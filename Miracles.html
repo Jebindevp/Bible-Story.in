@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from themewagon.github.io/ZenBlog/single-post.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Oct 2025 10:06:47 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Miracles</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Favicons -->
+    <link href="assets/imges/ll1.jpg" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/" rel="preconnect">
+    <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: ZenBlog
+  * Template URL: https://bootstrapmade.com/zenblog-bootstrap-blog-template/
+  * Updated: Aug 08 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+
+    <style>
+        /* ====== Header Base ====== */
+        .header {
+            background: #0d1b2a;
+            /* deep navy blue */
+            padding: 15px 0;
+            transition: all 0.3s ease;
+            z-index: 999;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .header.sticky-top {
+            position: sticky;
+            top: 0;
+        }
+
+        /* ====== Logo ====== */
+        .sitename {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        .sitename:hover {
+            color: #ffd700;
+            /* gold hover */
+        }
+
+        /* ====== Navigation Menu ====== */
+        .navmenu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .navmenu a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 500;
+            font-size: 1rem;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        /* Hover underline animation */
+        .navmenu a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 0;
+            height: 2px;
+            background-color: #ffd700;
+            transition: width 0.3s ease;
+        }
+
+        .navmenu a:hover::after,
+        .navmenu a.active::after {
+            width: 100%;
+        }
+
+        .navmenu a:hover,
+        .navmenu a.active {
+            color: #ffd700;
+        }
+
+        /* ====== Social Icons ====== */
+        /* ====== Header Social Links ====== */
+        .header-social-links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* ensures even centering in container */
+            gap: 12px;
+        }
+
+        /* Base style for icons */
+        .header-social-links a {
+            color: #ffffff;
+            font-size: 1.2rem;
+            width: 40px;
+            /* slightly larger for better centering */
+            height: 40px;
+            display: flex;
+            /* use flex instead of inline-flex for stable centering */
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.826);
+            backdrop-filter: blur(6px);
+            transition: all 0.35s ease;
+            position: relative;
+            overflow: hidden;
+            line-height: 1;
+            /* keeps icon centered vertically */
+        }
+
+        /* Icon hover animation */
+        .header-social-links a::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(45deg, #ffd700, #ff8c00);
+            transform: scale(0);
+            transition: transform 0.35s ease;
+            border-radius: 50%;
+            z-index: 0;
+        }
+
+        .header-social-links a:hover::after {
+            transform: scale(1);
+        }
+
+        /* Hover effects for the icon itself */
+        .header-social-links a i {
+            position: relative;
+            z-index: 1;
+            transition: transform 0.35s ease, color 0.35s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .header-social-links a:hover i {
+            transform: scale(1.2) rotate(10deg);
+            color: #000;
+        }
+
+        /* Add glowing effect on hover */
+        .header-social-links a:hover {
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+        }
+
+
+        /* ====== Mobile Navigation ====== */
+        .mobile-nav-toggle {
+            display: none;
+            font-size: 1.8rem;
+            color: #fff;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .mobile-nav-toggle:hover {
+            transform: rotate(90deg);
+        }
+
+        /* ====== Responsive Design ====== */
+        @media (max-width: 991px) {
+            .navmenu ul {
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background: #1b263b;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 15px 20px;
+                gap: 15px;
+                display: none;
+                /* hidden by default */
+            }
+
+            .navmenu.active ul {
+                display: flex;
+                /* show when toggled */
+            }
+
+            .mobile-nav-toggle {
+                display: block;
+            }
+
+            .header-social-links {
+                display: none;
+                /* hide social links on mobile for simplicity */
+            }
+        }
+
+        /* ====== Scroll Effect (optional enhancement) ====== */
+        .header.scrolled {
+            background: #1b263b;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+
+
+
+
+
+
+
+        /* ========== Global Reset & Font ========== */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background: #f9fafc;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* ========== Page Title Section ========== */
+        .page-title {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: #fff;
+            padding: 80px 0;
+            text-align: center;
+            border-radius: 0 0 50px 50px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .page-title h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        .breadcrumbs {
+            margin-top: 15px;
+        }
+
+        .breadcrumbs ol {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .breadcrumbs ol li {
+            color: #fff;
+            font-size: 0.95rem;
+        }
+
+        .breadcrumbs ol li a {
+            color: #ffd700;
+            text-decoration: none;
+            transition: 0.3s ease;
+        }
+
+        .breadcrumbs ol li a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        .breadcrumbs li+li::before {
+            content: "/";
+            margin: 0 8px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* ========== Blog Details ========== */
+        .blog-details .article {
+            background: #fff;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .blog-details .article:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+        }
+
+        .blog-details .post-img img {
+            width: 100%;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .blog-details .title {
+            font-size: 1.8rem;
+            color: #2b2b2b;
+            margin-bottom: 15px;
+        }
+
+        .blog-details .content p {
+            margin-bottom: 18px;
+            color: #555;
+        }
+
+        .blog-details blockquote {
+            background: #f0f4ff;
+            border-left: 5px solid #2575fc;
+            padding: 20px;
+            border-radius: 10px;
+            font-style: italic;
+            color: #444;
+        }
+
+        /* ========== Sidebar ========== */
+        .sidebar {
+            margin-top: 0px;
+        }
+
+        .widget-item {
+            background: #fff;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+            transition: 0.3s ease;
+        }
+
+        .widget-item:hover {
+            transform: translateY(-4px);
+        }
+
+        .widget-title {
+            font-weight: 600;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            border-left: 4px solid #2575fc;
+            padding-left: 10px;
+        }
+
+        /* ========== Author Widget ========== */
+        .blog-author-widget img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            margin-right: 15px;
+            border: 3px solid #2575fc;
+        }
+
+        .blog-author-widget h4 {
+            margin-bottom: 8px;
+            color: #222;
+        }
+
+        .blog-author-widget p {
+            margin-top: 15px;
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        /* ========== Social Links ========== */
+        .social-links a {
+            display: inline-block;
+            color: #2575fc;
+            background: transparent;
+            font-size: 1.1rem;
+            margin: 0 6px;
+            width: 38px;
+            height: 38px;
+            line-height: 38px;
+            text-align: center;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #fff;
+            background: #2575fc;
+            transform: translateY(-4px) scale(1.1);
+        }
+
+        /* Additional Social Icons */
+        .social-links a.github:hover {
+            background: #333;
+        }
+
+        .social-links a.whatsapp:hover {
+            background: #25D366;
+        }
+
+        .social-links a.gmail:hover {
+            background: #D44638;
+        }
+
+        .social-links a.portfolio:hover {
+            background: #ff6f00;
+        }
+
+        /* ========== Recent Posts ========== */
+        .recent-posts-widget .post-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .recent-posts-widget .post-item img {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            margin-right: 15px;
+        }
+
+        .recent-posts-widget .post-item h4 {
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+
+        .recent-posts-widget .post-item a {
+            text-decoration: none;
+            color: #222;
+            transition: color 0.3s;
+        }
+
+        .recent-posts-widget .post-item a:hover {
+            color: #2575fc;
+        }
+
+        /* ========== Tags Widget ========== */
+        .tags-widget ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tags-widget a {
+            display: inline-block;
+            background: #eef3ff;
+            color: #2575fc;
+            padding: 6px 14px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            transition: 0.3s ease;
+        }
+
+        .tags-widget a:hover {
+            background: #2575fc;
+            color: #fff;
+            transform: scale(1.05);
+        }
+
+        /* ========== Responsive ========== */
+        @media (max-width: 992px) {
+            .page-title {
+                padding: 60px 20px;
+            }
+
+            .blog-details .title {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .blog-author-widget img {
+                width: 60px;
+                height: 60px;
+            }
+
+            .recent-posts-widget .post-item img {
+                width: 65px;
+                height: 65px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .page-title h1 {
+                font-size: 1.8rem;
+            }
+
+            .widget-item {
+                padding: 18px;
+            }
+        }
+
+
+
+        .related-posts {
+            margin-top: 50px;
+            padding: 30px 15px;
+            background: #fafafa;
+            border-radius: 16px;
+            text-align: center;
+        }
+
+        /* Language Toggle */
+        .language-toggle {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .lang-btn {
+            background: #eee;
+            color: #333;
+            border: none;
+            padding: 8px 18px;
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .lang-btn.active {
+            background: linear-gradient(45deg, #ffd700, #ffb400);
+            color: #000;
+            box-shadow: 0 0 8px rgba(255, 215, 0, 0.4);
+        }
+
+        /* Cards */
+        .related-cards {
+            position: relative;
+            width: 100%;
+            height: 480px;
+            /* consistent card height */
+            overflow: hidden;
+        }
+
+        .related-card {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            padding: 20px;
+            height: 100%;
+        }
+
+        .related-card.active {
+            display: flex;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .related-card img {
+            width: 100%;
+            max-width: 450px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .card-content {
+            margin-top: 15px;
+        }
+
+        .card-content h4 {
+            font-size: 1.3rem;
+            color: #333;
+        }
+
+        .card-content p {
+            color: #555;
+            font-size: 1rem;
+        }
+
+        mark {
+            background: #fff7b2;
+            color: #000;
+            padding: 0 4px;
+            border-radius: 3px;
+        }
+
+        .pagination-controls {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .pagination-controls button {
+            background: linear-gradient(45deg, #ffd700, #ff8c00);
+            color: #000;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .pagination-controls button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(255, 165, 0, 0.4);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .related-card img {
+                height: 200px;
+            }
+
+            .related-cards {
+                height: auto;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body class="single-post-page">
+
+    <header id="header" class="header d-flex align-items-center sticky-top">
+        <div class="container position-relative d-flex align-items-center justify-content-between">
+
+            <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+
+                <h1 class="sitename">BIBLE</h1>
+            </a>
+
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="category.html">Categories</a></li>
+
+
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+
+            <div class="header-social-links">
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="main">
+
+        <!-- Page Title -->
+        <div class="page-title">
+            <div class="container d-lg-flex justify-content-between align-items-center">
+                <h1 class="mb-2 mb-lg-0">Jesus’ Wisdom and Miracles</h1>
+                <nav class="breadcrumbs">
+                    <ol>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Demons.html">Next Stories</a></li>
+                        <li><a href="Wilderness.html">Back</a></li>
+                    </ol>
+                </nav>
+            </div>
+        </div><!-- End Page Title -->
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-8">
+
+                    <!-- Blog Details Section -->
+                    <section id="blog-details" class="blog-details section">
+                        <div class="container">
+
+                            <article class="article">
+
+                                <div class="post-img">
+                                    <img src="assets/imges/as1.jpg" alt="" class="img-fluid" style="height: 400px;">
+                                </div>
+
+                                <h2 class="title"> Jesus’ Wisdom and Miracles</h2>
+
+
+                                <div class="content">
+                                    <p>
+                                        Jesus faced temptation but never sinned.
+                                        He remained faithful to God’s will and won the battle.
+
+                                        Because He conquered, we too can overcome.
+                                        Let us follow His example —
+                                        trusting God completely, even in the wilderness of life.
+                                    </p>
+
+                                    <!-- Related Horizontal Cards Section -->
+                                    <!-- Related Horizontal Cards Section -->
+                                    <section class="related-posts">
+                                        <!-- Language Toggle -->
+                                        <div class="language-toggle">
+                                            <button id="english-btn" class="lang-btn active"><i class="bi bi-book"></i>
+                                                English</button>
+                                            <button id="tamil-btn" class="lang-btn"><i class="bi bi-book-half"></i>
+                                                தமிழ்</button>
+                                        </div>
+
+                                        <h3 class="section-title"><i class="bi bi-journal-bookmark"></i>
+                                            <h2 class="title">Jesus’ Wisdom and Miracles</h2>
+                                        </h3>
+
+                                        <!-- Cards Wrapper -->
+                                        <div class="related-cards">
+                                            <!-- Pagination Controls -->
+                                            <div class="pagination-controls">
+                                                <button id="prev-btn"><i class="bi bi-arrow-left"></i> Prev</button>
+                                                <span id="page-info"></span>
+                                                <button id="next-btn">Next <i class="bi bi-arrow-right"></i></button>
+                                            </div>
+                                            <!-- Card 1 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/as2.jpg" alt="Day 1">
+                                                <div class="card-content">
+                                                    <h4 class="en">Jesus Preaches and Heals</h4>
+                                                    <h4 class="ta" style="display:none;">இயேசு போதித்தும்
+                                                        குணப்படுத்தியும்
+                                                    </h4>
+                                                    <p class="en">Jesus went from village to village teaching the
+                                                        people.
+                                                        He preached about the Kingdom of God and shared the good news
+                                                        with everyone.
+
+                                                        Crowds followed Him — the sick, the blind, the deaf, the
+                                                        paralyzed,
+                                                        and those who suffered for many years.
+
+                                                        They all came with one faith in their hearts:
+                                                        “Jesus will heal us!”
+                                                    </p>
+                                                    <p class="ta" style="display:none;">இயேசு மக்கள் வாழும் ஊர் தோறும்
+                                                        சென்று போதித்தார்.
+                                                        அவர் தேவனுடைய ராஜ்யத்தைப் பற்றி மக்களிடம் அறிவித்தார்.
+
+                                                        அவரைச் சுற்றி பல நோயாளிகள் வந்தனர் —
+                                                        குருடர்கள், காது கேளாதோர், சாய்ந்தவர்கள், பிசாசால்
+                                                        வாட்டப்பட்டவர்கள்,
+                                                        அல்லது பல வருடங்களாக வேதனையில் இருந்தவர்கள்.
+
+                                                        அவர்கள் அனைவரும் ஒரே நம்பிக்கையுடன் வந்தனர் —
+
+                                                        “இயேசு நம்மை குணப்படுத்துவார்!”
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 2 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/as3.jpg" alt="Day 2">
+                                                <div class="card-content">
+                                                    <h4 class="en">The Healing of the Blind Man</h4>
+                                                    <h4 class="ta" style="display:none;">குருடரை குணமாக்கிய அற்புதம்
+                                                    </h4>
+                                                    <p class="en">One day, as Jesus was walking by, a blind man shouted,
+                                                        <mark>“Lord, have mercy on me!”</mark>
+
+                                                        The people told him to be quiet,
+                                                        but he cried out even louder.
+
+                                                        Jesus stopped and called him near.
+
+                                                        “What do you want Me to do for you?” Jesus asked.
+                                                        <mark>“Lord, I want to see,”</mark> the man replied.
+
+                                                        Jesus said softly,
+                                                        <mark>“Receive your sight; your faith has made you well.”</mark>
+
+                                                        Immediately, the man’s eyes were opened!
+                                                        He jumped with joy and praised God!
+                                                    </p>
+                                                    <p class="ta" style="display:none;">ஒரு நாள், இயேசு வழியில்
+                                                        சென்றபோது ஒரு குருடர் கூவினான்:
+
+                                                        <mark>“கர்த்தரே, என்னை இரக்கமாய்ப் பாரும்!”</mark>
+
+                                                        மக்கள் அவனை அமைதியாக இருக்கச் சொன்னார்கள்,
+                                                        ஆனால் அவன் இன்னும் பலமாக கூவினான்.
+
+                                                        இயேசு நின்று அவனை அழைத்தார்.
+
+                                                        “நீ என்ன விரும்புகிறாய்?” என்று கேட்டார்.
+                                                        அவன் சொன்னான்:
+
+                                                        <mark>“கர்த்தரே, நான் பார்வை பெற வேண்டும்.”</mark>
+
+                                                        இயேசு மெதுவாகச் சொன்னார்:
+
+                                                        <mark>“நம்பிக்கை கொண்டாய்; ஆகையால் பார்வைபெறு.”</mark>
+
+                                                        அந்த நொடியில் அவனது கண்கள் திறந்தது!
+                                                        அவன் குதித்துக்கொண்டு தேவனைத் துதியிட்டான்
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 3 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/as4.jpg" alt="Day 3">
+                                                <div class="card-content">
+                                                    <h4 class="en">The Deaf and Mute Man Healed
+                                                    </h4>
+                                                    <h4 class="ta" style="display:none;">காது கேளாதவருக்கும் பேச
+                                                        முடியாதவருக்கும் குணம்
+                                                    </h4>
+                                                    <p class="en">In another town, some people brought to Jesus a man
+                                                        who was <mark>deaf and could hardly speak.</mark>
+
+                                                        Jesus took him aside from the crowd,
+                                                        placed His fingers into the man’s ears,
+                                                        looked up to heaven, and prayed, saying:
+
+                                                        <mark>“Ephphatha!” — which means “Be opened!”</mark>
+
+                                                        At once, the man’s ears were opened,
+                                                        his tongue was loosened,
+                                                        and he began to speak clearly
+
+                                                        The people were amazed and said:
+                                                        “He has done everything well!”
+                                                    </p>
+                                                    <p class="ta" style="display:none;">மற்றொரு ஊரில், மக்கள் ஒருவரை
+                                                        இயேசுவிடம் கொண்டு வந்தனர்.
+                                                        <mark>அவன் காது கேளாதவரும், பேச முடியாதவரும் இருந்தான்.</mark>
+
+                                                        இயேசு அவனைப் பக்கத்திற்கு அழைத்து சென்றார்,
+                                                        அவனது காது மீது தம் விரலை வைத்தார்,
+                                                        பின் வானத்தை நோக்கிப் பிரார்த்தித்து சொன்னார்:
+
+                                                        <mark>“எப்பாத்தா!” (அதாவது “திறந்துவிடு!”)</mark>
+
+                                                        உடனே அவனது காது திறந்தது!
+                                                        நாக்கு தளர்ந்து, அவன் தெளிவாகப் பேசத் தொடங்கினான்.
+
+                                                        மக்கள் ஆச்சரியமடைந்து கூறினர்:
+
+                                                        “அவர் செய்த அனைத்தும் நன்றாகவே செய்துள்ளார்!”
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 4 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/as5.jpg" alt="Day 3">
+                                                <div class="card-content">
+                                                    <h4 class="en">The Woman Healed After Twelve Years
+                                                    </h4>
+                                                    <h4 class="ta" style="display:none;">பல வருடங்கள் நோயால் வாடிய பெண்
+                                                    </h4>
+                                                    <p class="en"><mark>A woman had been suffering from a bleeding
+                                                            illness for
+                                                            twelve years.</mark>
+                                                        She had visited many doctors but found no cure.
+
+                                                        When she heard about Jesus,
+                                                        she came quietly through the crowd and touched His garment.
+
+                                                        Immediately, she felt healed!
+
+                                                        Jesus turned and asked,
+                                                        “Who touched Me?”
+
+                                                        The woman, trembling, came forward and confessed.
+
+                                                        Jesus looked at her kindly and said:
+                                                        <mark> “Daughter, your faith has healed you.
+                                                            Go in peace.”</mark>
+                                                    </p>
+                                                    <p class="ta" style="display:none;">ஒரு <mark>பெண் பன்னிரண்டு
+                                                            ஆண்டுகளாக
+                                                            நோயால் வாடினார்.</mark>
+                                                        அவர் பல மருத்தவரிடம் சென்றிருந்தார்; ஆனால் குணமடையவில்லை.
+
+                                                        அவர் இயேசுவைப் பற்றி கேட்டார்,
+                                                        பின்பு கூட்டத்தில் மெதுவாக சென்று இயேசுவின் ஆடையைக் தொடினார்.
+
+                                                        அந்த நொடியில் அவள் உடலில் குணம் வந்தது!
+
+                                                        இயேசு திரும்பி கேட்டார்:
+
+                                                        “என்னை யார் தொட்டார்?”
+
+                                                        அவள் நடுங்கியபடி முன் வந்து ஒப்புக்கொண்டாள்.
+
+                                                        இயேசு அவளை நோக்கி மெதுவாகச் சொன்னார்:
+
+                                                        <mark> “மகளே, உன் நம்பிக்கை உன்னை குணமாக்கியது.
+                                                            சமாதானமாகப் போ.”</mark>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 5-->
+                                            <div class="related-card">
+                                                <img src="assets/imges/as6.jpg" alt="Day 3">
+                                                <div class="card-content">
+                                                    <h4 class="en">Jesus Heals a Man with Leprosy
+                                                    </h4>
+                                                    <h4 class="ta" style="display:none;">குஷ்டரோகியொருவன் சுத்தமானான்
+                                                    </h4>
+                                                    <p class="en">One day, a man with leprosy came to Jesus.
+                                                        He knelt before Him and pleaded with faith:
+
+                                                        <mark>“Lord, if You are willing, You can make me clean!”</mark>
+
+                                                        Moved with compassion, Jesus reached out His hand and touched
+                                                        him.
+                                                        He said gently:
+
+                                                       <mark> “I am willing. Be clean!”</mark>
+
+                                                        At that very moment, the man was completely healed.
+                                                        His skin was restored, and his heart was filled with joy.
+
+                                                        The people who saw it were amazed and glorified God,
+                                                        for they had witnessed the power of God’s mercy and love
+                                                    </p>
+                                                    <p class="ta" style="display:none;">ஒரு நாள் குஷ்டரோகியொருவன்
+                                                        இயேசுவின் முன் விழுந்து கூறினான்: <mark>“கத்தாவே, நீர் விரும்பினால்
+                                                        நான் சுத்தமாகலாம்!”</mark> இயேசு அவனைத் தொட்ந்து சொன்னார்:mark “நான்
+                                                        விரும்புகிறேன்; சுத்தமாயிரு!” அந்தக் கணத்தில் அவன் முழுமையாக
+                                                        குணமடைந்தான். மக்கள் அதிசயத்தால் நெஞ்சார்ந்தனர்.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </section>
+
+
+                                </div><!-- End post content -->
+
+                                <blockquote>
+                                    <p>
+                                        The story of Jesus in the wilderness teaches us:
+
+
+                                        We must obey God and say “No” to sin.
+
+                                        Through prayer, fasting, and faith, we gain victory.
+                                    </p>
+                                </blockquote>
+
+                            </article>
+
+                        </div>
+                    </section><!-- /Blog Details Section -->
+
+
+
+                </div>
+
+                <div class="col-lg-4 sidebar">
+
+                    <div class="widgets-container">
+
+
+                        <!-- Recent Posts Widget -->
+                        <div class="recent-posts-widget widget-item">
+
+                            <h3 class="widget-title">Next Stories</h3>
+
+                            <div class="post-item">
+                                <img src="assets/imges/nn1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Noah.html">Noah – The Great Ark and God’s Promise</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/aa1.webp" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="single-post.html">God Create World</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+
+
+                            <div class="post-item">
+                                <img src="assets/imges/bb1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Adam.html">The Story of Adam and Eve</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/kk1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Abel.html">Cain and Abel – Detailed Story</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+
+
+                            <div class="post-item">
+                                <img src="assets/imges/hh1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Abraham.html">Abraham – The Father of Faith</a>
+                                    </h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/jj1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Jacob.html">Jacob & Joseph – The Dreamer and the Redeemer</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/mm1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Moses.html">The Story of Moses’ Final Blessing and Death</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/ss1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Samuel.html">Samuel the Prophet – From Birth to Death</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/dd1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="David.html">King David – From Shepherd Boy to King of Israel</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/qq1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Solomon.html">King Solomon – The King of Wisdom</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/da1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Daniel.html">Daniel in the Lion’s Den</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                        </div><!--/Recent Posts Widget -->
+
+
+                        <!-- Blog Author Widget -->
+                        <div class="blog-author-widget widget-item">
+
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="d-flex align-items-center w-100">
+                                    <img src="assets/imges/mine.jpg" class="rounded-circle flex-shrink-0" alt="">
+                                    <div>
+                                        <h4>Jebin Joseph</h4>
+                                        <div class="social-links">
+                                            <a href="https://github.com/Jebindevp" class="github"><i
+                                                    class="bi bi-github"></i></a>
+                                            <a href="https://wa.me/919487851243?text=Hello%20I%20have%20a%20question"
+                                                target="_blank" rel="noopener noreferrer">
+                                                <i class="bi bi-whatsapp"></i>
+                                            </a>
+                                            <a href="mailto:kmt4543@gmail.com" class="gmail"><i
+                                                    class="bi bi-envelope-fill"></i></a>
+                                            <a href="https://jebindevp.github.io/My-Protifolio/" class="portfolio"><i
+                                                    class="bi bi-briefcase-fill"></i></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <p>
+                                    I’m Jebin Joseph, a passionate Web Designer dedicated to turning creative ideas into
+                                    visually stunning
+                                    and user-friendly websites. With a deep love for design and technology, I specialize
+                                    in crafting
+                                    modern, responsive, and engaging digital experiences that bring brands to life.
+                                </p>
+                                <p>"Good design is not just about how it looks — it’s about how it works and how it
+                                    makes people feel."
+                                </p>
+                            </div>
+
+                        </div><!--/Blog Author Widget -->
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer id="footer" class="footer dark-background">
+
+        <div class="container footer-top">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <a href="index.html" class="logo d-flex align-items-center">
+                        <span class="sitename">Bible</span>
+                    </a>
+                    <div class="footer-contact pt-3">
+                        <p>India , TamilNadu</p>
+                        <p>Kanya Kumari Dist</p>
+                        <p class="mt-3"><strong>Phone:</strong> <span>91+ 9487851243</span></p>
+                        <p><strong>Email:</strong> <span>kmt4543@gmail.com</span></p>
+                    </div>
+                    <div class="social-links d-flex mt-4">
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Categries</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Management System</a></li>
+                        <li><a href="#">Marketing</a></li>
+                        <li><a href="#">Graphic Design</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Development</h4>
+                    <ul>
+                        <li><a href="#">static websites</a></li>
+                        <li><a href="#">dynamic websites </a></li>
+                        <li><a href="#">E-Commerce design</a></li>
+                        <li><a href="#">Student Projects</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Other Services</h4>
+                    <ul>
+                        <li><a href="#">Photos Editting</a></li>
+                        <li><a href="#">Video Editting</a></li>
+                        <li><a href="#">Online Class </a></li>
+                        <li><a href="#">Poster Edit</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container copyright text-center mt-4">
+            <p>© <span>Copyright</span> <strong class="px-1 sitename">BIBLE</strong> <span>All Rights Reserved</span>
+            </p>
+            <div class="credits">
+
+                Designed by & Distributed by <a href="">Jebin Joseph</a>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+
+    <script>
+        const cards = document.querySelectorAll(".related-card");
+        const nextBtn = document.getElementById("next-btn");
+        const prevBtn = document.getElementById("prev-btn");
+        const pageInfo = document.getElementById("page-info");
+        let currentCard = 0;
+
+        function showCard(index) {
+            cards.forEach((card, i) => card.classList.toggle("active", i === index));
+            pageInfo.textContent = ` ${index + 1} of ${cards.length}`;
+        }
+
+        nextBtn.addEventListener("click", () => {
+            currentCard = (currentCard + 1) % cards.length;
+            showCard(currentCard);
+        });
+
+        prevBtn.addEventListener("click", () => {
+            currentCard = (currentCard - 1 + cards.length) % cards.length;
+            showCard(currentCard);
+        });
+
+        showCard(currentCard);
+
+        // Language Toggle
+        const tamilBtn = document.getElementById("tamil-btn");
+        const englishBtn = document.getElementById("english-btn");
+
+        tamilBtn.addEventListener("click", () => {
+            tamilBtn.classList.add("active");
+            englishBtn.classList.remove("active");
+            document.querySelectorAll(".ta").forEach(el => el.style.display = "block");
+            document.querySelectorAll(".en").forEach(el => el.style.display = "none");
+        });
+
+        englishBtn.addEventListener("click", () => {
+            englishBtn.classList.add("active");
+            tamilBtn.classList.remove("active");
+            document.querySelectorAll(".en").forEach(el => el.style.display = "block");
+            document.querySelectorAll(".ta").forEach(el => el.style.display = "none");
+        });
+    </script>
+
+
+</body>
+
+
+<!-- Mirrored from themewagon.github.io/ZenBlog/single-post.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Oct 2025 10:06:52 GMT -->
+
+</html>

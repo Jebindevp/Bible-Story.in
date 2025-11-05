@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from themewagon.github.io/ZenBlog/single-post.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Oct 2025 10:06:47 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Jacob & Joseph</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Favicons -->
+    <link href="assets/imges/ll1.jpg" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/" rel="preconnect">
+    <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: ZenBlog
+  * Template URL: https://bootstrapmade.com/zenblog-bootstrap-blog-template/
+  * Updated: Aug 08 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+
+    <style>
+        /* ====== Header Base ====== */
+        .header {
+            background: #0d1b2a;
+            /* deep navy blue */
+            padding: 15px 0;
+            transition: all 0.3s ease;
+            z-index: 999;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .header.sticky-top {
+            position: sticky;
+            top: 0;
+        }
+
+        /* ====== Logo ====== */
+        .sitename {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        .sitename:hover {
+            color: #ffd700;
+            /* gold hover */
+        }
+
+        /* ====== Navigation Menu ====== */
+        .navmenu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .navmenu a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 500;
+            font-size: 1rem;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        /* Hover underline animation */
+        .navmenu a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 0;
+            height: 2px;
+            background-color: #ffd700;
+            transition: width 0.3s ease;
+        }
+
+        .navmenu a:hover::after,
+        .navmenu a.active::after {
+            width: 100%;
+        }
+
+        .navmenu a:hover,
+        .navmenu a.active {
+            color: #ffd700;
+        }
+
+        /* ====== Social Icons ====== */
+        /* ====== Header Social Links ====== */
+        .header-social-links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* ensures even centering in container */
+            gap: 12px;
+        }
+
+        /* Base style for icons */
+        .header-social-links a {
+            color: #ffffff;
+            font-size: 1.2rem;
+            width: 40px;
+            /* slightly larger for better centering */
+            height: 40px;
+            display: flex;
+            /* use flex instead of inline-flex for stable centering */
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.826);
+            backdrop-filter: blur(6px);
+            transition: all 0.35s ease;
+            position: relative;
+            overflow: hidden;
+            line-height: 1;
+            /* keeps icon centered vertically */
+        }
+
+        /* Icon hover animation */
+        .header-social-links a::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(45deg, #ffd700, #ff8c00);
+            transform: scale(0);
+            transition: transform 0.35s ease;
+            border-radius: 50%;
+            z-index: 0;
+        }
+
+        .header-social-links a:hover::after {
+            transform: scale(1);
+        }
+
+        /* Hover effects for the icon itself */
+        .header-social-links a i {
+            position: relative;
+            z-index: 1;
+            transition: transform 0.35s ease, color 0.35s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .header-social-links a:hover i {
+            transform: scale(1.2) rotate(10deg);
+            color: #000;
+        }
+
+        /* Add glowing effect on hover */
+        .header-social-links a:hover {
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+        }
+
+
+        /* ====== Mobile Navigation ====== */
+        .mobile-nav-toggle {
+            display: none;
+            font-size: 1.8rem;
+            color: #fff;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .mobile-nav-toggle:hover {
+            transform: rotate(90deg);
+        }
+
+        /* ====== Responsive Design ====== */
+        @media (max-width: 991px) {
+            .navmenu ul {
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background: #1b263b;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 15px 20px;
+                gap: 15px;
+                display: none;
+                /* hidden by default */
+            }
+
+            .navmenu.active ul {
+                display: flex;
+                /* show when toggled */
+            }
+
+            .mobile-nav-toggle {
+                display: block;
+            }
+
+            .header-social-links {
+                display: none;
+                /* hide social links on mobile for simplicity */
+            }
+        }
+
+        /* ====== Scroll Effect (optional enhancement) ====== */
+        .header.scrolled {
+            background: #1b263b;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+
+
+
+
+
+
+
+        /* ========== Global Reset & Font ========== */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background: #f9fafc;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* ========== Page Title Section ========== */
+        .page-title {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: #fff;
+            padding: 80px 0;
+            text-align: center;
+            border-radius: 0 0 50px 50px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .page-title h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        .breadcrumbs {
+            margin-top: 15px;
+        }
+
+        .breadcrumbs ol {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .breadcrumbs ol li {
+            color: #fff;
+            font-size: 0.95rem;
+        }
+
+        .breadcrumbs ol li a {
+            color: #ffd700;
+            text-decoration: none;
+            transition: 0.3s ease;
+        }
+
+        .breadcrumbs ol li a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        .breadcrumbs li+li::before {
+            content: "/";
+            margin: 0 8px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* ========== Blog Details ========== */
+        .blog-details .article {
+            background: #fff;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .blog-details .article:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+        }
+
+        .blog-details .post-img img {
+            width: 100%;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .blog-details .title {
+            font-size: 1.8rem;
+            color: #2b2b2b;
+            margin-bottom: 15px;
+        }
+
+        .blog-details .content p {
+            margin-bottom: 18px;
+            color: #555;
+        }
+
+        .blog-details blockquote {
+            background: #f0f4ff;
+            border-left: 5px solid #2575fc;
+            padding: 20px;
+            border-radius: 10px;
+            font-style: italic;
+            color: #444;
+        }
+
+        /* ========== Sidebar ========== */
+        .sidebar {
+            margin-top: 0px;
+        }
+
+        .widget-item {
+            background: #fff;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+            transition: 0.3s ease;
+        }
+
+        .widget-item:hover {
+            transform: translateY(-4px);
+        }
+
+        .widget-title {
+            font-weight: 600;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            border-left: 4px solid #2575fc;
+            padding-left: 10px;
+        }
+
+        /* ========== Author Widget ========== */
+        .blog-author-widget img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            margin-right: 15px;
+            border: 3px solid #2575fc;
+        }
+
+        .blog-author-widget h4 {
+            margin-bottom: 8px;
+            color: #222;
+        }
+
+        .blog-author-widget p {
+            margin-top: 15px;
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        /* ========== Social Links ========== */
+        .social-links a {
+            display: inline-block;
+            color: #2575fc;
+            background: #eef3ff;
+            font-size: 1.1rem;
+            margin: 0 6px;
+            width: 38px;
+            height: 38px;
+            line-height: 38px;
+            text-align: center;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #fff;
+            background: #2575fc;
+            transform: translateY(-4px) scale(1.1);
+        }
+
+        /* Additional Social Icons */
+        .social-links a.github:hover {
+            background: #333;
+        }
+
+        .social-links a.whatsapp:hover {
+            background: #25D366;
+        }
+
+        .social-links a.gmail:hover {
+            background: #D44638;
+        }
+
+        .social-links a.portfolio:hover {
+            background: #ff6f00;
+        }
+
+        /* ========== Recent Posts ========== */
+        .recent-posts-widget .post-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .recent-posts-widget .post-item img {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            margin-right: 15px;
+        }
+
+        .recent-posts-widget .post-item h4 {
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+
+        .recent-posts-widget .post-item a {
+            text-decoration: none;
+            color: #222;
+            transition: color 0.3s;
+        }
+
+        .recent-posts-widget .post-item a:hover {
+            color: #2575fc;
+        }
+
+        /* ========== Tags Widget ========== */
+        .tags-widget ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tags-widget a {
+            display: inline-block;
+            background: #eef3ff;
+            color: #2575fc;
+            padding: 6px 14px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            transition: 0.3s ease;
+        }
+
+        .tags-widget a:hover {
+            background: #2575fc;
+            color: #fff;
+            transform: scale(1.05);
+        }
+
+        /* ========== Responsive ========== */
+        @media (max-width: 992px) {
+            .page-title {
+                padding: 60px 20px;
+            }
+
+            .blog-details .title {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .blog-author-widget img {
+                width: 60px;
+                height: 60px;
+            }
+
+            .recent-posts-widget .post-item img {
+                width: 65px;
+                height: 65px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .page-title h1 {
+                font-size: 1.8rem;
+            }
+
+            .widget-item {
+                padding: 18px;
+            }
+        }
+
+
+
+        .related-posts {
+            margin-top: 50px;
+            padding: 30px 15px;
+            background: #fafafa;
+            border-radius: 16px;
+            text-align: center;
+        }
+
+        /* Language Toggle */
+        .language-toggle {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .lang-btn {
+            background: #eee;
+            color: #333;
+            border: none;
+            padding: 8px 18px;
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .lang-btn.active {
+            background: linear-gradient(45deg, #ffd700, #ffb400);
+            color: #000;
+            box-shadow: 0 0 8px rgba(255, 215, 0, 0.4);
+        }
+
+        /* Cards */
+        .related-cards {
+            position: relative;
+            width: 100%;
+            height: 480px;
+            /* consistent card height */
+            overflow: hidden;
+        }
+
+        .related-card {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            padding: 20px;
+            height: 100%;
+        }
+
+        .related-card.active {
+            display: flex;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .related-card img {
+            width: 100%;
+            max-width: 450px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .card-content {
+            margin-top: 15px;
+        }
+
+        .card-content h4 {
+            font-size: 1.3rem;
+            color: #333;
+        }
+
+        .card-content p {
+            color: #555;
+            font-size: 1rem;
+        }
+
+        mark {
+            background: #fff7b2;
+            color: #000;
+            padding: 0 4px;
+            border-radius: 3px;
+        }
+
+        .pagination-controls {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .pagination-controls button {
+            background: linear-gradient(45deg, #ffd700, #ff8c00);
+            color: #000;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .pagination-controls button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(255, 165, 0, 0.4);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .related-card img {
+                height: 200px;
+            }
+
+            .related-cards {
+                height: auto;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body class="single-post-page">
+
+    <header id="header" class="header d-flex align-items-center sticky-top">
+        <div class="container position-relative d-flex align-items-center justify-content-between">
+
+            <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+
+                <h1 class="sitename">BIBLE</h1>
+            </a>
+
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="category.html">Categories</a></li>
+
+
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+
+            <div class="header-social-links">
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="main">
+
+        <!-- Page Title -->
+        <div class="page-title">
+            <div class="container d-lg-flex justify-content-between align-items-center">
+                <h1 class="mb-2 mb-lg-0">Jacob & Joseph – The Dreamer and the Redeemer</h1>
+                <nav class="breadcrumbs">
+                    <ol>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Moses.html">Next Story</a></li>
+                        <li><a href="Abraham.html">Back</a></li>
+                    </ol>
+                </nav>
+            </div>
+        </div><!-- End Page Title -->
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-8">
+
+                    <!-- Blog Details Section -->
+                    <section id="blog-details" class="blog-details section">
+                        <div class="container">
+
+                            <article class="article">
+
+                                <div class="post-img">
+                                    <img src="assets/imges/jj1.jpg" alt="" class="img-fluid" style="height: 400px;">
+                                </div>
+
+                                <h2 class="title">The Dreamer and the Redeemer</h2>
+
+
+                                <div class="content">
+                                    <p>
+                                        “Lord, help me to trust Your plan like Joseph —
+                                        to believe that even in betrayal, pain, or loneliness, You are still working for
+                                        my good.
+
+                                        Give me the faith to hold on to my dreams,
+                                        even when the world calls them impossible,
+                                        for You are the God who turns prisons into palaces and tears into triumphs."
+                                    </p>
+
+                                    <!-- Related Horizontal Cards Section -->
+                                    <!-- Related Horizontal Cards Section -->
+                                    <section class="related-posts">
+                                        <!-- Language Toggle -->
+                                        <div class="language-toggle">
+                                            <button id="english-btn" class="lang-btn active"><i class="bi bi-book"></i>
+                                                English</button>
+                                            <button id="tamil-btn" class="lang-btn"><i class="bi bi-book-half"></i>
+                                                தமிழ்</button>
+                                        </div>
+
+                                        <h3 class="section-title"><i class="bi bi-journal-bookmark"></i> Jacob and Joseph
+                                           
+                                        </h3>
+
+                                        <!-- Cards Wrapper -->
+                                        <div class="related-cards">
+                                            <!-- Pagination Controls -->
+                                            <div class="pagination-controls">
+                                                <button id="prev-btn"><i class="bi bi-arrow-left"></i> Prev</button>
+                                                <span id="page-info"></span>
+                                                <button id="next-btn">Next <i class="bi bi-arrow-right"></i></button>
+                                            </div>
+                                            <!-- Card 1 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/jj2.jpg" alt="Day 1">
+                                                <div class="card-content">
+                                                    <h4 class="en">Jacob’s Family</h4>
+                                                    <h4 class="ta" style="display:none;">யாக்கோபின் குடும்பம்</h4>
+                                                    <p class="en"> <mark>Jacob was the son of Isaac and the grandson of
+                                                            Abraham.</mark>
+                                                        He had <mark>twelve sons,</mark> and from them came the <mark>
+                                                            Twelve Tribes of
+                                                            Israel. 🇮🇱</mark>
+
+                                                        Among his sons was Joseph — a wise and kind young boy who
+                                                        trusted in God and had a pure heart.
+                                                    </p>
+                                                    <p class="ta" style="display:none;"> <mark>யாக்கோபு, இசாகின் மகன்
+                                                            மற்றும்
+                                                            ஆபிரகாமின் பேரன்.</mark>
+                                                        அவருக்கு <mark>பன்னிரண்டு (12) மகன்கள்</mark> பிறந்தனர்.
+                                                        இவர்களாலே <mark>இஸ்ரவேல் 12 குலங்கள் (Tribes of Israel)</mark>
+                                                        உருவானன. 🇮🇱
+
+                                                        யாக்கோபின் மக்களில் ஒருவன் யோசேப் (Joseph) — மிகவும் புத்திசாலி,
+                                                        கனவுகள் காணும் சிறுவன்.
+                                                        அவன் சிறுவயதிலேயே தேவனை நம்பியவன்; நல்ல இதயமுடையவன்.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 2 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/jj3.jpg" alt="Day 2">
+                                                <div class="card-content">
+                                                    <h4 class="en">Joseph’s Dreams</h4>
+                                                    <h4 class="ta" style="display:none;">யோசேப்பின் கனவுகள்
+                                                    </h4>
+                                                    <p class="en">One night, Joseph had two special dreams:
+
+                                                        In the first dream — he and his brothers were tying bundles
+                                                        of grain in the field.
+                                                        Joseph’s bundle stood upright, while the others bowed down to
+                                                        his.
+
+                                                        In the second dream — the sun, moon, and eleven stars
+                                                        bowed before him.
+
+                                                        When Joseph told his brothers, they became jealous and angry.
+                                                        They said, “Will you really rule over us?”</mark>
+                                                    </p>
+                                                    <p class="ta" style="display:none;">ஒருநாள் யோசேப் இரண்டு
+                                                        விசித்திரமான கனவுகள் கண்டான்:
+                                                        முதலாவது — தானும் தன் சகோதரர்களும் வயலில் தானியக் குத்துகள்
+                                                        கட்டும் போது,
+                                                        அவனுடைய குத்து நேராக நின்றது; மற்ற சகோதரர்களின் குத்துகள்
+                                                        அவனுக்குப் பணிந்தன.
+
+                                                        இரண்டாவது — சூரியன், நிலா, பதினொன்று நட்சத்திரங்கள் அவனுக்குப்
+                                                        பணிந்தன.
+
+                                                        இந்த கனவுகளைச் சொல்லியபோது, சகோதரர்கள் பொறாமைப்பட்டார்கள்.
+                                                        “அவன் எங்களை ஆட்சி செய்வானா?” என்று அவர்கள் மனதில் கோபமடைந்தனர்.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 3 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/jj4.jpg" alt="Day 3">
+                                                <div class="card-content">
+                                                    <h4 class="en">The Brothers’ Jealousy and Betrayal</h4>
+                                                    <h4 class="ta" style="display:none;">சகோதரர்களின் பொறாமை மற்றும்
+                                                        விற்பனை</h4>
+                                                    <p class="en">
+                                                        One day, Joseph went to visit his brothers in the field.
+                                                        When they saw him coming, they plotted against him.
+                                                        “Let’s get rid of him once and for all!” they said.
+
+                                                        <mark> They threw him into a deep pit, and later sold him to
+                                                            Ishmaelite
+                                                            traders for twenty pieces of silver.</mark>
+
+                                                        Then they dipped Joseph’s colorful robe in goat’s blood and took
+                                                        it to their father Jacob.
+                                                        Jacob wept bitterly, thinking, “My son Joseph has been killed by
+                                                        a wild animal!”
+                                                    </p>
+                                                    <p class="ta" style="display:none;">ஒருநாள் யோசேப் தன் சகோதரர்களைச்
+                                                        சந்திக்கச் சென்றான்.
+                                                        அவர்கள் அவனைப் பார்த்தவுடனே திட்டமிட்டனர் —
+                                                        “அவனைப் போக்கிவிடுவோம்!” என்று.
+
+                                                        <mark> அவர்கள் அவனை கிணற்றில் தள்ளி, பின்னர் இஷ்மாயேலர்
+                                                            (Ishmaelites)
+                                                            என்னும் வணிகர்களிடம்
+                                                            20 வெள்ளி நாணயங்களுக்கு விற்றனர்.</mark>
+
+                                                        அவர்கள் யோசேப்பின் நிறமுடைய மேலையைக் கொண்டு,
+                                                        அதை ஆட்டின் இரத்தத்தில் நனைத்து, தங்கள் தந்தை யாக்கோபிடம்
+                                                        காட்டினர்.
+                                                        யாக்கோபு அதை பார்த்து, “என் மகன் யோசேப் ஒரு மிருகத்தால்
+                                                        கொல்லப்பட்டான்!” என்று அழுதார்.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 4 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/jj5.jpg" alt="Day 4">
+                                                <div class="card-content">
+                                                    <h4 class="en">Joseph’s Life in Egypt</h4>
+                                                    <h4 class="ta" style="display:none;"> எகிப்தில் யோசேப்பின் வாழ்க்கை
+                                                    </h4>
+                                                    <p class="en">Joseph was sold as a slave to Potiphar, an officer in
+                                                        Egypt.
+                                                        But Joseph worked faithfully, and God blessed everything he did.
+
+                                                        However, Potiphar’s wife falsely accused him, and Joseph was
+                                                        thrown into prison.
+
+                                                        Even there, God was with him.
+                                                        Joseph helped others by interpreting their dreams, and soon his
+                                                        gift became known to Pharaoh, the king of Egypt.
+                                                    </p>
+                                                    <p class="ta" style="display:none;"> யோசேப் எகிப்தில் பொத்திபார்
+                                                        (Potiphar) எனும் அதிகாரியிடம் அடிமையாக விற்கப்பட்டான்.
+                                                        அவன் உண்மையுடன், நம்பிக்கையுடன் பணியாற்றினான்.
+                                                        தேவன் அவனுடன் இருந்ததால், அவன் எல்லா காரியத்திலும் வெற்றி
+                                                        பெற்றான்.
+
+                                                        ஆனால் பொத்திபாரின் மனைவி பொய்யாக குற்றம் சாட்டியதால்,
+                                                        யோசேப் சிறையில் அடைக்கப்பட்டான்.
+
+                                                        அங்கும் தேவன் அவனுடன் இருந்தார்.
+                                                        யோசேப் கனவுகளை விளக்கி மக்களுக்கு உதவினான்.
+                                                        அந்த செய்தி பரோவனிடம் (Pharaoh) சென்றது.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 5 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/jj6.jpg" alt="Day 5">
+                                                <div class="card-content">
+                                                    <h4 class="en">Pharaoh’s Dreams and Joseph’s Rise to Power</h4>
+                                                    <h4 class="ta" style="display:none;">பாரோவனின் கனவு மற்றும் உயர்வு
+                                                    </h4>
+                                                    <p class="en">Pharaoh had two troubling dreams:
+
+                                                        1️⃣ Seven healthy cows eaten by seven thin cows.
+                                                        2️⃣ Seven good heads of grain swallowed by seven dry ones.
+
+                                                        No one could explain them — but Joseph said:
+                                                        “God has revealed what will happen.
+                                                        There will be seven years of plenty, followed by seven years of
+                                                        famine.”
+
+                                                        Pharaoh was amazed and made Joseph the second ruler of Egypt!
+                                                        He gave him a royal ring, fine clothes, and a chariot to ride
+                                                        in.
+                                                    </p>
+                                                    <p class="ta" style="display:none;"> பரோவன் இரண்டு கனவுகள் கண்டான் —
+                                                        1️⃣ ஏழு பருமனான பசுக்கள் மற்றும் ஏழு மெலிந்த பசுக்கள்.
+                                                        2️⃣ ஏழு நல்ல தானியக் குத்துகள் மற்றும் ஏழு வாடிய குத்துகள்.
+
+                                                        யாரும் அதை விளக்க முடியவில்லை.
+                                                        அப்போது யோசேப் அழைக்கப்பட்டான்.
+
+                                                        அவன் சொன்னான்:
+                                                        “தேவன் உமக்குக் காட்டிய கனவின் அர்த்தம் —
+                                                        ஏழு வருடங்கள் மிகுந்த விளைச்சல் வரும்,
+                                                        அதற்குப் பிறகு ஏழு வருடங்கள் கடுமையான பஞ்சம் வரும்.”
+
+                                                        பரோவன் அதைக் கேட்டதும் மகிழ்ச்சியடைந்து,
+                                                        யோசேப்பை எகிப்தின் இரண்டாம் நிலை ஆட்சியாளராக நியமித்தான்!
+                                                        அவனுக்கு மோதிரமும், பொற்கயிறும், வண்டியும் அளித்தான்.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 6 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/jj7.jpg" alt="Day 6">
+                                                <div class="card-content">
+                                                    <h4 class="en">The Famine and Family Reunion</h4>
+                                                    <h4 class="ta" style="display:none;">பஞ்ச காலம் மற்றும் குடும்ப
+                                                        மீட்பு</h4>
+                                                    <p class="en">When the famine came, Joseph had already stored enough
+                                                        grain for the nation.
+                                                        People from many lands came to Egypt for food — including
+                                                        Joseph’s brothers.
+
+                                                        They bowed before him, not realizing he was their brother!
+
+                                                        After testing their hearts, Joseph finally revealed himself:
+                                                        “I am Joseph, your brother!
+                                                        You sold me, but God used it for good — to save many lives.”
+
+                                                        Joseph forgave them and brought his whole family to live safely
+                                                        in Egypt.
+                                                        There they grew and became the great nation of Israel.
+                                                    </p>
+                                                    <p class="ta" style="display:none;"> பஞ்சம் வந்தபோது, யோசேப்
+                                                        முன்னேற்பாடாக நிறைய தானியத்தை சேமித்திருந்தான்.
+                                                        பூமியின் எல்லா இடங்களிலிருந்தும் மக்கள் உணவுக்காக எகிப்துக்கு
+                                                        வந்தனர்.
+
+                                                        யாக்கோபின் மகன்களும் தானியத்திற்காக வந்தார்கள் —
+                                                        அவர்கள் முன் நின்றவர் யோசேப் என்பதை அவர்கள் அறிந்திருக்கவில்லை!
+
+                                                        யோசேப் அவர்களைச் சோதித்துப் பார்த்து,
+                                                        இறுதியில் தன்னை வெளிப்படுத்தினான்:
+
+                                                        “நான் உங்களுடைய சகோதரன் யோசேப்!
+                                                        நீங்கள் என்னை விற்றீர்கள், ஆனால் தேவன் இதை நன்மைக்காக செய்தார்.
+                                                        அவர் மக்களை காப்பாற்றினார்.”
+
+                                                        அவன் தனது குடும்பத்தினரை அழைத்து, எகிப்தில் தங்கச் செய்தான்.
+                                                        அங்கு அவர்கள் வளர்ந்து பெருகினர் — இது இஸ்ரவேல் ஜாதியின்
+                                                        தொடக்கம்.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+
+                                            <!-- Card 7-->
+                                            <div class="related-card">
+                                                <img src="assets/imges/jj8.jpg" alt="Day 6">
+                                                <div class="card-content">
+                                                    <h4 class="en">God’s Plan and Lessons</h4>
+                                                    <h4 class="ta" style="display:none;">தேவனின் திட்டம் மற்றும்
+                                                        பாடங்கள்</h4>
+                                                    <p class="en"> God is always with us — even in pain or betrayal.
+                                                        Jealousy destroys, but forgiveness restores.
+                                                        Faith, patience, and trust in God lead to victory.
+
+                                                        Joseph’s life is a symbol of hope and redemption —
+                                                        just as Jesus came later to save all people.
+                                                    </p>
+                                                    <p class="ta" style="display:none;"> தேவன் எப்போதும் நம்மோடு
+                                                        இருக்கிறார்,
+                                                        நம்முடைய துன்பத்தையும் நன்மையாக மாற்றுவார்.
+
+                                                        பொறாமை அழிக்கிறது, ஆனால் மன்னிப்பு மீட்டெடுக்கிறது.
+
+                                                        நம்பிக்கை, பொறுமை, விசுவாசம் — இதுவே வெற்றியின் ரகசியம்.
+
+                                                        யோசேப்பின் வாழ்க்கை ஒரு மீட்சியின் சின்னம் —
+                                                        அப்படியே யேசுவும் நம்மை மீட்டார்.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+
+
+                                    </section>
+
+
+                                </div><!-- End post content -->
+
+                                <blockquote>
+                                    <p>
+                                        "When life feels uncertain, strengthen my heart with Your promises.
+                                        Remind me that Your timing is perfect, even when I cannot see the path ahead.
+
+                                        Teach me to forgive like Joseph —
+                                        to let go of bitterness, and to love those who have hurt me,
+                                        knowing that forgiveness brings peace and healing.
+
+                                        Help me to see Your purpose in every season —
+                                        in waiting, in weeping, and in rejoicing.
+                                        Let every trial refine my faith, and every blessing remind me of Your grace.
+
+                                        May my life be a living testimony that You are faithful,
+                                        and that Your plans are always greater than my own."
+                                    </p>
+                                </blockquote>
+
+                            </article>
+
+                        </div>
+                    </section><!-- /Blog Details Section -->
+
+
+
+                </div>
+
+                <div class="col-lg-4 sidebar">
+
+                    <div class="widgets-container">
+
+                        <!-- Recent Posts Widget -->
+                        <div class="recent-posts-widget widget-item">
+
+                            <h3 class="widget-title">Next Stories</h3>
+
+                            <div class="post-item">
+                                <img src="assets/imges/mm1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Moses.html">The Story of Moses’ Final Blessing and Death</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+
+                            <div class="post-item">
+                                <img src="assets/imges/ss1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Samuel.html">Samuel the Prophet – From Birth to Death</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/dd1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="David.html">King David – From Shepherd Boy to King of Israel</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/qq1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Solomon.html">King Solomon – The King of Wisdom</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/jn1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Jonah.html">Jonah and the Whale</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/dn1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Daniel.html">Daniel in the Lion’s Den</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/qe1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Esther.html">Queen Esther – Brave and Kind Queen</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/nn1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Noah.html">Noah – The Great Ark and God’s Promise</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/aa1.webp" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="single-post.html">God Create World</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/bb1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Adam.html">The Story of Adam and Eve</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/kk1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Abel.html">Cain and Abel – Detailed Story</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+
+                            <div class="post-item">
+                                <img src="assets/imges/hh1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Abraham.html">Abraham – The Father of Faith</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                        </div><!--/Recent Posts Widget -->
+
+                        <!-- Blog Author Widget -->
+                        <div class="blog-author-widget widget-item">
+
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="d-flex align-items-center w-100">
+                                    <img src="assets/imges/mine.jpg" class="rounded-circle flex-shrink-0" alt="">
+                                    <div>
+                                        <h4>Jebin Joseph</h4>
+                                        <div class="social-links">
+                                            <a href="https://github.com/Jebindevp" class="github"><i
+                                                    class="bi bi-github"></i></a>
+                                            <a href="https://wa.me/919487851243?text=Hello%20I%20have%20a%20question"
+                                                target="_blank" rel="noopener noreferrer">
+                                                <i class="bi bi-whatsapp"></i>
+                                            </a>
+                                            <a href="mailto:kmt4543@gmail.com" class="gmail"><i
+                                                    class="bi bi-envelope-fill"></i></a>
+                                            <a href="https://jebindevp.github.io/My-Protifolio/" class="portfolio"><i
+                                                    class="bi bi-briefcase-fill"></i></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <p>
+                                    I’m Jebin Joseph, a passionate Web Designer dedicated to turning creative ideas into
+                                    visually stunning
+                                    and user-friendly websites. With a deep love for design and technology, I specialize
+                                    in crafting
+                                    modern, responsive, and engaging digital experiences that bring brands to life.
+                                </p>
+                                <p>"Good design is not just about how it looks — it’s about how it works and how it
+                                    makes people feel."
+                                </p>
+                            </div>
+
+                        </div><!--/Blog Author Widget -->
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer id="footer" class="footer dark-background">
+
+        <div class="container footer-top">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <a href="index.html" class="logo d-flex align-items-center">
+                        <span class="sitename">Bible</span>
+                    </a>
+                    <div class="footer-contact pt-3">
+                        <p>India , TamilNadu</p>
+                        <p>Kanya Kumari Dist</p>
+                        <p class="mt-3"><strong>Phone:</strong> <span>91+ 9487851243</span></p>
+                        <p><strong>Email:</strong> <span>kmt4543@gmail.com</span></p>
+                    </div>
+                    <div class="social-links d-flex mt-4">
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Categries</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Management System</a></li>
+                        <li><a href="#">Marketing</a></li>
+                        <li><a href="#">Graphic Design</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Development</h4>
+                    <ul>
+                        <li><a href="#">static websites</a></li>
+                        <li><a href="#">dynamic websites </a></li>
+                        <li><a href="#">E-Commerce design</a></li>
+                        <li><a href="#">Student Projects</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Other Services</h4>
+                    <ul>
+                        <li><a href="#">Photos Editting</a></li>
+                        <li><a href="#">Video Editting</a></li>
+                        <li><a href="#">Online Class </a></li>
+                        <li><a href="#">Poster Edit</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container copyright text-center mt-4">
+            <p>© <span>Copyright</span> <strong class="px-1 sitename">BIBLE</strong> <span>All Rights Reserved</span>
+            </p>
+            <div class="credits">
+
+                Designed by & Distributed by <a href="">Jebin Joseph</a>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+
+    <script>
+        const cards = document.querySelectorAll(".related-card");
+        const nextBtn = document.getElementById("next-btn");
+        const prevBtn = document.getElementById("prev-btn");
+        const pageInfo = document.getElementById("page-info");
+        let currentCard = 0;
+
+        function showCard(index) {
+            cards.forEach((card, i) => card.classList.toggle("active", i === index));
+            pageInfo.textContent = ` ${index + 1} of ${cards.length}`;
+        }
+
+        nextBtn.addEventListener("click", () => {
+            currentCard = (currentCard + 1) % cards.length;
+            showCard(currentCard);
+        });
+
+        prevBtn.addEventListener("click", () => {
+            currentCard = (currentCard - 1 + cards.length) % cards.length;
+            showCard(currentCard);
+        });
+
+        showCard(currentCard);
+
+        // Language Toggle
+        const tamilBtn = document.getElementById("tamil-btn");
+        const englishBtn = document.getElementById("english-btn");
+
+        tamilBtn.addEventListener("click", () => {
+            tamilBtn.classList.add("active");
+            englishBtn.classList.remove("active");
+            document.querySelectorAll(".ta").forEach(el => el.style.display = "block");
+            document.querySelectorAll(".en").forEach(el => el.style.display = "none");
+        });
+
+        englishBtn.addEventListener("click", () => {
+            englishBtn.classList.add("active");
+            tamilBtn.classList.remove("active");
+            document.querySelectorAll(".en").forEach(el => el.style.display = "block");
+            document.querySelectorAll(".ta").forEach(el => el.style.display = "none");
+        });
+    </script>
+
+
+</body>
+
+
+<!-- Mirrored from themewagon.github.io/ZenBlog/single-post.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Oct 2025 10:06:52 GMT -->
+
+</html>

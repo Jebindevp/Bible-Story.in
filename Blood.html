@@ -1,0 +1,1686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from themewagon.github.io/ZenBlog/single-post.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Oct 2025 10:06:47 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Body and Blood</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Favicons -->
+    <link href="assets/imges/ll1.jpg" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/" rel="preconnect">
+    <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: ZenBlog
+  * Template URL: https://bootstrapmade.com/zenblog-bootstrap-blog-template/
+  * Updated: Aug 08 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+
+    <style>
+        /* ====== Header Base ====== */
+        .header {
+            background: #0d1b2a;
+            /* deep navy blue */
+            padding: 15px 0;
+            transition: all 0.3s ease;
+            z-index: 999;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .header.sticky-top {
+            position: sticky;
+            top: 0;
+        }
+
+        /* ====== Logo ====== */
+        .sitename {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        .sitename:hover {
+            color: #ffd700;
+            /* gold hover */
+        }
+
+        /* ====== Navigation Menu ====== */
+        .navmenu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .navmenu a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 500;
+            font-size: 1rem;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        /* Hover underline animation */
+        .navmenu a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 0;
+            height: 2px;
+            background-color: #ffd700;
+            transition: width 0.3s ease;
+        }
+
+        .navmenu a:hover::after,
+        .navmenu a.active::after {
+            width: 100%;
+        }
+
+        .navmenu a:hover,
+        .navmenu a.active {
+            color: #ffd700;
+        }
+
+        /* ====== Social Icons ====== */
+        /* ====== Header Social Links ====== */
+        .header-social-links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* ensures even centering in container */
+            gap: 12px;
+        }
+
+        /* Base style for icons */
+        .header-social-links a {
+            color: #ffffff;
+            font-size: 1.2rem;
+            width: 40px;
+            /* slightly larger for better centering */
+            height: 40px;
+            display: flex;
+            /* use flex instead of inline-flex for stable centering */
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.826);
+            backdrop-filter: blur(6px);
+            transition: all 0.35s ease;
+            position: relative;
+            overflow: hidden;
+            line-height: 1;
+            /* keeps icon centered vertically */
+        }
+
+        /* Icon hover animation */
+        .header-social-links a::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(45deg, #ffd700, #ff8c00);
+            transform: scale(0);
+            transition: transform 0.35s ease;
+            border-radius: 50%;
+            z-index: 0;
+        }
+
+        .header-social-links a:hover::after {
+            transform: scale(1);
+        }
+
+        /* Hover effects for the icon itself */
+        .header-social-links a i {
+            position: relative;
+            z-index: 1;
+            transition: transform 0.35s ease, color 0.35s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .header-social-links a:hover i {
+            transform: scale(1.2) rotate(10deg);
+            color: #000;
+        }
+
+        /* Add glowing effect on hover */
+        .header-social-links a:hover {
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+        }
+
+
+        /* ====== Mobile Navigation ====== */
+        .mobile-nav-toggle {
+            display: none;
+            font-size: 1.8rem;
+            color: #fff;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .mobile-nav-toggle:hover {
+            transform: rotate(90deg);
+        }
+
+        /* ====== Responsive Design ====== */
+        @media (max-width: 991px) {
+            .navmenu ul {
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background: #1b263b;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 15px 20px;
+                gap: 15px;
+                display: none;
+                /* hidden by default */
+            }
+
+            .navmenu.active ul {
+                display: flex;
+                /* show when toggled */
+            }
+
+            .mobile-nav-toggle {
+                display: block;
+            }
+
+            .header-social-links {
+                display: none;
+                /* hide social links on mobile for simplicity */
+            }
+        }
+
+        /* ====== Scroll Effect (optional enhancement) ====== */
+        .header.scrolled {
+            background: #1b263b;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+
+
+
+
+
+
+
+        /* ========== Global Reset & Font ========== */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background: #f9fafc;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* ========== Page Title Section ========== */
+        .page-title {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: #fff;
+            padding: 80px 0;
+            text-align: center;
+            border-radius: 0 0 50px 50px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .page-title h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        .breadcrumbs {
+            margin-top: 15px;
+        }
+
+        .breadcrumbs ol {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .breadcrumbs ol li {
+            color: #fff;
+            font-size: 0.95rem;
+        }
+
+        .breadcrumbs ol li a {
+            color: #ffd700;
+            text-decoration: none;
+            transition: 0.3s ease;
+        }
+
+        .breadcrumbs ol li a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        .breadcrumbs li+li::before {
+            content: "/";
+            margin: 0 8px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* ========== Blog Details ========== */
+        .blog-details .article {
+            background: #fff;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .blog-details .article:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+        }
+
+        .blog-details .post-img img {
+            width: 100%;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .blog-details .title {
+            font-size: 1.8rem;
+            color: #2b2b2b;
+            margin-bottom: 15px;
+        }
+
+        .blog-details .content p {
+            margin-bottom: 18px;
+            color: #555;
+        }
+
+        .blog-details blockquote {
+            background: #f0f4ff;
+            border-left: 5px solid #2575fc;
+            padding: 20px;
+            border-radius: 10px;
+            font-style: italic;
+            color: #444;
+        }
+
+        /* ========== Sidebar ========== */
+        .sidebar {
+            margin-top: 0px;
+        }
+
+        .widget-item {
+            background: #fff;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+            transition: 0.3s ease;
+        }
+
+        .widget-item:hover {
+            transform: translateY(-4px);
+        }
+
+        .widget-title {
+            font-weight: 600;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            border-left: 4px solid #2575fc;
+            padding-left: 10px;
+        }
+
+        /* ========== Author Widget ========== */
+        .blog-author-widget img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            margin-right: 15px;
+            border: 3px solid #2575fc;
+        }
+
+        .blog-author-widget h4 {
+            margin-bottom: 8px;
+            color: #222;
+        }
+
+        .blog-author-widget p {
+            margin-top: 15px;
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        /* ========== Social Links ========== */
+        .social-links a {
+            display: inline-block;
+            color: #2575fc;
+            background: transparent;
+            font-size: 1.1rem;
+            margin: 0 6px;
+            width: 38px;
+            height: 38px;
+            line-height: 38px;
+            text-align: center;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #fff;
+            background: #2575fc;
+            transform: translateY(-4px) scale(1.1);
+        }
+
+        /* Additional Social Icons */
+        .social-links a.github:hover {
+            background: #333;
+        }
+
+        .social-links a.whatsapp:hover {
+            background: #25D366;
+        }
+
+        .social-links a.gmail:hover {
+            background: #D44638;
+        }
+
+        .social-links a.portfolio:hover {
+            background: #ff6f00;
+        }
+
+        /* ========== Recent Posts ========== */
+        .recent-posts-widget .post-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .recent-posts-widget .post-item img {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            margin-right: 15px;
+        }
+
+        .recent-posts-widget .post-item h4 {
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+
+        .recent-posts-widget .post-item a {
+            text-decoration: none;
+            color: #222;
+            transition: color 0.3s;
+        }
+
+        .recent-posts-widget .post-item a:hover {
+            color: #2575fc;
+        }
+
+        /* ========== Tags Widget ========== */
+        .tags-widget ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tags-widget a {
+            display: inline-block;
+            background: #eef3ff;
+            color: #2575fc;
+            padding: 6px 14px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            transition: 0.3s ease;
+        }
+
+        .tags-widget a:hover {
+            background: #2575fc;
+            color: #fff;
+            transform: scale(1.05);
+        }
+
+        /* ========== Responsive ========== */
+        @media (max-width: 992px) {
+            .page-title {
+                padding: 60px 20px;
+            }
+
+            .blog-details .title {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .blog-author-widget img {
+                width: 60px;
+                height: 60px;
+            }
+
+            .recent-posts-widget .post-item img {
+                width: 65px;
+                height: 65px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .page-title h1 {
+                font-size: 1.8rem;
+            }
+
+            .widget-item {
+                padding: 18px;
+            }
+        }
+
+
+
+        .related-posts {
+            margin-top: 50px;
+            padding: 30px 15px;
+            background: #fafafa;
+            border-radius: 16px;
+            text-align: center;
+        }
+
+        /* Language Toggle */
+        .language-toggle {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .lang-btn {
+            background: #eee;
+            color: #333;
+            border: none;
+            padding: 8px 18px;
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .lang-btn.active {
+            background: linear-gradient(45deg, #ffd700, #ffb400);
+            color: #000;
+            box-shadow: 0 0 8px rgba(255, 215, 0, 0.4);
+        }
+
+        /* Cards */
+        .related-cards {
+            position: relative;
+            width: 100%;
+            height: 480px;
+            /* consistent card height */
+            overflow: hidden;
+        }
+
+        .related-card {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            padding: 20px;
+            height: 100%;
+        }
+
+        .related-card.active {
+            display: flex;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .related-card img {
+            width: 100%;
+            max-width: 450px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .card-content {
+            margin-top: 15px;
+        }
+
+        .card-content h4 {
+            font-size: 1.3rem;
+            color: #333;
+        }
+
+        .card-content p {
+            color: #555;
+            font-size: 1rem;
+        }
+
+        mark {
+            background: #fff7b2;
+            color: #000;
+            padding: 0 4px;
+            border-radius: 3px;
+        }
+
+        .pagination-controls {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .pagination-controls button {
+            background: linear-gradient(45deg, #ffd700, #ff8c00);
+            color: #000;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .pagination-controls button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(255, 165, 0, 0.4);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .related-card img {
+                height: 200px;
+            }
+
+            .related-cards {
+                height: auto;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body class="single-post-page">
+
+    <header id="header" class="header d-flex align-items-center sticky-top">
+        <div class="container position-relative d-flex align-items-center justify-content-between">
+
+            <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+
+                <h1 class="sitename">BIBLE</h1>
+            </a>
+
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="category.html">Categories</a></li>
+
+
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+
+            <div class="header-social-links">
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="main">
+
+        <!-- Page Title -->
+        <div class="page-title">
+            <div class="container d-lg-flex justify-content-between align-items-center">
+                <h1 class="mb-2 mb-lg-0">The Body and Blood of Christ </h1>
+                <nav class="breadcrumbs">
+                    <ol>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Crucifixion.html">Next Stories</a></li>
+                        <li><a href="">Back</a></li>
+                    </ol>
+                </nav>
+            </div>
+        </div><!-- End Page Title -->
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-8">
+
+                    <!-- Blog Details Section -->
+                    <section id="blog-details" class="blog-details section">
+                        <div class="container">
+
+                            <article class="article">
+
+                                <div class="post-img">
+                                    <img src="assets/imges/pp1.jpg" alt="" class="img-fluid" style="height: 400px;">
+                                </div>
+
+                                <h2 class="title">The Body and Blood of Christ </h2>
+
+
+                                <div class="content">
+                                    <p>
+                                        That night, Judas’ kiss became
+                                        one of the most painful moments in human history —
+                                        yet it also marked
+                                        the beginning of the path to salvation.
+
+                                        Jesus surrendered Himself —
+                                        for the sake of love.
+                                        He did not resist,
+                                        He did not flee,
+                                        He did not show anger —
+                                        He completely submitted to the Father’s will.
+                                    </p>
+
+                                    <!-- Related Horizontal Cards Section -->
+                                    <!-- Related Horizontal Cards Section -->
+                                    <section class="related-posts">
+                                        <!-- Language Toggle -->
+                                        <div class="language-toggle">
+                                            <button id="english-btn" class="lang-btn active"><i class="bi bi-book"></i>
+                                                English</button>
+                                            <button id="tamil-btn" class="lang-btn"><i class="bi bi-book-half"></i>
+                                                தமிழ்</button>
+                                        </div>
+
+                                        <h3 class="section-title"><i class="bi bi-journal-bookmark"></i>
+                                            <h2 class="title">The Body and Blood of Christ </h2>
+                                        </h3>
+
+                                        <!-- Cards Wrapper -->
+                                        <div class="related-cards">
+                                            <!-- Pagination Controls -->
+                                            <div class="pagination-controls">
+                                                <button id="prev-btn"><i class="bi bi-arrow-left"></i> Prev</button>
+                                                <span id="page-info"></span>
+                                                <button id="next-btn">Next <i class="bi bi-arrow-right"></i></button>
+                                            </div> <br><br>
+                                            <!-- Card 1 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/pp2.jpg" alt="Day 1">
+                                                <div class="card-content">
+                                                    <h4 class="en">The Last Supper – The Miracle of the Holy Meal</h4>
+                                                    <h4 class="ta" style="display:none;">பரிசுத்த இரவு உணவு – கடைசி இரவு
+                                                        விருந்தின் அதிசயம்
+                                                    </h4>
+                                                    <p class="en">It was the evening before the Passover Festival.
+                                                        The city of Jerusalem was filled with celebration —
+                                                        but in an upper room, Jesus sat quietly with His disciples.
+                                                        There was deep peace on His face,
+                                                        but His heart was heavy with sorrow.
+                                                        He knew — this was His final night on earth.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">அது பஸ்கா திருவிழாவுக்கான முன்
+                                                        இரவு.
+                                                        யெருசலேம் நகரம் முழுவதும் ஆனந்தக் களிகூரல் — ஆனால் மேல்மாடி
+                                                        அறையில்,
+                                                        இயேசு தமது சீஷர்களுடன் அமைதியாக அமர்ந்திருந்தார்.
+                                                        அவரது முகத்தில் ஆழ்ந்த அமைதி இருந்தது, ஆனால் இதயம் துயரத்தால்
+                                                        நிரம்பியது.
+                                                        அவர் அறிந்தார் — தம்முடைய பூமியிலுள்ள கடைசி இரவு இது என்பதை.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 2 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/pp3.jpg" alt="Day 2">
+                                                <div class="card-content">
+                                                    <h4 class="en">The Supper of Love Begins</h4>
+                                                    <h4 class="ta" style="display:none;">அன்பின் விருந்து தொடங்கியது
+                                                    </h4>
+                                                    <p class="en">He looked at His <mark>twelve disciples</mark> and
+                                                        said gently:
+
+                                                        <mark>“I have eagerly desired to eat this Passover with you
+                                                            before I
+                                                            suffer.”</mark>
+
+                                                        There was deep compassion in His words.
+                                                        Then <mark>He rose, poured water into a basin,
+                                                            and began to wash the feet of each disciple.</mark>
+
+                                                        The disciples were shocked!
+                                                        <mark>Peter said</mark> in confusion:
+
+                                                        <mark>“Lord! You shall never wash my feet!”</mark>
+
+                                                        Jesus smiled softly and replied:
+
+                                                        <mark>“Unless I wash you, you have no part with Me.”</mark>
+
+                                                        In that moment, they understood —
+                                                        the highest form of love is humble service.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">அவர் <mark>பன்னிரு
+                                                            சீஷர்களை</mark> நோக்கி,
+                                                        மெதுவாகச் சொன்னார்:
+
+                                                        <mark>“இந்த பஸ்கா விருந்தை உங்களுடன் உண்ண நான் மிகுந்த
+                                                            ஆசைப்பட்டேன்.”</mark>
+
+                                                        அவருடைய வார்த்தைகளில் கருணை ததும்பியது.
+                                                        அவர் எழுந்து, <mark>ஒரு பாத்திரத்தில் தண்ணீர் ஊற்றி,
+                                                            ஒவ்வொருவரின் கால்களையும் துவைக்க ஆரம்பித்தார்.</mark>
+
+                                                        சீஷர்கள் அதிர்ச்சியடைந்தனர்!
+                                                        <mark>பேதுரு தடுமாறி கூறினான்:
+
+                                                            “கர்த்தாவே! நீர் என் கால்களைத் துவைக்க முடியாது!”</mark>
+
+                                                        இயேசு மெதுவாகப் புன்னகையுடன் பதிலளித்தார்:
+
+                                                        <mark> “நான் உன்னைத் துவைக்காவிட்டால், நீ எனக்குள்
+                                                            பங்கில்லாதவன்.”</mark>
+
+                                                        அந்த நொடியில் அவர்கள் உணர்ந்தனர் —
+                                                        அன்பின் உச்சம் தாழ்மையில்தான் இருப்பதை.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 3 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/pp4.jpg" alt="Day 3">
+                                                <div class="card-content">
+                                                    <h4 class="en">The Covenant of His Body – The Bread
+                                                    </h4>
+                                                    <h4 class="ta" style="display:none;">உடலின் உடன்படிக்கை – அப்பம்
+                                                    </h4>
+                                                    <p class="en">As the supper continued,
+                                                        <mark>Jesus took the bread, gave thanks to God, broke it,</mark>
+                                                        and gave it to His disciples, saying:
+
+                                                        <mark> “This is My body, given for you.
+                                                            Do this in remembrance of Me.”</mark>
+
+                                                        As He gave them the bread,
+                                                        His eyes shone with deep love.
+                                                        It was not an ordinary meal —
+                                                        it was the beginning of a covenant of love.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">விருந்து தொடர்ந்தது.
+                                                        <mark> இயேசு அப்பத்தை எடுத்தார், தேவனுக்கு நன்றி கூறி
+                                                            உடைத்தார்.</mark>
+                                                        அதை சீஷர்களுக்குக் கொடுத்து கூறினார்:
+
+                                                        <mark> “இது உங்களுக்காக உடைக்கப்படும் என் உடல்.
+                                                            இதை நினைத்து, இதையே செய்து கொண்டிருங்கள்.”</mark>
+
+                                                        அவர் அப்பத்தை அவர்களுக்குக் கொடுத்தபோது,
+                                                        அவரது கண்களில் ஆழ்ந்த அன்பு பிரகாசித்தது.
+                                                        அது ஒரு சாதாரண உணவு அல்ல —
+                                                        அன்பின் உடன்படிக்கை தொடங்கிய நொடி அது.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 4 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/pp5.jpg" alt="Day 3">
+                                                <div class="card-content">
+                                                    <h4 class="en">The Covenant of His Blood – The Wine
+                                                    </h4>
+                                                    <h4 class="ta" style="display:none;">இரத்தத்தின் உடன்படிக்கை –
+                                                        திராட்சரசம்
+                                                    </h4>
+                                                    <p class="en">Then <mark>Jesus took a cup filled with wine,
+                                                            lifted it toward heaven, and gave thanks, saying:
+
+                                                            “This is My blood — the blood of the new covenant,
+                                                            poured out for many for the forgiveness of sins.”</mark>
+
+                                                        He passed the cup to each of them.
+                                                        The disciples drank it with tears of devotion.
+                                                        In that sacred moment,
+                                                        humanity stood at the doorway of redemption.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">பின்னர் <mark>இயேசு ஒரு கலசத்தை
+                                                            எடுத்தார்.
+                                                            அது திராட்சரசம் நிரம்பியிருந்தது.
+                                                            அவர் அதைக் கையில் பிடித்து, வானத்தை நோக்கி நன்றி கூறி
+                                                            சொன்னார்:
+
+                                                            “இது என் இரத்தம் — புதிய உடன்படிக்கையின் இரத்தம்,
+                                                            பாவங்கள் மன்னிக்கப் பலருக்காகச் சிந்தப்படுகிறது.”</mark>
+
+                                                        அவர் அதை ஒவ்வொருவருக்கும் அளித்தார்.
+                                                        சீஷர்கள் அதைத் தமது இதயங்களில் நெகிழ்ச்சியுடன் பருகினர்.
+                                                        அந்த நேரம் — மனிதகுலம் மீட்சியின் வாசலில் நின்றது.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 5-->
+                                            <div class="related-card">
+                                                <img src="assets/imges/pp6.jpg" alt="Day 3">
+                                                <div class="card-content">
+                                                    <h4 class="en">The Betrayal of Judas Revealed
+                                                    </h4>
+                                                    <h4 class="ta" style="display:none;">யூதாவின் துரோகம் வெளிப்படுகிறது
+                                                    </h4>
+                                                    <p class="en">In the midst of the meal, Jesus said quietly:
+
+                                                        <mark>“One of you will betray Me.”</mark>
+
+                                                        All were stunned.
+                                                        One after another they asked, “Lord, is it I?”
+                                                        Jesus replied softly:
+
+                                                        <mark>“The one who dips his hand in the bowl with Me — he is the
+                                                            one.”</mark>
+
+                                                        <mark>Judas lowered his head and stood up.</mark>
+                                                        Jesus looked at him and said:
+
+                                                        <mark> “What you are about to do, do quickly.”</mark>
+
+                                                        Judas went out —
+                                                        and the night grew dark, as did his heart.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">விருந்தின் நடுவே இயேசு
+                                                        அமைதியாகச் சொன்னார்:
+
+                                                        <mark> “உங்களில் ஒருவன் என்னைத் துரோகம் செய்யப் போகிறான்.”
+                                                        </mark>
+                                                        அனைவரும் அதிர்ச்சியடைந்தனர்.
+                                                        “கர்த்தாவே, நானா?” என்று ஒருவரின் பின் ஒருவர் கேட்டனர்.
+                                                        அவர் மெதுவாகச் சொன்னார்:
+
+                                                        <mark> “என்னோடு கிண்ணத்தில் கை நீட்டுகிறவன் தான்.”</mark>
+
+                                                        அந்த நொடியில் <mark>யூதா தலைகுனிந்து எழுந்தான்.</mark>
+                                                        இயேசு அவனை நோக்கி கூறினார்:
+
+                                                        <mark>“நீ செய்யப் போகிறதை விரைவாகச் செய்.”</mark>
+
+                                                        யூதா வெளியில் சென்றான் —
+                                                        இரவு இருண்டது, அவனது இதயமும் இருண்டது.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 6-->
+                                            <div class="related-card">
+                                                <img src="assets/imges/pp7.jpg" alt="Day 3">
+                                                <div class="card-content">
+                                                    <h4 class="en">The Silence of the Night
+                                                    </h4>
+                                                    <h4 class="ta" style="display:none;">இரவு நேரத்தின் அமைதி
+                                                    </h4>
+                                                    <p class="en">After the Passover meal,
+                                                        <mark> Jesus led His disciples to a garden called
+                                                            Gethsemane.</mark>
+                                                        The night was calm —
+                                                        the breeze gently touched the trees,
+                                                        but inside Jesus’ heart, a storm was rising.
+
+                                                        He knew — the hour had come.
+                                                        The cross and His suffering were drawing near.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">பஸ்கா விருந்துக்குப் பிறகு,
+                                                        <mark> இயேசு தமது சீஷர்களை அழைத்துக் கொண்டு கெத்சேமனே எனப்படும்
+                                                            தோட்டத்திற்குச் சென்றார்.</mark>
+                                                        அந்த இரவு மிக அமைதியாக இருந்தது —
+                                                        காற்று மெதுவாக மரங்களைத் தழுவியது,
+                                                        ஆனால் இயேசுவின் இதயத்தில் ஒரு பெரும் புயல் கிளம்பிக்
+                                                        கொண்டிருந்தது.
+
+                                                        அவர் அறிந்தார் — நேரம் வந்து விட்டது.
+                                                        தமது துன்பமும் சிலுவையும் நெருங்கிக் கொண்டிருந்தது.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 7-->
+                                            <div class="related-card">
+                                                <img src="assets/imges/pp8.jpg" alt="Day 3">
+                                                <div class="card-content">
+                                                    <h4 class="en">The Sorrow of Jesus’ Soul
+                                                    </h4>
+                                                    <h4 class="ta" style="display:none;">இயேசுவின் உள்ளத் துயரம்
+                                                    </h4>
+                                                    <p class="en">Jesus said to His disciples:
+
+                                                        <mark> “My soul is overwhelmed with sorrow to the point of
+                                                            death.
+                                                            Stay here and keep watch with Me.”</mark>
+
+                                                        He took <mark> Peter, James, and John</mark> with Him.
+                                                        His face was filled with anguish.
+                                                        He went a little farther,
+                                                        fell to the ground, and prayed in deep distress.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">இயேசு தமது சீஷர்களிடம் சொன்னார்:
+
+                                                        <mark>“என் ஆவி மரணத்திற்கும் அளவாக துயரப்படுகிறது;
+                                                            நீங்கள் இங்கே இருந்து, என்னுடன் விழித்திருந்து
+                                                            ஜெபியுங்கள்.”</mark>
+
+                                                        அவர் <mark>பீத்துரு, யாக்கோபு, யோவான்</mark> ஆகியோரைத் தமக்குச்
+                                                        சேர்த்து
+                                                        கொண்டார்.
+                                                        அவரது முகம் துயரத்தால் நிறைந்திருந்தது.
+                                                        அவர் சிறிது தூரம் சென்றார்,
+                                                        மண்ணில் விழுந்து முழங்காலில் அமர்ந்து துயரமுடன் ஜெபித்தார்.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+
+                                            <!-- Card 8-->
+                                            <div class="related-card">
+                                                <img src="assets/imges/pp9.jpg" alt="Day 3">
+                                                <div class="card-content">
+                                                    <h4 class="en">Jesus’ Prayer to the Father
+                                                    </h4>
+                                                    <h4 class="ta" style="display:none;">தந்தையிடம் இயேசுவின் ஜெபம்
+                                                    </h4>
+                                                    <p class="en">His voice trembled as He prayed:
+
+                                                        <mark> “Father, everything is possible for You.
+                                                            Take this cup from Me.
+                                                            Yet not My will, but Yours be done.”</mark>
+
+                                                        That prayer rose from the depths of His pain.
+                                                        As a man, He felt the weight of suffering;
+                                                        as the Son of God, He fully obeyed the Father’s will.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">அவரது குரல் நடுங்கியது —
+
+                                                        <mark>“அப்பா, உம்மால் எல்லாம் சாத்தியம்;
+                                                            இந்தக் கிண்ணம் என்மீது இருந்து விலகட்டும்;
+                                                            ஆனால் என் சித்தமல்ல, உம்முடைய சித்தமே நிறைவேறட்டும்.”</mark>
+
+                                                        அந்த ஜெபம் துயரத்தின் ஆழத்திலிருந்து எழுந்தது.
+                                                        அவர் மனிதனாக துன்பத்தை உணர்ந்தார்,
+                                                        ஆனால் தேவனின் குமாரனாக தந்தையின் சித்தத்துக்கு கீழ்ப்படியினார்.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 9-->
+                                            <div class="related-card">
+                                                <img src="assets/imges/pp10.jpg" alt="Day 3">
+                                                <div class="card-content">
+                                                    <h4 class="en">The Disciples Fall Asleep
+                                                    </h4>
+                                                    <h4 class="ta" style="display:none;">சீஷர்களின் உறக்கம்
+                                                    </h4>
+                                                    <p class="en">After praying, He returned to His disciples —
+                                                        and found them asleep.
+
+                                                        He said to Peter:
+
+                                                        <mark>“Simon, are you asleep?
+                                                            Could you not keep watch for one hour?
+                                                            Watch and pray so that you will not fall into
+                                                            temptation.”</mark>
+
+                                                        He prayed a second and third time.
+                                                        Each time He came back — they were still sleeping.
+                                                        Their eyes were heavy with weariness,
+                                                        but His spirit was burning with passion and pain.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">அவர் ஜெபித்து முடித்து திரும்பி
+                                                        வந்தார் —
+                                                        சீஷர்கள் தூங்கிக் கொண்டிருந்தார்கள்.
+                                                        அவரிடம் இயேசு சொன்னார்:
+
+                                                        <mark>“பீத்துருவே, நீ ஒரு மணிநேரமாவது விழித்திருக்க
+                                                            முடியவில்லையா?
+                                                            விழித்திருந்து ஜெபியுங்கள்; நீங்கள் சோதனையில்
+                                                            விழாதபடி.”</mark>
+
+                                                        இரண்டாவது, மூன்றாவது முறை அவரும் ஜெபித்தார்;
+                                                        ஒவ்வொரு முறையும் சீஷர்கள் தூங்கியிருந்தனர்.
+                                                        அவர்களின் கண்கள் சோர்வடைந்திருந்தது —
+                                                        ஆனால் இயேசுவின் ஆவி எரிந்து கொண்டிருந்தது.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 10-->
+                                            <div class="related-card">
+                                                <img src="assets/imges/pp11.jpg" alt="Day 3">
+                                                <div class="card-content">
+                                                    <h4 class="en">The Angel’s Comfort
+                                                    </h4>
+                                                    <h4 class="ta" style="display:none;">தேவதூதரின் ஆறுதல்
+                                                    </h4>
+                                                    <p class="en">Jesus was overwhelmed with sorrow.
+                                                        His sweat fell like drops of blood to the ground.
+                                                        At that moment,
+                                                        an angel from heaven appeared and strengthened Him.
+
+                                                        The angel comforted Him, saying:
+
+                                                        <mark>“Endure, until the Father’s will is fulfilled.”</mark>
+
+                                                        Renewed in spirit, Jesus rose with calm strength.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">அவர் துயரத்தில்
+                                                        மூழ்கியிருந்தார்.
+                                                        அவரது நெற்றியில் வியர்வை இரத்தத் துளிகளைப் போல விழுந்தது.
+                                                        அந்த நேரத்தில்,
+                                                        ஒரு தேவதூதன் வானத்திலிருந்து வந்து அவரை வலிமைப்படுத்தினான்.
+
+                                                        அந்த தேவதூதன் அவருக்கு ஆறுதல் கூறினான்:
+
+                                                        <mark> “தந்தையின் சித்தம் பூர்த்தியடையும் வரை நீ
+                                                            நிலைத்திரு.”</mark>
+
+                                                        அவர் மீண்டும் தமது ஆவியைக் கட்டுப்படுத்தி எழுந்தார்.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 12-->
+                                            <div class="related-card">
+                                                <img src="assets/imges/pp13.jpg" alt="Day 3">
+                                                <div class="card-content">
+                                                    <h4 class="en">The Betrayal Approaches
+                                                    </h4>
+                                                    <h4 class="ta" style="display:none;">துரோகம் நெருங்குகிறது
+                                                    </h4>
+                                                    <p class="en">Jesus went back to His disciples and said:
+
+                                                        <mark> “Are you still sleeping and resting?
+                                                            The hour has come —
+                                                            the Son of Man is betrayed into the hands of sinners.
+                                                            Rise, let us go! Here comes My betrayer.”</mark>
+
+                                                        In that very moment, Judas arrived with a crowd —
+                                                        holding torches, swords, and clubs.
+                                                        In the darkness of Gethsemane,
+                                                        the night of sorrow began —
+                                                        but it was also the dawn of salvation.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">இயேசு எழுந்து சீஷர்களிடம்
+                                                        வந்தார்.
+                                                        அவர் சொன்னார்:
+
+                                                        <mark>“இனி நீங்கள் தூங்கிக்கொண்டே இருங்கள்; நேரம் வந்து விட்டது.
+                                                            மனிதகுமாரன் பாவிகளின் கையில் ஒப்படைக்கப்படுகிறான்.
+                                                            எழுந்து வாருங்கள், இதோ — என்னைத் துரோகம் செய்கிறவன்
+                                                            வருகிறான்.”</mark>
+
+                                                        அந்த நிமிடத்தில் இருட்டின் நிழலில் யூதாஸ் கூட்டத்துடன் வந்தான் —
+                                                        கையில் விளக்குகள், பட்டைகள், கோல்களுடன்.
+                                                        அந்த இரவு கெத்சேமனே தோட்டத்தில் ஒளிந்திருந்தது
+                                                        துன்பத்தின் இரவும், மீட்சியின் துவக்கமும்.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 13-->
+                                            <div class="related-card">
+                                                <img src="assets/imges/pp14.jpg" alt="Day 3">
+                                                <div class="card-content">
+                                                    <h4 class="en">The Betrayal by Judas
+                                                    </h4>
+                                                    <h4 class="ta" style="display:none;">யூதாவின் துரோகம்
+                                                    </h4>
+                                                    <p class="en">The stillness of Gethsemane was shattered.
+                                                        <mark> Suddenly, there were torches, lanterns, swords, and
+                                                            shouting.
+                                                            At the front — Judas.</mark>
+                                                        His face was determined, but his heart was filled with darkness.
+
+                                                        Jesus stood calmly,
+                                                        His eyes full of love —
+                                                        but Judas’ heart full of betrayal.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">கெத்சேமனே தோட்டத்தின் அமைதி
+                                                        உடைந்தது.
+                                                        <mark>திடீரென விளக்குகள், தீப்பந்தங்கள், கத்திகள், கோல்களின் ஒலி
+                                                            எழுந்தது.
+                                                            முன்னிலையில் — யூதாஸ்.</mark>
+                                                        அவன் முகம் தீவிரமாக இருந்தது, ஆனால் உள்ளம் இருளால்
+                                                        நிரம்பியிருந்தது.
+
+                                                        இயேசு அமைதியாக நின்றார்;
+                                                        அவரது கண்களில் அன்பு இருந்தது —
+                                                        ஆனால் யூதாவின் இதயத்தில் துரோகம் நிறைந்தது.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 14-->
+                                            <div class="related-card">
+                                                <img src="assets/imges/pp15.jpg" alt="Day 3">
+                                                <div class="card-content">
+                                                    <h4 class="en">The Kiss of Betrayal
+                                                    </h4>
+                                                    <h4 class="ta" style="display:none;">துரோகம் நிறைந்த முத்தம்
+                                                    </h4>
+                                                    <p class="en">Judas approached Jesus, pretending affection.
+                                                        <mark> He said softly, “Greetings, Rabbi!”
+                                                            Then he kissed Him —
+                                                            a kiss disguised as love, hiding deep betrayal.</mark>
+
+                                                        Jesus said gently,
+                                                        <mark> “Judas, are you betraying the Son of Man with a
+                                                            kiss?”</mark>
+                                                        His words echoed through the night —
+                                                        a voice of truth mixed with mercy.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">யூதாஸ் இயேசுவின் பக்கம் வந்து
+                                                        நெருங்கினான்.
+                                                        அவன் முகம் பொய்யான அன்பால் நிறைந்தது.
+                                                        அவன் இயேசுவை நோக்கி சொன்னான்:
+
+                                                        <mark>“வணக்கம், ஆசிரியை!”
+
+                                                            அவன் முத்தமிட்டான் —
+                                                            அந்த முத்தம் அன்பின் வேடத்தில் மறைந்த துரோகம்.</mark>
+
+                                                        இயேசு மெதுவாக சொன்னார்:
+
+                                                        <mark>“யூதா, மனிதகுமாரனை முத்தத்தின் மூலம் துரோகம்
+                                                            செய்கிறாயா?”</mark>
+
+                                                        அந்த வார்த்தைகள் வானத்தில் ஒலித்தது போலிருந்தது —
+                                                        நீதியும் அன்பும் கலந்த குரல்.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 15-->
+                                            <div class="related-card">
+                                                <img src="assets/imges/pp16.jpg" alt="Day 3">
+                                                <div class="card-content">
+                                                    <h4 class="en">The Disciples’ Panic
+                                                    </h4>
+                                                    <h4 class="ta" style="display:none;">சீஷர்களின் கலக்கம்
+                                                    </h4>
+                                                    <p class="en">The disciples were terrified.
+                                                        One of them drew a sword
+                                                        and cut off the ear of the high priest’s servant.
+
+                                                        But Jesus said,
+                                                        <mark> “Put your sword back!
+                                                            Those who live by the sword will die by the sword.”</mark>
+
+                                                        Then He touched the servant’s ear and healed him.
+                                                        Even in that moment,
+                                                        His hands were full of love —
+                                                        even for those who came to arrest Him.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">அந்த நேரத்தில் சீஷர்கள்
+                                                        திடுக்கிட்டனர்.
+                                                        ஒருவர் வாள் எடுத்துத் தாக்கினார் —
+                                                        அவர் ஆசாரியரின் ஊழியனின் காதை வெட்டினார்.
+
+                                                        ஆனால் இயேசு உடனே சொன்னார்:
+
+                                                        <mark>“வாளை வைப்பாயாக!
+                                                            வாளை எடுத்தவர் வாளால் அழிவார்.”</mark>
+
+                                                        அவர் அந்த மனிதனின் காதைத் தொட்டு குணப்படுத்தினார்.
+                                                        இயேசுவின் கரங்கள் இன்னும் அன்பும் கருணையும் கொண்டிருந்தது —
+                                                        அவரை கைது செய்ய வந்தவர்களுக்கே கூட.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 16-->
+                                            <div class="related-card">
+                                                <img src="assets/imges/pp17.jpg" alt="Day 3">
+                                                <div class="card-content">
+                                                    <h4 class="en">The Arrival of the Authorities
+                                                    </h4>
+                                                    <h4 class="ta" style="display:none;">அதிகாரிகளின் வருகை
+                                                    </h4>
+                                                    <p class="en">Priests, temple guards, and Roman soldiers surrounded
+                                                        Him,
+                                                        their torches flickering in the night.
+
+                                                        Jesus asked calmly,
+                                                        “Whom do you seek?”
+
+                                                        They answered,
+                                                        “Jesus of Nazareth.”
+
+                                                        Jesus said,
+                                                        “I am He.”
+
+                                                        At His words, they drew back and fell to the ground —
+                                                        for divine power and peace shone through Him even then.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">அந்த கூட்டத்தில் ஆசாரியர்களும்,
+                                                        ஆலயப் பாதுகாவலர்களும், ரோம சிப்பாய்களும் இருந்தனர்.
+                                                        அவர்கள் விளக்குகளின் வெளிச்சத்தில் இயேசுவைச் சுற்றினர்.
+
+                                                        இயேசு அமைதியாக கேட்டார்:
+
+                                                        “நீங்கள் எவரைத் தேடுகிறீர்கள்?”
+
+                                                        அவர்கள் பதிலளித்தனர்:
+
+                                                        “நாங்கள் நாசரேயர் இயேசுவைத் தேடுகிறோம்.”
+
+                                                        இயேசு சொன்னார்:
+
+                                                        “நான் தான்.”
+
+                                                        அந்த வார்த்தை கேட்கும் போதே,
+                                                        அவர்களின் மனம் நடுங்கி, சிலர் பின்னோக்கி விழுந்தனர்.
+                                                        அவரது தெய்வீக ஆட்சியும், அமைதியும் அந்த இரவில் பிரகாசித்தது.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 17-->
+                                            <div class="related-card">
+                                                <img src="assets/imges/pp18.jpg" alt="Day 3">
+                                                <div class="card-content">
+                                                    <h4 class="en">The Disciples Flee
+                                                    </h4>
+                                                    <h4 class="ta" style="display:none;">சீஷர்கள் தப்பி ஓடுகிறார்கள்
+                                                    </h4>
+                                                    <p class="en"><mark>The soldiers seized Jesus,
+                                                            binding the very hands that had healed and blessed
+                                                            many.</mark>
+
+                                                        Fear gripped the disciples.
+                                                        One by one, they fled into the darkness.
+                                                        And Jesus — alone —
+                                                        stood as the Light in the midst of the night.
+                                                    </p>
+                                                    <p class="ta" style="display:none;"><mark>கைது குழு இயேசுவை
+                                                            பிடித்தது.
+                                                            அவரது கைகள் கட்டப்பட்டன —
+                                                            அன்பின் கரங்கள் இப்போது சங்கிலியால் சுற்றப்பட்டன.</mark>
+
+                                                        அந்த நேரத்தில், சீஷர்கள் பயந்தனர்.
+                                                        அவர்கள் எல்லோரும் ஓடிச்சென்றனர்.
+                                                        இயேசு மட்டும் தனியாக —
+                                                        இருளின் நடுவே ஒளியாய் நின்றார்.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </section>
+
+
+                                </div><!-- End post content -->
+
+                                <blockquote>
+                                    <p>
+                                        “Father, protect those You have given Me;
+                                        may they be one, just as We are one.”
+                                        “Love one another as I have loved you.”
+
+                                        Gethsemane was not merely a place of sorrow —
+                                        it was the beginning of Jesus’ obedience, love,
+                                        and sacrifice for the redemption of humanity.
+                                    </p>
+                                </blockquote>
+
+                            </article>
+
+                        </div>
+                    </section><!-- /Blog Details Section -->
+
+
+
+                </div>
+
+                <div class="col-lg-4 sidebar">
+
+                    <div class="widgets-container">
+
+
+                        <!-- Recent Posts Widget -->
+                        <div class="recent-posts-widget widget-item">
+
+                            <h3 class="widget-title">Next Stories</h3>
+
+                            <div class="post-item">
+                                <img src="assets/imges/nn1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Noah.html">Noah – The Great Ark and God’s Promise</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/aa1.webp" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="single-post.html">God Create World</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+
+
+                            <div class="post-item">
+                                <img src="assets/imges/bb1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Adam.html">The Story of Adam and Eve</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/kk1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Abel.html">Cain and Abel – Detailed Story</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+
+
+                            <div class="post-item">
+                                <img src="assets/imges/hh1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Abraham.html">Abraham – The Father of Faith</a>
+                                    </h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/jj1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Jacob.html">Jacob & Joseph – The Dreamer and the Redeemer</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/mm1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Moses.html">The Story of Moses’ Final Blessing and Death</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/ss1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Samuel.html">Samuel the Prophet – From Birth to Death</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/dd1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="David.html">King David – From Shepherd Boy to King of Israel</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/qq1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Solomon.html">King Solomon – The King of Wisdom</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/da1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Daniel.html">Daniel in the Lion’s Den</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                        </div><!--/Recent Posts Widget -->
+
+
+                        <!-- Blog Author Widget -->
+                        <div class="blog-author-widget widget-item">
+
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="d-flex align-items-center w-100">
+                                    <img src="assets/imges/mine.jpg" class="rounded-circle flex-shrink-0" alt="">
+                                    <div>
+                                        <h4>Jebin Joseph</h4>
+                                        <div class="social-links">
+                                            <a href="https://github.com/Jebindevp" class="github"><i
+                                                    class="bi bi-github"></i></a>
+                                            <a href="https://wa.me/919487851243?text=Hello%20I%20have%20a%20question"
+                                                target="_blank" rel="noopener noreferrer">
+                                                <i class="bi bi-whatsapp"></i>
+                                            </a>
+                                            <a href="mailto:kmt4543@gmail.com" class="gmail"><i
+                                                    class="bi bi-envelope-fill"></i></a>
+                                            <a href="https://jebindevp.github.io/My-Protifolio/" class="portfolio"><i
+                                                    class="bi bi-briefcase-fill"></i></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <p>
+                                    I’m Jebin Joseph, a passionate Web Designer dedicated to turning creative ideas into
+                                    visually stunning
+                                    and user-friendly websites. With a deep love for design and technology, I specialize
+                                    in crafting
+                                    modern, responsive, and engaging digital experiences that bring brands to life.
+                                </p>
+                                <p>"Good design is not just about how it looks — it’s about how it works and how it
+                                    makes people feel."
+                                </p>
+                            </div>
+
+                        </div><!--/Blog Author Widget -->
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer id="footer" class="footer dark-background">
+
+        <div class="container footer-top">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <a href="index.html" class="logo d-flex align-items-center">
+                        <span class="sitename">Bible</span>
+                    </a>
+                    <div class="footer-contact pt-3">
+                        <p>India , TamilNadu</p>
+                        <p>Kanya Kumari Dist</p>
+                        <p class="mt-3"><strong>Phone:</strong> <span>91+ 9487851243</span></p>
+                        <p><strong>Email:</strong> <span>kmt4543@gmail.com</span></p>
+                    </div>
+                    <div class="social-links d-flex mt-4">
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Categries</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Management System</a></li>
+                        <li><a href="#">Marketing</a></li>
+                        <li><a href="#">Graphic Design</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Development</h4>
+                    <ul>
+                        <li><a href="#">static websites</a></li>
+                        <li><a href="#">dynamic websites </a></li>
+                        <li><a href="#">E-Commerce design</a></li>
+                        <li><a href="#">Student Projects</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Other Services</h4>
+                    <ul>
+                        <li><a href="#">Photos Editting</a></li>
+                        <li><a href="#">Video Editting</a></li>
+                        <li><a href="#">Online Class </a></li>
+                        <li><a href="#">Poster Edit</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container copyright text-center mt-4">
+            <p>© <span>Copyright</span> <strong class="px-1 sitename">BIBLE</strong> <span>All Rights Reserved</span>
+            </p>
+            <div class="credits">
+
+                Designed by & Distributed by <a href="">Jebin Joseph</a>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+
+    <script>
+        const cards = document.querySelectorAll(".related-card");
+        const nextBtn = document.getElementById("next-btn");
+        const prevBtn = document.getElementById("prev-btn");
+        const pageInfo = document.getElementById("page-info");
+        let currentCard = 0;
+
+        function showCard(index) {
+            cards.forEach((card, i) => card.classList.toggle("active", i === index));
+            pageInfo.textContent = ` ${index + 1} of ${cards.length}`;
+        }
+
+        nextBtn.addEventListener("click", () => {
+            currentCard = (currentCard + 1) % cards.length;
+            showCard(currentCard);
+        });
+
+        prevBtn.addEventListener("click", () => {
+            currentCard = (currentCard - 1 + cards.length) % cards.length;
+            showCard(currentCard);
+        });
+
+        showCard(currentCard);
+
+        // Language Toggle
+        const tamilBtn = document.getElementById("tamil-btn");
+        const englishBtn = document.getElementById("english-btn");
+
+        tamilBtn.addEventListener("click", () => {
+            tamilBtn.classList.add("active");
+            englishBtn.classList.remove("active");
+            document.querySelectorAll(".ta").forEach(el => el.style.display = "block");
+            document.querySelectorAll(".en").forEach(el => el.style.display = "none");
+        });
+
+        englishBtn.addEventListener("click", () => {
+            englishBtn.classList.add("active");
+            tamilBtn.classList.remove("active");
+            document.querySelectorAll(".en").forEach(el => el.style.display = "block");
+            document.querySelectorAll(".ta").forEach(el => el.style.display = "none");
+        });
+    </script>
+
+
+</body>
+
+
+<!-- Mirrored from themewagon.github.io/ZenBlog/single-post.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Oct 2025 10:06:52 GMT -->
+
+</html>

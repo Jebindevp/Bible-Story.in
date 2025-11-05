@@ -1,0 +1,2561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from themewagon.github.io/ZenBlog/single-post.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Oct 2025 10:06:47 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>The Story of Moses
+    </title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Favicons -->
+    <link href="assets/imges/ll1.jpg" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/" rel="preconnect">
+    <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: ZenBlog
+  * Template URL: https://bootstrapmade.com/zenblog-bootstrap-blog-template/
+  * Updated: Aug 08 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+
+    <style>
+        /* ====== Header Base ====== */
+        .header {
+            background: #0d1b2a;
+            /* deep navy blue */
+            padding: 15px 0;
+            transition: all 0.3s ease;
+            z-index: 999;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .header.sticky-top {
+            position: sticky;
+            top: 0;
+        }
+
+        /* ====== Logo ====== */
+        .sitename {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        .sitename:hover {
+            color: #ffd700;
+            /* gold hover */
+        }
+
+        /* ====== Navigation Menu ====== */
+        .navmenu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .navmenu a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 500;
+            font-size: 1rem;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        /* Hover underline animation */
+        .navmenu a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 0;
+            height: 2px;
+            background-color: #ffd700;
+            transition: width 0.3s ease;
+        }
+
+        .navmenu a:hover::after,
+        .navmenu a.active::after {
+            width: 100%;
+        }
+
+        .navmenu a:hover,
+        .navmenu a.active {
+            color: #ffd700;
+        }
+
+        /* ====== Social Icons ====== */
+        /* ====== Header Social Links ====== */
+        .header-social-links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* ensures even centering in container */
+            gap: 12px;
+        }
+
+        /* Base style for icons */
+        .header-social-links a {
+            color: #ffffff;
+            font-size: 1.2rem;
+            width: 40px;
+            /* slightly larger for better centering */
+            height: 40px;
+            display: flex;
+            /* use flex instead of inline-flex for stable centering */
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.826);
+            backdrop-filter: blur(6px);
+            transition: all 0.35s ease;
+            position: relative;
+            overflow: hidden;
+            line-height: 1;
+            /* keeps icon centered vertically */
+        }
+
+        /* Icon hover animation */
+        .header-social-links a::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(45deg, #ffd700, #ff8c00);
+            transform: scale(0);
+            transition: transform 0.35s ease;
+            border-radius: 50%;
+            z-index: 0;
+        }
+
+        .header-social-links a:hover::after {
+            transform: scale(1);
+        }
+
+        /* Hover effects for the icon itself */
+        .header-social-links a i {
+            position: relative;
+            z-index: 1;
+            transition: transform 0.35s ease, color 0.35s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .header-social-links a:hover i {
+            transform: scale(1.2) rotate(10deg);
+            color: #000;
+        }
+
+        /* Add glowing effect on hover */
+        .header-social-links a:hover {
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+        }
+
+
+        /* ====== Mobile Navigation ====== */
+        .mobile-nav-toggle {
+            display: none;
+            font-size: 1.8rem;
+            color: #fff;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .mobile-nav-toggle:hover {
+            transform: rotate(90deg);
+        }
+
+        /* ====== Responsive Design ====== */
+        @media (max-width: 991px) {
+            .navmenu ul {
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background: #1b263b;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 15px 20px;
+                gap: 15px;
+                display: none;
+                /* hidden by default */
+            }
+
+            .navmenu.active ul {
+                display: flex;
+                /* show when toggled */
+            }
+
+            .mobile-nav-toggle {
+                display: block;
+            }
+
+            .header-social-links {
+                display: none;
+                /* hide social links on mobile for simplicity */
+            }
+        }
+
+        /* ====== Scroll Effect (optional enhancement) ====== */
+        .header.scrolled {
+            background: #1b263b;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+
+
+
+
+
+
+
+        /* ========== Global Reset & Font ========== */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background: #f9fafc;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* ========== Page Title Section ========== */
+        .page-title {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: #fff;
+            padding: 80px 0;
+            text-align: center;
+            border-radius: 0 0 50px 50px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .page-title h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        .breadcrumbs {
+            margin-top: 15px;
+        }
+
+        .breadcrumbs ol {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .breadcrumbs ol li {
+            color: #fff;
+            font-size: 0.95rem;
+        }
+
+        .breadcrumbs ol li a {
+            color: #ffd700;
+            text-decoration: none;
+            transition: 0.3s ease;
+        }
+
+        .breadcrumbs ol li a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        .breadcrumbs li+li::before {
+            content: "/";
+            margin: 0 8px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* ========== Blog Details ========== */
+        .blog-details .article {
+            background: #fff;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .blog-details .article:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+        }
+
+        .blog-details .post-img img {
+            width: 100%;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .blog-details .title {
+            font-size: 1.8rem;
+            color: #2b2b2b;
+            margin-bottom: 15px;
+        }
+
+        .blog-details .content p {
+            margin-bottom: 18px;
+            color: #555;
+        }
+
+        .blog-details blockquote {
+            background: #f0f4ff;
+            border-left: 5px solid #2575fc;
+            padding: 20px;
+            border-radius: 10px;
+            font-style: italic;
+            color: #444;
+        }
+
+        /* ========== Sidebar ========== */
+        .sidebar {
+            margin-top: 0px;
+        }
+
+        .widget-item {
+            background: #fff;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+            transition: 0.3s ease;
+        }
+
+        .widget-item:hover {
+            transform: translateY(-4px);
+        }
+
+        .widget-title {
+            font-weight: 600;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            border-left: 4px solid #2575fc;
+            padding-left: 10px;
+        }
+
+        /* ========== Author Widget ========== */
+        .blog-author-widget img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            margin-right: 15px;
+            border: 3px solid #2575fc;
+        }
+
+        .blog-author-widget h4 {
+            margin-bottom: 8px;
+            color: #222;
+        }
+
+        .blog-author-widget p {
+            margin-top: 15px;
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        /* ========== Social Links ========== */
+        .social-links a {
+            display: inline-block;
+            color: #2575fc;
+            background: transparent;
+            font-size: 1.1rem;
+            margin: 0 6px;
+            width: 38px;
+            height: 38px;
+            line-height: 38px;
+            text-align: center;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #fff;
+            background: #2575fc;
+            transform: translateY(-4px) scale(1.1);
+        }
+
+        /* Additional Social Icons */
+        .social-links a.github:hover {
+            background: #333;
+        }
+
+        .social-links a.whatsapp:hover {
+            background: #25D366;
+        }
+
+        .social-links a.gmail:hover {
+            background: #D44638;
+        }
+
+        .social-links a.portfolio:hover {
+            background: #ff6f00;
+        }
+
+        /* ========== Recent Posts ========== */
+        .recent-posts-widget .post-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .recent-posts-widget .post-item img {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            margin-right: 15px;
+        }
+
+        .recent-posts-widget .post-item h4 {
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+
+        .recent-posts-widget .post-item a {
+            text-decoration: none;
+            color: #222;
+            transition: color 0.3s;
+        }
+
+        .recent-posts-widget .post-item a:hover {
+            color: #2575fc;
+        }
+
+        /* ========== Tags Widget ========== */
+        .tags-widget ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tags-widget a {
+            display: inline-block;
+            background: #eef3ff;
+            color: #2575fc;
+            padding: 6px 14px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            transition: 0.3s ease;
+        }
+
+        .tags-widget a:hover {
+            background: #2575fc;
+            color: #fff;
+            transform: scale(1.05);
+        }
+
+        /* ========== Responsive ========== */
+        @media (max-width: 992px) {
+            .page-title {
+                padding: 60px 20px;
+            }
+
+            .blog-details .title {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .blog-author-widget img {
+                width: 60px;
+                height: 60px;
+            }
+
+            .recent-posts-widget .post-item img {
+                width: 65px;
+                height: 65px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .page-title h1 {
+                font-size: 1.8rem;
+            }
+
+            .widget-item {
+                padding: 18px;
+            }
+        }
+
+
+
+        .related-posts {
+            margin-top: 50px;
+            padding: 30px 15px;
+            background: #fafafa;
+            border-radius: 16px;
+            text-align: center;
+        }
+
+        /* Language Toggle */
+        .language-toggle {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .lang-btn {
+            background: #eee;
+            color: #333;
+            border: none;
+            padding: 8px 18px;
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .lang-btn.active {
+            background: linear-gradient(45deg, #ffd700, #ffb400);
+            color: #000;
+            box-shadow: 0 0 8px rgba(255, 215, 0, 0.4);
+        }
+
+        /* Cards */
+        .related-cards {
+            position: relative;
+            width: 100%;
+            height: 480px;
+            /* consistent card height */
+            overflow: hidden;
+        }
+
+        .related-card {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            padding: 20px;
+            height: 100%;
+        }
+
+        .related-card.active {
+            display: flex;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .related-card img {
+            width: 100%;
+            max-width: 450px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .card-content {
+            margin-top: 15px;
+        }
+
+        .card-content h4 {
+            font-size: 1.3rem;
+            color: #333;
+        }
+
+        .card-content p {
+            color: #555;
+            font-size: 1rem;
+        }
+
+        mark {
+            background: #fff7b2;
+            color: #000;
+            padding: 0 4px;
+            border-radius: 3px;
+        }
+
+        .pagination-controls {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .pagination-controls button {
+            background: linear-gradient(45deg, #ffd700, #ff8c00);
+            color: #000;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .pagination-controls button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(255, 165, 0, 0.4);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .related-card img {
+                height: 200px;
+            }
+
+            .related-cards {
+                height: auto;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body class="single-post-page">
+
+    <header id="header" class="header d-flex align-items-center sticky-top">
+        <div class="container position-relative d-flex align-items-center justify-content-between">
+
+            <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+
+                <h1 class="sitename">BIBLE</h1>
+            </a>
+
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="category.html">Categories</a></li>
+
+
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+
+            <div class="header-social-links">
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="main">
+
+        <!-- Page Title -->
+        <div class="page-title">
+            <div class="container d-lg-flex justify-content-between align-items-center">
+                <h1 class="mb-2 mb-lg-0">The Story of Moses’ Final Blessing and Death</h1>
+                <nav class="breadcrumbs">
+                    <ol>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Samuel.html">Next Story</a></li>
+                        <li><a href="Jacob.html">Back</a></li>
+
+                    </ol>
+                </nav>
+            </div>
+        </div><!-- End Page Title -->
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-8">
+
+                    <!-- Blog Details Section -->
+                    <section id="blog-details" class="blog-details section">
+                        <div class="container">
+
+                            <article class="article">
+
+                                <div class="post-img">
+                                    <img src="assets/imges/mm1.jpg" alt="" class="img-fluid" style="height: 400px;">
+                                </div>
+
+                                <h2 class="title">Moses’ Final Blessing and Death</h2>
+
+
+                                <div class="content">
+                                    <p>
+                                        Moses’ life reminds us that true success is not about reaching the destination,
+                                        but about faithfully walking with God every step of the journey.
+
+                                        Even when the path is uncertain, and the promises seem far away,
+                                        God never forgets what He has spoken.
+
+                                        Moses didn’t enter the Promised Land, yet his mission was fulfilled —
+                                        because his obedience, courage, and faith inspired generations after him.
+                                    </p>
+
+                                    <!-- Related Horizontal Cards Section -->
+                                    <!-- Related Horizontal Cards Section -->
+                                    <section class="related-posts">
+                                        <!-- Language Toggle -->
+                                        <div class="language-toggle">
+                                            <button id="english-btn" class="lang-btn active"><i class="bi bi-book"></i>
+                                                English</button>
+                                            <button id="tamil-btn" class="lang-btn"><i class="bi bi-book-half"></i>
+                                                தமிழ்</button>
+                                        </div>
+
+                                        <h3 class="section-title"><i class="bi bi-journal-bookmark"></i> Moses’ Final
+                                            Blessing and Death
+                                        </h3>
+
+                                        <!-- Cards Wrapper -->
+                                        <div class="related-cards">
+                                            <!-- Pagination Controls -->
+                                            <div class="pagination-controls">
+                                                <button id="prev-btn"><i class="bi bi-arrow-left"></i> Prev</button>
+                                                <span id="page-info"></span>
+                                                <button id="next-btn">Next <i class="bi bi-arrow-right"></i></button>
+                                            </div>
+                                            <!-- Card 1 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/mm2.jpg" alt="Day 1">
+                                                <div class="card-content">
+                                                    <h4 class="en">Slavery in Egypt and Pharaoh’s Decree</h4>
+                                                    <h4 class="ta" style="display:none;">எகிப்தில் அடிமைத்தனம் மற்றும்
+                                                        பறவோனின் உத்தரவு
+                                                    </h4>
+                                                    <p class="en">The <mark>Israelites lived as slaves</mark> in the
+                                                        land of Egypt.
+                                                        At that time, a <mark>king called Pharaoh</mark> issued an order
+                                                        to kill the
+                                                        Hebrew baby boys:
+
+                                                        <mark> “Whatever Hebrew boy is born in any family, throw him
+                                                            into the
+                                                            Nile River!”</mark>
+                                                        Fearing the Israelites and wishing to stop their growth, he
+                                                        issued this cruel decree.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">எகிப்து நாடில் <mark>இஸ்ரவேல்
+                                                            மக்கள்
+                                                            அடிமைகளாக</mark> வாழ்ந்துகொண்டிருந்தனர்.
+                                                        அப்போது <mark>பறவோன் என்ற அரசன்,</mark> எபிரேயர்களின் ஆண்
+                                                        குழந்தைகளை கொல்லுமாறு உத்தரவிட்டான்
+                                                        <mark>“எபிரேய குடும்பங்களில் பிறக்கும் ஆண் குழந்தைகள் யாராக
+                                                            இருந்தாலும், அவர்களை நைல் நதியில் வீசிவிட வேண்டும்!”</mark>
+                                                        எபிரேய மக்களைப் பயந்து, அவர்கள் பெருகக் கூடாது என்பதற்காக ஒரு
+                                                        கொடூரமான உத்தரவு பிறப்பித்தான்
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 2 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/mm3.jpg" alt="Day 2">
+                                                <div class="card-content">
+                                                    <h4 class="en">Moses was born.</h4>
+                                                    <h4 class="ta" style="display:none;">மோசேயின் பிறப்பு</h4>
+                                                    <p class="en">In the land of Egypt, the Israelites lived as slaves.
+                                                        At that time, a <mark>Hebrew woman named Jochebed lived with her
+                                                            husband Amram.</mark>
+                                                        She gave <mark>birth to a beautiful baby boy,</mark>
+                                                        and she realized that God’s special grace was upon the child.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">எகிப்து நாடில் இஸ்ரவேல் மக்கள்
+                                                        அடிமைகளாக வாழ்ந்துகொண்டிருந்தனர்.அந்த நேரத்தில் ஒரு <mark>
+                                                            எபிரேயப்
+                                                            பெண்
+                                                            யோகேபெத்</mark> தனது <mark>கணவர் அம்ராம்</mark> உடன்
+                                                        வாழ்ந்தாள்.
+                                                        அவள் <mark>ஒரு அழகான ஆண் குழந்தையைப் பெற்றாள்.</mark>
+
+                                                        அவள் அந்தக் குழந்தையில் தேவனுடைய சிறப்பு கருணை இருப்பதை
+                                                        உணர்ந்தாள்.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 3 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/mm4.jpg" alt="Day 3">
+                                                <div class="card-content">
+                                                    <h4 class="en">Miraculous Rescue</h4>
+                                                    <h4 class="ta" style="display:none;">அதிசயமான மீட்பு</h4>
+                                                    <p class="en">She hid him for <mark>three months</mark> — even when
+                                                        the king’s
+                                                        soldiers went from house to house searching for baby boys, God
+                                                        protected her.
+
+                                                        When she could no longer hide him, <mark>she made a basket —
+                                                            carefully
+                                                            coated it with tar and pitch to make it waterproof.</mark>
+
+                                                        She placed her baby in the basket and, with tears in her eyes,
+                                                        set it among the reeds by the bank of <mark>the Nile River,
+                                                            entrusting
+                                                            him to God’s care.</mark>
+
+                                                        His <mark>sister Miriam </mark>stood at a distance, watching to
+                                                        see what
+                                                        would happen to the basket</p>
+                                                    <p class="ta" style="display:none;">அவனை <mark>மூன்று
+                                                            மாதங்கள்</mark> மறைத்து
+                                                        வைத்தாள் —
+                                                        அரசனின் படைவீரர்கள் வீடு வீடாகச் சுற்றி குழந்தைகளை தேடியபோதும்,
+                                                        தேவன் அவளை காத்தார்.
+
+                                                        பின்னர், அவனைக் கூட மறைத்துக் கொள்ள முடியாது என உணர்ந்தபோது,
+                                                        அவள் ஒரு <mark>கூடைப் பெட்டியை தயாரித்தாள் —
+                                                            அதை நன்கு காப்பாற்றும் வகையில் பிடுமனும் , மூங்கிலும்
+                                                            பூசினாள்,</mark> நீர் உள்ளே நுழையாமல் இருக்க.
+
+                                                        அந்தக் கூடைப்பெட்டியில் தன் மகனை வைத்தாள்.
+                                                        கண்ணீர் கலந்த மனதுடன், அவனை <mark>நைல் நதியின் கரையில் விட்டு,
+                                                            தேவனிடம் ஒப்படைத்தாள்.</mark>
+
+                                                        அவனுடைய <mark>அக்கா மிரியம்</mark> தொலைவில் நின்று, அந்தக் கூடை
+                                                        எங்கு செல்வது என்று கவனித்துக் கொண்டிருந்தாள்.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 4 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/mm5.jpg" alt="Day 4">
+                                                <div class="card-content">
+                                                    <h4 class="en">Pharaoh’s Daughter Found Moses</h4>
+                                                    <h4 class="ta" style="display:none;">பறவோனின் மகள் மோசேயை
+                                                        கண்டுபிடித்தாள்</h4>
+                                                    <p class="en"><mark>Pharaoh’s daughter</mark> came to bathe by the
+                                                        Nile River and
+                                                        noticed a basket floating in the water.
+
+                                                        When she opened it, a <mark>beautiful baby was crying
+                                                            inside.</mark> Hearing
+                                                        his cries, her heart was moved with compassion.
+
+                                                        She said:
+                                                        <mark> “This must be a Hebrew child. But I will raise him as my
+                                                            own
+                                                            son.”</mark>
+
+                                                        She <mark>named the child Moses,</mark> which means <mark>“Drawn
+                                                            out of the water.”</mark>
+
+                                                        In this way, God protected Moses and prepared him to become the
+                                                        future leader who would deliver the Israelites.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">அப்போது <mark>பறவோனின் மகள் நைல்
+                                                            நதிக்கரையில் குளிக்க வந்தாள்.</mark>
+                                                        அவள் நீரில் மிதந்துக்கொண்டிருந்த ஒரு கூடைப் பெட்டியை பார்த்தாள்.
+
+                                                        அதைத் திறந்தபோது, உள்ளே இருந்த <mark>அழகான குழந்தை
+                                                            அழுதது.</mark>
+                                                        அந்தக் குரலைக் கேட்டவுடன் அவளுடைய இதயம் நெகிழ்ந்தது.
+
+                                                        அவள் கூறினாள்:
+
+                                                        <mark> “இது எபிரேயக் குழந்தையாக இருக்க வேண்டும்.
+                                                            ஆனால் நான் இதை என் மகனாக வளர்ப்பேன்.”</mark>
+
+                                                        அவள் அந்தக் குழந்தைக்கு <mark>“மோசே”</mark> என்று பெயரிட்டாள் —
+                                                        அதாவது, <mark>“நீரிலிருந்து எடுத்தவன்”</mark>.
+
+                                                        இவ்வாறு தேவன் மோசேவைக் காப்பாற்றி,
+                                                        அவரை எதிர்காலத்தில் இஸ்ரவேல் மக்களை மீட்கும் தலைவராக வளர்த்தார்.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 5 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/mm6.jpg" alt="Day 5">
+                                                <div class="card-content">
+                                                    <h4 class="en">Moses Grew Up in the Egyptian Palace</h4>
+                                                    <h4 class="ta" style="display:none;">மோசே எகிப்து அரண்மனையில்
+                                                        வளர்ந்தது</h4>
+                                                    <p class="en">Moses was raised as a son by Pharaoh’s daughter. His
+                                                        early life was full of palace luxury. He excelled in <mark>
+                                                            royal
+                                                            education, intelligence, and wisdom, learning about Egyptian
+                                                            culture, politics, and the military.</mark>
+                                                    </p>
+                                                    <p class="ta" style="display:none;">மோசே பறவோனின் மகளால் தன் மகனாகப்
+                                                        பெரியார்.
+                                                        அவனுக்கான வாழ்க்கை அரண்மனையின் சொகுசில் அமைந்தது.
+                                                        அவன் <mark>அரச முறை கல்வியிலும், புத்திசாலித்தனத்திலும்
+                                                            சிறந்தவன்</mark>
+                                                        ஆனான்.
+                                                        எகிப்து நாட்டின் <mark>கலாச்சாரம், அரசியல் மற்றும்
+                                                            ராணுவத்தைப்</mark>
+                                                        பற்றியும் கற்றான்.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 6 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/mm7.jpg" alt="Day 6">
+                                                <div class="card-content">
+                                                    <h4 class="en">Witnessing the Israelites’ Slavery</h4>
+                                                    <h4 class="ta" style="display:none;">எபிரேய மக்களின் அடிமை வாழ்வு
+                                                        பார்வை</h4>
+                                                    <p class="en">Even while growing up in luxury, Moses never forgot
+                                                        his own people. <mark> He saw the suffering, cruelty, and
+                                                            slavery of
+                                                            the Israelites.</mark> This filled his heart with compassion
+                                                        and
+                                                        determination..</p>
+                                                    <p class="ta" style="display:none;">பெரியவராக வளர்ந்தபோதும், மோசே
+                                                        தனது மூல மனிதர்களின் உணர்வுகளை மறக்கவில்லை.
+                                                        அவன் <mark>எபிரேய மக்களின் துன்பம், வன்முறை மற்றும் அடிமைத்தனம்
+                                                            பார்த்தான்.</mark>
+                                                        இதனால் அவனுடைய மனதில் ஒரு தீவிர கருணை மற்றும் நம்பிக்கை
+                                                        வளர்ந்தது.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 7 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/mm8.jpeg" alt="Day 7">
+                                                <div class="card-content">
+                                                    <h4 class="en">First Crisis – Killing an Egyptian</h4>
+                                                    <h4 class="ta" style="display:none;">முதல் நெருக்கடி – எகிப்தியரை
+                                                        கொன்றது</h4>
+                                                    <p class="en">One day, Moses saw an <mark>Egyptian beating a Hebrew
+                                                            slave.
+                                                            In anger, he killed the Egyptian.</mark> When Pharaoh
+                                                        learned this, he
+                                                        sought to kill Moses.
+
+                                                        This was the beginning of God’s plan of salvation — to bring
+                                                        humans back into His love.</p>
+                                                    <p class="ta" style="display:none;">ஒரு நாள், <mark>மோசே ஒரு
+                                                            எகிப்தியர்
+                                                            எபிரேய அடிமையை அடித்து காயப்படுத்துவதை கண்டான்.</mark>
+                                                        அவன் கோபத்தில் அந்த <mark>எகிப்தியரை கொன்றான்.</mark>
+                                                        இதனால் பறவோன் அதனை அறிந்தபோது மோசேவைக் கொல்ல முயன்றார்.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+
+                                            <!-- Card 8 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/mm9.jpg" alt="Day 7">
+                                                <div class="card-content">
+                                                    <h4 class="en">Escape to Midian</h4>
+                                                    <h4 class="ta" style="display:none;">மித்யான் வனத்திற்கு தப்பித்தல்
+                                                    </h4>
+                                                    <p class="en"><mark>Moses fled to Midian to save his life. There, he
+                                                            led a
+                                                            peaceful life tending flocks in the green pastures,
+                                                            developing
+                                                            inner peace and reflection.</mark></p>
+                                                    <p class="ta" style="display:none;"><mark>மோசே உயிரை தப்பி மித்யான்
+                                                            என்ற இடத்திற்கு ஓடினான்.</mark>
+                                                        அங்கு அவன் <mark>ஒரு பசுமையான வனாந்தரத்தில், நீரில் பசுக்கள்
+                                                            மேய்த்தும் வாழ்க்கையைத் தொடங்கினான்.</mark>
+                                                        அவன் பசுக்களை மேய்த்து, உள்ளார்ந்த அமைதி மற்றும் எண்ணங்களை
+                                                        வளர்த்துக் கொண்டான்.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 9 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/mm10.jpg" alt="Day 7">
+                                                <div class="card-content">
+                                                    <h4 class="en">God Appeared to Moses in the Burning Bush</h4>
+                                                    <h4 class="ta" style="display:none;">தேவன் மோசேவிற்கு எரியும்
+                                                        கொடிமரத்தில் தோன்றினார்
+                                                    </h4>
+                                                    <p class="en">While <mark>Moses was tending the sheep of his
+                                                            father-in-law
+                                                            Jethro in the land of Midian,</mark>
+                                                        he saw a miraculous sight — a bush was burning, yet it was not
+                                                        consumed.
+
+                                                        Then God revealed Himself and said:
+
+                                                        <mark> “I am the God of your fathers — the God of Abraham,
+                                                            Isaac, and
+                                                            Jacob.”</mark>
+
+                                                        God called Moses to deliver His people from Egypt and assured
+                                                        him:
+
+                                                        <mark> “I will be with you.”
+                                                        </mark>
+                                                        And God said further:
+
+                                                        <mark>“Tell them — ‘I AM WHO I AM’ has sent me to you.”</mark>
+                                                    </p>
+                                                    <p class="ta" style="display:none;">மித்யான் வனத்தில், <mark>மோசே
+                                                            தனது
+                                                            மாமனார் யித்ரோவின் ஆட்டுகளை மேய்த்துக்
+                                                            கொண்டிருந்தபோது,</mark>
+                                                        அவன் ஒரு அதிசயத்தை கண்டான் — <mark>ஒரு கொடிமரம்
+                                                            எரிந்துகொண்டிருந்தது,
+                                                            ஆனால் அது அழியவில்லை</mark> தேவன் தன்னை வெளிப்படுத்தினார்:
+                                                        <mark> “நான் உன் பிதாக்களின் தேவன் — ஆபிரகாம், இசாக், யாக்கோபின்
+                                                            தேவன்.”</mark>
+                                                        அவருடைய மக்களை எகிப்திலிருந்து விடுவிக்க மோசேவை அழைத்தார்.“நான்
+                                                        உன்னுடன் இருப்பேன்.”
+                                                        <mark> “அவர்களுக்கு சொல்லு — ‘இருப்பவன்’ (I AM WHO I AM) என்னை
+                                                            அனுப்பினார்.”</mark>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 10 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/mm11.jpg" alt="Day 7">
+                                                <div class="card-content">
+                                                    <h4 class="en">The Journey of Moses</h4>
+                                                    <h4 class="ta" style="display:none;">மோசேயின் பயணம்
+                                                    </h4>
+                                                    <p class="en">After receiving God’s call from the burning bush,
+                                                        Moses asked permission from his <mark> father-in-law
+                                                            Jethro</mark> to leave.
+                                                        He then took his <mark>wife Zipporah and his sons with him,
+                                                            and prepared to return to Egypt.</mark>
+
+                                                        God said to him:
+
+                                                        <mark> “Go back to Egypt; all those who wanted to kill you are
+                                                            now
+                                                            dead.”</mark>
+
+                                                        <mark>Moses took in his hand the staff of God,
+                                                            the symbol through which God would perform many
+                                                            miracles.</mark>
+
+                                                        Thus, trusting in God’s promise,
+                                                        Moses set out on his journey to free the people of Israel.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">எரியும் கொடிமரத்தில் தேவனின்
+                                                        அழைப்பை பெற்ற பின்,
+                                                        மோசே தனது<mark> மாமனார் யித்ரோவிடம்</mark> அனுமதி பெற்று,
+                                                        தன் <mark>மனைவி ஸிப்போராவையும், மகன்களையும் கூட்டிக் கொண்டு
+                                                            எகிப்திற்குத்</mark> திரும்பத் தயாரானான்.
+
+                                                        தேவன் அவனிடம் கூறினார்:
+
+                                                        <mark>“எகிப்திற்குத் திரும்பு; உன் உயிரைக் கேட்டு உன்னைத்
+                                                            தேடியவர்கள்
+                                                            இறந்துவிட்டார்கள்.”</mark>
+
+                                                        மோசே தன் கையில் தேவனின் அடையாளமான <mark>அதிசயக் குச்சியை</mark>
+                                                        எடுத்துக் கொண்டு பயணமானான்.
+                                                        அந்தக் <mark>குச்சி மூலமாகவே தேவன் பல அதிசயங்களைச் செய்வார்
+                                                        </mark> என்று
+                                                        கூறினார்.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 11 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/mm12.jpg" alt="Day 7">
+                                                <div class="card-content">
+                                                    <h4 class="en">Aaron Joined Moses</h4>
+                                                    <h4 class="ta" style="display:none;">மோசேவுடன் ஆரோன் இணைந்தார்
+                                                    </h4>
+                                                    <p class="en">God said to Moses:
+                                                        <mark>
+                                                            “Your brother Aaron is coming to meet you; he will be your
+                                                            spokesperson.”</mark>
+
+                                                        Moses and Aaron met and shared the words of God together.
+                                                        Then, united in purpose, they went to Egypt
+                                                        to fulfill God’s command — to free the people of Israel from
+                                                        slavery.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">தேவன் மோசேவிடம் கூறினார்:
+
+                                                        <mark> “உன் சகோதரன் ஆரோன் உன்னைச் சந்திக்க வருகிறான்; அவன் உன்
+                                                            வாயாகப்
+                                                            பேசுவான்.”</mark>
+
+                                                        மோசே மற்றும் ஆரோன் இருவரும் சந்தித்து தேவனுடைய வார்த்தைகளை
+                                                        பகிர்ந்தனர்.
+                                                        பின்னர் அவர்கள் இணைந்து எகிப்திற்குச் சென்றனர், இஸ்ரவேல் மக்களை
+                                                        விடுவிக்க தேவனின் கட்டளையை நிறைவேற்ற.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 12 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/mm13.jpg" alt="Day 7">
+                                                <div class="card-content">
+                                                    <h4 class="en">First Meeting in Pharaoh’s Palace</h4>
+                                                    <h4 class="ta" style="display:none;">பறவோனின் அரண்மனையில் முதல்
+                                                        சந்திப்பு
+                                                    </h4>
+                                                    <p class="en">Moses and Aaron stood before Pharaoh and said:
+
+                                                        <mark>“The Lord, the God of Israel, says: Let my people go,
+                                                            so that they may worship Me in the wilderness.”</mark>
+
+                                                        But Pharaoh replied proudly,
+
+                                                        <mark>“Who is the Lord? I do not know Him, and I will not let
+                                                            Israel
+                                                            go!”</mark>
+
+                                                        He refused to obey God’s command and made the lives of the
+                                                        Israelites even harder —
+                                                        he ordered that no straw be given to them for making bricks,
+                                                        yet demanded the same amount of work as before
+                                                    </p>
+                                                    <p class="ta" style="display:none;">மோசே மற்றும் ஆரோன் பறவோனின் முன்
+                                                        நின்று கூறினர்:
+
+                                                        <mark> “இஸ்ரவேலின் தேவன் கூறுகிறார் — என் மக்களை விடுவி, அவர்கள்
+                                                            வனாந்தரத்தில் எனக்கு வணக்கம் செய்யட்டும்.”</mark>
+
+                                                        ஆனால் பறவோன் திமிருடன் பதிலளித்தான்:
+
+                                                        <mark>“யார் அந்த யெகோவா? அவனை நான் அறியேன். இஸ்ரவேலை நான்
+                                                            விடமாட்டேன்.”</mark>
+
+                                                        அவன் தேவனின் வார்த்தையைக் கேட்க மறுத்து,
+                                                        இஸ்ரவேல் மக்களின் வேலையை இன்னும் கடுமையாக்கினான் —
+                                                        அவர்களுக்கு இடுப்பு செய்யத் தேவையான புல் கூட
+                                                        கொடுக்காமல், அதே அளவிலான கற்கள் தயாரிக்க உத்தரவிட்டான்.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+
+                                            <!-- Card 13 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/mm14.jpg" alt="Day 7">
+                                                <div class="card-content">
+                                                    <h4 class="en">God’s Promise and the Beginning of Miracles</h4>
+                                                    <h4 class="ta" style="display:none;">தேவனின் உறுதி மற்றும்
+                                                        அதிசயத்தின் ஆரம்பம்
+                                                    </h4>
+                                                    <p class="en">Seeing all this, Moses grew discouraged.
+                                                        He cried out to God:
+
+                                                        <mark> “Lord, why have You allowed such suffering to come upon
+                                                            Your
+                                                            people?”</mark>
+
+                                                        Then God spoke with assurance:
+
+                                                        <mark>“Now Pharaoh will see My power.
+                                                            With My mighty hand, he will let My people go.”</mark>
+
+                                                        After that, God gave Moses and Aaron the power to perform
+                                                        miracles.
+                                                        They went once again before Pharaoh to show the signs of God’s
+                                                        greatness.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">மோசே இதைக் கண்டு மனம்
+                                                        தளர்ந்தான்.
+                                                        அவன் தேவனை நோக்கி கேட்டான்:
+
+                                                        <mark>“கர்த்தாவே, ஏன் இத்தகைய துன்பத்தை உன் மக்களுக்கு
+                                                            அனுமதித்தாய்?”</mark>
+
+                                                        அப்போது தேவன் உறுதியுடன் கூறினார்:
+
+                                                        <mark>“இப்போது பறவோன் என் வல்லமையை காண்பான்.
+                                                            என் வலது கரத்தால் அவன் என் மக்களை அனுப்புவான்.”</mark>
+
+                                                        பின்னர் தேவன் மோசேவுக்கும் ஆரோனுக்கும் அதிசயத்தின் ஆற்றலை
+                                                        அளித்தார்.
+                                                        அவர்கள் பறவோனின் முன் மீண்டும் சென்றனர்.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 14 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/mm15.jpg" alt="Day 7">
+                                                <div class="card-content">
+                                                    <h4 class="en">The Miracle of the Staff Turning into a Snake</h4>
+                                                    <h4 class="ta" style="display:none;">குச்சி பாம்பாக மாறிய அதிசயம்
+                                                    </h4>
+                                                    <p class="en"><mark>Aaron threw his staff down before Pharaoh — and
+                                                            it
+                                                            became a snake!</mark>
+                                                        Pharaoh, however, called his magicians, and they did the same
+                                                        trick.
+
+                                                        But <mark>Aaron’s snake swallowed up the other snakes!</mark>
+                                                        This demonstrated the power and supremacy of God.
+
+                                                        Even so, Pharaoh’s heart remained hardened.
+                                                        He still refused to let the Israelites go
+                                                    </p>
+                                                    <p class="ta" style="display:none;"> <mark>ஆரோன் தன் குச்சியை
+                                                            பறவோனின்
+                                                            முன்னே எறிந்தான் — அது பாம்பாக மாறியது!</mark>
+                                                        ஆனால் பறவோனும் தன் மாந்திரிகர்களையும் அழைத்து அதையே செய்தான்.
+
+                                                        ஆனால், <mark>ஆரோனின் பாம்பு மற்ற பாம்புகளை விழுங்கியது</mark>
+                                                        அது தேவனின் வல்லமையை வெளிப்படுத்தியது.
+
+                                                        என்றாலும் பறவோனின் இதயம் கடினமாக இருந்தது.
+                                                        அவன் இஸ்ரவேலை விடுவிக்க மறுத்தான்
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 15 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/mm16.jpg" alt="Day 7">
+                                                <div class="card-content">
+                                                    <h4 class="en">God’s Plan Continues</h4>
+                                                    <h4 class="ta" style="display:none;">தேவனின் திட்டம் தொடர்கிறது
+                                                    </h4>
+                                                    <p class="en">That was only the first warning.
+                                                        Afterward, <mark>God sent many miracles and punishments in Egypt
+                                                            — the
+                                                            Ten Plagues.</mark>
+                                                        All of these displayed God’s power and paved the way to deliver
+                                                        His people.
+                                                    </p>
+                                                    <p class="ta" style="display:none;"> அது முதல் எச்சரிக்கை மட்டுமே.
+                                                        அதற்குப் பின் <mark>தேவன் எகிப்தில் பல அதிசயங்களையும்,
+                                                            தண்டனைகளையும்
+                                                            (பத்து பிளேக்கள்) ஏற்படுத்தினார்.</mark>
+                                                        அவை அனைத்தும் தேவனின் சக்தியை வெளிப்படுத்தி,
+                                                        மக்களை மீட்பதற்கான வழியைத் திறந்தன.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 16 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/mm17.jpg" alt="Day 7">
+                                                <div class="card-content">
+                                                    <h4 class="en">1️⃣ The Nile Turns to Blood</h4>
+                                                    <h4 class="ta" style="display:none;"> 1️⃣நீர் இரத்தமாக மாறியது
+                                                    </h4>
+                                                    <p class="en">Moses told Aaron,
+                                                        <mark>“Take your staff and stretch it over the Nile.”</mark>
+
+                                                        When he did, <mark>the Nile turned to blood!
+                                                            The fish died, the river stank, and the Egyptians could not
+                                                            drink the water.</mark>
+
+                                                        Yet Pharaoh’s heart remained hardened.
+                                                    </p>
+                                                    <p class="ta" style="display:none;"> மோசே ஆரோனிடம் கூறினார்,
+
+                                                        <mark>“உன் குச்சியை எடுத்துக் கொண்டு நைல் நதியின் மீது நீ
+                                                            விரித்து காட்டு.”</mark>
+
+                                                        அவர் அவ்வாறு செய்தபோது,
+                                                        <mark>நைல் நதி இரத்தமாக மாறியது!
+                                                            மீன்கள் இறந்தன, நதி துர்நாற்றமடைந்தது,
+                                                            எகிப்தியர்கள் தண்ணீர் குடிக்க முடியவில்லை.</mark>
+
+                                                        எனினும், பறவோனின் இதயம் இன்னும் கடினமாக இருந்தது.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 17 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/mm18.jpg" alt="Day 7">
+                                                <div class="card-content">
+                                                    <h4 class="en">2️⃣ The Plague of Frogs</h4>
+                                                    <h4 class="ta" style="display:none;">2️⃣ தவளைகள் நிறைந்த பிளேக்
+                                                    </h4>
+                                                    <p class="en">After the water returned to normal,
+                                                        God said again:
+
+                                                        <mark> "I will send frogs throughout the land."</mark>
+
+                                                        Frogs entered houses, bedrooms, kitchens, and vessels!
+                                                        The people were greatly troubled.
+
+                                                        Pharaoh spoke to Moses —
+
+                                                        <mark> "Remove the frogs, and I will let your people go."</mark>
+
+                                                        When Moses prayed, the frogs died;
+                                                        But Pharaoh changed his mind again.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">நீர் மீண்டும் இயல்பாக மாறிய
+                                                        பின்,
+                                                        தேவன் மீண்டும் சொன்னார்:
+
+                                                        <mark>“நான் நாட்டில் தவளைகளை எழுப்புவேன்.”</mark>
+
+                                                        தவளைகள் வீடுகளிலும், படுக்கையிலும், அடுப்பிலும்,
+                                                        பாத்திரங்களிலும் புகுந்தன!
+                                                        மக்கள் மிகுந்த சலிப்படைந்தனர்.
+
+                                                        <mark> பறவோன் மோசேவிடம் மன்றாடினான் —
+
+                                                            “தவளைகளை நீக்குங்கள், உங்கள் மக்களை அனுப்புகிறேன்.”</mark>
+
+                                                        மோசே வேண்டிக்கொண்டதும் தவளைகள் இறந்தன;
+                                                        ஆனால் பறவோன் மீண்டும் மனம் மாற்றிக் கொண்டான்.
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 18 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/mm19.jpg" alt="Day 7">
+                                                <div class="card-content">
+                                                    <h4 class="en">3️⃣ The Gnats (or Lice) </h4>
+                                                    <h4 class="ta" style="display:none;">3️⃣ நுண்ணிய ஈக்கள்
+                                                    </h4>
+                                                    <p class="en">As the third plague, <mark>gnats arose from the dust
+                                                            of the
+                                                            ground.</mark>
+                                                        They bit both humans and animals.
+
+                                                        The magicians could not replicate this,
+                                                        and they said:
+
+                                                        <mark>"This is the finger of God!"</mark>
+
+                                                        Yet Pharaoh hardened his heart.
+                                                    </p>
+                                                    <p class="ta" style="display:none;"><mark>மண்ணிலிருந்து ஈக்கள்
+                                                            எழுந்தன.</mark>
+                                                        அவை மனிதர்களையும் மிருகங்களையும் கடித்தன.
+
+                                                        மாந்திரிகர்கள் இதை நகல் செய்ய முடியவில்லை,
+                                                        அவர்கள் கூறினர்:
+
+                                                        <mark> “இது தேவனின் விரல்!”</mark>
+
+                                                        ஆனாலும் பறவோன் இதயத்தை கடினப்படுத்தினான்.
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 19 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/mm20.jpg" alt="Day 7">
+                                                <div class="card-content">
+                                                    <h4 class="en">4️⃣The Swarms of Flies </h4>
+                                                    <h4 class="ta" style="display:none;">4️⃣ பெரிய ஈக்களின் கூட்டம்
+                                                    </h4>
+                                                    <p class="en">All the houses of Egypt were filled with flies.
+                                                        But the <mark> region of Goshen, where the Israelites lived, was
+                                                            protected!
+                                                            This showed God’s protection.</mark>
+
+                                                        Pharaoh promised again, but he broke his word.
+                                                    </p>
+                                                    <p class="ta" style="display:none;"><mark>எகிப்தின் வீடுகள்
+                                                            அனைத்தும்
+                                                            ஈக்களால் நிரம்பின.</mark>
+                                                        ஆனால் <mark>இஸ்ரவேல் மக்கள் வாழும் கோஷென் பகுதி
+                                                            பாதுகாக்கப்பட்டது!
+                                                            அது தேவனின் பாதுகாப்பை வெளிப்படுத்தியது.</mark>
+
+                                                        பறவோன் மீண்டும் வாக்குறுதி அளித்தான், ஆனால் தன் வார்த்தையை
+                                                        மீறினான்.
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 20 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/mm21.jpg" alt="Day 7">
+                                                <div class="card-content">
+                                                    <h4 class="en">5️⃣ The Death of Livestock </h4>
+                                                    <h4 class="ta" style="display:none;">5️⃣ மிருக நோய்
+                                                    </h4>
+                                                    <p class="en">Next, in <mark> Egypt, all the cattle, donkeys, sheep,
+                                                            and
+                                                            camels died from disease.</mark>
+                                                        But nothing happened to the livestock of the Israelites.
+
+                                                        Even after seeing this, Pharaoh did not change his mind.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">அடுத்ததாக, <mark>எகிப்தில்
+                                                            மாடுகள்,
+                                                            கழுதைகள், ஆடுகள், ஒட்டகங்கள் அனைத்தும் நோயால் இறந்தன.</mark>
+                                                        ஆனால் இஸ்ரவேலின் மிருகங்களுக்கு எதுவும் ஆகவில்லை.
+
+                                                        பறவோன் இதை பார்த்தும் மனம் மாறவில்லை.
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 21 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/mm22.jpg" alt="Day 7">
+                                                <div class="card-content">
+                                                    <h4 class="en">6️⃣ Boils and Sores </h4>
+                                                    <h4 class="ta" style="display:none;">6️⃣ புண் மற்றும் காய்ச்சல்
+                                                    </h4>
+                                                    <p class="en"><mark>When Moses sprinkled ashes into the sky,
+                                                            both humans and animals were covered with painful
+                                                            boils.</mark>
+
+                                                        Even the magicians could not stand before Pharaoh.
+                                                    </p>
+                                                    <p class="ta" style="display:none;"><mark>மோசே வானத்தில் சாம்பலைத்
+                                                            தூவியபோது,
+                                                            அது மனிதர்களும் மிருகங்களும் முழுக்க புண்களால்
+                                                            மூடப்பட்டது.</mark>
+
+                                                        மாந்திரிகர்கள் கூட பறவோனின் முன் நிற்க முடியவில்லை.
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 22 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/mm23.jpg" alt="Day 7">
+                                                <div class="card-content">
+                                                    <h4 class="en">7️⃣ Hailstorm and Fire</h4>
+                                                    <h4 class="ta" style="display:none;">7️⃣ ஆலங்கட்டி மழை
+                                                    </h4>
+                                                    <p class="en"><mark>God sent a hailstorm mixed with fire from the
+                                                            sky.</mark>
+                                                        The heavy rain destroyed both animals and crops.
+
+                                                        When Moses prayed, the storm stopped,
+                                                        but Pharaoh changed his mind again.
+                                                    </p>
+                                                    <p class="ta" style="display:none;"><mark>தேவன் வானத்தில் ஆலங்கட்டி
+                                                            மழை
+                                                            மற்றும் தீயைச் சேர்த்து அனுப்பினார்.</mark>
+                                                        பெரிய மழை மிருகங்களையும் பயிர்களையும் அழித்தது.
+
+                                                        மோசே வேண்டிக் கொண்டபோது மழை நின்றது,
+                                                        ஆனால் பறவோன் மீண்டும் மனம் மாற்றிக் கொண்டான்.
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 23 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/mm24.jpg" alt="Day 7">
+                                                <div class="card-content">
+                                                    <h4 class="en">8️⃣ Locusts</h4>
+                                                    <h4 class="ta" style="display:none;">8️⃣ வண்டுகள்
+                                                    </h4>
+                                                    <p class="en"><mark>Next came the locusts.
+                                                            They devoured all the remaining crops in Egypt.
+                                                            Nothing green was left in the land.</mark>
+
+                                                        Pharaoh humbly asked for forgiveness,
+                                                        but then he hardened his heart again.
+                                                    </p>
+                                                    <p class="ta" style="display:none;"><mark>அடுத்து வண்டுகள் வந்தன.
+                                                            அவை எகிப்தில் மீதமிருந்த பயிர்கள் அனைத்தையும் உண்டன.
+                                                            நாட்டில் பசுமை ஒன்றும் எஞ்சவில்லை</mark>.
+
+                                                        பறவோன் தாழ்மையுடன் மன்னிப்பு கேட்டான்,
+                                                        ஆனால் மீண்டும் கடுமையடைந்தான்.
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 24 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/mm25.jpg" alt="Day 7">
+                                                <div class="card-content">
+                                                    <h4 class="en">9️⃣ Darkness</h4>
+                                                    <h4 class="ta" style="display:none;">9️⃣ இருள்
+                                                    </h4>
+                                                    <p class="en"><mark>For three full days, thick darkness covered all
+                                                            of
+                                                            Egypt.</mark>
+                                                        No one could see anyone else.
+
+                                                        But in the homes of the Israelites, there was light!
+                                                    </p>
+                                                    <p class="ta" style="display:none;"><mark>மூன்று நாட்கள் முழுவதும்
+                                                            எகிப்து
+                                                            முழுக்க கறுப்பு இருள் நிலவியது.</mark>
+                                                        யாரும் ஒருவரையும் பார்க்க முடியவில்லை.
+
+                                                        ஆனால் இஸ்ரவேல் மக்களின் வீடுகளில் ஒளி இருந்தது
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 25 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/mm26.jpg" alt="Day 7">
+                                                <div class="card-content">
+                                                    <h4 class="en">🔟 Death of the Firstborn</h4>
+                                                    <h4 class="ta" style="display:none;">🔟 முதல் பிறந்த மகன்களின் மரணம்
+                                                    </h4>
+                                                    <p class="en">This was the final and most severe plague.
+                                                        God said:
+
+                                                        <mark>"Tonight, every firstborn son in Egypt, and every
+                                                            firstborn
+                                                            animal, will die."</mark>
+
+                                                        But God showed a way for the Israelites —
+                                                        they had to mark their <mark>doorposts with the blood of a
+                                                            lamb</mark>.
+                                                        Then the <mark>“Angel of Death”</mark> would pass over that
+                                                        house.
+
+                                                        That night, there was great mourning in Egypt.
+                                                        Even Pharaoh’s own son died.
+
+                                                        He called Moses and said:
+
+                                                        <mark>"Take your people and go, and serve the Lord!"</mark>
+                                                    </p>
+                                                    <p class="ta" style="display:none;">இது கடைசி மற்றும் மிகக் கடுமையான
+                                                        பிளேக்.
+                                                        தேவன் கூறினார்:
+
+                                                        <mark> “இன்று இரவு, எகிப்தில் ஒவ்வொரு குடும்பத்தின் முதல் பிறந்த
+                                                            மகனும், முதல் பிறந்த மிருகமும் இறக்கும்.”</mark>
+
+                                                        ஆனால் தேவன் இஸ்ரவேலர்களுக்கு ஒரு வழி காட்டினார் —
+                                                        அவர்கள் <mark>ஆட்டுக்குட்டியின் இரத்தத்தை</mark> தங்கள் வீட்டு
+                                                        வாசலில் பூச
+                                                        வேண்டும்.
+                                                        அப்பொழுது <mark> “மரண தூதன்” </mark>அந்த வீட்டைத் தாண்டி போவான்.
+
+                                                        அந்த இரவு, எகிப்தில் துக்கம் மிகுந்தது.
+                                                        பறவோனின் சொந்த மகனும் இறந்தான்.
+
+                                                        அவன் மோசேவிடம் அழைத்துச் சொன்னான்:
+
+                                                        <mark> “உங்கள் மக்களை எடுத்துச் சென்று தேவனுக்கு சேவை
+                                                            செய்யுங்கள்!”</mark>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 26 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/mm27.jpg" alt="Day 7">
+                                                <div class="card-content">
+                                                    <h4 class="en">The Great Exodus</h4>
+                                                    <h4 class="ta" style="display:none;">மக்களின் விடுதலை
+                                                    </h4>
+                                                    <p class="en">Thus, God delivered His people from Egypt.
+                                                        They <mark>left on the night of Passover.</mark>
+                                                        This day is remembered forever as the day of their liberation
+                                                    </p>
+                                                    <p class="ta" style="display:none;">இவ்வாறு தேவன் தம் மக்களை
+                                                        எகிப்திலிருந்து விடுவித்தார்.
+                                                        அவர்கள் <mark>பாஸ்கா இரவு</mark> அன்று வெளியேறினர்.
+                                                        இது நித்தியமாக நினைவுகூரப்படும் விடுதலை நாள்
+                                                </div>
+                                            </div>
+
+
+                                            <!-- Card 27 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/mm28.jpg" alt="Day 7">
+                                                <div class="card-content">
+                                                    <h4 class="en">The Exodus from Egypt</h4>
+                                                    <h4 class="ta" style="display:none;">எகிப்தில் வெளியேறல்
+                                                    </h4>
+                                                    <p class="en">After Pharaoh’s hardened heart and the ten plagues,
+                                                        the <mark>Israelites finally left Egypt.
+                                                            Moses</mark> led the people,
+                                                        and <mark>Aaron</mark> stood beside him to help.
+
+                                                        They began their journey toward the <mark>Red Sea.</mark>
+                                                    </p>
+                                                    <p class="ta" style="display:none;">பறவோனின் கடுமையான மனம் மற்றும்
+                                                        பத்து பிளேக்களை அனுபவித்த பிறகு,
+                                                        <mark>இஸ்ரவேல் மக்கள் எகிப்தை</mark> விட்டுப் பயணித்தனர்.
+                                                        <mark>மோசே</mark> அவர்களைக் கூட்டி வழிநடத்தினார்,
+                                                        <mark>ஆரோன்</mark> கூட அவர்களுக்கு உதவினார்.
+
+                                                        அவர்கள் <mark>சிவப்பு கடலை</mark> நோக்கி நகர்ந்தனர்.
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 28 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/mm29.jpg" alt="Day 7">
+                                                <div class="card-content">
+                                                    <h4 class="en">Pharaoh Pursues Them</h4>
+                                                    <h4 class="ta" style="display:none;">பறவோன் பின்னர் பின்தொடரும்
+                                                    </h4>
+                                                    <p class="en">Pharaoh changed his mind in Egypt.
+
+                                                        He said,
+                                                        <mark> "I will bring back my slaves! I will capture Moses and
+                                                            his
+                                                            people again!"</mark>
+
+                                                        So he gathered his <mark>strongest horses, chariots, and
+                                                            army,</mark>
+                                                        and set out to chase them.
+
+                                                        The Israelites were terrified;
+                                                        they stood before the sea with no way to escape.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">பறவோன் எகிப்தில் மனம்
+                                                        மாற்றினான்.
+
+                                                        <mark> “நான் என் அடிமைகளை மீண்டும் பிடித்து கொண்டுவந்து, மோசே
+                                                            மற்றும்
+                                                            அவர்களின் மக்களை கட்டுப்படுத்துவேன்!”</mark>
+
+                                                        அவர் என்னுடைய மிகப்பெரிய<mark> குதிரைகள், ரதங்கள் மற்றும்
+                                                            ராணுவத்துடனும்</mark> பின்னால் வந்தார்.
+
+                                                        இஸ்ரவேல் மக்கள் பயத்தில் இருந்தனர்;
+                                                        அவர்கள் கடல் முன் நிற்கும்போது, பின்வாங்க முடியாத நிலைமை
+                                                        ஏற்பட்டது.
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 29 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/mm30.jpg" alt="Day 7">
+                                                <div class="card-content">
+                                                    <h4 class="en">Moses Prays to God</h4>
+                                                    <h4 class="ta" style="display:none;">மோசே தேவனிடம் வளைந்தார்
+                                                    </h4>
+                                                    <p class="en">Standing by the sea, Moses cried out to God:
+
+                                                        <mark>"Lord! Stretch out Your mighty hand and save us!"</mark>
+
+                                                        And God said to him:
+
+                                                        <mark>"Raise your staff and stretch out your hand over the sea.
+                                                            I am going to perform a miracle for you."</mark>
+                                                    </p>
+                                                    <p class="ta" style="display:none;">மோசே கடலில் நின்று தேவனிடம்
+                                                        வேண்டினார்:
+
+                                                        <mark>“கர்த்தாவே! எங்கள் மீது உங்கள் கையேம் விரிந்து, எங்களை
+                                                            காப்பாற்றுங்கள்!”</mark>
+
+                                                        தேவன் அவனிடம் கூறினார்:
+
+                                                        <mark>“உன் குச்சியை நீ நீட்டித்து கடல் மீது எறி. நான்
+                                                            நீங்களுக்காக
+                                                            அதிசயத்தை செய்யப்போகிறேன்.”</mark>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 30 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/mm31.jpg" alt="Day 7">
+                                                <div class="card-content">
+                                                    <h4 class="en">The Parting of the Red Sea</h4>
+                                                    <h4 class="ta" style="display:none;">சிவப்பு கடல் பிளக்கப்படுதல்
+                                                    </h4>
+                                                    <p class="en">
+
+                                                        <mark>When Moses stretched out his staff,
+                                                            the waters of the sea divided into two!
+                                                            Dry land appeared in the middle.</mark>
+
+                                                        The Israelites walked safely through the sea on dry ground.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">
+
+                                                        <mark> மோசே குச்சியை நீட்டித்தவுடன்,
+                                                            கடல் நீரின் இரண்டு பக்கங்களாக பிளந்தது!
+                                                            மத்தியில் நிலம் தோன்றியது.</mark>
+                                                        இஸ்ரவேல் மக்கள் அந்த நிலத்தில் சென்று பாதுகாப்பாக கடலை கடந்து
+                                                        சென்றனர்.
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 31 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/mm32.jpg" alt="Day 7">
+                                                <div class="card-content">
+                                                    <h4 class="en">The Red Sea closed again</h4>
+                                                    <h4 class="ta" style="display:none;">சிவப்பு கடல் மீண்டும் மூடியது
+                                                    </h4>
+                                                    <p class="en">
+
+                                                        Then <mark>Pharaoh and his army</mark> followed,
+                                                        but the <mark>sea closed again</mark>!
+                                                        The waters covered them and destroyed them completely.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">
+                                                        <mark>பறவோனும் ராணுவமும்</mark> பின்னர் கடலைச் சென்றனர்,
+                                                        ஆனால் <mark>கடல் மீண்டும் மூடியது</mark>!
+                                                        நீர் அவைகளை மூடி, முழுமையாக அழித்தது.
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 32 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/mm33.jpg" alt="Day 7">
+                                                <div class="card-content">
+                                                    <h4 class="en"> Deliverance and Joy </h4>
+                                                    <h4 class="ta" style="display:none;">மீட்பு மற்றும் மகிழ்ச்சி
+                                                    </h4>
+                                                    <p class="en">
+
+
+
+                                                        When the Israelites saw that they were saved,
+                                                        they rejoiced and sang songs of praise to God:
+
+                                                        <mark> "Lord, You are great!
+                                                            Your power gives us life forever!"</mark>
+
+                                                        It was a moment of hope, love, and joyful deliverance.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">
+                                                        இஸ்ரவேல் மக்கள் காப்பாற்றப்பட்டதைப் பார்த்து மகிழ்ச்சி
+                                                        அடைந்தனர்.
+                                                        அவர்கள் தேவனுக்கு பாடல்கள் பாடி வாழ்த்துக்கள் கூறினர்:
+
+                                                        <mark>“கர்த்தாவே! நீங்கள் பெரியவர்; உங்கள் சக்தி எப்போதும்
+                                                            நமக்கு
+                                                            வாழ்வாகும்!”</mark>
+
+                                                        இது நம்பிக்கையையும், தேவனின் அன்பையும், மீட்பின் மகிழ்ச்சியையும்
+                                                        காட்டுகிறது.
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 33 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/mm34.jpg" alt="Day 7">
+                                                <div class="card-content">
+                                                    <h4 class="en">Climbing Mount Horeb</h4>
+                                                    <h4 class="ta" style="display:none;">ஹோரேப் மலைக்கு ஏறுதல்
+                                                    </h4>
+                                                    <p class="en">
+
+                                                        After crossing the Red Sea,
+                                                        the Israelites continued their journey under God’s guidance,
+                                                        learning to live a life of faith and obedience.
+
+                                                        <mark>Moses went up Mount Horeb to receive God’s words.</mark>
+                                                        He led the people faithfully,
+                                                        but the mountain itself was holy, awe-inspiring, and filled with
+                                                        divine power.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">
+                                                        இஸ்ரவேல் மக்கள் சிவப்பு கடலை கடந்து, தேவனின் வழிகாட்டலில் செயல்
+                                                        நெருங்கிய வாழ்க்கைக்காக பயணித்தனர்.
+                                                        <mark>மோசே, தேவனுடைய வார்த்தைகளைப் பெற மலை ஹோரேப்புக்கு
+                                                            ஏறினார்.</mark>
+
+                                                        அவன் அவர்களுக்கு முன் இருந்து வழிநடத்தினார், ஆனால் இந்த மலை ஆனது
+                                                        பரிசுத்தமான, அற்புதமான மற்றும் பயங்கரமான இடமாக இருந்தது.
+                                                </div>
+                                            </div>
+
+
+                                            <!-- Card 34 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/mm35.jpg" alt="Day 7">
+                                                <div class="card-content">
+                                                    <h4 class="en">Meeting with God</h4>
+                                                    <h4 class="ta" style="display:none;">தேவனுடன் சந்திப்பு
+                                                    </h4>
+                                                    <p class="en">
+
+                                                        When Moses stood at the top of the mountain,
+                                                        clouds, stars, flashes of light, and fire surrounded him.
+                                                        God spoke to him and said:
+
+                                                        <mark>"I am the Lord your God.
+                                                            Protect My people and give them My laws."</mark>
+                                                    </p>
+                                                    <p class="ta" style="display:none;">
+                                                        மோசே மலை உச்சியில் நின்றபோது,
+                                                        மேகங்கள், நட்சத்திரங்கள், அதிசய ஒளிகள் மற்றும் எரியும் கிளைகள்
+                                                        அவனைச் சுற்றின.
+                                                        தேவன் அவனுடன் பேசினார்:
+
+                                                        <mark>“நான் கர்த்தா, உன் தேவன். என் மக்களை நீ பாதுகாப்பு;
+                                                            அவர்களுக்கு
+                                                            சட்டங்கள் கொடு.”</mark>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 35 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/mm36.jpg" alt="Day 7">
+                                                <div class="card-content">
+                                                    <h4 class="en">God’s Sacred Laws</h4>
+                                                    <h4 class="ta" style="display:none;">தேவனின் பரிசுத்த சட்டங்கள்
+                                                    </h4>
+                                                    <p class="en">
+
+                                                        On Mount Horeb, God spoke directly with Moses.
+                                                        He gave <mark> ten holy commandments</mark> to guide His people
+                                                        in the right
+                                                        path.
+
+                                                        These commandments became the foundation of moral life
+                                                        and a divine guide for our relationship with God and with one
+                                                        another.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">
+                                                        தேவன் மலை ஹோரேப்பில் மோசேவுடன் நேரடியாகப் பேசினார்.
+                                                        அவர் தனது மக்களை சரியான வழியில் நடத்துவதற்காக <mark>பத்து
+                                                            பரிசுத்த
+                                                            கட்டளைகள் அளித்தார்.</mark>
+                                                        இந்த கட்டளைகள் மனித வாழ்க்கையின் அடிப்படை ஒழுக்க விதிகளாகவும்,
+                                                        தேவனுடன் நம் உறவை நிலைநாட்டும் வழிகாட்டுதலாகவும் அமைந்தன.
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 36 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/mm37.jpg" alt="Day 7">
+                                                <div class="card-content">
+                                                    <h4 class="en">1️⃣ Worship God Above All</h4>
+                                                    <h4 class="ta" style="display:none;"> 1️⃣ தேவனையே முதன்மையாக வழிபடு
+                                                    </h4>
+                                                    <p class="en">
+
+                                                        <mark> “I am the Lord your God.
+                                                            You shall have no other gods before Me.”</mark>
+
+                                                        This means — in every part of life,
+                                                        put God first and trust in Him completely.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">
+                                                        <mark>“நான் உன் தேவன். எனக்கு அப்பாற்பட்டு வேறு தேவனை
+                                                            வைத்துக்கொள்ளாதே.”</mark>
+                                                        இதன் பொருள் — வாழ்க்கையில் தேவனை முதன்மையாக வைத்து, அவரையே நம்பி
+                                                        வாழ வேண்டும்.
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 37 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/mm38.jpg" alt="Day 7">
+                                                <div class="card-content">
+                                                    <h4 class="en">2️⃣ Do Not Worship Idols or False Gods</h4>
+                                                    <h4 class="ta" style="display:none;">2️⃣ சிலைகளையும் பொய்யான
+                                                        தேவன்களையும் வணங்காதே
+                                                    </h4>
+                                                    <p class="en">
+
+                                                        <mark>"God is living and eternal.
+                                                            No image, statue, or created thing can replace Him.</mark>
+                                                        Objects or people must never become the center of our worship —
+                                                        only God deserves that honor.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">
+                                                        <mark>"தேவன் உயிரோடு இருப்பவர். அவருக்கு மாற்றாக யாரையும், எந்த
+                                                            உருவத்தையும் வணங்கக் கூடாது.</mark>
+                                                        சிலைகள், பொருட்கள் அல்லது மனிதர்கள் அல்ல — தேவனே நம் வழிபாட்டின்
+                                                        மையம்.
+                                                </div>
+                                            </div>
+
+
+                                            <!-- Card 38 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/mm39.jpg" alt="Day 7">
+                                                <div class="card-content">
+                                                    <h4 class="en">3️⃣ Do Not Misuse God’s Name </h4>
+                                                    <h4 class="ta" style="display:none;">3️⃣ தேவனுடைய பெயரை தவறாக
+                                                        பயன்படுத்தாதே
+                                                    </h4>
+                                                    <p class="en">
+                                                        <mark>"God’s name is holy.
+                                                            It must not be spoken lightly, in falsehood, or in
+                                                            anger.</mark>
+                                                        Speak His name with reverence and respect.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">
+                                                        <mark>"தேவனுடைய பெயரை சிரிப்புக்கோ, பொய்யுக்கோ, சாபத்துக்கோ
+                                                            பயன்படுத்தக் கூடாது.</mark>
+                                                        அவருடைய பெயர் பரிசுத்தமானது — அதை மதிப்புடன் சொல்ல வேண்டும்.
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 39 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/mm40.jpg" alt="Day 7">
+                                                <div class="card-content">
+                                                    <h4 class="en"> 4️⃣ Keep the Sabbath Day Holy
+                                                    </h4>
+                                                    <h4 class="ta" style="display:none;"> 4️⃣ சபத நாளை விசேஷமாக
+                                                        காத்துக்கொள்
+                                                    </h4>
+                                                    <p class="en">
+
+                                                        God created the world in six days
+                                                        and rested on the <mark>seventh.</mark>
+                                                        We too must remember that day —
+                                                        to <mark>rest, to worship, and to give thanks to Him.</mark>
+                                                    </p>
+                                                    <p class="ta" style="display:none;">
+
+
+                                                        தேவன் ஆறு நாட்களில் உலகத்தை படைத்தார், <mark>ஏழாம் நாளில்</mark>
+                                                        ஓய்வெடுத்தார்.
+                                                        அந்த நாளை நாம் நினைவில் வைத்து, <mark>ஓய்வு எடுத்து, தேவனை நன்றி
+                                                            கூற
+                                                            வேண்டும்.</mark>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 40 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/mm41.jpg" alt="Day 7">
+                                                <div class="card-content">
+                                                    <h4 class="en"> 5️⃣ Honor Your Father and Mother
+                                                    </h4>
+                                                    <h4 class="ta" style="display:none;"> 5️⃣ தாயாரையும் தந்தையாரையும்
+                                                        கௌரவிக்க
+                                                    </h4>
+                                                    <p class="en">
+                                                        <mark>Our parents gave us life.</mark>
+                                                        Respecting and obeying them brings God’s blessing.
+                                                        Their love is a reflection of God’s own care for us.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">
+                                                        <mark> பெற்றோர்கள் நமக்கு உயிர் கொடுத்தவர்கள்.</mark> அவர்களை
+                                                        மதிப்பதும்,
+                                                        அவர்களின் வார்த்தையைப் பின்பற்றுவதும் தேவனின் ஆசீர்வாதத்துக்கு
+                                                        வழி.
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 41 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/mm42.jpg" alt="Day 7">
+                                                <div class="card-content">
+                                                    <h4 class="en"> 6️⃣ Do Not Kill
+                                                    </h4>
+                                                    <h4 class="ta" style="display:none;">6️⃣ கொலை செய்யாதே
+                                                    </h4>
+                                                    <p class="en">
+                                                        Life is a sacred gift from God.
+                                                        <mark>Taking another’s life is a grave sin.</mark>
+                                                        We are called to live with love, peace, and compassion.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">
+                                                        தேவன் உயிரைக் கொடுத்தவர். <mark>மற்றவர்களின் உயிரை
+                                                            காயப்படுத்துதல்
+                                                            பாவம்.</mark>
+                                                        அன்புடன், அமைதியுடன் வாழ வேண்டும்.
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 42 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/mm43.jpg" alt="Day 7">
+                                                <div class="card-content">
+                                                    <h4 class="en">7️⃣ Be Faithful and Pure in Heart
+                                                    </h4>
+                                                    <h4 class="ta" style="display:none;">7️⃣ துரோகம் செய்யாதே
+                                                    </h4>
+                                                    <p class="en">
+                                                        Keep truth and faithfulness in your relationships.
+                                                        <mark>Marriage is God’s precious gift</mark> —
+                                                        it must be honored and kept pure.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">
+                                                        உறவுகளில் உண்மையையும் விசுவாசத்தையும் காக்க வேண்டும்.
+                                                        <mark>திருமண வாழ்க்கை தேவனின் பரிசு</mark> — அதை மதிப்புடன்
+                                                        காக்க வேண்டும்.
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 43 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/mm44.jpg" alt="Day 7">
+                                                <div class="card-content">
+                                                    <h4 class="en">8️⃣ Do Not Steal
+                                                    </h4>
+                                                    <h4 class="ta" style="display:none;">8️⃣ திருடாதே
+                                                    </h4>
+                                                    <p class="en">
+                                                        <mark> Do not take what belongs to others.</mark>
+                                                        What we earn through honesty and hard work
+                                                        is what God will bless.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">
+                                                        <mark> பிறரின் சொத்தை எடுத்து விடாதே.</mark>
+                                                        நேர்மையுடன் உழைத்து பெற்றதே ஆசீர்வதிக்கப்படும்.
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 44 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/mm45.jpg" alt="Day 7">
+                                                <div class="card-content">
+                                                    <h4 class="en">9️⃣ Do Not Bear False Witness
+                                                    </h4>
+                                                    <h4 class="ta" style="display:none;">9️⃣ பொய்யாக சாட்சியமிடாதே
+                                                    </h4>
+                                                    <p class="en">
+                                                        <mark> Speaking lies harms others and destroys trust.</mark>
+                                                        God delights in truth and justice.
+                                                        Always speak with honesty and integrity.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">
+                                                        <mark>பொய்யாக பேசுவது மற்றவர்களுக்கு தீங்கு தரும்.</mark>
+                                                        நீதியுடன், உண்மையுடன் பேசுவது தேவனுக்கு பிடிக்கும்.
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 45 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/mm46.jpg" alt="Day 7">
+                                                <div class="card-content">
+                                                    <h4 class="en">🔟 Do Not Covet What Belongs to Others
+                                                    </h4>
+                                                    <h4 class="ta" style="display:none;">🔟 பிறரின் பொருட்களை விரும்பாதே
+                                                    </h4>
+                                                    <p class="en">
+                                                        <mark>" Jealousy and greed lead the heart toward sin."</mark>
+                                                        Be content and thankful for what God has given you —
+                                                        a grateful heart is precious in His sight.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">
+                                                        <mark>"பொறாமையும் ஆசையும் மனிதனை பாவத்துக்கு இழுத்துச்
+                                                            செல்லும்."</mark>
+                                                        நீ பெற்றவற்றில் மகிழ்ந்து வாழும் மனப்பான்மை தேவனுக்குப்
+                                                        பிரியமானது.
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 46 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/mm47.jpg" alt="Day 7">
+                                                <div class="card-content">
+                                                    <h4 class="en">The Meaning and Importance of the Commandments
+                                                    </h4>
+                                                    <h4 class="ta" style="display:none;">கட்டளைகளின் அர்த்தம் மற்றும்
+                                                        முக்கியம்
+                                                    </h4>
+                                                    <p class="en">
+                                                        These <mark>"Ten Commandments form the moral foundation of human
+                                                            life.
+                                                            They teach us to live rightly, truthfully, and
+                                                            peacefully.</mark>
+
+                                                        By following them,
+                                                        we receive God’s blessing, inner peace, and harmony with others.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">
+                                                        இந்த <mark>பத்து கட்டளைகள் மனித வாழ்க்கையின் ஒழுக்க
+                                                            அடித்தளமாகும்.</mark>
+                                                        அவை <mark>"நம்மை நல்லவராகவும், நேர்மையாகவும், அமைதியுடனும் வாழ
+                                                            கற்றுக்கொடுக்கும்.</mark>
+                                                        அவற்றை பின்பற்றுவது தேவனின் ஆசீர்வாதத்தையும், சமாதானத்தையும்
+                                                        பெறும் வழியாகும்.
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 47 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/mm48.jpg" alt="Day 7">
+                                                <div class="card-content">
+                                                    <h4 class="en">Moses’ Final Day
+                                                    </h4>
+                                                    <h4 class="ta" style="display:none;">மோசேயின் கடைசி நாள்
+                                                    </h4>
+                                                    <p class="en">
+                                                        Moses was the faithful servant of God.
+                                                        After <mark>forty years of wandering in the wilderness,
+                                                            the Israelites finally reached the border of the Promised
+                                                            Land —
+                                                            the land of Canaan.</mark>
+
+                                                        Moses looked at the land from afar,
+                                                        but as God had said, he was not to enter it.
+                                                        He knew this was his final day on earth,
+                                                        yet his heart was filled with peace and faith.
+
+                                                        God said:
+                                                        <mark>"This is the land I promised to your descendants.
+                                                            You will see it with your eyes, but you will not cross into
+                                                            it."</mark>
+                                                    </p>
+                                                    <p class="ta" style="display:none;">
+                                                        மோசே தேவனின் விசுவாசமான தாசன்.
+                                                        <mark> இஸ்ரவேல் மக்கள் நாற்பது ஆண்டுகள் பாலைவனத்தில்</mark>
+                                                        அலைந்த பிறகு,
+                                                        அவர்கள் வாக்களிக்கப்பட்ட <mark> தேசம் — காணான் நாட்டின்</mark>
+                                                        எல்லைக்கு
+                                                        வந்தனர்.
+                                                        மோசே அந்த நாட்டை தொலைவில் பார்த்தார், ஆனால் தேவன் கூறியபடி அவர்
+                                                        அதில் நுழையவில்லை.
+                                                        இது அவருக்கான கடைசி நாள் என அவர் அறிந்தார், ஆனாலும் அவர் மனதில்
+                                                        அமைதியும் நம்பிக்கையும் இருந்தது.
+
+                                                        இறைவன் கூறினார்: <mark>“நான் உன் பிள்ளைகளுக்குக் கொடுத்த தேசம்
+                                                            இதுவே. நீ அதை காண்பாய், ஆனால் அதில் நுழைய மாட்டாய்.”</mark>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 48 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/mm49.jpg" alt="Day 7">
+                                                <div class="card-content">
+                                                    <h4 class="en">Blessing the Tribes
+                                                    </h4>
+                                                    <h4 class="ta" style="display:none;">கோத்திரங்களுக்கு ஆசீர்வாதம்
+                                                    </h4>
+                                                    <p class="en">
+                                                        Filled with the Spirit of God,
+                                                        Moses blessed the twelve tribes of Israel before his death.
+                                                        He spoke promises and guidance for their future.
+
+                                                        <mark>" Judah — the blessing of strength and leadership.
+                                                            Levi — the grace of serving the Lord.
+                                                            Joseph — abundance and prosperity.
+                                                            Benjamin — the protection of God’s presence."</mark>
+
+                                                        Message: “A true leader is one who knows how to bless
+                                                        others.”
+                                                    </p>
+                                                    <p class="ta" style="display:none;">
+                                                        மோசே, தேவனுடைய ஆவியால் நிறைந்திருந்ததால், இறப்பதற்கு முன்
+                                                        இஸ்ரவேலின் பன்னிரண்டு கோத்திரங்களுக்கும் ஆசீர்வாதம் அளித்தார்.
+                                                        ஒவ்வொரு கோத்திரத்துக்கும் தேவனின் வாக்குத்தத்தங்களையும்,
+                                                        எதிர்காலத்திற்கான வழிகாட்டுதல்களையும் வழங்கினார்.
+
+                                                        <mark>"யூதா — வலிமை மற்றும் ஆட்சியின் ஆசீர்வாதம்
+
+                                                            லேவி — தேவனுடைய ஊழியத்தின் கிருபை
+
+                                                            யோசேப் — பெருக்கமும் ஆசீர்வாதமும்
+
+                                                            பென்யமீன் — தேவனுடைய பாதுகாப்பு"</mark>
+
+                                                        செய்தி: “ஆசீர்வதிக்க தெரிந்தவர்தான் உண்மையான தலைவன்.”
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 49 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/mm50.jpg" alt="Day 7">
+                                                <div class="card-content">
+                                                    <h4 class="en">Moses Climbs Mount Nebo
+                                                    </h4>
+                                                    <h4 class="ta" style="display:none;">மோசே நெபோ மலை ஏறினார்
+                                                    </h4>
+                                                    <p class="en">
+                                                        Obeying <mark>God’s command, Moses climbed Mount Nebo.</mark>
+                                                        From there, he saw the entire land of Canaan —
+                                                        the land flowing with milk and honey!
+
+                                                        His heart overflowed with joy,
+                                                        and he praised God for His faithfulness.
+
+                                                        God said:
+                                                        <mark> "You have shown faith to My people; now your journey is
+                                                            complete."</mark>
+                                                    </p>
+                                                    <p class="ta" style="display:none;">
+                                                        மோசே <mark>தேவனின் கட்டளைக்கிணங்க, நெபோ மலையில்</mark> ஏறினார்.
+                                                        அங்கிருந்து அவர் காணான் தேசத்தை முழுவதுமாகக் கண்டார் — பால்
+                                                        தேனோடும் ஓடும் அந்த தேசம்!
+                                                        அவர் மனதில் மகிழ்ச்சியுடன் தேவனுக்குத் துதி கூறினார்.
+
+                                                        இறைவன் கூறினார்: <mark>“நீ என் மக்களுக்கு நம்பிக்கையை
+                                                            காட்டினாய்;
+                                                            இனி உன் சபதம் நிறைவேறியுள்ளது.”</mark>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 49 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/mm51.jpg" alt="Day 7">
+                                                <div class="card-content">
+                                                    <h4 class="en">Moses’ Peaceful Passing
+                                                    </h4>
+                                                    <h4 class="ta" style="display:none;">மோசேயின் அமைதியான மரணம்
+                                                    </h4>
+                                                    <p class="en">
+                                                        On the top of <mark>Mount Nebo,
+                                                            Moses peacefully closed his eyes</mark>.
+                                                        God Himself buried him,
+                                                        and no one knows where his grave lies.
+
+                                                        <mark> Moses was 120 years old when he died,</mark>
+                                                        yet his eyes were not dim, and his strength had not left him.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">
+                                                        <mark>மோசே நெபோ மலைமேல் அமைதியாகக் கண்களை மூடினார்.</mark>
+                                                        தேவன் தாமே அவரின் உடலை அடக்கம் செய்தார்; யாரும் அவரது கல்லறையை
+                                                        அறியவில்லை.
+                                                        அவர் <mark>இறந்தபோது வயது 120.</mark> ஆனால் அவரது கண்கள்
+                                                        மங்கவில்லை; அவரது
+                                                        ஆவி வலிமையுடன் இருந்தது.
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </section>
+
+
+                                </div><!-- End post content -->
+
+                                <blockquote>
+                                    <p>
+                                        "God’s promises are not bound by time or circumstance.
+                                        They are fulfilled in His perfect way and in His perfect time.
+
+                                        When we trust God completely, He leads us exactly where we need to be.
+                                        Sometimes, our purpose is to pave the way for others to enter the blessing."
+                                        breadcrumbs breadcrumbsLet us walk like Moses — with humility, patience, and
+                                        unwavering faith.
+                                        Let our hearts remain steadfast, even when the destination seems distant.
+                                        For God’s plan is always greater than our understanding.
+
+                                        “Be strong and courageous, for the Lord your God goes with you;
+                                        He will never leave you nor forsake you.”
+                                    </p>
+                                </blockquote>
+
+                            </article>
+
+                        </div>
+                    </section><!-- /Blog Details Section -->
+
+
+
+                </div>
+
+                <div class="col-lg-4 sidebar">
+
+                    <div class="widgets-container">
+
+
+                        <!-- Recent Posts Widget -->
+                        <div class="recent-posts-widget widget-item">
+
+                            <h3 class="widget-title">Next Stories</h3>
+
+
+                            <div class="post-item">
+                                <img src="assets/imges/ss1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Samuel.html">Samuel the Prophet – From Birth to Death</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/dd1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="David.html">King David – From Shepherd Boy to King of Israel</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/qq1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Solomon.html">King Solomon – The King of Wisdom</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/jn1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Jonah.html">Jonah and the Whale</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/dn1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Daniel.html">Daniel in the Lion’s Den</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/qe1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Esther.html">Queen Esther – Brave and Kind Queen</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/nn1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Noah.html">Noah – The Great Ark and God’s Promise</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/aa1.webp" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="single-post.html">God Create World</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/bb1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Adam.html">The Story of Adam and Eve</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/kk1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Abel.html">Cain and Abel – Detailed Story</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+
+                            <div class="post-item">
+                                <img src="assets/imges/hh1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Abraham.html">Abraham – The Father of Faith</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/jj1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Jacob.html">Jacob & Joseph – The Dreamer and the Redeemer</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                        </div><!--/Recent Posts Widget -->
+
+
+                        <!-- Blog Author Widget -->
+                        <div class="blog-author-widget widget-item">
+
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="d-flex align-items-center w-100">
+                                    <img src="assets/imges/mine.jpg" class="rounded-circle flex-shrink-0" alt="">
+                                    <div>
+                                        <h4>Jebin Joseph</h4>
+                                        <div class="social-links">
+                                            <a href="https://github.com/Jebindevp" class="github"><i
+                                                    class="bi bi-github"></i></a>
+                                            <a href="https://wa.me/919487851243?text=Hello%20I%20have%20a%20question"
+                                                target="_blank" rel="noopener noreferrer">
+                                                <i class="bi bi-whatsapp"></i>
+                                            </a>
+                                            <a href="mailto:kmt4543@gmail.com" class="gmail"><i
+                                                    class="bi bi-envelope-fill"></i></a>
+                                            <a href="https://jebindevp.github.io/My-Protifolio/" class="portfolio"><i
+                                                    class="bi bi-briefcase-fill"></i></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <p>
+                                    I’m Jebin Joseph, a passionate Web Designer dedicated to turning creative ideas into
+                                    visually stunning
+                                    and user-friendly websites. With a deep love for design and technology, I specialize
+                                    in crafting
+                                    modern, responsive, and engaging digital experiences that bring brands to life.
+                                </p>
+                                <p>"Good design is not just about how it looks — it’s about how it works and how it
+                                    makes people feel."
+                                </p>
+                            </div>
+
+                        </div><!--/Blog Author Widget -->
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer id="footer" class="footer dark-background">
+
+        <div class="container footer-top">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <a href="index.html" class="logo d-flex align-items-center">
+                        <span class="sitename">Bible</span>
+                    </a>
+                    <div class="footer-contact pt-3">
+                        <p>India , TamilNadu</p>
+                        <p>Kanya Kumari Dist</p>
+                        <p class="mt-3"><strong>Phone:</strong> <span>91+ 9487851243</span></p>
+                        <p><strong>Email:</strong> <span>kmt4543@gmail.com</span></p>
+                    </div>
+                    <div class="social-links d-flex mt-4">
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Categries</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Management System</a></li>
+                        <li><a href="#">Marketing</a></li>
+                        <li><a href="#">Graphic Design</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Development</h4>
+                    <ul>
+                        <li><a href="#">static websites</a></li>
+                        <li><a href="#">dynamic websites </a></li>
+                        <li><a href="#">E-Commerce design</a></li>
+                        <li><a href="#">Student Projects</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Other Services</h4>
+                    <ul>
+                        <li><a href="#">Photos Editting</a></li>
+                        <li><a href="#">Video Editting</a></li>
+                        <li><a href="#">Online Class </a></li>
+                        <li><a href="#">Poster Edit</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container copyright text-center mt-4">
+            <p>© <span>Copyright</span> <strong class="px-1 sitename">BIBLE</strong> <span>All Rights Reserved</span>
+            </p>
+            <div class="credits">
+
+                Designed by & Distributed by <a href="">Jebin Joseph</a>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+
+    <script>
+        const cards = document.querySelectorAll(".related-card");
+        const nextBtn = document.getElementById("next-btn");
+        const prevBtn = document.getElementById("prev-btn");
+        const pageInfo = document.getElementById("page-info");
+        let currentCard = 0;
+
+        function showCard(index) {
+            cards.forEach((card, i) => card.classList.toggle("active", i === index));
+            pageInfo.textContent = ` ${index + 1} of ${cards.length}`;
+        }
+
+        nextBtn.addEventListener("click", () => {
+            currentCard = (currentCard + 1) % cards.length;
+            showCard(currentCard);
+        });
+
+        prevBtn.addEventListener("click", () => {
+            currentCard = (currentCard - 1 + cards.length) % cards.length;
+            showCard(currentCard);
+        });
+
+        showCard(currentCard);
+
+        // Language Toggle
+        const tamilBtn = document.getElementById("tamil-btn");
+        const englishBtn = document.getElementById("english-btn");
+
+        tamilBtn.addEventListener("click", () => {
+            tamilBtn.classList.add("active");
+            englishBtn.classList.remove("active");
+            document.querySelectorAll(".ta").forEach(el => el.style.display = "block");
+            document.querySelectorAll(".en").forEach(el => el.style.display = "none");
+        });
+
+        englishBtn.addEventListener("click", () => {
+            englishBtn.classList.add("active");
+            tamilBtn.classList.remove("active");
+            document.querySelectorAll(".en").forEach(el => el.style.display = "block");
+            document.querySelectorAll(".ta").forEach(el => el.style.display = "none");
+        });
+    </script>
+
+
+</body>
+
+
+<!-- Mirrored from themewagon.github.io/ZenBlog/single-post.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Oct 2025 10:06:52 GMT -->
+
+</html>

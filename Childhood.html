@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from themewagon.github.io/ZenBlog/single-post.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Oct 2025 10:06:47 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>The Birth of Jesus</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Favicons -->
+    <link href="assets/imges/ll1.jpg" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/" rel="preconnect">
+    <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: ZenBlog
+  * Template URL: https://bootstrapmade.com/zenblog-bootstrap-blog-template/
+  * Updated: Aug 08 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+
+    <style>
+        /* ====== Header Base ====== */
+        .header {
+            background: #0d1b2a;
+            /* deep navy blue */
+            padding: 15px 0;
+            transition: all 0.3s ease;
+            z-index: 999;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .header.sticky-top {
+            position: sticky;
+            top: 0;
+        }
+
+        /* ====== Logo ====== */
+        .sitename {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        .sitename:hover {
+            color: #ffd700;
+            /* gold hover */
+        }
+
+        /* ====== Navigation Menu ====== */
+        .navmenu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .navmenu a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 500;
+            font-size: 1rem;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        /* Hover underline animation */
+        .navmenu a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 0;
+            height: 2px;
+            background-color: #ffd700;
+            transition: width 0.3s ease;
+        }
+
+        .navmenu a:hover::after,
+        .navmenu a.active::after {
+            width: 100%;
+        }
+
+        .navmenu a:hover,
+        .navmenu a.active {
+            color: #ffd700;
+        }
+
+        /* ====== Social Icons ====== */
+        /* ====== Header Social Links ====== */
+        .header-social-links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* ensures even centering in container */
+            gap: 12px;
+        }
+
+        /* Base style for icons */
+        .header-social-links a {
+            color: #ffffff;
+            font-size: 1.2rem;
+            width: 40px;
+            /* slightly larger for better centering */
+            height: 40px;
+            display: flex;
+            /* use flex instead of inline-flex for stable centering */
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.826);
+            backdrop-filter: blur(6px);
+            transition: all 0.35s ease;
+            position: relative;
+            overflow: hidden;
+            line-height: 1;
+            /* keeps icon centered vertically */
+        }
+
+        /* Icon hover animation */
+        .header-social-links a::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(45deg, #ffd700, #ff8c00);
+            transform: scale(0);
+            transition: transform 0.35s ease;
+            border-radius: 50%;
+            z-index: 0;
+        }
+
+        .header-social-links a:hover::after {
+            transform: scale(1);
+        }
+
+        /* Hover effects for the icon itself */
+        .header-social-links a i {
+            position: relative;
+            z-index: 1;
+            transition: transform 0.35s ease, color 0.35s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .header-social-links a:hover i {
+            transform: scale(1.2) rotate(10deg);
+            color: #000;
+        }
+
+        /* Add glowing effect on hover */
+        .header-social-links a:hover {
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+        }
+
+
+        /* ====== Mobile Navigation ====== */
+        .mobile-nav-toggle {
+            display: none;
+            font-size: 1.8rem;
+            color: #fff;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .mobile-nav-toggle:hover {
+            transform: rotate(90deg);
+        }
+
+        /* ====== Responsive Design ====== */
+        @media (max-width: 991px) {
+            .navmenu ul {
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background: #1b263b;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 15px 20px;
+                gap: 15px;
+                display: none;
+                /* hidden by default */
+            }
+
+            .navmenu.active ul {
+                display: flex;
+                /* show when toggled */
+            }
+
+            .mobile-nav-toggle {
+                display: block;
+            }
+
+            .header-social-links {
+                display: none;
+                /* hide social links on mobile for simplicity */
+            }
+        }
+
+        /* ====== Scroll Effect (optional enhancement) ====== */
+        .header.scrolled {
+            background: #1b263b;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+
+
+
+
+
+
+
+        /* ========== Global Reset & Font ========== */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background: #f9fafc;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* ========== Page Title Section ========== */
+        .page-title {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: #fff;
+            padding: 80px 0;
+            text-align: center;
+            border-radius: 0 0 50px 50px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .page-title h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        .breadcrumbs {
+            margin-top: 15px;
+        }
+
+        .breadcrumbs ol {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .breadcrumbs ol li {
+            color: #fff;
+            font-size: 0.95rem;
+        }
+
+        .breadcrumbs ol li a {
+            color: #ffd700;
+            text-decoration: none;
+            transition: 0.3s ease;
+        }
+
+        .breadcrumbs ol li a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        .breadcrumbs li+li::before {
+            content: "/";
+            margin: 0 8px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* ========== Blog Details ========== */
+        .blog-details .article {
+            background: #fff;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .blog-details .article:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+        }
+
+        .blog-details .post-img img {
+            width: 100%;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .blog-details .title {
+            font-size: 1.8rem;
+            color: #2b2b2b;
+            margin-bottom: 15px;
+        }
+
+        .blog-details .content p {
+            margin-bottom: 18px;
+            color: #555;
+        }
+
+        .blog-details blockquote {
+            background: #f0f4ff;
+            border-left: 5px solid #2575fc;
+            padding: 20px;
+            border-radius: 10px;
+            font-style: italic;
+            color: #444;
+        }
+
+        /* ========== Sidebar ========== */
+        .sidebar {
+            margin-top: 0px;
+        }
+
+        .widget-item {
+            background: #fff;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+            transition: 0.3s ease;
+        }
+
+        .widget-item:hover {
+            transform: translateY(-4px);
+        }
+
+        .widget-title {
+            font-weight: 600;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            border-left: 4px solid #2575fc;
+            padding-left: 10px;
+        }
+
+        /* ========== Author Widget ========== */
+        .blog-author-widget img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            margin-right: 15px;
+            border: 3px solid #2575fc;
+        }
+
+        .blog-author-widget h4 {
+            margin-bottom: 8px;
+            color: #222;
+        }
+
+        .blog-author-widget p {
+            margin-top: 15px;
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        /* ========== Social Links ========== */
+        .social-links a {
+            display: inline-block;
+            color: #2575fc;
+            background: transparent;
+            font-size: 1.1rem;
+            margin: 0 6px;
+            width: 38px;
+            height: 38px;
+            line-height: 38px;
+            text-align: center;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #fff;
+            background: #2575fc;
+            transform: translateY(-4px) scale(1.1);
+        }
+
+        /* Additional Social Icons */
+        .social-links a.github:hover {
+            background: #333;
+        }
+
+        .social-links a.whatsapp:hover {
+            background: #25D366;
+        }
+
+        .social-links a.gmail:hover {
+            background: #D44638;
+        }
+
+        .social-links a.portfolio:hover {
+            background: #ff6f00;
+        }
+
+        /* ========== Recent Posts ========== */
+        .recent-posts-widget .post-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .recent-posts-widget .post-item img {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            margin-right: 15px;
+        }
+
+        .recent-posts-widget .post-item h4 {
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+
+        .recent-posts-widget .post-item a {
+            text-decoration: none;
+            color: #222;
+            transition: color 0.3s;
+        }
+
+        .recent-posts-widget .post-item a:hover {
+            color: #2575fc;
+        }
+
+        /* ========== Tags Widget ========== */
+        .tags-widget ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tags-widget a {
+            display: inline-block;
+            background: #eef3ff;
+            color: #2575fc;
+            padding: 6px 14px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            transition: 0.3s ease;
+        }
+
+        .tags-widget a:hover {
+            background: #2575fc;
+            color: #fff;
+            transform: scale(1.05);
+        }
+
+        /* ========== Responsive ========== */
+        @media (max-width: 992px) {
+            .page-title {
+                padding: 60px 20px;
+            }
+
+            .blog-details .title {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .blog-author-widget img {
+                width: 60px;
+                height: 60px;
+            }
+
+            .recent-posts-widget .post-item img {
+                width: 65px;
+                height: 65px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .page-title h1 {
+                font-size: 1.8rem;
+            }
+
+            .widget-item {
+                padding: 18px;
+            }
+        }
+
+
+
+        .related-posts {
+            margin-top: 50px;
+            padding: 30px 15px;
+            background: #fafafa;
+            border-radius: 16px;
+            text-align: center;
+        }
+
+        /* Language Toggle */
+        .language-toggle {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .lang-btn {
+            background: #eee;
+            color: #333;
+            border: none;
+            padding: 8px 18px;
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .lang-btn.active {
+            background: linear-gradient(45deg, #ffd700, #ffb400);
+            color: #000;
+            box-shadow: 0 0 8px rgba(255, 215, 0, 0.4);
+        }
+
+        /* Cards */
+        .related-cards {
+            position: relative;
+            width: 100%;
+            height: 480px;
+            /* consistent card height */
+            overflow: hidden;
+        }
+
+        .related-card {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            padding: 20px;
+            height: 100%;
+        }
+
+        .related-card.active {
+            display: flex;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .related-card img {
+            width: 100%;
+            max-width: 450px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .card-content {
+            margin-top: 15px;
+        }
+
+        .card-content h4 {
+            font-size: 1.3rem;
+            color: #333;
+        }
+
+        .card-content p {
+            color: #555;
+            font-size: 1rem;
+        }
+
+        mark {
+            background: #fff7b2;
+            color: #000;
+            padding: 0 4px;
+            border-radius: 3px;
+        }
+
+        .pagination-controls {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .pagination-controls button {
+            background: linear-gradient(45deg, #ffd700, #ff8c00);
+            color: #000;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .pagination-controls button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(255, 165, 0, 0.4);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .related-card img {
+                height: 200px;
+            }
+
+            .related-cards {
+                height: auto;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body class="single-post-page">
+
+    <header id="header" class="header d-flex align-items-center sticky-top">
+        <div class="container position-relative d-flex align-items-center justify-content-between">
+
+            <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+
+                <h1 class="sitename">BIBLE</h1>
+            </a>
+
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="category.html">Categories</a></li>
+
+
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+
+            <div class="header-social-links">
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="main">
+
+        <!-- Page Title -->
+        <div class="page-title">
+            <div class="container d-lg-flex justify-content-between align-items-center">
+                <h1 class="mb-2 mb-lg-0">The Childhood and Growth of Jesus</h1>
+                <nav class="breadcrumbs">
+                    <ol>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Life.html">Next Stories</a></li>
+                        <li><a href="Birth.html">Back</a></li>
+                    </ol>
+                </nav>
+            </div>
+        </div><!-- End Page Title -->
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-8">
+
+                    <!-- Blog Details Section -->
+                    <section id="blog-details" class="blog-details section">
+                        <div class="container">
+
+                            <article class="article">
+
+                                <div class="post-img">
+                                    <img src="assets/imges/je1.jpg" alt="" class="img-fluid" style="height: 400px;">
+                                </div>
+
+                                <h2 class="title">The Childhood and Growth of Jesus</h2>
+
+
+                                <div class="content">
+                                    <p>
+                                        "After that, Jesus went back to Nazareth with His parents
+                                        and lived in obedience to them.
+                                        He grew in wisdom, stature, and in favor with God and man.
+
+                                        Everyone who saw Him said,
+                                        “This child truly has the grace of God upon Him..”
+                                    </p>
+
+                                    <!-- Related Horizontal Cards Section -->
+                                    <!-- Related Horizontal Cards Section -->
+                                    <section class="related-posts">
+                                        <!-- Language Toggle -->
+                                        <div class="language-toggle">
+                                            <button id="english-btn" class="lang-btn active"><i class="bi bi-book"></i>
+                                                English</button>
+                                            <button id="tamil-btn" class="lang-btn"><i class="bi bi-book-half"></i>
+                                                தமிழ்</button>
+                                        </div>
+
+                                        <h3 class="section-title"><i class="bi bi-journal-bookmark"></i>
+                                            <h2 class="title">The Childhood and Growth of Jesus</h2>
+                                        </h3>
+
+                                        <!-- Cards Wrapper -->
+                                        <div class="related-cards">
+                                            <!-- Pagination Controls -->
+                                            <div class="pagination-controls">
+                                                <button id="prev-btn"><i class="bi bi-arrow-left"></i> Prev</button>
+                                                <span id="page-info"></span>
+                                                <button id="next-btn">Next <i class="bi bi-arrow-right"></i></button>
+                                            </div>
+                                            <!-- Card 1 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/je2.jpg" alt="Day 1">
+                                                <div class="card-content">
+                                                    <h4 class="en">The Childhood and Growth of Jesus</h4>
+                                                    <h4 class="ta" style="display:none;">இயேசுவின் சிறுவயதும்
+                                                        வளர்ச்சியும்
+                                                    </h4>
+                                                    <p class="en">Jesus grew up in a small, peaceful town called
+                                                        <mark> Nazareth</mark>.
+                                                        He worked as a <mark> carpenter alongside His earthly father,
+                                                            Joseph.</mark>
+                                                        His mother, Mary, lovingly raised Him with care and devotion.
+
+                                                        Their family lived a simple life —
+                                                        but their home was filled with love, prayer, and faith.
+
+                                                        Even as a child, Jesus was full of wisdom
+                                                        and found favor with God and with everyone around Him.
+                                                        He was kind, gentle, and always ready to help others.
+                                                    </p>
+                                                    <p class="ta" style="display:none;"><mark>இயேசு நாசரேத்</mark> என்ற
+                                                        சிறிய,
+                                                        அமைதியான ஊரில் வளர்ந்தார்.
+                                                        அவர் <mark> தந்தை யோசேப்புடன் சேர்ந்து தச்சுக்காரராக
+                                                            பணியாற்றினார்.</mark>
+                                                        அவர் தாயார் மரியாள், அவரை அன்புடன் வளர்த்தாள்.
+
+                                                        அந்த குடும்பம் எளிமையான வாழ்க்கை வாழ்ந்தது —
+                                                        ஆனால் அங்கே அன்பு, பிரார்த்தனை, விசுவாசம் நிறைந்திருந்தது.
+
+                                                        இயேசு சிறுவயதிலிருந்தே மிகுந்த ஞானமுள்ளவராகவும்,
+                                                        தேவனுக்குப் பிரியமானவராகவும் இருந்தார்.
+                                                        அவர் எல்லோரிடமும் அன்பாகவும் உதவிசாலியாகவும் நடந்தார்
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 2 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/je3.jpg" alt="Day 2">
+                                                <div class="card-content">
+                                                    <h4 class="en">The Journey to the Passover Festival</h4>
+                                                    <h4 class="ta" style="display:none;">பஸ்கா விழாவுக்கான பயணம்
+                                                    </h4>
+                                                    <p class="en"><mark>When Jesus was twelve years old,
+                                                            His parents, Joseph and Mary,
+                                                            traveled to Jerusalem for the annual Passover festival —
+                                                            a sacred event where Jewish families came together
+                                                            to worship and thank God.</mark>
+
+                                                        It was a great spiritual celebration,
+                                                        filled with joy, prayers, and songs of praise.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">ஒரு நாள், <mark>இயேசு பன்னிரண்டு
+                                                            வயதானபோது,
+                                                            அவரது பெற்றோர் யோசேப்பும் மரியாளும்,
+                                                            யூதர்களின் வருடாந்திர பஸ்கா விழாவுக்காக
+                                                            யெருசலேம் நகரத்துக்குப் பயணித்தனர்.</mark>
+
+                                                        இந்த விழா யூதர்களுக்கு மிகப்பெரிய ஆன்மீக நிகழ்வு;
+                                                        அவர்கள் அனைவரும் தேவனைப் புகழ்ந்து,
+                                                        நன்றி செலுத்துவதற்காக ஆலயத்துக்குச் செல்வார்கள்.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 3 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/je4.jpg" alt="Day 3">
+                                                <div class="card-content">
+                                                    <h4 class="en">Jesus Goes Missing on the Journey Home
+                                                    </h4>
+                                                    <h4 class="ta" style="display:none;">திரும்பும் பயணத்தில் காணாமல்
+                                                        போன இயேசு
+                                                    </h4>
+                                                    <p class="en">After the festival ended,
+                                                        Joseph and Mary began their journey back to Nazareth.
+                                                        They thought <mark>Jesus was traveling with relatives or
+                                                            friends.</mark>
+
+                                                        <mark>But after a full day’s journey,
+                                                            they realized He was nowhere to be found
+
+                                                            They called His name, searched among the crowd —
+                                                            but He was missing.</mark>
+
+                                                        With hearts full of worry and tears in their eyes,
+                                                        Mary and Joseph returned to Jerusalem to search for Him.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">விழா முடிந்ததும், யோசேப்பும்
+                                                        மரியாளும்
+                                                        தங்கள் ஊரான நாசரேத் நோக்கி திரும்பத் தொடங்கினர்.
+                                                        அவர்கள் நினைத்தார்கள் —<mark> “இயேசு நம் உறவினர்களோடு
+                                                            வந்திருப்பார்”</mark>
+                                                        என்று.
+
+                                                        <mark>ஆனால் ஒரு நாள் பயணித்த பிறகு,
+                                                            அவர் எங்கும் இல்லை என்று அவர்கள் உணர்ந்தனர்!
+                                                            அவரது பெயரை அழைத்தும், இடமெல்லாம் தேடியும் —
+                                                            அவர் காணப்படவில்லை.</mark>
+
+                                                        மரியாளும் யோசேப்பும் மிகுந்த கவலையுடன்,
+                                                        யெருசலேமுக்கு மீண்டும் திரும்பினர்.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 4 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/je5.jpg" alt="Day 3">
+                                                <div class="card-content">
+                                                    <h4 class="en">Finding Jesus in the Temple
+                                                    </h4>
+                                                    <h4 class="ta" style="display:none;">ஆலயத்தில் இயேசுவை கண்டனர்
+                                                    </h4>
+                                                    <p class="en"><mark>After three long days,
+                                                            they finally found Jesus in the Temple</mark>
+
+                                                        He was sitting among the teachers and scholars,
+                                                        listening to them and asking deep, thoughtful questions.
+
+                                                        Everyone who heard Him was astonished
+                                                        at His understanding and wisdom.
+
+                                                        Though He was only a boy,
+                                                        the Spirit of God clearly shone through Him.
+                                                    </p>
+                                                    <p class="ta" style="display:none;"><mark>மூன்று நாட்கள் தேடிய
+                                                            பிறகு,
+                                                            அவர்கள் தேவ ஆலயத்தில் இயேசுவை கண்டனர்</mark>
+
+                                                        அவர் அங்கே பண்டிதர்களும் ஆசிரியர்களும் உடன் அமர்ந்து,
+                                                        தேவனுடைய வார்த்தைகள் குறித்து பேசிக் கொண்டிருந்தார்.
+                                                        அவர் கேள்வி கேட்டு, பதிலளித்தார்,
+                                                        அவரது ஞானமும் புத்தியுமாக அனைவரையும் ஆச்சரியப்படுத்தியது!
+
+                                                        அவர் சிறுவனாக இருந்தாலும்,
+                                                        அவருள் தேவனுடைய ஆவி வெளிப்பட்டது.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 5-->
+                                            <div class="related-card">
+                                                <img src="assets/imges/je6.jpg" alt="Day 3">
+                                                <div class="card-content">
+                                                    <h4 class="en">Mary’s Concern
+                                                    </h4>
+                                                    <h4 class="ta" style="display:none;">மரியாளின் கவலை
+                                                    </h4>
+                                                    <p class="en">When Mary saw Him, she said with tears and relief,
+
+                                                        <mark>“Son, why have You done this to us?
+                                                            Your father and I have been so worried!”</mark>
+
+                                                        Her words carried both love and pain —
+                                                        a mother’s anxious heart.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">அவரை பார்த்ததும் மரியாள்
+                                                        சொன்னாள்:
+
+                                                        <mark> “மகனே, நீ எங்கே இருந்தாய்?
+                                                            நாங்களும் உன் தந்தையும் மிகவும் கவலைப்பட்டோம்!”</mark>
+
+                                                        அவர் முகத்தில் கவலையும் அன்பும் கலந்திருந்தது.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+
+                                            <!-- Card 6-->
+                                            <div class="related-card">
+                                                <img src="assets/imges/je7.jpg" alt="Day 3">
+                                                <div class="card-content">
+                                                    <h4 class="en">Jesus’ Divine Reply
+                                                    </h4>
+                                                    <h4 class="ta" style="display:none;">இயேசுவின் தெய்வீக பதில்
+                                                    </h4>
+                                                    <p class="en">Then Jesus answered calmly and confidently:
+
+                                                        <mark>“Did you not know that I must be in My Father’s
+                                                            house?”</mark>
+
+                                                        This was not a child’s simple reply —
+                                                        it was a divine revelation.
+
+                                                        At that moment, Jesus revealed
+                                                        the purpose of His life —
+                                                        to do His Heavenly Father’s will.
+
+                                                        Mary and Joseph did not fully understand His words then,
+                                                        but they sensed the beginning of something holy.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">அப்போது இயேசு அமைதியாகவும்
+                                                        தன்னம்பிக்கையுடனும் சொன்னார்:
+
+                                                        <mark>“நான் என் பிதாவின் வீட்டில் இருக்க வேண்டியது
+                                                            இல்லையா?”</mark>
+
+                                                        இந்த வார்த்தைகள் ஒரு சிறுவனின் பதிலாக இல்லை —
+                                                        இது ஒரு தெய்வீக உணர்வின் வெளிப்பாடு.
+                                                        அவர் தனது வாழ்க்கையின் நோக்கம் என்ன என்பதை
+                                                        அந்தக் கணத்திலேயே வெளிப்படுத்தினார்.
+
+                                                        அந்தச் சொல்லின் பொருள் யோசேப்பும் மரியாளும்
+                                                        அப்போது முழுமையாகப் புரிந்து கொள்ளவில்லை,
+                                                        ஆனால் அது இயேசுவின் தெய்வீக அழைப்பின் தொடக்கம்.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 7--->
+                                            <div class="related-card">
+                                                <img src="assets/imges/je8.jpg" alt="Day 3">
+                                                <div class="card-content">
+                                                    <h4 class="en">Obedience and Growth
+                                                    </h4>
+                                                    <h4 class="ta" style="display:none;">கீழ்ப்படிதலும் வளர்ச்சியும்
+                                                    </h4>
+                                                    <p class="en"><mark>After that, Jesus went home with His parents to
+                                                            Nazareth.</mark>
+                                                        He lived in obedience to them,
+                                                        helping, learning, and growing each day.
+
+                                                        He grew in wisdom and stature,
+                                                        and in favor with God and with man.
+
+                                                        Everyone who saw Him knew
+                                                        He was filled with God’s grace.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">பின்னர்
+                                                    <main>இயேசு தாயாரும்
+                                                        தந்தையாரும் சேர்ந்து
+                                                        நாசரேத்திற்குத் திரும்பினார்.</main>
+                                                    அவர் அவர்களுக்குக் கீழ்ப்படிந்து வாழ்ந்தார்.
+
+                                                    அவர் ஞானத்திலும் வயதிலும்,
+                                                    தேவனிடத்திலும் மனிதரிடத்திலும்
+                                                    வளர்ந்து வந்தார்.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </section>
+
+
+                                </div><!-- End post content -->
+
+                                <blockquote>
+                                    <p>
+                                        “The experience of the young Jesus in the Temple
+                                        was the first glimpse of His divine mission.
+                                        It revealed who He truly was —
+                                        the Son of God,
+                                        who would one day become
+                                        the Savior of the world.”
+                                    </p>
+                                </blockquote>
+
+                            </article>
+
+                        </div>
+                    </section><!-- /Blog Details Section -->
+
+
+
+                </div>
+
+                <div class="col-lg-4 sidebar">
+
+                    <div class="widgets-container">
+
+
+                        <!-- Recent Posts Widget -->
+                        <div class="recent-posts-widget widget-item">
+
+                            <h3 class="widget-title">Next Stories</h3>
+
+                            <div class="post-item">
+                                <img src="assets/imges/nn1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Noah.html">Noah – The Great Ark and God’s Promise</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/aa1.webp" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="single-post.html">God Create World</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+
+
+                            <div class="post-item">
+                                <img src="assets/imges/bb1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Adam.html">The Story of Adam and Eve</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/kk1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Abel.html">Cain and Abel – Detailed Story</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+
+
+                            <div class="post-item">
+                                <img src="assets/imges/hh1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Abraham.html">Abraham – The Father of Faith</a>
+                                    </h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/jj1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Jacob.html">Jacob & Joseph – The Dreamer and the Redeemer</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/mm1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Moses.html">The Story of Moses’ Final Blessing and Death</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/ss1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Samuel.html">Samuel the Prophet – From Birth to Death</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/dd1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="David.html">King David – From Shepherd Boy to King of Israel</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/qq1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Solomon.html">King Solomon – The King of Wisdom</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/da1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Daniel.html">Daniel in the Lion’s Den</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                        </div><!--/Recent Posts Widget -->
+
+
+                        <!-- Blog Author Widget -->
+                        <div class="blog-author-widget widget-item">
+
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="d-flex align-items-center w-100">
+                                    <img src="assets/imges/mine.jpg" class="rounded-circle flex-shrink-0" alt="">
+                                    <div>
+                                        <h4>Jebin Joseph</h4>
+                                        <div class="social-links">
+                                            <a href="https://github.com/Jebindevp" class="github"><i
+                                                    class="bi bi-github"></i></a>
+                                            <a href="https://wa.me/919487851243?text=Hello%20I%20have%20a%20question"
+                                                target="_blank" rel="noopener noreferrer">
+                                                <i class="bi bi-whatsapp"></i>
+                                            </a>
+                                            <a href="mailto:kmt4543@gmail.com" class="gmail"><i
+                                                    class="bi bi-envelope-fill"></i></a>
+                                            <a href="https://jebindevp.github.io/My-Protifolio/" class="portfolio"><i
+                                                    class="bi bi-briefcase-fill"></i></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <p>
+                                    I’m Jebin Joseph, a passionate Web Designer dedicated to turning creative ideas into
+                                    visually stunning
+                                    and user-friendly websites. With a deep love for design and technology, I specialize
+                                    in crafting
+                                    modern, responsive, and engaging digital experiences that bring brands to life.
+                                </p>
+                                <p>"Good design is not just about how it looks — it’s about how it works and how it
+                                    makes people feel."
+                                </p>
+                            </div>
+
+                        </div><!--/Blog Author Widget -->
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer id="footer" class="footer dark-background">
+
+        <div class="container footer-top">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <a href="index.html" class="logo d-flex align-items-center">
+                        <span class="sitename">Bible</span>
+                    </a>
+                    <div class="footer-contact pt-3">
+                        <p>India , TamilNadu</p>
+                        <p>Kanya Kumari Dist</p>
+                        <p class="mt-3"><strong>Phone:</strong> <span>91+ 9487851243</span></p>
+                        <p><strong>Email:</strong> <span>kmt4543@gmail.com</span></p>
+                    </div>
+                    <div class="social-links d-flex mt-4">
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Categries</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Management System</a></li>
+                        <li><a href="#">Marketing</a></li>
+                        <li><a href="#">Graphic Design</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Development</h4>
+                    <ul>
+                        <li><a href="#">static websites</a></li>
+                        <li><a href="#">dynamic websites </a></li>
+                        <li><a href="#">E-Commerce design</a></li>
+                        <li><a href="#">Student Projects</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Other Services</h4>
+                    <ul>
+                        <li><a href="#">Photos Editting</a></li>
+                        <li><a href="#">Video Editting</a></li>
+                        <li><a href="#">Online Class </a></li>
+                        <li><a href="#">Poster Edit</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container copyright text-center mt-4">
+            <p>© <span>Copyright</span> <strong class="px-1 sitename">BIBLE</strong> <span>All Rights Reserved</span>
+            </p>
+            <div class="credits">
+
+                Designed by & Distributed by <a href="">Jebin Joseph</a>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+
+    <script>
+        const cards = document.querySelectorAll(".related-card");
+        const nextBtn = document.getElementById("next-btn");
+        const prevBtn = document.getElementById("prev-btn");
+        const pageInfo = document.getElementById("page-info");
+        let currentCard = 0;
+
+        function showCard(index) {
+            cards.forEach((card, i) => card.classList.toggle("active", i === index));
+            pageInfo.textContent = ` ${index + 1} of ${cards.length}`;
+        }
+
+        nextBtn.addEventListener("click", () => {
+            currentCard = (currentCard + 1) % cards.length;
+            showCard(currentCard);
+        });
+
+        prevBtn.addEventListener("click", () => {
+            currentCard = (currentCard - 1 + cards.length) % cards.length;
+            showCard(currentCard);
+        });
+
+        showCard(currentCard);
+
+        // Language Toggle
+        const tamilBtn = document.getElementById("tamil-btn");
+        const englishBtn = document.getElementById("english-btn");
+
+        tamilBtn.addEventListener("click", () => {
+            tamilBtn.classList.add("active");
+            englishBtn.classList.remove("active");
+            document.querySelectorAll(".ta").forEach(el => el.style.display = "block");
+            document.querySelectorAll(".en").forEach(el => el.style.display = "none");
+        });
+
+        englishBtn.addEventListener("click", () => {
+            englishBtn.classList.add("active");
+            tamilBtn.classList.remove("active");
+            document.querySelectorAll(".en").forEach(el => el.style.display = "block");
+            document.querySelectorAll(".ta").forEach(el => el.style.display = "none");
+        });
+    </script>
+
+
+</body>
+
+
+<!-- Mirrored from themewagon.github.io/ZenBlog/single-post.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Oct 2025 10:06:52 GMT -->
+
+</html>

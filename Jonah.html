@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from themewagon.github.io/ZenBlog/single-post.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Oct 2025 10:06:47 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Jonah </title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Favicons -->
+    <link href="assets/imges/ll1.jpg" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/" rel="preconnect">
+    <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: ZenBlog
+  * Template URL: https://bootstrapmade.com/zenblog-bootstrap-blog-template/
+  * Updated: Aug 08 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+
+    <style>
+        /* ====== Header Base ====== */
+        .header {
+            background: #0d1b2a;
+            /* deep navy blue */
+            padding: 15px 0;
+            transition: all 0.3s ease;
+            z-index: 999;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .header.sticky-top {
+            position: sticky;
+            top: 0;
+        }
+
+        /* ====== Logo ====== */
+        .sitename {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        .sitename:hover {
+            color: #ffd700;
+            /* gold hover */
+        }
+
+        /* ====== Navigation Menu ====== */
+        .navmenu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .navmenu a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 500;
+            font-size: 1rem;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        /* Hover underline animation */
+        .navmenu a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 0;
+            height: 2px;
+            background-color: #ffd700;
+            transition: width 0.3s ease;
+        }
+
+        .navmenu a:hover::after,
+        .navmenu a.active::after {
+            width: 100%;
+        }
+
+        .navmenu a:hover,
+        .navmenu a.active {
+            color: #ffd700;
+        }
+
+        /* ====== Social Icons ====== */
+        /* ====== Header Social Links ====== */
+        .header-social-links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* ensures even centering in container */
+            gap: 12px;
+        }
+
+        /* Base style for icons */
+        .header-social-links a {
+            color: #ffffff;
+            font-size: 1.2rem;
+            width: 40px;
+            /* slightly larger for better centering */
+            height: 40px;
+            display: flex;
+            /* use flex instead of inline-flex for stable centering */
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.826);
+            backdrop-filter: blur(6px);
+            transition: all 0.35s ease;
+            position: relative;
+            overflow: hidden;
+            line-height: 1;
+            /* keeps icon centered vertically */
+        }
+
+        /* Icon hover animation */
+        .header-social-links a::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(45deg, #ffd700, #ff8c00);
+            transform: scale(0);
+            transition: transform 0.35s ease;
+            border-radius: 50%;
+            z-index: 0;
+        }
+
+        .header-social-links a:hover::after {
+            transform: scale(1);
+        }
+
+        /* Hover effects for the icon itself */
+        .header-social-links a i {
+            position: relative;
+            z-index: 1;
+            transition: transform 0.35s ease, color 0.35s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .header-social-links a:hover i {
+            transform: scale(1.2) rotate(10deg);
+            color: #000;
+        }
+
+        /* Add glowing effect on hover */
+        .header-social-links a:hover {
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+        }
+
+
+        /* ====== Mobile Navigation ====== */
+        .mobile-nav-toggle {
+            display: none;
+            font-size: 1.8rem;
+            color: #fff;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .mobile-nav-toggle:hover {
+            transform: rotate(90deg);
+        }
+
+        /* ====== Responsive Design ====== */
+        @media (max-width: 991px) {
+            .navmenu ul {
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background: #1b263b;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 15px 20px;
+                gap: 15px;
+                display: none;
+                /* hidden by default */
+            }
+
+            .navmenu.active ul {
+                display: flex;
+                /* show when toggled */
+            }
+
+            .mobile-nav-toggle {
+                display: block;
+            }
+
+            .header-social-links {
+                display: none;
+                /* hide social links on mobile for simplicity */
+            }
+        }
+
+        /* ====== Scroll Effect (optional enhancement) ====== */
+        .header.scrolled {
+            background: #1b263b;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+
+
+
+
+
+
+
+        /* ========== Global Reset & Font ========== */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background: #f9fafc;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* ========== Page Title Section ========== */
+        .page-title {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: #fff;
+            padding: 80px 0;
+            text-align: center;
+            border-radius: 0 0 50px 50px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .page-title h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        .breadcrumbs {
+            margin-top: 15px;
+        }
+
+        .breadcrumbs ol {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .breadcrumbs ol li {
+            color: #fff;
+            font-size: 0.95rem;
+        }
+
+        .breadcrumbs ol li a {
+            color: #ffd700;
+            text-decoration: none;
+            transition: 0.3s ease;
+        }
+
+        .breadcrumbs ol li a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        .breadcrumbs li+li::before {
+            content: "/";
+            margin: 0 8px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* ========== Blog Details ========== */
+        .blog-details .article {
+            background: #fff;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .blog-details .article:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+        }
+
+        .blog-details .post-img img {
+            width: 100%;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .blog-details .title {
+            font-size: 1.8rem;
+            color: #2b2b2b;
+            margin-bottom: 15px;
+        }
+
+        .blog-details .content p {
+            margin-bottom: 18px;
+            color: #555;
+        }
+
+        .blog-details blockquote {
+            background: #f0f4ff;
+            border-left: 5px solid #2575fc;
+            padding: 20px;
+            border-radius: 10px;
+            font-style: italic;
+            color: #444;
+        }
+
+        /* ========== Sidebar ========== */
+        .sidebar {
+            margin-top: 0px;
+        }
+
+        .widget-item {
+            background: #fff;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+            transition: 0.3s ease;
+        }
+
+        .widget-item:hover {
+            transform: translateY(-4px);
+        }
+
+        .widget-title {
+            font-weight: 600;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            border-left: 4px solid #2575fc;
+            padding-left: 10px;
+        }
+
+        /* ========== Author Widget ========== */
+        .blog-author-widget img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            margin-right: 15px;
+            border: 3px solid #2575fc;
+        }
+
+        .blog-author-widget h4 {
+            margin-bottom: 8px;
+            color: #222;
+        }
+
+        .blog-author-widget p {
+            margin-top: 15px;
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        /* ========== Social Links ========== */
+        .social-links a {
+            display: inline-block;
+            color: #2575fc;
+            background: transparent;
+            font-size: 1.1rem;
+            margin: 0 6px;
+            width: 38px;
+            height: 38px;
+            line-height: 38px;
+            text-align: center;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #fff;
+            background: #2575fc;
+            transform: translateY(-4px) scale(1.1);
+        }
+
+        /* Additional Social Icons */
+        .social-links a.github:hover {
+            background: #333;
+        }
+
+        .social-links a.whatsapp:hover {
+            background: #25D366;
+        }
+
+        .social-links a.gmail:hover {
+            background: #D44638;
+        }
+
+        .social-links a.portfolio:hover {
+            background: #ff6f00;
+        }
+
+        /* ========== Recent Posts ========== */
+        .recent-posts-widget .post-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .recent-posts-widget .post-item img {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            margin-right: 15px;
+        }
+
+        .recent-posts-widget .post-item h4 {
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+
+        .recent-posts-widget .post-item a {
+            text-decoration: none;
+            color: #222;
+            transition: color 0.3s;
+        }
+
+        .recent-posts-widget .post-item a:hover {
+            color: #2575fc;
+        }
+
+        /* ========== Tags Widget ========== */
+        .tags-widget ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tags-widget a {
+            display: inline-block;
+            background: #eef3ff;
+            color: #2575fc;
+            padding: 6px 14px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            transition: 0.3s ease;
+        }
+
+        .tags-widget a:hover {
+            background: #2575fc;
+            color: #fff;
+            transform: scale(1.05);
+        }
+
+        /* ========== Responsive ========== */
+        @media (max-width: 992px) {
+            .page-title {
+                padding: 60px 20px;
+            }
+
+            .blog-details .title {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .blog-author-widget img {
+                width: 60px;
+                height: 60px;
+            }
+
+            .recent-posts-widget .post-item img {
+                width: 65px;
+                height: 65px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .page-title h1 {
+                font-size: 1.8rem;
+            }
+
+            .widget-item {
+                padding: 18px;
+            }
+        }
+
+
+
+        .related-posts {
+            margin-top: 50px;
+            padding: 30px 15px;
+            background: #fafafa;
+            border-radius: 16px;
+            text-align: center;
+        }
+
+        /* Language Toggle */
+        .language-toggle {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .lang-btn {
+            background: #eee;
+            color: #333;
+            border: none;
+            padding: 8px 18px;
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .lang-btn.active {
+            background: linear-gradient(45deg, #ffd700, #ffb400);
+            color: #000;
+            box-shadow: 0 0 8px rgba(255, 215, 0, 0.4);
+        }
+
+        /* Cards */
+        .related-cards {
+            position: relative;
+            width: 100%;
+            height: 480px;
+            /* consistent card height */
+            overflow: hidden;
+        }
+
+        .related-card {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            padding: 20px;
+            height: 100%;
+        }
+
+        .related-card.active {
+            display: flex;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .related-card img {
+            width: 100%;
+            max-width: 450px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .card-content {
+            margin-top: 15px;
+        }
+
+        .card-content h4 {
+            font-size: 1.3rem;
+            color: #333;
+        }
+
+        .card-content p {
+            color: #555;
+            font-size: 1rem;
+        }
+
+        mark {
+            background: #fff7b2;
+            color: #000;
+            padding: 0 4px;
+            border-radius: 3px;
+        }
+
+        .pagination-controls {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .pagination-controls button {
+            background: linear-gradient(45deg, #ffd700, #ff8c00);
+            color: #000;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .pagination-controls button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(255, 165, 0, 0.4);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .related-card img {
+                height: 200px;
+            }
+
+            .related-cards {
+                height: auto;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body class="single-post-page">
+
+    <header id="header" class="header d-flex align-items-center sticky-top">
+        <div class="container position-relative d-flex align-items-center justify-content-between">
+
+            <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+
+                <h1 class="sitename">BIBLE</h1>
+            </a>
+
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="category.html">Categories</a></li>
+
+
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+
+            <div class="header-social-links">
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="main">
+
+        <!-- Page Title -->
+        <div class="page-title">
+            <div class="container d-lg-flex justify-content-between align-items-center">
+                <h1 class="mb-2 mb-lg-0">Jonah and the Whale </h1>
+                <nav class="breadcrumbs">
+                    <ol>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Daniel.html">Next Story</a></li>
+                        <li><a href="Solomon.html">Back</a></li>
+                    </ol>
+                </nav>
+            </div>
+        </div><!-- End Page Title -->
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-8">
+
+                    <!-- Blog Details Section -->
+                    <section id="blog-details" class="blog-details section">
+                        <div class="container">
+
+                            <article class="article">
+
+                                <div class="post-img">
+                                    <img src="assets/imges/jn1.jpg" alt="" class="img-fluid" style="height: 400px;">
+                                </div>
+
+                                <h2 class="title">Jonah and the Whale – The Prophet Who Tried to Run Away</h2>
+
+
+                                <div class="content">
+                                    <p>
+                                        “Jonah’s story is more than a tale of a man and a great fish — it is a mirror
+                                        for every heart that has ever run away from God’s call. 
+
+                                        We learn that no distance, no storm, no failure can separate us from His mercy.
+                                        Even in the belly of the sea, God heard Jonah’s prayer — and turned his despair
+                                        into deliverance.”
+                                    </p>
+
+                                    <!-- Related Horizontal Cards Section -->
+                                    <!-- Related Horizontal Cards Section -->
+                                    <section class="related-posts">
+                                        <!-- Language Toggle -->
+                                        <div class="language-toggle">
+                                            <button id="english-btn" class="lang-btn active"><i class="bi bi-book"></i>
+                                                English</button>
+                                            <button id="tamil-btn" class="lang-btn"><i class="bi bi-book-half"></i>
+                                                தமிழ்</button>
+                                        </div>
+
+                                        <h3 class="section-title"><i class="bi bi-journal-bookmark"></i> Jonah and the
+                                            Great Fish</h3>
+
+                                        <!-- Cards Wrapper -->
+                                        <div class="related-cards">
+                                            <!-- Pagination Controls -->
+                                            <div class="pagination-controls">
+                                                <button id="prev-btn"><i class="bi bi-arrow-left"></i> Prev</button>
+                                                <span id="page-info"></span>
+                                                <button id="next-btn">Next <i class="bi bi-arrow-right"></i></button>
+                                            </div>
+                                            <!-- Card 1 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/jn2.jpg" alt="Day 1">
+                                                <div class="card-content">
+                                                    <h4 class="en">God’s Call to Jonah</h4>
+                                                    <h4 class="ta" style="display:none;">தேவனின் அழைப்பு
+                                                    </h4>
+                                                    <p class="en">Long ago, there lived a man <mark>named Jonah, the son
+                                                            of
+                                                            Amittai.</mark>
+                                                        He was a prophet — someone who spoke the words of God.
+
+                                                        One day, God spoke to Jonah and said:
+
+                                                        <mark> “Go to the great city of Nineveh, for the people there
+                                                            are doing
+                                                            wicked things.
+                                                            Tell them to turn away from their evil ways, or I will
+                                                            destroy
+                                                            the city.”</mark>
+
+                                                        But Jonah did not want to go.
+                                                        He hated the people of Nineveh and didn’t want them to be
+                                                        forgiven.
+
+                                                        So instead of obeying God, Jonah tried to run away.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">பண்டைய நாட்களில் <mark>யோனா என்ற
+                                                            தீர்க்கதரிசி வாழ்ந்தார்.
+                                                            அவரின் தந்தை அமித்தாய் என்பவர்.</mark>
+
+                                                        ஒருநாள் தேவன் யோனாவிடம் பேசினார்:
+
+                                                        <mark>“பெரிய நகரமான நினவேக்கு போ.
+                                                            அங்குள்ள மக்கள் தீய வழியில் நடக்கிறார்கள்.
+                                                            அவர்களுக்கு என் செய்தியைச் சொல்லி, அவர்கள்
+                                                            மனந்திரும்பாவிட்டால்
+                                                            நான் அந்த நகரத்தை அழித்துவிடுவேன்.”</mark>
+
+                                                        ஆனால் யோனா அதைக் கேட்டு மகிழவில்லை.
+                                                        அவருக்கு நினவே மக்களிடம் விருப்பு இல்லை.
+                                                        அவர்கள் மன்னிக்கப்பட வேண்டாம் என எண்ணினார்.
+
+                                                        அதனால் யோனா தேவனிடமிருந்து ஓட முயன்றார்.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 2 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/jn3.jpg" alt="Day 2">
+                                                <div class="card-content">
+                                                    <h4 class="en">Jonah Runs Away and the Great Storm</h4>
+                                                    <h4 class="ta" style="display:none;">யோனாவின் தப்பிப்பு மற்றும்
+                                                        கடும் புயல்
+                                                    </h4>
+                                                    <p class="en">Jonah went down to the <mark>port city of Joppa</mark>
+                                                        and found a
+                                                        ship sailing to Tarshish, far away from Nineveh — in the
+                                                        opposite direction!
+                                                        He paid the fare, boarded the ship, and sailed away, thinking he
+                                                        could escape from God.
+
+                                                        But you can’t run from God!
+
+                                                        While the ship was at sea, a terrible storm arose.
+                                                        Winds howled, waves crashed, and the sailors were terrified.
+
+                                                        They cried out to their gods and threw cargo overboard to
+                                                        lighten the ship.
+                                                        But Jonah was fast asleep in the lower deck.
+
+                                                        The captain woke him up and said,
+
+                                                        “How can you sleep? Pray to your God to save us!”
+
+                                                        When the sailors cast lots to find who was responsible for the
+                                                        storm, the lot fell on Jonah.
+
+                                                        Jonah told them,
+
+                                                        <mark> “It is my fault. I am running away from the Lord, the God
+                                                            who
+                                                            made the sea and the land.”</mark>
+
+                                                        He said,
+
+                                                        <mark>“Throw me into the sea, and the storm will stop.”</mark>
+
+                                                        The sailors didn’t want to, but the storm grew worse.
+                                                        Finally, they threw Jonah into the raging waters — and
+                                                        immediately, the sea became calm.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">யோனா <mark>யோப்பா எனும்
+                                                            துறைமுகத்துக்கு</mark> சென்றார்.
+                                                        அங்கிருந்து <mark>தர்சீஸ் என்ற தூர நாட்டிற்குச்</mark> செல்லும்
+                                                        கப்பலை
+                                                        கண்டார் — அது நினவேக்கு எதிர் திசையில் சென்றது!
+
+                                                        அவர் கப்பலுக்கு கட்டணம் கொடுத்து அதில் ஏறினார்,
+                                                        தேவனிடமிருந்து தப்பலாம் என்று நினைத்தார்.
+
+                                                        ஆனால் தேவனிடமிருந்து யாரும் தப்ப முடியாது!
+
+                                                        சில நேரத்தில் கடலில் மிகப் பெரிய புயல் எழுந்தது.
+                                                        காற்று வீசியது, அலைகள் மோதின, கப்பல் மூழ்கும்வரை போனது.
+
+                                                        கப்பலில் இருந்த மாலுமிகள் தங்களது தெய்வங்களை அழைத்தார்கள்,
+                                                        சுமைகளை கடலில் வீசினர்.
+
+                                                        ஆனால் யோனா கீழே தூங்கிக் கொண்டிருந்தார்.
+
+                                                        கப்பல் தலைவர் வந்து கூறினார்:
+
+                                                        “நீ எப்படி இப்படி தூங்குகிறாய்?
+                                                        உன் தேவனைப் பிரார்த்தனை செய், எங்களை மீட்டிடட்டும்!”
+
+                                                        அவர்கள் சீட்டுகளை போட்டனர், புயலுக்குக் காரணம் யார் என அறிய.
+                                                        அதில் யோனா தான் பிடிபட்டார்.
+
+                                                        யோனா கூறினார்:
+
+                                                        <mark>“இது எனது தவறு. நான் கடலும் நிலமும் உண்டாக்கிய
+                                                            தேவனிடமிருந்து
+                                                            ஓடிக்கொண்டிருக்கிறேன்.”</mark>
+
+                                                        அவர் சொன்னார்:
+
+                                                        <mark>“என்னை கடலுக்குள் எறிந்துவிடுங்கள், புயல்
+                                                            நின்றுவிடும்.”</mark>
+
+                                                        மாலுமிகள் விரும்பவில்லை, ஆனால் புயல் மேலும் வலுவடைந்தது.
+                                                        இறுதியில் அவர்கள் யோனாவை கடலுக்குள் எறிந்தனர் —
+                                                        புயல் உடனே நின்றது.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 3 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/jn4.jpg" alt="Day 3">
+                                                <div class="card-content">
+                                                    <h4 class="en">Jonah and the Great Fish
+                                                    </h4>
+                                                    <h4 class="ta" style="display:none;">திமிங்கிலத்தின் வயிற்றில் யோனா
+                                                    </h4>
+                                                    <p class="en">As Jonah sank beneath the waves, God prepared a
+                                                        <mark>great
+                                                            fish (often called a whale)</mark> to swallow him.
+
+                                                        <mark>Jonah was inside the belly of the fish for three days and
+                                                            three
+                                                            nights.</mark>
+
+                                                        Inside the dark, smelly belly, Jonah prayed to God:
+
+                                                        <mark>“Lord, I cried out to You from deep in the sea, and You
+                                                            heard
+                                                            me.
+                                                            When I was sinking, You saved my life.
+                                                            I will offer You thanksgiving and do what I
+                                                            promised.”</mark>
+
+                                                        After Jonah repented, God commanded the fish —
+                                                        and it spit Jonah out onto dry land!
+                                                    </p>
+                                                    <p class="ta" style="display:none;">யோனா கடலுக்குள் மூழ்கியபோது,
+                                                        தேவன் ஒரு <mark>பெரிய மீனை (திமிங்கிலத்தை)</mark> அனுப்பினார்.
+                                                        அது யோனாவை விழுங்கியது.
+
+                                                        <mark>யோனா அந்த திமிங்கிலத்தின் வயிற்றில் மூன்று நாட்கள், மூன்று
+                                                            இரவுகள் இருந்தார்.</mark>
+
+                                                        அந்த இருளிலும் துயரத்திலும் யோனா தேவனை நோக்கி பிரார்த்தித்தார்:
+
+                                                        <mark>“கர்த்தாவே, நான் ஆழ்கடலிலிருந்து உம்மை நோக்கி
+                                                            கூப்பிட்டேன்,
+                                                            நீர் என் குரலைக் கேட்டீர்.
+                                                            நான் மூழ்கும்போது, நீர் என்னை மீட்டீர்.
+                                                            நான் உமக்கே நன்றி செலுத்துவேன்.”</mark>
+
+                                                        அவரது மனந்திரும்பிய பிரார்த்தனையை தேவன் கேட்டார்.
+
+                                                        பிறகு தேவன் திமிங்கிலத்துக்கு ஆணையிட்டார் —
+                                                        அது யோனாவை கரைக்கு உமிழ்ந்தது
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 4 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/jn5.jpg" alt="Day 4">
+                                                <div class="card-content">
+                                                    <h4 class="en">Jonah Obeys God – The City of Nineveh</h4>
+                                                    <h4 class="ta" style="display:none;">யோனாவின் கீழ்ப்படிதல் – நினவே
+                                                        நகரம்
+                                                    </h4>
+                                                    <p class="en">Then God spoke to Jonah a second time:
+
+                                                        <mark> “Go to Nineveh and deliver My message.”</mark>
+
+                                                        This time, Jonah obeyed.
+
+                                                        He went to Nineveh, a large and powerful city, and shouted
+                                                        through the streets:
+
+                                                        <mark> “Forty days from now, Nineveh will be destroyed unless
+                                                            you
+                                                            repent!”</mark>
+
+                                                        The people of Nineveh listened!
+                                                        From the king to the poorest person, everyone stopped doing
+                                                        evil.
+                                                        They wore sackcloth, fasted, and prayed to God for mercy.
+
+                                                        When God saw that they had truly repented,
+                                                        He forgave them and did not destroy the city.
+                                                    </p>
+                                                    <p class="ta" style="display:none;"> பிறகு தேவன் மீண்டும் யோனாவிடம்
+                                                        பேசினார்:
+
+                                                        <mark>“இப்போது நினவேக்கு போய் என் செய்தியை அறிவி.”</mark>
+
+                                                        இந்தமுறை யோனா தேவனுக்கு கீழ்ப்படியினார்.
+
+                                                        அவர் நினவே நகரத்துக்குச் சென்று, தெருக்களில் முழங்கினார்:
+
+                                                        <mark>“இன்னும் நாற்பது நாட்களில், நினவே அழிக்கப்படும்!”</mark>
+
+                                                        நினவே மக்கள் இதை கேட்டபோது, அவர்கள் மனந்திரும்பினர்.
+                                                        ராஜாவிலிருந்து ஏழையவர்வரை எல்லோரும் தங்கள் தீய வழிகளை விட்டனர்.
+                                                        அவர்கள் நோன்பிருந்து, பிரார்த்தனை செய்தனர்.
+
+                                                        இதை கண்டு தேவன் இரக்கமடைந்தார்.
+                                                        அவர் நகரத்தை அழிக்கவில்லை.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 5 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/jn6.jpg" alt="Day 5">
+                                                <div class="card-content">
+                                                    <h4 class="en">Jonah’s Anger and God’s Mercy</h4>
+                                                    <h4 class="ta" style="display:none;">யோனாவின் கோபமும் தேவனின்
+                                                        இரக்கமும்</h4>
+                                                    <p class="en">But Jonah was angry.
+                                                        He said,
+
+                                                        <mark> “Lord, isn’t this why I ran away? I knew You are merciful
+                                                            and
+                                                            forgiving!”</mark>
+
+                                                        He sat outside the city, hoping God might still destroy it.
+
+                                                        God made a plant grow over Jonah to give him shade.
+                                                        Jonah was happy.
+                                                        But the next morning, God sent a worm that ate the plant, and
+                                                        the hot sun beat down on Jonah’s head.
+
+                                                        Jonah became miserable and said,
+
+                                                        <mark>“It’s better for me to die than to live.”</mark>
+
+                                                        Then God said,
+
+                                                        “Jonah, you are upset about a plant that lived only one day.
+                                                        Should I not be concerned about the great <mark>city of Nineveh,
+                                                            with
+                                                            more than 120,000 people</mark>”
+
+                                                        Jonah realized God’s compassion was far greater than his own.
+                                                    </p>
+                                                    <p class="ta" style="display:none;"> ஆனால் யோனா இதைக் கண்டு
+                                                        கோபமுற்றார்.
+                                                        அவர் கூறினார்:
+
+                                                        <mark>“கர்த்தாவே, இதற்காகத்தான் நான் ஓடினேன்!
+                                                            நீர் கருணையுள்ளவரும், மன்னிக்கும் தேவனும் என்பதை
+                                                            அறிந்திருந்தேன்.”</mark>
+
+                                                        அவர் நகரத்துக்கு வெளியே சென்று அமர்ந்தார்,
+                                                        நகரம் அழிக்கப்படுகிறதா எனப் பார்த்துக்கொண்டிருந்தார்.
+
+                                                        அப்பொழுது <mark>தேவன் ஒரு மரத்தை வளரச்செய்தார்,
+                                                            அது யோனாவுக்கு நிழல் கொடுத்தது.</mark>
+                                                        யோனா மகிழ்ந்தார்.
+
+                                                        அடுத்த நாள் தேவன் ஒரு பூச்சியை அனுப்பினார்,
+                                                        அது மரத்தை உண்டது.
+                                                        மரம் வாடி போனது,
+                                                        கடுமையான வெயிலில் யோனா துன்பப்பட்டார்.
+
+                                                        அவர் கூறினார்:
+
+                                                        <mark> “இப்படி வாழ்வதற்குப் பதில் இறந்துவிடுவது நல்லது.”</mark>
+
+                                                        அப்போது தேவன் சொன்னார்:
+
+                                                        “யோனாவே, ஒரு நாளில் உருவாகி அழிந்த ஒரு மரத்துக்காக நீ
+                                                        துயரப்படுகிறாய்.
+                                                        ஆனால் <mark>நினவே நகரத்தில் 1,20,000 மக்கள்</mark>
+                                                        இருக்கிறார்கள் —
+                                                        அவர்களை நான் இரக்கப்பட வேண்டாமா?”
+
+                                                        அப்பொழுது யோனா தேவனின் கருணை எவ்வளவு பெரியது என்பதை உணர்ந்தார்.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+                                    </section>
+
+
+                                </div><!-- End post content -->
+
+                                <blockquote>
+                                    <p>
+                                        "When Jonah finally obeyed, an entire city found forgiveness.
+                                        Through his journey, we see that God’s purpose always outweighs our hesitation,
+                                        and His compassion is greater than our judgment.
+
+                                        Sometimes, God leads us into the depths not to punish us, but to teach us grace,
+                                        surrender, and second chances. 
+
+                                        Let this truth echo in our hearts:
+
+                                        “God’s mercy can find us wherever we are — and His love can turn our running
+                                        into returning.”"
+                                    </p>
+                                </blockquote>
+
+                            </article>
+
+                        </div>
+                    </section><!-- /Blog Details Section -->
+
+
+
+                </div>
+
+                <div class="col-lg-4 sidebar">
+
+                    <div class="widgets-container">
+
+
+                        <!-- Recent Posts Widget -->
+                        <div class="recent-posts-widget widget-item">
+
+                            <h3 class="widget-title">Next Stories</h3>
+
+
+                            <div class="post-item">
+                                <img src="assets/imges/dn1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Daniel.html">Daniel in the Lion’s Den</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/qe1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Esther.html">Queen Esther – Brave and Kind Queen</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/nn1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Noah.html">Noah – The Great Ark and God’s Promise</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/aa1.webp" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="single-post.html">God Create World</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+
+
+                            <div class="post-item">
+                                <img src="assets/imges/bb1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Adam.html">The Story of Adam and Eve</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/kk1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Abel.html">Cain and Abel – Detailed Story</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+
+
+                            <div class="post-item">
+                                <img src="assets/imges/hh1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Abraham.html">Abraham – The Father of Faith</a>
+                                    </h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/jj1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Jacob.html">Jacob & Joseph – The Dreamer and the Redeemer</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/mm1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Moses.html">The Story of Moses’ Final Blessing and Death</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/ss1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Samuel.html">Samuel the Prophet – From Birth to Death</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/dd1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="David.html">King David – From Shepherd Boy to King of Israel</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/qq1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Solomon.html">King Solomon – The King of Wisdom</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                        </div><!--/Recent Posts Widget -->
+
+
+                        <!-- Blog Author Widget -->
+                        <div class="blog-author-widget widget-item">
+
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="d-flex align-items-center w-100">
+                                    <img src="assets/imges/mine.jpg" class="rounded-circle flex-shrink-0" alt="">
+                                    <div>
+                                        <h4>Jebin Joseph</h4>
+                                        <div class="social-links">
+                                            <a href="https://github.com/Jebindevp" class="github"><i
+                                                    class="bi bi-github"></i></a>
+                                            <a href="https://wa.me/919487851243?text=Hello%20I%20have%20a%20question"
+                                                target="_blank" rel="noopener noreferrer">
+                                                <i class="bi bi-whatsapp"></i>
+                                            </a>
+                                            <a href="mailto:kmt4543@gmail.com" class="gmail"><i
+                                                    class="bi bi-envelope-fill"></i></a>
+                                            <a href="https://jebindevp.github.io/My-Protifolio/" class="portfolio"><i
+                                                    class="bi bi-briefcase-fill"></i></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <p>
+                                    I’m Jebin Joseph, a passionate Web Designer dedicated to turning creative ideas into
+                                    visually stunning
+                                    and user-friendly websites. With a deep love for design and technology, I specialize
+                                    in crafting
+                                    modern, responsive, and engaging digital experiences that bring brands to life.
+                                </p>
+                                <p>"Good design is not just about how it looks — it’s about how it works and how it
+                                    makes people feel."
+                                </p>
+                            </div>
+
+                        </div><!--/Blog Author Widget -->
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer id="footer" class="footer dark-background">
+
+        <div class="container footer-top">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <a href="index.html" class="logo d-flex align-items-center">
+                        <span class="sitename">Bible</span>
+                    </a>
+                    <div class="footer-contact pt-3">
+                        <p>India , TamilNadu</p>
+                        <p>Kanya Kumari Dist</p>
+                        <p class="mt-3"><strong>Phone:</strong> <span>91+ 9487851243</span></p>
+                        <p><strong>Email:</strong> <span>kmt4543@gmail.com</span></p>
+                    </div>
+                    <div class="social-links d-flex mt-4">
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Categries</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Management System</a></li>
+                        <li><a href="#">Marketing</a></li>
+                        <li><a href="#">Graphic Design</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Development</h4>
+                    <ul>
+                        <li><a href="#">static websites</a></li>
+                        <li><a href="#">dynamic websites </a></li>
+                        <li><a href="#">E-Commerce design</a></li>
+                        <li><a href="#">Student Projects</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Other Services</h4>
+                    <ul>
+                        <li><a href="#">Photos Editting</a></li>
+                        <li><a href="#">Video Editting</a></li>
+                        <li><a href="#">Online Class </a></li>
+                        <li><a href="#">Poster Edit</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container copyright text-center mt-4">
+            <p>© <span>Copyright</span> <strong class="px-1 sitename">BIBLE</strong> <span>All Rights Reserved</span>
+            </p>
+            <div class="credits">
+
+                Designed by & Distributed by <a href="">Jebin Joseph</a>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+
+    <script>
+        const cards = document.querySelectorAll(".related-card");
+        const nextBtn = document.getElementById("next-btn");
+        const prevBtn = document.getElementById("prev-btn");
+        const pageInfo = document.getElementById("page-info");
+        let currentCard = 0;
+
+        function showCard(index) {
+            cards.forEach((card, i) => card.classList.toggle("active", i === index));
+            pageInfo.textContent = ` ${index + 1} of ${cards.length}`;
+        }
+
+        nextBtn.addEventListener("click", () => {
+            currentCard = (currentCard + 1) % cards.length;
+            showCard(currentCard);
+        });
+
+        prevBtn.addEventListener("click", () => {
+            currentCard = (currentCard - 1 + cards.length) % cards.length;
+            showCard(currentCard);
+        });
+
+        showCard(currentCard);
+
+        // Language Toggle
+        const tamilBtn = document.getElementById("tamil-btn");
+        const englishBtn = document.getElementById("english-btn");
+
+        tamilBtn.addEventListener("click", () => {
+            tamilBtn.classList.add("active");
+            englishBtn.classList.remove("active");
+            document.querySelectorAll(".ta").forEach(el => el.style.display = "block");
+            document.querySelectorAll(".en").forEach(el => el.style.display = "none");
+        });
+
+        englishBtn.addEventListener("click", () => {
+            englishBtn.classList.add("active");
+            tamilBtn.classList.remove("active");
+            document.querySelectorAll(".en").forEach(el => el.style.display = "block");
+            document.querySelectorAll(".ta").forEach(el => el.style.display = "none");
+        });
+    </script>
+
+
+</body>
+
+
+<!-- Mirrored from themewagon.github.io/ZenBlog/single-post.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Oct 2025 10:06:52 GMT -->
+
+</html>

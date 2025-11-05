@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from themewagon.github.io/ZenBlog/single-post.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Oct 2025 10:06:47 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Adam and Eve
+  </title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/imges/ll1.jpg" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/" rel="preconnect">
+  <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: ZenBlog
+  * Template URL: https://bootstrapmade.com/zenblog-bootstrap-blog-template/
+  * Updated: Aug 08 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+
+  <style>
+    /* ====== Header Base ====== */
+    .header {
+      background: #0d1b2a;
+      /* deep navy blue */
+      padding: 15px 0;
+      transition: all 0.3s ease;
+      z-index: 999;
+      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .header.sticky-top {
+      position: sticky;
+      top: 0;
+    }
+
+    /* ====== Logo ====== */
+    .sitename {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: 1px;
+      transition: color 0.3s;
+    }
+
+    .sitename:hover {
+      color: #ffd700;
+      /* gold hover */
+    }
+
+    /* ====== Navigation Menu ====== */
+    .navmenu ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .navmenu a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      font-size: 1rem;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    /* Hover underline animation */
+    .navmenu a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 0;
+      height: 2px;
+      background-color: #ffd700;
+      transition: width 0.3s ease;
+    }
+
+    .navmenu a:hover::after,
+    .navmenu a.active::after {
+      width: 100%;
+    }
+
+    .navmenu a:hover,
+    .navmenu a.active {
+      color: #ffd700;
+    }
+
+    /* ====== Social Icons ====== */
+    /* ====== Header Social Links ====== */
+    .header-social-links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* ensures even centering in container */
+      gap: 12px;
+    }
+
+    /* Base style for icons */
+    .header-social-links a {
+      color: #ffffff;
+      font-size: 1.2rem;
+      width: 40px;
+      /* slightly larger for better centering */
+      height: 40px;
+      display: flex;
+      /* use flex instead of inline-flex for stable centering */
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.826);
+      backdrop-filter: blur(6px);
+      transition: all 0.35s ease;
+      position: relative;
+      overflow: hidden;
+      line-height: 1;
+      /* keeps icon centered vertically */
+    }
+
+    /* Icon hover animation */
+    .header-social-links a::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(45deg, #ffd700, #ff8c00);
+      transform: scale(0);
+      transition: transform 0.35s ease;
+      border-radius: 50%;
+      z-index: 0;
+    }
+
+    .header-social-links a:hover::after {
+      transform: scale(1);
+    }
+
+    /* Hover effects for the icon itself */
+    .header-social-links a i {
+      position: relative;
+      z-index: 1;
+      transition: transform 0.35s ease, color 0.35s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .header-social-links a:hover i {
+      transform: scale(1.2) rotate(10deg);
+      color: #000;
+    }
+
+    /* Add glowing effect on hover */
+    .header-social-links a:hover {
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+    }
+
+
+    /* ====== Mobile Navigation ====== */
+    .mobile-nav-toggle {
+      display: none;
+      font-size: 1.8rem;
+      color: #fff;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .mobile-nav-toggle:hover {
+      transform: rotate(90deg);
+    }
+
+    /* ====== Responsive Design ====== */
+    @media (max-width: 991px) {
+      .navmenu ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #1b263b;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+        gap: 15px;
+        display: none;
+        /* hidden by default */
+      }
+
+      .navmenu.active ul {
+        display: flex;
+        /* show when toggled */
+      }
+
+      .mobile-nav-toggle {
+        display: block;
+      }
+
+      .header-social-links {
+        display: none;
+        /* hide social links on mobile for simplicity */
+      }
+    }
+
+    /* ====== Scroll Effect (optional enhancement) ====== */
+    .header.scrolled {
+      background: #1b263b;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      transition: background 0.3s, box-shadow 0.3s;
+    }
+
+
+
+
+
+
+
+    /* ========== Global Reset & Font ========== */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background: #f9fafc;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* ========== Page Title Section ========== */
+    .page-title {
+      background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+      color: #fff;
+      padding: 80px 0;
+      text-align: center;
+      border-radius: 0 0 50px 50px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .page-title h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    .breadcrumbs {
+      margin-top: 15px;
+    }
+
+    .breadcrumbs ol {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .breadcrumbs ol li {
+      color: #fff;
+      font-size: 0.95rem;
+    }
+
+    .breadcrumbs ol li a {
+      color: #ffd700;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    .breadcrumbs ol li a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    .breadcrumbs li+li::before {
+      content: "/";
+      margin: 0 8px;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    /* ========== Blog Details ========== */
+    .blog-details .article {
+      background: #fff;
+      border-radius: 15px;
+      padding: 30px;
+      margin-bottom: 40px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .blog-details .article:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    }
+
+    .blog-details .post-img img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    .blog-details .title {
+      font-size: 1.8rem;
+      color: #2b2b2b;
+      margin-bottom: 15px;
+    }
+
+    .blog-details .content p {
+      margin-bottom: 18px;
+      color: #555;
+    }
+
+    .blog-details blockquote {
+      background: #f0f4ff;
+      border-left: 5px solid #2575fc;
+      padding: 20px;
+      border-radius: 10px;
+      font-style: italic;
+      color: #444;
+    }
+
+    /* ========== Sidebar ========== */
+    .sidebar {
+      margin-top: 0px;
+    }
+
+    .widget-item {
+      background: #fff;
+      padding: 25px;
+      border-radius: 15px;
+      margin-bottom: 30px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+      transition: 0.3s ease;
+    }
+
+    .widget-item:hover {
+      transform: translateY(-4px);
+    }
+
+    .widget-title {
+      font-weight: 600;
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      border-left: 4px solid #2575fc;
+      padding-left: 10px;
+    }
+
+    /* ========== Author Widget ========== */
+    .blog-author-widget img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      margin-right: 15px;
+      border: 3px solid #2575fc;
+    }
+
+    .blog-author-widget h4 {
+      margin-bottom: 8px;
+      color: #222;
+    }
+
+    .blog-author-widget p {
+      margin-top: 15px;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    /* ========== Social Links ========== */
+    .social-links a {
+      display: inline-block;
+      color: #2575fc;
+      background: transparent;
+      font-size: 1.1rem;
+      margin: 0 6px;
+      width: 38px;
+      height: 38px;
+      line-height: 38px;
+      text-align: center;
+      border-radius: 50%;
+      transition: all 0.3s ease;
+    }
+
+    .social-links a:hover {
+      color: #fff;
+      background: #2575fc;
+      transform: translateY(-4px) scale(1.1);
+    }
+
+    /* Additional Social Icons */
+    .social-links a.github:hover {
+      background: #333;
+    }
+
+    .social-links a.whatsapp:hover {
+      background: #25D366;
+    }
+
+    .social-links a.gmail:hover {
+      background: #D44638;
+    }
+
+    .social-links a.portfolio:hover {
+      background: #ff6f00;
+    }
+
+    /* ========== Recent Posts ========== */
+    .recent-posts-widget .post-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .recent-posts-widget .post-item img {
+      width: 80px;
+      height: 80px;
+      border-radius: 10px;
+      margin-right: 15px;
+    }
+
+    .recent-posts-widget .post-item h4 {
+      font-size: 1rem;
+      margin-bottom: 5px;
+    }
+
+    .recent-posts-widget .post-item a {
+      text-decoration: none;
+      color: #222;
+      transition: color 0.3s;
+    }
+
+    .recent-posts-widget .post-item a:hover {
+      color: #2575fc;
+    }
+
+    /* ========== Tags Widget ========== */
+    .tags-widget ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .tags-widget a {
+      display: inline-block;
+      background: #eef3ff;
+      color: #2575fc;
+      padding: 6px 14px;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      transition: 0.3s ease;
+    }
+
+    .tags-widget a:hover {
+      background: #2575fc;
+      color: #fff;
+      transform: scale(1.05);
+    }
+
+    /* ========== Responsive ========== */
+    @media (max-width: 992px) {
+      .page-title {
+        padding: 60px 20px;
+      }
+
+      .blog-details .title {
+        font-size: 1.5rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .blog-author-widget img {
+        width: 60px;
+        height: 60px;
+      }
+
+      .recent-posts-widget .post-item img {
+        width: 65px;
+        height: 65px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .page-title h1 {
+        font-size: 1.8rem;
+      }
+
+      .widget-item {
+        padding: 18px;
+      }
+    }
+
+
+
+    .related-posts {
+      margin-top: 50px;
+      padding: 30px 15px;
+      background: #fafafa;
+      border-radius: 16px;
+      text-align: center;
+    }
+
+    /* Language Toggle */
+    .language-toggle {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .lang-btn {
+      background: #eee;
+      color: #333;
+      border: none;
+      padding: 8px 18px;
+      border-radius: 25px;
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.3s ease;
+    }
+
+    .lang-btn.active {
+      background: linear-gradient(45deg, #ffd700, #ffb400);
+      color: #000;
+      box-shadow: 0 0 8px rgba(255, 215, 0, 0.4);
+    }
+
+    /* Cards */
+    .related-cards {
+      position: relative;
+      width: 100%;
+      height: 480px;
+      /* consistent card height */
+      overflow: hidden;
+    }
+
+    .related-card {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, opacity 0.3s ease;
+      padding: 20px;
+      height: 100%;
+    }
+
+    .related-card.active {
+      display: flex;
+      animation: fadeIn 0.5s ease;
+    }
+
+    .related-card img {
+      width: 100%;
+      max-width: 450px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .card-content {
+      margin-top: 15px;
+    }
+
+    .card-content h4 {
+      font-size: 1.3rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #555;
+      font-size: 1rem;
+    }
+
+    mark {
+      background: #fff7b2;
+      color: #000;
+      padding: 0 4px;
+      border-radius: 3px;
+    }
+
+    .pagination-controls {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      align-items: center;
+    }
+
+    .pagination-controls button {
+      background: linear-gradient(45deg, #ffd700, #ff8c00);
+      color: #000;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .pagination-controls button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(255, 165, 0, 0.4);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .related-card img {
+        height: 200px;
+      }
+
+      .related-cards {
+        height: auto;
+      }
+    }
+  </style>
+
+
+</head>
+
+<body class="single-post-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+
+        <h1 class="sitename">BIBLE</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="category.html">Categories</a></li>
+
+
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="header-social-links">
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">The Story of Adam and Eve</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Abel.html">Next Story</a></li>
+            <li><a href="single-post.html">Back</a></li>
+
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-8">
+
+          <!-- Blog Details Section -->
+          <section id="blog-details" class="blog-details section">
+            <div class="container">
+
+              <article class="article">
+
+                <div class="post-img">
+                  <img src="assets/imges/bb1.jpg" alt="" class="img-fluid" style="height: 400px;">
+                </div>
+
+                <h2 class="title">God’s Amazing Creation</h2>
+
+
+                <div class="content">
+                  <p>
+                    The story of the first humans, Adam and Eve, is known to everyone.
+                    But it is not just a story — it is the truth that reveals the heart of God and the choices of man.
+
+                    The Bible says that this very event was the beginning of all the pain and suffering
+                    that humankind continues to experience even today.
+                    Yet, hidden within that story is also a message of love, mercy, and hope.
+                  </p>
+
+                  <!-- Related Horizontal Cards Section -->
+                  <!-- Related Horizontal Cards Section -->
+                  <section class="related-posts">
+                    <!-- Language Toggle -->
+                    <div class="language-toggle">
+                      <button id="english-btn" class="lang-btn active"><i class="bi bi-book"></i> English</button>
+                      <button id="tamil-btn" class="lang-btn"><i class="bi bi-book-half"></i> தமிழ்</button>
+                    </div>
+
+                    <h3 class="section-title"><i class="bi bi-journal-bookmark"></i> Adam and Eve</h3>
+
+                    <!-- Cards Wrapper -->
+                    <div class="related-cards">
+                      <!-- Pagination Controls -->
+                      <div class="pagination-controls">
+                        <button id="prev-btn"><i class="bi bi-arrow-left"></i> Prev</button>
+                        <span id="page-info"></span>
+                        <button id="next-btn">Next <i class="bi bi-arrow-right"></i></button>
+                      </div>
+                      <!-- Card 1 -->
+                      <div class="related-card">
+                        <img src="assets/imges/bb8.jpg" alt="Day 1">
+                        <div class="card-content">
+                          <h4 class="en">The Garden of Eden – God’s Beautiful Gift</h4>
+                          <h4 class="ta" style="display:none;">ஏதேன் தோட்டம் – தேவனின் அழகான பரிசு</h4>
+                          <p class="en">After God created the world, He made a beautiful garden.
+                            <mark>He called it the Garden of Eden.</mark>
+                            In that garden were all kinds of trees, delicious fruits, and clear rivers flowing gently.
+                            There was no sorrow, no pain, and no death — only perfect peace and joy.
+                          </p>
+                          <p class="ta" style="display:none;">தேவன் உலகை படைத்த பின்பு, அழகான ஒரு தோட்டத்தை
+                            உருவாக்கினார்.
+                            <mark> அதை ஏதேன் தோட்டம் என்று அழைத்தார்.</mark>
+                            அந்த தோட்டத்தில் எல்லா வகை மரங்களும், இனிய பழங்களும், தெளிந்த நீர் ஓடும் நதிகளும் இருந்தன.
+                            அங்கு துயரம், வலி, மரணம் எதுவும் இல்லை — முழுமையான அமைதி மற்றும் ஆனந்தம் மட்டுமே.
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Card 2 -->
+                      <div class="related-card">
+                        <img src="assets/imges/bb9.jpg" alt="Day 2">
+                        <div class="card-content">
+                          <h4 class="en">Adam and Eve</h4>
+                          <h4 class="ta" style="display:none;">ஆதாம் – ஏவாளின்</h4>
+                          <p class="en">God <mark>created man </mark> in His own image and likeness.
+                            He named <mark>him Adam.</mark>
+                            Then, <mark>He made Eve </mark>to be a companion for Adam.
+                            Together, they lived in the garden, cared for the animals, and spoke with God directly.
+                            They lived happily and peacefully.</p>
+                          <p class="ta" style="display:none;">தேவன் மனிதனை தன் உருவிலும், தன் சாயலிலும் படைத்தார். அவரை
+                            <mark>ஆதாம் </mark>என்று அழைத்தார். பின்னர் <mark>ஆதாமுக்கு துணையாக ஏவாளை </mark>படைத்தார்.
+                            அவர்கள் இருவரும்
+                            தோட்டத்தில் வாழ்ந்து, விலங்குகளைக் கவனித்து, தேவனுடன் நேரடியாக பேசினர். அவர்கள்
+                            மகிழ்ச்சியுடனும், அமைதியுடனும் வாழ்ந்தனர்.
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Card 3 -->
+                      <div class="related-card">
+                        <img src="assets/imges/bb10.jpg" alt="Day 3">
+                        <div class="card-content">
+                          <h4 class="en">God’s Command</h4>
+                          <h4 class="ta" style="display:none;">தேவனின் கட்டளை</h4>
+                          <p class="en">God said to them:
+                            “You may freely eat the fruit from any tree in this garden.
+                            But you must <mark> not eat from the tree of the knowledge of good and evil.
+                              If you eat from it, you will surely die.</mark>”
+
+                            Adam and Eve obeyed this command and submitted to God.</p>
+                          <p class="ta" style="display:none;">தேவன் அவர்களிடம் கூறினார்:
+                            “இந்த தோட்டத்தில் உள்ள எல்லா மரங்களிலும் நீங்களோ சுதந்திரமாக பழம் சாப்பிடலாம்.
+                            ஆனால், <mark>நல்லதையும் கெட்டதையும் அறியச் செய்கிற மரத்தின் பழத்தை மட்டும் சாப்பிடக்கூடாது.
+                              அதிலிருந்து சாப்பிட்ட நாளில், நீங்கள் மரித்துவிடுவீர்கள்.</mark>”
+
+                            ஆதாம், ஏவாளும் அந்த கட்டளையை ஏற்று, தேவனுக்குக் கீழ்ப்படிந்தனர்.</p>
+                        </div>
+                      </div>
+
+                      <!-- Card 4 -->
+                      <div class="related-card">
+                        <img src="assets/imges/bb11.jpg" alt="Day 4">
+                        <div class="card-content">
+                          <h4 class="en">The Serpent Deceived Eve</h4>
+                          <h4 class="ta" style="display:none;">பாம்பு ஏவாளை ஏமாற்றியது</h4>
+                          <p class="en">One day, a <mark>cunning serpent came to Eve</mark> and said:
+                            “ <mark>Did God really say you must not eat from this tree?
+                              If you eat it, you will become wise like God!</mark>”
+
+                            Eve was tempted by these words.
+                            <mark>She took the fruit and ate it</mark>;
+                            then she gave some to <mark>Adam, and he ate it too</mark>.
+                          </p>
+                          <p class="ta" style="display:none;">ஒரு நாள் <mark>சாமர்த்தியமான பாம்பு</mark> ஏவாளிடம் வந்து
+                            சொன்னது:
+                            “நீங்கள் உண்மையிலேயே இந்த மரத்தின் பழத்தை சாப்பிடக்கூடாதா?
+                            அது சாப்பிட்டால் நீங்கள் தேவனைப் போல புத்திசாலியாகிவிடுவீர்கள்!”
+
+                            ஏவாள் அந்த வார்த்தைகளால் கவரப்பட்டாள்.
+                            <mark>அவள் மரத்தின் பழத்தை எடுத்து சாப்பிட்டாள்;
+                              பிறகு ஆதாமுக்கும் கொடுத்தாள், அவனும் சாப்பிட்டான்.</mark>
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Card 5 -->
+                      <div class="related-card">
+                        <img src="assets/imges/bb6.jpg" alt="Day 5">
+                        <div class="card-content">
+                          <h4 class="en">God Searched for Them</h4>
+                          <h4 class="ta" style="display:none;">தேவன் அவர்களைத் தேடினார்</h4>
+                          <p class="en">In the evening, God walked in the garden.
+                            But Adam and Eve hid among the trees.
+
+                            God asked,
+                            “Adam, where are you?”
+                            Adam replied,
+                            <mark> “I was afraid because I saw You, so I hid.”</mark>
+
+                            God asked,
+                            <mark> “Who told you that you were naked? Did you eat the fruit I commanded you not to
+                              eat?”</mark>
+
+                            Adam said,
+                            “The woman You gave me gave me the fruit.”
+                            <mark>Eve said,
+                              “The serpent deceived me.”</mark>
+                          </p>
+                          <p class="ta" style="display:none;">மாலை நேரத்தில் தேவன் தோட்டத்தில் நடந்து வந்தார்.
+                            ஆனால் <mark>ஆதாமும் ஏவாளும் மரங்களுக்குள் ஒளிந்துகொண்டனர்.</mark>
+
+                            தேவன் கேட்டார்:
+                            “ஆதாமே, நீ எங்கே இருக்கிறாய்?”
+                            ஆதாம் பதிலளித்தான்: <mark>“நான் உம்மை பார்த்து பயந்தேன், அதனால் மறைந்தேன்.”</mark>
+
+                            தேவன் கேட்டார்: <mark>“நீ நிர்வாணம் என்று யார் சொன்னது? நீ தடை செய்யப்பட்ட பழத்தை
+                              சாப்பிட்டாயா?”</mark>
+
+                            ஆதாம் சொன்னான்: “நீ எனக்குக் கொடுத்த பெண்ணே அதைத் தந்தாள்.”
+                            <mark>ஏவாள் சொன்னாள்: “பாம்பே என்னை ஏமாற்றியது.”</mark>
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Card 6 -->
+                      <div class="related-card">
+                        <img src="assets/imges/bb12.jpg" alt="Day 6">
+                        <div class="card-content">
+                          <h4 class="en">The Consequence of Sin</h4>
+                          <h4 class="ta" style="display:none;">பாவத்தின் விளைவு</h4>
+                          <p class="en">For their disobedience, God gave them punishment.
+                            He <mark>cursed the serpent, gave Eve the pain of childbirth, and made Adam work hard</mark>
+                            for his
+                            food.
+                            Then He sent them <mark>out of the Garden of Eden.</mark>
+
+                            This was the <mark>beginning of human sin — from it came suffering and death</mark> into the
+                            world.</p>
+                          <p class="ta" style="display:none;">அவர்களின் கீழ்ப்படியாமைக்கு தேவன் தண்டனை அளித்தார்.
+                            <mark>பாம்பைத் தண்டித்து, ஏவாளுக்கு பிரசவ வேதனையை, ஆதாமுக்கு கடின உழைப்பைத் தந்தார்.</mark>
+                            பின் அவர்களை <mark> ஏதேன் தோட்டத்திலிருந்து வெளியே அனுப்பினார்.</mark>
+
+                            இது தான் <mark>மனிதனின் பாவத்தின் ஆரம்பம் — அதிலிருந்து துன்பமும் மரணமும்</mark> உலகில்
+                            வந்தன.
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Card 7 -->
+                      <div class="related-card">
+                        <img src="assets/imges/bb13.jpg" alt="Day 7">
+                        <div class="card-content">
+                          <h4 class="en">God’s Promise</h4>
+                          <h4 class="ta" style="display:none;">தேவனின் வாக்குறுதி</h4>
+                          <p class="en">But God did not abandon humanity in His love.
+                            One day, a Savior (Jesus Christ) would come and redeem mankind from sin.
+
+                            This was the beginning of God’s plan of salvation — to bring humans back into His love.</p>
+                          <p class="ta" style="display:none;">ஆனால் தேவன் மனிதனை அன்பால் கைவிடவில்லை.
+                            ஒரு நாள், ஒரு இரட்சகர் (யேசு கிறிஸ்து) வந்து, பாவத்திலிருந்து மனிதனை மீட்பார் என வாக்குறுதி
+                            அளித்தார்.
+
+                            இது தான் தேவனின் மீட்பு திட்டத்தின் ஆரம்பம் — மனிதனை மீண்டும் தேவனின் அன்புக்குள் கொண்டு வர.
+                          </p>
+                        </div>
+                      </div>
+
+                    </div>
+
+
+                  </section>
+
+
+                </div><!-- End post content -->
+
+                <blockquote>
+                  <p>
+                    “Do not eat from the tree of the knowledge of good and evil,”
+                    it was not to limit Adam and Eve — but to teach them love, trust, and obedience.
+
+                    God had given them everything — beauty, peace, joy, and eternal fellowship with Him.
+                    Only one command was given, not to test their strength, but to test their faithfulness. <br><br>“God’s love gives us choices,
+but our choices reveal our love for God.”
+                  </p>
+                </blockquote>
+
+              </article>
+
+            </div>
+          </section><!-- /Blog Details Section -->
+
+
+
+        </div>
+
+        <div class="col-lg-4 sidebar">
+
+          <div class="widgets-container">
+
+
+            <!-- Recent Posts Widget -->
+            <div class="recent-posts-widget widget-item">
+
+              <h3 class="widget-title">Next Stories</h3>
+
+              <div class="post-item">
+                <img src="assets/imges/kk1.jpg" alt="" class="flex-shrink-0">
+                <div>
+                  <h4><a href="Abel.html">Cain and Abel – Detailed Story</a></h4>
+                </div>
+              </div><!-- End recent post item-->
+
+
+
+              <div class="post-item">
+                <img src="assets/imges/hh1.jpg" alt="" class="flex-shrink-0">
+                <div>
+                  <h4><a href="Abraham.html">Abraham – The Father of Faith</a></h4>
+                </div>
+              </div><!-- End recent post item-->
+
+              <div class="post-item">
+                <img src="assets/imges/jj1.jpg" alt="" class="flex-shrink-0">
+                <div>
+                  <h4><a href="Jacob.html">Jacob & Joseph – The Dreamer and the Redeemer</a></h4>
+                </div>
+              </div><!-- End recent post item-->
+
+              <div class="post-item">
+                <img src="assets/imges/mm1.jpg" alt="" class="flex-shrink-0">
+                <div>
+                  <h4><a href="Moses.html">The Story of Moses’ Final Blessing and Death</a></h4>
+                </div>
+              </div><!-- End recent post item-->
+
+
+              <div class="post-item">
+                <img src="assets/imges/ss1.jpg" alt="" class="flex-shrink-0">
+                <div>
+                  <h4><a href="Samuel.html">Samuel the Prophet – From Birth to Death</a></h4>
+                </div>
+              </div><!-- End recent post item-->
+
+              <div class="post-item">
+                <img src="assets/imges/dd1.jpg" alt="" class="flex-shrink-0">
+                <div>
+                  <h4><a href="David.html">King David – From Shepherd Boy to King of Israel</a></h4>
+                </div>
+              </div><!-- End recent post item-->
+
+              <div class="post-item">
+                <img src="assets/imges/qq1.jpg" alt="" class="flex-shrink-0">
+                <div>
+                  <h4><a href="Solomon.html">King Solomon – The King of Wisdom</a></h4>
+                </div>
+              </div><!-- End recent post item-->
+
+              <div class="post-item">
+                <img src="assets/imges/jn1.jpg" alt="" class="flex-shrink-0">
+                <div>
+                  <h4><a href="Jonah.html">Jonah and the Whale</a></h4>
+                </div>
+              </div><!-- End recent post item-->
+
+              <div class="post-item">
+                <img src="assets/imges/dn1.jpg" alt="" class="flex-shrink-0">
+                <div>
+                  <h4><a href="Daniel.html">Daniel in the Lion’s Den</a></h4>
+                </div>
+              </div><!-- End recent post item-->
+
+              <div class="post-item">
+                <img src="assets/imges/qe1.jpg" alt="" class="flex-shrink-0">
+                <div>
+                  <h4><a href="Esther.html">Queen Esther – Brave and Kind Queen</a></h4>
+                </div>
+              </div><!-- End recent post item-->
+
+              <div class="post-item">
+                <img src="assets/imges/nn1.jpg" alt="" class="flex-shrink-0">
+                <div>
+                  <h4><a href="Noah.html">Noah – The Great Ark and God’s Promise</a></h4>
+                </div>
+              </div><!-- End recent post item-->
+
+              <div class="post-item">
+                <img src="assets/imges/aa1.webp" alt="" class="flex-shrink-0">
+                <div>
+                  <h4><a href="single-post.html">God Create World</a></h4>
+                </div>
+              </div><!-- End recent post item-->
+
+            </div><!--/Recent Posts Widget -->
+
+
+            <!-- Blog Author Widget -->
+            <div class="blog-author-widget widget-item">
+
+              <div class="d-flex flex-column align-items-center">
+                <div class="d-flex align-items-center w-100">
+                  <img src="assets/imges/mine.jpg" class="rounded-circle flex-shrink-0" alt="">
+                  <div>
+                    <h4>Jebin Joseph</h4>
+                    <div class="social-links">
+                      <a href="https://github.com/Jebindevp" class="github"><i class="bi bi-github"></i></a>
+                      <a href="https://wa.me/919487851243?text=Hello%20I%20have%20a%20question" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="bi bi-whatsapp"></i>
+                      </a>
+                      <a href="mailto:kmt4543@gmail.com" class="gmail"><i class="bi bi-envelope-fill"></i></a>
+                      <a href="https://jebindevp.github.io/My-Protifolio/" class="portfolio"><i
+                          class="bi bi-briefcase-fill"></i></a>
+                    </div>
+
+                  </div>
+                </div>
+
+                <p>
+                  I’m Jebin Joseph, a passionate Web Designer dedicated to turning creative ideas into visually stunning
+                  and user-friendly websites. With a deep love for design and technology, I specialize in crafting
+                  modern, responsive, and engaging digital experiences that bring brands to life.
+                </p>
+                <p>"Good design is not just about how it looks — it’s about how it works and how it makes people feel."
+                </p>
+              </div>
+
+            </div><!--/Blog Author Widget -->
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Bible</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>India , TamilNadu</p>
+            <p>Kanya Kumari Dist</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>91+ 9487851243</span></p>
+            <p><strong>Email:</strong> <span>kmt4543@gmail.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Categries</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Management System</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Graphic Design</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Development</h4>
+          <ul>
+            <li><a href="#">static websites</a></li>
+            <li><a href="#">dynamic websites </a></li>
+            <li><a href="#">E-Commerce design</a></li>
+            <li><a href="#">Student Projects</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Other Services</h4>
+          <ul>
+            <li><a href="#">Photos Editting</a></li>
+            <li><a href="#">Video Editting</a></li>
+            <li><a href="#">Online Class </a></li>
+            <li><a href="#">Poster Edit</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">BIBLE</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+
+        Designed by & Distributed by <a href="">Jebin Joseph</a>
+      </div>
+    </div>
+
+  </footer>
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+  <script>
+    const cards = document.querySelectorAll(".related-card");
+    const nextBtn = document.getElementById("next-btn");
+    const prevBtn = document.getElementById("prev-btn");
+    const pageInfo = document.getElementById("page-info");
+    let currentCard = 0;
+
+    function showCard(index) {
+      cards.forEach((card, i) => card.classList.toggle("active", i === index));
+      pageInfo.textContent = ` ${index + 1} of ${cards.length}`;
+    }
+
+    nextBtn.addEventListener("click", () => {
+      currentCard = (currentCard + 1) % cards.length;
+      showCard(currentCard);
+    });
+
+    prevBtn.addEventListener("click", () => {
+      currentCard = (currentCard - 1 + cards.length) % cards.length;
+      showCard(currentCard);
+    });
+
+    showCard(currentCard);
+
+    // Language Toggle
+    const tamilBtn = document.getElementById("tamil-btn");
+    const englishBtn = document.getElementById("english-btn");
+
+    tamilBtn.addEventListener("click", () => {
+      tamilBtn.classList.add("active");
+      englishBtn.classList.remove("active");
+      document.querySelectorAll(".ta").forEach(el => el.style.display = "block");
+      document.querySelectorAll(".en").forEach(el => el.style.display = "none");
+    });
+
+    englishBtn.addEventListener("click", () => {
+      englishBtn.classList.add("active");
+      tamilBtn.classList.remove("active");
+      document.querySelectorAll(".en").forEach(el => el.style.display = "block");
+      document.querySelectorAll(".ta").forEach(el => el.style.display = "none");
+    });
+  </script>
+
+
+</body>
+
+
+<!-- Mirrored from themewagon.github.io/ZenBlog/single-post.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Oct 2025 10:06:52 GMT -->
+
+</html>

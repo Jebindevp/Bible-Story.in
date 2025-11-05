@@ -1,0 +1,1429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from themewagon.github.io/ZenBlog/single-post.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Oct 2025 10:06:47 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Apostle John</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Favicons -->
+    <link href="assets/imges/ll1.jpg" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/" rel="preconnect">
+    <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: ZenBlog
+  * Template URL: https://bootstrapmade.com/zenblog-bootstrap-blog-template/
+  * Updated: Aug 08 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+
+    <style>
+        /* ====== Header Base ====== */
+        .header {
+            background: #0d1b2a;
+            /* deep navy blue */
+            padding: 15px 0;
+            transition: all 0.3s ease;
+            z-index: 999;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .header.sticky-top {
+            position: sticky;
+            top: 0;
+        }
+
+        /* ====== Logo ====== */
+        .sitename {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        .sitename:hover {
+            color: #ffd700;
+            /* gold hover */
+        }
+
+        /* ====== Navigation Menu ====== */
+        .navmenu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .navmenu a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 500;
+            font-size: 1rem;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        /* Hover underline animation */
+        .navmenu a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 0;
+            height: 2px;
+            background-color: #ffd700;
+            transition: width 0.3s ease;
+        }
+
+        .navmenu a:hover::after,
+        .navmenu a.active::after {
+            width: 100%;
+        }
+
+        .navmenu a:hover,
+        .navmenu a.active {
+            color: #ffd700;
+        }
+
+        /* ====== Social Icons ====== */
+        /* ====== Header Social Links ====== */
+        .header-social-links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* ensures even centering in container */
+            gap: 12px;
+        }
+
+        /* Base style for icons */
+        .header-social-links a {
+            color: #ffffff;
+            font-size: 1.2rem;
+            width: 40px;
+            /* slightly larger for better centering */
+            height: 40px;
+            display: flex;
+            /* use flex instead of inline-flex for stable centering */
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.826);
+            backdrop-filter: blur(6px);
+            transition: all 0.35s ease;
+            position: relative;
+            overflow: hidden;
+            line-height: 1;
+            /* keeps icon centered vertically */
+        }
+
+        /* Icon hover animation */
+        .header-social-links a::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(45deg, #ffd700, #ff8c00);
+            transform: scale(0);
+            transition: transform 0.35s ease;
+            border-radius: 50%;
+            z-index: 0;
+        }
+
+        .header-social-links a:hover::after {
+            transform: scale(1);
+        }
+
+        /* Hover effects for the icon itself */
+        .header-social-links a i {
+            position: relative;
+            z-index: 1;
+            transition: transform 0.35s ease, color 0.35s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .header-social-links a:hover i {
+            transform: scale(1.2) rotate(10deg);
+            color: #000;
+        }
+
+        /* Add glowing effect on hover */
+        .header-social-links a:hover {
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+        }
+
+
+        /* ====== Mobile Navigation ====== */
+        .mobile-nav-toggle {
+            display: none;
+            font-size: 1.8rem;
+            color: #fff;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .mobile-nav-toggle:hover {
+            transform: rotate(90deg);
+        }
+
+        /* ====== Responsive Design ====== */
+        @media (max-width: 991px) {
+            .navmenu ul {
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background: #1b263b;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 15px 20px;
+                gap: 15px;
+                display: none;
+                /* hidden by default */
+            }
+
+            .navmenu.active ul {
+                display: flex;
+                /* show when toggled */
+            }
+
+            .mobile-nav-toggle {
+                display: block;
+            }
+
+            .header-social-links {
+                display: none;
+                /* hide social links on mobile for simplicity */
+            }
+        }
+
+        /* ====== Scroll Effect (optional enhancement) ====== */
+        .header.scrolled {
+            background: #1b263b;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+
+
+
+
+
+
+
+        /* ========== Global Reset & Font ========== */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background: #f9fafc;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* ========== Page Title Section ========== */
+        .page-title {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: #fff;
+            padding: 80px 0;
+            text-align: center;
+            border-radius: 0 0 50px 50px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .page-title h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        .breadcrumbs {
+            margin-top: 15px;
+        }
+
+        .breadcrumbs ol {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .breadcrumbs ol li {
+            color: #fff;
+            font-size: 0.95rem;
+        }
+
+        .breadcrumbs ol li a {
+            color: #ffd700;
+            text-decoration: none;
+            transition: 0.3s ease;
+        }
+
+        .breadcrumbs ol li a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        .breadcrumbs li+li::before {
+            content: "/";
+            margin: 0 8px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* ========== Blog Details ========== */
+        .blog-details .article {
+            background: #fff;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .blog-details .article:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+        }
+
+        .blog-details .post-img img {
+            width: 100%;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .blog-details .title {
+            font-size: 1.8rem;
+            color: #2b2b2b;
+            margin-bottom: 15px;
+        }
+
+        .blog-details .content p {
+            margin-bottom: 18px;
+            color: #555;
+        }
+
+        .blog-details blockquote {
+            background: #f0f4ff;
+            border-left: 5px solid #2575fc;
+            padding: 20px;
+            border-radius: 10px;
+            font-style: italic;
+            color: #444;
+        }
+
+        /* ========== Sidebar ========== */
+        .sidebar {
+            margin-top: 0px;
+        }
+
+        .widget-item {
+            background: #fff;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+            transition: 0.3s ease;
+        }
+
+        .widget-item:hover {
+            transform: translateY(-4px);
+        }
+
+        .widget-title {
+            font-weight: 600;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            border-left: 4px solid #2575fc;
+            padding-left: 10px;
+        }
+
+        /* ========== Author Widget ========== */
+        .blog-author-widget img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            margin-right: 15px;
+            border: 3px solid #2575fc;
+        }
+
+        .blog-author-widget h4 {
+            margin-bottom: 8px;
+            color: #222;
+        }
+
+        .blog-author-widget p {
+            margin-top: 15px;
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        /* ========== Social Links ========== */
+        .social-links a {
+            display: inline-block;
+            color: #2575fc;
+            background: transparent;
+            font-size: 1.1rem;
+            margin: 0 6px;
+            width: 38px;
+            height: 38px;
+            line-height: 38px;
+            text-align: center;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #fff;
+            background: #2575fc;
+            transform: translateY(-4px) scale(1.1);
+        }
+
+        /* Additional Social Icons */
+        .social-links a.github:hover {
+            background: #333;
+        }
+
+        .social-links a.whatsapp:hover {
+            background: #25D366;
+        }
+
+        .social-links a.gmail:hover {
+            background: #D44638;
+        }
+
+        .social-links a.portfolio:hover {
+            background: #ff6f00;
+        }
+
+        /* ========== Recent Posts ========== */
+        .recent-posts-widget .post-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .recent-posts-widget .post-item img {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            margin-right: 15px;
+        }
+
+        .recent-posts-widget .post-item h4 {
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+
+        .recent-posts-widget .post-item a {
+            text-decoration: none;
+            color: #222;
+            transition: color 0.3s;
+        }
+
+        .recent-posts-widget .post-item a:hover {
+            color: #2575fc;
+        }
+
+        /* ========== Tags Widget ========== */
+        .tags-widget ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tags-widget a {
+            display: inline-block;
+            background: #eef3ff;
+            color: #2575fc;
+            padding: 6px 14px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            transition: 0.3s ease;
+        }
+
+        .tags-widget a:hover {
+            background: #2575fc;
+            color: #fff;
+            transform: scale(1.05);
+        }
+
+        /* ========== Responsive ========== */
+        @media (max-width: 992px) {
+            .page-title {
+                padding: 60px 20px;
+            }
+
+            .blog-details .title {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .blog-author-widget img {
+                width: 60px;
+                height: 60px;
+            }
+
+            .recent-posts-widget .post-item img {
+                width: 65px;
+                height: 65px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .page-title h1 {
+                font-size: 1.8rem;
+            }
+
+            .widget-item {
+                padding: 18px;
+            }
+        }
+
+
+
+        .related-posts {
+            margin-top: 50px;
+            padding: 30px 15px;
+            background: #fafafa;
+            border-radius: 16px;
+            text-align: center;
+        }
+
+        /* Language Toggle */
+        .language-toggle {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .lang-btn {
+            background: #eee;
+            color: #333;
+            border: none;
+            padding: 8px 18px;
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .lang-btn.active {
+            background: linear-gradient(45deg, #ffd700, #ffb400);
+            color: #000;
+            box-shadow: 0 0 8px rgba(255, 215, 0, 0.4);
+        }
+
+        /* Cards */
+        .related-cards {
+            position: relative;
+            width: 100%;
+            height: 480px;
+            /* consistent card height */
+            overflow: hidden;
+        }
+
+        .related-card {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            padding: 20px;
+            height: 100%;
+        }
+
+        .related-card.active {
+            display: flex;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .related-card img {
+            width: 100%;
+            max-width: 450px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .card-content {
+            margin-top: 15px;
+        }
+
+        .card-content h4 {
+            font-size: 1.3rem;
+            color: #333;
+        }
+
+        .card-content p {
+            color: #555;
+            font-size: 1rem;
+        }
+
+        mark {
+            background: #fff7b2;
+            color: #000;
+            padding: 0 4px;
+            border-radius: 3px;
+        }
+
+        .pagination-controls {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .pagination-controls button {
+            background: linear-gradient(45deg, #ffd700, #ff8c00);
+            color: #000;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .pagination-controls button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(255, 165, 0, 0.4);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .related-card img {
+                height: 200px;
+            }
+
+            .related-cards {
+                height: auto;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body class="single-post-page">
+
+    <header id="header" class="header d-flex align-items-center sticky-top">
+        <div class="container position-relative d-flex align-items-center justify-content-between">
+
+            <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+
+                <h1 class="sitename">BIBLE</h1>
+            </a>
+
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="category.html">Categories</a></li>
+
+
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+
+            <div class="header-social-links">
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="main">
+
+        <!-- Page Title -->
+        <div class="page-title">
+            <div class="container d-lg-flex justify-content-between align-items-center">
+                <h1 class="mb-2 mb-lg-0">John the Baptist</h1>
+                <nav class="breadcrumbs">
+                    <ol>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Wilderness.html">Next Stories</a></li>
+                        <li><a href="John.html">Back</a></li>
+                    </ol>
+                </nav>
+            </div>
+        </div><!-- End Page Title -->
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-8">
+
+                    <!-- Blog Details Section -->
+                    <section id="blog-details" class="blog-details section">
+                        <div class="container">
+
+                            <article class="article">
+
+                                <div class="post-img">
+                                    <img src="assets/imges/yy1.jpg" alt="" class="img-fluid" style="height: 400px;">
+                                </div>
+
+                                <h2 class="title"> John the Baptist – The Messenger of Repentance</h2>
+
+
+                                <div class="content">
+                                    <p>
+                                        John the Baptist remains a symbol of repentance and truth.
+                                        He fearlessly stood for righteousness,
+                                        even when it cost him his life.
+
+                                        His life still challenges us today —
+                                        to live with honesty, humility, and devotion to God.
+                                    </p>
+
+                                    <!-- Related Horizontal Cards Section -->
+                                    <!-- Related Horizontal Cards Section -->
+                                    <section class="related-posts">
+                                        <!-- Language Toggle -->
+                                        <div class="language-toggle">
+                                            <button id="english-btn" class="lang-btn active"><i class="bi bi-book"></i>
+                                                English</button>
+                                            <button id="tamil-btn" class="lang-btn"><i class="bi bi-book-half"></i>
+                                                தமிழ்</button>
+                                        </div>
+
+                                        <h3 class="section-title"><i class="bi bi-journal-bookmark"></i>
+                                            <h2 class="title">John the Baptist – The Messenger of Repentance</h2>
+                                        </h3>
+
+                                        <!-- Cards Wrapper -->
+                                        <div class="related-cards">
+                                            <!-- Pagination Controls -->
+                                            <div class="pagination-controls">
+                                                <button id="prev-btn"><i class="bi bi-arrow-left"></i> Prev</button>
+                                                <span id="page-info"></span>
+                                                <button id="next-btn">Next <i class="bi bi-arrow-right"></i></button>
+                                            </div>
+                                            <!-- Card 1 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/yy2.jpg" alt="Day 1">
+                                                <div class="card-content">
+                                                    <h4 class="en">Introduction</h4>
+                                                    <h4 class="ta" style="display:none;">அறிமுகம்
+                                                    </h4>
+                                                    <p class="en"><mark>John the Baptist was one of the greatest
+                                                            prophets in
+                                                            the Bible</mark> —
+                                                        the man chosen by God to prepare the way for Jesus Christ.
+                                                        He stood as the bridge between the Old and New Testaments.
+
+                                                        His central message was simple yet powerful:
+
+                                                        <mark>“Repent, for the Kingdom of Heaven is near.”</mark>
+                                                    </p>
+                                                    <p class="ta" style="display:none;"><mark>யோவான் நாழிகையாளர் (John
+                                                            the
+                                                            Baptist) பைபிளில் மிக முக்கியமான தீர்க்கதரிசி</mark> மற்றும்
+                                                        இயேசு
+                                                        கிறிஸ்துவின் வழியை ஆயத்தப்படுத்தியவர்.
+                                                        அவர் பழைய ஏற்பாட்டுக்கும் புதிய ஏற்பாட்டுக்கும் இடையே இணைப்பாக
+                                                        திகழ்ந்தார்.
+                                                        அவரது முக்கிய செய்தி:
+
+                                                        <mark> “மனந்திரும்புங்கள், வானராஜ்யம் நெருக்கமாயுள்ளது.”</mark>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 2 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/yy3.jpg" alt="Day 2">
+                                                <div class="card-content">
+                                                    <h4 class="en">Birth and Family</h4>
+                                                    <h4 class="ta" style="display:none;">பிறப்பு மற்றும் குடும்பம்
+                                                    </h4>
+                                                    <p class="en"><mark>John was born into a priestly family.
+                                                            His father Zechariah was a priest, and his mother Elizabeth
+                                                            was
+                                                            a righteous woman.</mark>
+                                                        Though they were both elderly, they had no children — until an
+                                                        angel appeared.
+
+                                                        The angel Gabriel told Zechariah:
+
+                                                        <mark> “Your wife Elizabeth will bear you a son, and you shall
+                                                            call his
+                                                            name John.”</mark>
+
+                                                        When John was born, Zechariah praised God with joy and prophecy.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">யோவான் ஒரு <mark>ஆசாரிய
+                                                            குடும்பத்தில்</mark>
+                                                        பிறந்தார்.
+                                                        அவரின் <mark>தந்தை சகரியா மற்றும் தாயார் எலிசபேது.</mark>
+                                                        இவர்கள் இருவரும் நீதிமான்கள், ஆனால் வயது முதிர்ந்தவர்களாக
+                                                        இருந்தபோதும் அவர்களுக்கு குழந்தை இல்லை.
+
+                                                        ஒரு நாள், தேவதூதர் கபிரியேல் சகரியாவுக்கு தோன்றி சொன்னார்:
+
+                                                        <mark> “உன் மனைவி எலிசபேத்து ஒரு மகனைப் பெறுவாள்; அவனுக்கு
+                                                            யோவான் என்று
+                                                            பெயர் வைப்பாய்.”</mark>
+                                                        அவர் பிறந்ததும், சகரியா தேவனுக்கு ஸ்தோத்திரம் செய்தார்.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 3 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/yy4.jpg" alt="Day 3">
+                                                <div class="card-content">
+                                                    <h4 class="en">TLife in the Wilderness
+                                                    </h4>
+                                                    <h4 class="ta" style="display:none;">வனாந்தர வாழ்க்கை
+                                                    </h4>
+                                                    <p class="en">John lived in the wilderness of Judea.
+                                                        He wore clothing made of camel’s hair,
+                                                        and ate locusts and wild honey.
+
+                                                        He lived apart from worldly pleasures,
+                                                        preaching a message of repentance and forgiveness of sins.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">யோவான் யூதா வனாந்தரத்தில்
+                                                        வாழ்ந்தார்.
+                                                        அவர் ஒட்டகத்தின் முடியில் செய்யப்பட்ட ஆடை அணிந்தார்,
+                                                        வன தேன் மற்றும் வண்டுகள் உணவாக உட்கொண்டார்.
+                                                        அவர் உலக வசதிகளை தவிர்த்து, பாவமன்னிப்பு மற்றும் மனந்திரும்புதல்
+                                                        குறித்து பிரசங்கித்தார்.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 4 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/yy5.jpg" alt="Day 3">
+                                                <div class="card-content">
+                                                    <h4 class="en">The Message of Baptism
+                                                    </h4>
+                                                    <h4 class="ta" style="display:none;">நாழிகை (Baptism) செய்தி
+                                                    </h4>
+                                                    <p class="en"><mark>John baptized people in the Jordan River</mark>
+                                                        as a sign of repentance and cleansing —
+                                                        a new beginning with God.
+
+                                                        He declared:
+
+                                                        <mark>“I baptize you with water for repentance,
+                                                            but after me comes one who is more powerful than I…
+                                                            He will baptize you with the Holy Spirit and fire.”</mark>
+                                                    </p>
+                                                    <p class="ta" style="display:none;"><mark>யோவான் யோர்தான் ஆற்றில்
+                                                            மக்களுக்கு நாழிகை (தூய நீராட்டம்) கொடுத்தார்.</mark>
+                                                        இது பாவங்களை ஒப்புக்கொண்டு, புதிய வாழ்க்கைக்கான அடையாளமாக
+                                                        இருந்தது.
+                                                        அவர் கூறினார்:
+
+                                                        <mark>“நான் நீரால் நாழிகை செய்கிறேன்; ஆனால் எனக்குப் பிறகு
+                                                            வருபவர்
+                                                            பரிசுத்த ஆவியால் நாழிகை செய்வார்.”</mark>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 5-->
+                                            <div class="related-card">
+                                                <img src="assets/imges/yy6.jpg" alt="Day 3">
+                                                <div class="card-content">
+                                                    <h4 class="en">John’s Bold Preaching
+                                                    </h4>
+                                                    <h4 class="ta" style="display:none;">யோவானின் பிரசங்கம்
+                                                    </h4>
+                                                    <p class="en">John fearlessly spoke against sin and injustice.
+                                                        <mark> He rebuked King Herod for marrying Herodias, his
+                                                            brother’s wife,
+                                                            which led to his imprisonment.</mark>
+
+                                                        To the people, he preached messages of moral purity:
+
+                                                        <mark> “Be honest and just.”
+
+                                                            “Love your neighbor.”
+
+                                                            “Do not cheat or oppress others.”</mark>
+
+                                                        He called everyone — rich and poor, soldiers and tax collectors
+                                                        — to turn to God.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">யோவான் வலிமையுடன் பாவத்திற்கு
+                                                        எதிராகப் பேசினார்.
+                                                        அவர் <mark>அரசர் எரோதேசு தனது சகோதரனின் மனைவி எரோதியாவை திருமணம்
+                                                            செய்ததை குற்றம் கூறினார்.
+                                                            இதனால் அவர் சிறையில் அடைக்கப்பட்டார்.</mark>
+                                                        அவர் மக்களுக்கு அறிவுறுத்தினார்:
+
+                                                        <mark>“நேர்மையாக நடந்து கொள்ளுங்கள்.”
+
+                                                            “அயலானை அன்பு செய்யுங்கள்.”
+
+                                                            “பணியாற்றுங்கள், பிறரை ஏமாற்றாதீர்கள்.”</mark>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+
+                                            <!-- Card 4 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/yy9.jpg" alt="Day 3">
+                                                <div class="card-content">
+                                                    <h4 class="en">Jesus Comes to Be Baptized
+                                                    </h4>
+                                                    <h4 class="ta" style="display:none;">இயேசு நீராட்டு பெற வருகிறார்
+                                                    </h4>
+                                                    <p class="en">One day, Jesus came to John and said:
+
+                                                        <mark></mark>
+
+                                                        John was shocked!
+                                                        He knew that Jesus was sinless.
+                                                        So he said:
+
+                                                        <mark>“I should be baptized by You — and yet You come to
+                                                            me?”</mark>
+
+                                                        But Jesus gently replied:
+
+                                                        <mark> “Let it be so now;
+                                                            it is proper for us to do this to fulfill all
+                                                            righteousness.”</mark>
+
+                                                        John agreed — and he baptized Jesus in the Jordan River.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">ஒருநாள் இயேசு யோவானிடம் வந்து
+                                                        சொன்னார்:
+
+                                                        <mark>“எனக்கும் நீராட்டு கொடு.”</mark>
+
+                                                        யோவான் அதிர்ச்சியடைந்தார்!
+                                                        அவர் அறிந்தார் — இயேசு பாவமற்றவர்.
+                                                        அதனால் அவர் சொன்னார்:
+
+                                                        <mark> “நீயே எனக்கு நீராட்டு கொடுக்க வேண்டியவர்!
+                                                            ஆனால் நீ எனக்கிடமா வருகிறாய்?”</mark>
+
+                                                        இயேசு அமைதியாகப் பதிலளித்தார்:
+
+                                                        <mark>“இப்போது இப்படியே இருக்கட்டும்;
+                                                            இது தேவனுடைய நீதியை நிறைவேற்றுவதற்காகத்தான்.”</mark>
+
+                                                        யோவான் சம்மதித்து, இயேசுவுக்கு நீராட்டு கொடுத்தார்.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 5-->
+                                            <div class="related-card">
+                                                <img src="assets/imges/yy10.jpg" alt="Day 3">
+                                                <div class="card-content">
+                                                    <h4 class="en">Heaven’s Testimony
+                                                    </h4>
+                                                    <h4 class="ta" style="display:none;">வானத்திலிருந்து வந்த சாட்சி
+                                                    </h4>
+                                                    <p class="en">As Jesus came up from the water, He prayed.
+                                                        Then <mark>the Holy Spirit descended like a dove</mark> and
+                                                        rested upon Him.
+
+                                                        And a voice came from heaven, saying:
+
+                                                        <mark>“This is My beloved Son,
+                                                            in whom I am well pleased.”</mark>
+
+                                                        This was God’s confirmation —
+                                                        Jesus is truly the Son of God.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">இயேசு நீரில் இருந்து மேலே
+                                                        வந்தவுடன்,
+                                                        அவர் பிரார்த்தனை செய்தார்.
+                                                        அப்பொழுது <mark>பரிசுத்த ஆவி புறாவாக இறங்கி,</mark>
+                                                        இயேசுவின் மீது தங்கினான்.
+
+                                                        பின்னர் வானத்திலிருந்து ஒரு சத்தம் வந்தது:
+
+                                                        <mark>“இவர் என் அன்பு மகன்;
+                                                            அவரில் நான் மகிழ்கிறேன்!”</mark>
+
+                                                        அது தேவனுடைய உறுதிமொழி —
+                                                        இயேசுவே தேவனின் மகன் என்பதற்கான சாட்சி.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 6-->
+                                            <div class="related-card">
+                                                <img src="assets/imges/yy7.jpg" alt="Day 3">
+                                                <div class="card-content">
+                                                    <h4 class="en">The Beginning of Jesus’ Ministry
+                                                    </h4>
+                                                    <h4 class="ta" style="display:none;">இயேசுவின் சேவை ஆரம்பம்
+                                                    </h4>
+                                                    <p class="en">At that time, <mark>Jesus was about thirty years
+                                                            old.</mark>
+                                                        After His baptism, He began His public ministry.
+
+                                                        He called His disciples and started teaching, healing, and
+                                                        serving people.
+
+                                                        John also continued baptizing, but he rejoiced when people began
+                                                        to follow Jesus instead.
+                                                        He said humbly:
+
+                                                        <mark> “He must increase, but I must decrease.”</mark>
+
+                                                        John knew that his mission was to point people to Jesus —
+                                                        the One who would take away the sins of the world.
+                                                    </p>
+                                                    <p class="ta" style="display:none;">அப்பொழுது <mark>இயேசுவுக்கு
+                                                            சுமார்
+                                                            முப்பது வயது.</mark>
+                                                        அந்தப் பிறகு அவர் தமது சிஷ்யர்களைத் தேர்ந்தெடுத்து,
+                                                        தமது பொது ஊழியத்தைத் தொடங்கினார்.
+
+                                                        இயேசுவின் சிஷ்யர்களும் மக்களுக்குப் நீராட்டு கொடுக்கத்
+                                                        தொடங்கினர்.
+                                                        மக்கள் இயேசுவிடம் அதிகமாகச் சென்று வந்தனர்.
+
+                                                        யோவான் இதனால் பொறாமைப்படவில்லை.
+                                                        அவர் மகிழ்ச்சியுடன் சொன்னார்:
+
+                                                        <mark>“இயேசு அதிகமாக உயர வேண்டும்,
+                                                            நான் குறைய வேண்டும்.”</mark>
+
+                                                        அவர் அறிந்தார் —
+                                                        தான் சொல்லுவது மட்டும்,
+                                                        ஆனால் பாவத்தை அகற்றுவது இயேசுவின் பணி என்பதைக்.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+
+                                            <!-- Card 7-->
+                                            <div class="related-card">
+                                                <img src="assets/imges/yy8.jpg" alt="Day 3">
+                                                <div class="card-content">
+                                                    <h4 class="en">Imprisonment and Martyrdom
+                                                    </h4>
+                                                    <h4 class="ta" style="display:none;">சிறை மற்றும் மரணம்
+                                                    </h4>
+                                                    <p class="en">While in prison, John’s disciples came to Jesus
+                                                        asking,
+
+                                                        “Are You the one who is to come, or should we expect someone
+                                                        else?”
+
+                                                        Jesus replied:
+
+                                                        <mark>“The blind see, the lame walk, the lepers are cleansed,
+                                                            the deaf hear, the dead are raised, and the good news is
+                                                            proclaimed to the poor.”</mark>
+
+                                                        Later, at
+                                                        <mark> King Herod’s banquet, Herodias’s daughter, Salome,</mark>
+                                                        danced before the king.
+                                                        At her mother’s urging, she asked:
+
+                                                        <mark>“Give me John the Baptist’s head on a platter.”
+
+                                                            Herod, though sorrowful, ordered John’s execution.</mark>
+                                                    </p>
+                                                    <p class="ta" style="display:none;">சிறையில் இருந்தபோது, யோவான் தன்
+                                                        சீஷர்களை இயேசுவிடமே அனுப்பி கேட்டார்:
+
+                                                        “வருகிறவர் நீங்கள் தானா, அல்லது வேறொருவரை எதிர்பார்ப்போமா?”
+
+                                                        இயேசு பதில் அளித்தார்:
+
+                                                        <mark>“குருடர்கள் பார்கிறார்கள், முடங்கியோர் நடக்கிறார்கள்,
+                                                            சுவிசேஷம்
+                                                            ஏழைகளுக்கு அறிவிக்கப்படுகிறது.”</mark>
+
+                                                        அதன்பின், <mark>எரோதியாவின் மகள் சலோமே,</mark> எரோதேசின்
+                                                        விருந்தில் ஆடினார்.
+                                                        அவள் தன் தாயின் உத்தரவுப்படி கேட்டாள்:
+
+                                                        <mark>“யோவான் நாழிகையாளரின் தலையை தட்டில் தருங்கள்.”
+                                                            அவர் உடனே சிறையில் கொலை செய்யப்பட்டார்.</mark>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </section>
+
+
+                                </div><!-- End post content -->
+
+                                <blockquote>
+                                    <p>
+                                        John lived and died for one purpose —
+                                        to point people toward Christ.
+
+                                        He said humbly:
+
+                                        “He must increase; I must decrease.” (John 3:30)
+
+                                        He never sought fame or glory;
+                                        he saw himself only as a voice crying in the wilderness,
+                                        preparing the way for the Lord.
+                                    </p>
+                                </blockquote>
+
+                            </article>
+
+                        </div>
+                    </section><!-- /Blog Details Section -->
+
+
+
+                </div>
+
+                <div class="col-lg-4 sidebar">
+
+                    <div class="widgets-container">
+
+
+                        <!-- Recent Posts Widget -->
+                        <div class="recent-posts-widget widget-item">
+
+                            <h3 class="widget-title">Next Stories</h3>
+
+                            <div class="post-item">
+                                <img src="assets/imges/nn1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Noah.html">Noah – The Great Ark and God’s Promise</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/aa1.webp" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="single-post.html">God Create World</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+
+
+                            <div class="post-item">
+                                <img src="assets/imges/bb1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Adam.html">The Story of Adam and Eve</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/kk1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Abel.html">Cain and Abel – Detailed Story</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+
+
+                            <div class="post-item">
+                                <img src="assets/imges/hh1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Abraham.html">Abraham – The Father of Faith</a>
+                                    </h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/jj1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Jacob.html">Jacob & Joseph – The Dreamer and the Redeemer</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/mm1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Moses.html">The Story of Moses’ Final Blessing and Death</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/ss1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Samuel.html">Samuel the Prophet – From Birth to Death</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/dd1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="David.html">King David – From Shepherd Boy to King of Israel</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/qq1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Solomon.html">King Solomon – The King of Wisdom</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/da1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Daniel.html">Daniel in the Lion’s Den</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                        </div><!--/Recent Posts Widget -->
+
+
+                        <!-- Blog Author Widget -->
+                        <div class="blog-author-widget widget-item">
+
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="d-flex align-items-center w-100">
+                                    <img src="assets/imges/mine.jpg" class="rounded-circle flex-shrink-0" alt="">
+                                    <div>
+                                        <h4>Jebin Joseph</h4>
+                                        <div class="social-links">
+                                            <a href="https://github.com/Jebindevp" class="github"><i
+                                                    class="bi bi-github"></i></a>
+                                            <a href="https://wa.me/919487851243?text=Hello%20I%20have%20a%20question"
+                                                target="_blank" rel="noopener noreferrer">
+                                                <i class="bi bi-whatsapp"></i>
+                                            </a>
+                                            <a href="mailto:kmt4543@gmail.com" class="gmail"><i
+                                                    class="bi bi-envelope-fill"></i></a>
+                                            <a href="https://jebindevp.github.io/My-Protifolio/" class="portfolio"><i
+                                                    class="bi bi-briefcase-fill"></i></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <p>
+                                    I’m Jebin Joseph, a passionate Web Designer dedicated to turning creative ideas into
+                                    visually stunning
+                                    and user-friendly websites. With a deep love for design and technology, I specialize
+                                    in crafting
+                                    modern, responsive, and engaging digital experiences that bring brands to life.
+                                </p>
+                                <p>"Good design is not just about how it looks — it’s about how it works and how it
+                                    makes people feel."
+                                </p>
+                            </div>
+
+                        </div><!--/Blog Author Widget -->
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer id="footer" class="footer dark-background">
+
+        <div class="container footer-top">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <a href="index.html" class="logo d-flex align-items-center">
+                        <span class="sitename">Bible</span>
+                    </a>
+                    <div class="footer-contact pt-3">
+                        <p>India , TamilNadu</p>
+                        <p>Kanya Kumari Dist</p>
+                        <p class="mt-3"><strong>Phone:</strong> <span>91+ 9487851243</span></p>
+                        <p><strong>Email:</strong> <span>kmt4543@gmail.com</span></p>
+                    </div>
+                    <div class="social-links d-flex mt-4">
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Categries</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Management System</a></li>
+                        <li><a href="#">Marketing</a></li>
+                        <li><a href="#">Graphic Design</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Development</h4>
+                    <ul>
+                        <li><a href="#">static websites</a></li>
+                        <li><a href="#">dynamic websites </a></li>
+                        <li><a href="#">E-Commerce design</a></li>
+                        <li><a href="#">Student Projects</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Other Services</h4>
+                    <ul>
+                        <li><a href="#">Photos Editting</a></li>
+                        <li><a href="#">Video Editting</a></li>
+                        <li><a href="#">Online Class </a></li>
+                        <li><a href="#">Poster Edit</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container copyright text-center mt-4">
+            <p>© <span>Copyright</span> <strong class="px-1 sitename">BIBLE</strong> <span>All Rights Reserved</span>
+            </p>
+            <div class="credits">
+
+                Designed by & Distributed by <a href="">Jebin Joseph</a>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+
+    <script>
+        const cards = document.querySelectorAll(".related-card");
+        const nextBtn = document.getElementById("next-btn");
+        const prevBtn = document.getElementById("prev-btn");
+        const pageInfo = document.getElementById("page-info");
+        let currentCard = 0;
+
+        function showCard(index) {
+            cards.forEach((card, i) => card.classList.toggle("active", i === index));
+            pageInfo.textContent = ` ${index + 1} of ${cards.length}`;
+        }
+
+        nextBtn.addEventListener("click", () => {
+            currentCard = (currentCard + 1) % cards.length;
+            showCard(currentCard);
+        });
+
+        prevBtn.addEventListener("click", () => {
+            currentCard = (currentCard - 1 + cards.length) % cards.length;
+            showCard(currentCard);
+        });
+
+        showCard(currentCard);
+
+        // Language Toggle
+        const tamilBtn = document.getElementById("tamil-btn");
+        const englishBtn = document.getElementById("english-btn");
+
+        tamilBtn.addEventListener("click", () => {
+            tamilBtn.classList.add("active");
+            englishBtn.classList.remove("active");
+            document.querySelectorAll(".ta").forEach(el => el.style.display = "block");
+            document.querySelectorAll(".en").forEach(el => el.style.display = "none");
+        });
+
+        englishBtn.addEventListener("click", () => {
+            englishBtn.classList.add("active");
+            tamilBtn.classList.remove("active");
+            document.querySelectorAll(".en").forEach(el => el.style.display = "block");
+            document.querySelectorAll(".ta").forEach(el => el.style.display = "none");
+        });
+    </script>
+
+
+</body>
+
+
+<!-- Mirrored from themewagon.github.io/ZenBlog/single-post.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Oct 2025 10:06:52 GMT -->
+
+</html>

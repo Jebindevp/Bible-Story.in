@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from themewagon.github.io/ZenBlog/single-post.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Oct 2025 10:06:47 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>King Solomon</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Favicons -->
+    <link href="assets/imges/ll1.jpg" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/" rel="preconnect">
+    <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: ZenBlog
+  * Template URL: https://bootstrapmade.com/zenblog-bootstrap-blog-template/
+  * Updated: Aug 08 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+
+    <style>
+        /* ====== Header Base ====== */
+        .header {
+            background: #0d1b2a;
+            /* deep navy blue */
+            padding: 15px 0;
+            transition: all 0.3s ease;
+            z-index: 999;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .header.sticky-top {
+            position: sticky;
+            top: 0;
+        }
+
+        /* ====== Logo ====== */
+        .sitename {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        .sitename:hover {
+            color: #ffd700;
+            /* gold hover */
+        }
+
+        /* ====== Navigation Menu ====== */
+        .navmenu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .navmenu a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 500;
+            font-size: 1rem;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        /* Hover underline animation */
+        .navmenu a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 0;
+            height: 2px;
+            background-color: #ffd700;
+            transition: width 0.3s ease;
+        }
+
+        .navmenu a:hover::after,
+        .navmenu a.active::after {
+            width: 100%;
+        }
+
+        .navmenu a:hover,
+        .navmenu a.active {
+            color: #ffd700;
+        }
+
+        /* ====== Social Icons ====== */
+        /* ====== Header Social Links ====== */
+        .header-social-links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* ensures even centering in container */
+            gap: 12px;
+        }
+
+        /* Base style for icons */
+        .header-social-links a {
+            color: #ffffff;
+            font-size: 1.2rem;
+            width: 40px;
+            /* slightly larger for better centering */
+            height: 40px;
+            display: flex;
+            /* use flex instead of inline-flex for stable centering */
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.826);
+            backdrop-filter: blur(6px);
+            transition: all 0.35s ease;
+            position: relative;
+            overflow: hidden;
+            line-height: 1;
+            /* keeps icon centered vertically */
+        }
+
+        /* Icon hover animation */
+        .header-social-links a::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(45deg, #ffd700, #ff8c00);
+            transform: scale(0);
+            transition: transform 0.35s ease;
+            border-radius: 50%;
+            z-index: 0;
+        }
+
+        .header-social-links a:hover::after {
+            transform: scale(1);
+        }
+
+        /* Hover effects for the icon itself */
+        .header-social-links a i {
+            position: relative;
+            z-index: 1;
+            transition: transform 0.35s ease, color 0.35s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .header-social-links a:hover i {
+            transform: scale(1.2) rotate(10deg);
+            color: #000;
+        }
+
+        /* Add glowing effect on hover */
+        .header-social-links a:hover {
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+        }
+
+
+        /* ====== Mobile Navigation ====== */
+        .mobile-nav-toggle {
+            display: none;
+            font-size: 1.8rem;
+            color: #fff;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .mobile-nav-toggle:hover {
+            transform: rotate(90deg);
+        }
+
+        /* ====== Responsive Design ====== */
+        @media (max-width: 991px) {
+            .navmenu ul {
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background: #1b263b;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 15px 20px;
+                gap: 15px;
+                display: none;
+                /* hidden by default */
+            }
+
+            .navmenu.active ul {
+                display: flex;
+                /* show when toggled */
+            }
+
+            .mobile-nav-toggle {
+                display: block;
+            }
+
+            .header-social-links {
+                display: none;
+                /* hide social links on mobile for simplicity */
+            }
+        }
+
+        /* ====== Scroll Effect (optional enhancement) ====== */
+        .header.scrolled {
+            background: #1b263b;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+
+
+
+
+
+
+
+        /* ========== Global Reset & Font ========== */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background: #f9fafc;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* ========== Page Title Section ========== */
+        .page-title {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: #fff;
+            padding: 80px 0;
+            text-align: center;
+            border-radius: 0 0 50px 50px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .page-title h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        .breadcrumbs {
+            margin-top: 15px;
+        }
+
+        .breadcrumbs ol {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .breadcrumbs ol li {
+            color: #fff;
+            font-size: 0.95rem;
+        }
+
+        .breadcrumbs ol li a {
+            color: #ffd700;
+            text-decoration: none;
+            transition: 0.3s ease;
+        }
+
+        .breadcrumbs ol li a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        .breadcrumbs li+li::before {
+            content: "/";
+            margin: 0 8px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* ========== Blog Details ========== */
+        .blog-details .article {
+            background: #fff;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .blog-details .article:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+        }
+
+        .blog-details .post-img img {
+            width: 100%;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .blog-details .title {
+            font-size: 1.8rem;
+            color: #2b2b2b;
+            margin-bottom: 15px;
+        }
+
+        .blog-details .content p {
+            margin-bottom: 18px;
+            color: #555;
+        }
+
+        .blog-details blockquote {
+            background: #f0f4ff;
+            border-left: 5px solid #2575fc;
+            padding: 20px;
+            border-radius: 10px;
+            font-style: italic;
+            color: #444;
+        }
+
+        /* ========== Sidebar ========== */
+        .sidebar {
+            margin-top: 0px;
+        }
+
+        .widget-item {
+            background: #fff;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+            transition: 0.3s ease;
+        }
+
+        .widget-item:hover {
+            transform: translateY(-4px);
+        }
+
+        .widget-title {
+            font-weight: 600;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            border-left: 4px solid #2575fc;
+            padding-left: 10px;
+        }
+
+        /* ========== Author Widget ========== */
+        .blog-author-widget img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            margin-right: 15px;
+            border: 3px solid #2575fc;
+        }
+
+        .blog-author-widget h4 {
+            margin-bottom: 8px;
+            color: #222;
+        }
+
+        .blog-author-widget p {
+            margin-top: 15px;
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        /* ========== Social Links ========== */
+        .social-links a {
+            display: inline-block;
+            color: #2575fc;
+            background: transparent;
+            font-size: 1.1rem;
+            margin: 0 6px;
+            width: 38px;
+            height: 38px;
+            line-height: 38px;
+            text-align: center;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #fff;
+            background: #2575fc;
+            transform: translateY(-4px) scale(1.1);
+        }
+
+        /* Additional Social Icons */
+        .social-links a.github:hover {
+            background: #333;
+        }
+
+        .social-links a.whatsapp:hover {
+            background: #25D366;
+        }
+
+        .social-links a.gmail:hover {
+            background: #D44638;
+        }
+
+        .social-links a.portfolio:hover {
+            background: #ff6f00;
+        }
+
+        /* ========== Recent Posts ========== */
+        .recent-posts-widget .post-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .recent-posts-widget .post-item img {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            margin-right: 15px;
+        }
+
+        .recent-posts-widget .post-item h4 {
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+
+        .recent-posts-widget .post-item a {
+            text-decoration: none;
+            color: #222;
+            transition: color 0.3s;
+        }
+
+        .recent-posts-widget .post-item a:hover {
+            color: #2575fc;
+        }
+
+        /* ========== Tags Widget ========== */
+        .tags-widget ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tags-widget a {
+            display: inline-block;
+            background: #eef3ff;
+            color: #2575fc;
+            padding: 6px 14px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            transition: 0.3s ease;
+        }
+
+        .tags-widget a:hover {
+            background: #2575fc;
+            color: #fff;
+            transform: scale(1.05);
+        }
+
+        /* ========== Responsive ========== */
+        @media (max-width: 992px) {
+            .page-title {
+                padding: 60px 20px;
+            }
+
+            .blog-details .title {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .blog-author-widget img {
+                width: 60px;
+                height: 60px;
+            }
+
+            .recent-posts-widget .post-item img {
+                width: 65px;
+                height: 65px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .page-title h1 {
+                font-size: 1.8rem;
+            }
+
+            .widget-item {
+                padding: 18px;
+            }
+        }
+
+
+
+        .related-posts {
+            margin-top: 50px;
+            padding: 30px 15px;
+            background: #fafafa;
+            border-radius: 16px;
+            text-align: center;
+        }
+
+        /* Language Toggle */
+        .language-toggle {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .lang-btn {
+            background: #eee;
+            color: #333;
+            border: none;
+            padding: 8px 18px;
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .lang-btn.active {
+            background: linear-gradient(45deg, #ffd700, #ffb400);
+            color: #000;
+            box-shadow: 0 0 8px rgba(255, 215, 0, 0.4);
+        }
+
+        /* Cards */
+        .related-cards {
+            position: relative;
+            width: 100%;
+            height: 480px;
+            /* consistent card height */
+            overflow: hidden;
+        }
+
+        .related-card {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            padding: 20px;
+            height: 100%;
+        }
+
+        .related-card.active {
+            display: flex;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .related-card img {
+            width: 100%;
+            max-width: 450px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .card-content {
+            margin-top: 15px;
+        }
+
+        .card-content h4 {
+            font-size: 1.3rem;
+            color: #333;
+        }
+
+        .card-content p {
+            color: #555;
+            font-size: 1rem;
+        }
+
+        mark {
+            background: #fff7b2;
+            color: #000;
+            padding: 0 4px;
+            border-radius: 3px;
+        }
+
+        .pagination-controls {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .pagination-controls button {
+            background: linear-gradient(45deg, #ffd700, #ff8c00);
+            color: #000;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .pagination-controls button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(255, 165, 0, 0.4);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .related-card img {
+                height: 200px;
+            }
+
+            .related-cards {
+                height: auto;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body class="single-post-page">
+
+    <header id="header" class="header d-flex align-items-center sticky-top">
+        <div class="container position-relative d-flex align-items-center justify-content-between">
+
+            <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+
+                <h1 class="sitename">BIBLE</h1>
+            </a>
+
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="category.html">Categories</a></li>
+
+
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+
+            <div class="header-social-links">
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="main">
+
+        <!-- Page Title -->
+        <div class="page-title">
+            <div class="container d-lg-flex justify-content-between align-items-center">
+                <h1 class="mb-2 mb-lg-0">King Solomon – The King of Wisdom</h1>
+                <nav class="breadcrumbs">
+                    <ol>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Jonah.html">Next Story</a></li>
+                        <li><a href="David.html">Back</a></li>
+                    </ol>
+                </nav>
+            </div>
+        </div><!-- End Page Title -->
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-8">
+
+                    <!-- Blog Details Section -->
+                    <section id="blog-details" class="blog-details section">
+                        <div class="container">
+
+                            <article class="article">
+
+                                <div class="post-img">
+                                    <img src="assets/imges/qq1.jpg" alt="" class="img-fluid" style="height: 400px;">
+                                </div>
+
+                                <h2 class="title">King Solomon – The King of Wisdom</h2>
+
+
+                                <div class="content">
+                                    <p>
+                                        “Solomon’s life teaches us that wisdom begins with a heart that fears the Lord.
+
+                                        He asked not for riches or power, but for understanding — and God was pleased to
+                                        bless him beyond measure.
+                                        Through him, we learn that true greatness lies not in what we possess, but in
+                                        how we honor God with what we’ve been given.”
+                                    </p>
+
+                                    <!-- Related Horizontal Cards Section -->
+                                    <!-- Related Horizontal Cards Section -->
+                                    <section class="related-posts">
+                                        <!-- Language Toggle -->
+                                        <div class="language-toggle">
+                                            <button id="english-btn" class="lang-btn active"><i class="bi bi-book"></i>
+                                                English</button>
+                                            <button id="tamil-btn" class="lang-btn"><i class="bi bi-book-half"></i>
+                                                தமிழ்</button>
+                                        </div>
+
+                                        <h3 class="section-title"><i class="bi bi-journal-bookmark"></i> King Solomon –
+                                            The King of Wisdom</h3>
+
+                                        <!-- Cards Wrapper -->
+                                        <div class="related-cards">
+                                            <!-- Pagination Controls -->
+                                            <div class="pagination-controls">
+                                                <button id="prev-btn"><i class="bi bi-arrow-left"></i> Prev</button>
+                                                <span id="page-info"></span>
+                                                <button id="next-btn">Next <i class="bi bi-arrow-right"></i></button>
+                                            </div>
+                                            <!-- Card 1 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/qq2.jpg" alt="Day 1">
+                                                <div class="card-content">
+                                                    <h4 class="en">The Birth of Solomon and God’s Favor</h4>
+                                                    <h4 class="ta" style="display:none;">சாலொமோனின் பிறப்பும் தேவனின்
+                                                        அருள்
+                                                    </h4>
+                                                    <p class="en"><mark>Solomon was born to King David and
+                                                            Bathsheba.</mark>
+                                                        Even as a child, he was calm, gentle, and full of understanding.
+
+                                                        Before his death, David told him:
+
+                                                        <mark>“After me, you will be king of Israel.
+                                                            Rule with a heart that honors God.”</mark>
+
+                                                        As David wished, young Solomon became the king of Israel.
+                                                        His rule began with worship and devotion to God.
+                                                    </p>
+                                                    <p class="ta" style="display:none;"><mark>தாவீது ராஜாவுக்கும்
+                                                            பத்சேபாவுக்கும் பிறந்த மகன் சாலொமோன்.</mark>
+                                                        அவர் சிறு வயதிலிருந்தே அமைதியானவர், புத்திசாலியானவர்.
+
+                                                        தாவீது தனது வாழ்வின் இறுதியில் கூறினார்:
+
+                                                        <mark>“என் பின் நீ இஸ்ரவேலின் ராஜாவாக இருப்பாய்.
+                                                            தேவனைக் காக்கும் நெஞ்சோடு ஆட்சி செய்.”</mark>
+
+                                                        அதன்படி, சாலொமோன் இளமையில் இஸ்ரவேல் அரசாங்கத்தைப் பெற்றார்.
+                                                        அவரது ஆட்சியின் தொடக்கமே தேவனுக்கான வழிபாட்டில் இருந்தது.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 2 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/qq3.jpg" alt="Day 2">
+                                                <div class="card-content">
+                                                    <h4 class="en">The Gift of Wisdom from God</h4>
+                                                    <h4 class="ta" style="display:none;">தேவனிடமிருந்து கிடைத்த
+                                                        ஞானத்தின் வரம்
+                                                    </h4>
+                                                    <p class="en">One night, Solomon heard God’s voice in a dream.
+                                                        God said:
+
+                                                        <mark>“Ask for whatever you want, and I will give it to
+                                                            you.”</mark>
+
+                                                        With humility, Solomon replied:
+
+                                                        <mark>“Lord, give me wisdom to judge Your people rightly
+                                                            and to know what is good and evil.”</mark>
+
+                                                        This request pleased God greatly.
+                                                        So God said:
+
+                                                        <mark>“You did not ask for riches, victory, or long life,
+                                                            but for wisdom.
+                                                            Therefore, I will give you wisdom beyond measure.
+                                                            None will ever be as wise as you.”</mark>
+
+                                                        God also blessed Solomon with great wealth and honor.
+
+                                                        “Wisdom is greater than wealth.”
+                                                    </p>
+                                                    <p class="ta" style="display:none;">ஒரு இரவு, சாலொமோன் கனவில்
+                                                        தேவனுடைய குரலைக் கேட்டார்.
+                                                        தேவன் சொன்னார்:
+
+                                                        <mark> “சாலொமோனே, நீ விரும்புவது எதுவோ அதை நான் உனக்குத்
+                                                            தருவேன்.”</mark>
+
+                                                        அப்போது சாலொமோன் பணிவுடன் கூறினான்:
+
+                                                        <mark> “தேவனே, என் மக்களுக்குச் சரியான தீர்ப்பை வழங்கவும், நன்மை
+                                                            தீமையை
+                                                            அறியவும் எனக்கு ஞானம் கொடுங்கள்.”</mark>
+
+                                                        அவனது வேண்டுகோள் தேவனுக்கு மிகவும் பிரியமானதாக இருந்தது.
+
+                                                        தேவன் சொன்னார்:
+
+                                                        <mark>“நீ செல்வம், வெற்றி, நீண்ட ஆயுள் எதையும் கேட்டதில்லை.
+                                                            ஆனால் ஞானத்தை கேட்டாய்.
+                                                            அதனால் உனக்கு அளவற்ற ஞானமும் புரிதலும் தருகிறேன்.
+                                                            உன்னைவிட ஞானமுள்ளவர் ஒருவரும் இல்லை.”</mark>
+
+                                                        அதுடன் தேவன் அவருக்கு மிகுந்த செல்வமும் கீர்த்தியும் வழங்கினார்.
+
+                                                        “ஞானம் செல்வத்தை விடப் பெரியது.”
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 3 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/qq4.jpg" alt="Day 3">
+                                                <div class="card-content">
+                                                    <h4 class="en">Solomon’s Famous Judgment</h4>
+                                                    <h4 class="ta" style="display:none;">சாலொமோனின் புகழ்பெற்ற தீர்ப்பு
+                                                    </h4>
+                                                    <p class="en">One day, <mark>two women</mark> came before Solomon.
+                                                        Each claimed to be the mother of the same baby.
+                                                        One of their babies had died during the night.
+
+                                                        Solomon said:
+
+                                                        <mark> “Bring me a sword. Cut the living child in two and give
+                                                            half to
+                                                            each woman.”</mark>
+
+                                                        At once, the real mother cried out:
+
+                                                        <mark> “No! Please give the baby to her — but don’t kill
+                                                            him!”</mark>
+
+                                                        The other woman remained silent.
+
+                                                        Then Solomon declared:
+
+                                                        <mark> “Give the baby to the woman who cried — she is the true
+                                                            mother.”</mark>
+
+                                                        The people marveled at his wisdom and said:
+
+                                                        <mark> “This man has wisdom from God.”</mark>
+                                                    </p>
+                                                    <p class="ta" style="display:none;">ஒரு நாள் <mark>இரு
+                                                            பெண்கள்</mark> சாலொமோனிடம்
+                                                        வந்தனர். இருவருக்கும் குழந்தை இருந்தது; ஆனால் <mark>ஒருவரின்
+                                                            குழந்தை
+                                                            இறந்துவிட்டது.</mark> இருவரும் உயிருடன் இருக்கும் குழந்தை
+                                                        தமதுதான்
+                                                        என்று கூறினர். அப்போது சாலொமோன் சொன்னார்:mark “கத்தியை கொண்டு
+                                                        வாருங்கள். குழந்தையை இரண்டு பாகமாக வெட்டி, இருவருக்கும் பாதி
+                                                        கொடுங்கள்.” அப்போது <mark>உண்மையான தாயார்</mark> அழுதுகொண்டு
+                                                        கூறினாள்:
+                                                        <mark> “இல்லை! குழந்தையை அவளுக்கு கொடுங்கள். ஆனால் அதை
+                                                            கொல்லாதீர்கள்!”</mark>
+                                                        மற்ற பெண் அமைதியாக இருந்தாள். அப்பொழுது சாலொமோன் கூறினார்:mark
+                                                        “அழுத
+                                                        பெண்ணே தாயார்! குழந்தையை அவளுக்கு கொடுங்கள்.” அவ்வாறு அவரது
+                                                        ஞானம் அனைவர் மத்தியில் பரவியது. மக்கள் சொன்னார்கள்: <mark>“இவன்
+                                                            தேவனிடமிருந்து ஞானம் பெற்றவன்.”</mark>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 4 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/qq5.jpg" alt="Day 4">
+                                                <div class="card-content">
+                                                    <h4 class="en">The Great Temple of Solomon</h4>
+                                                    <h4 class="ta" style="display:none;">சாலொமோனின் ஆலயம் – தேவனுக்கான
+                                                        மகத்தான கோயில்
+                                                    </h4>
+                                                    <p class="en"><mark>Solomon fulfilled his father David’s dream —
+                                                            he built a magnificent Temple in Jerusalem</mark>
+                                                        to house the Ark of the Covenant.
+
+                                                        The temple was <mark>decorated with gold, silver, and precious
+                                                            stones.</mark>
+                                                        When it was completed, Solomon prayed and dedicated it to God:
+
+                                                        <mark>“O Lord, You hear the prayers of those on earth and in
+                                                            heaven.
+                                                            May Your eyes be upon this place,
+                                                            and may You bless all who pray here.”</mark>
+
+                                                        Then <mark>fire came down from heaven</mark> and consumed the
+                                                        offering.
+                                                        All the people bowed down and worshiped.
+
+                                                        <mark>“A house for God is not built with hands, but with the
+                                                            heart.”</mark>
+                                                    </p>
+                                                    <p class="ta" style="display:none;"> <mark>சாலொமோன் தனது தந்தை
+                                                            தாவீதின்
+                                                            ஆசையை நிறைவேற்றினார்.</mark> அவர் <mark>யெருசலேமில் பெரிய
+                                                            ஆலயத்தை கட்டினார்</mark> —
+                                                        அது தேவனுடைய பரிசுத்தப் பந்தி
+                                                        வைக்கப்பட்டது. <mark>ஆலயம் தங்கம், வெள்ளி, நகைகள்</mark>
+                                                        ஆகியவற்றால்
+                                                        அலங்கரிக்கப்பட்டது. அதை முடித்த பின் சாலொமோன் முழு மக்களுடன்
+                                                        பிரார்த்தனை செய்து அர்ப்பணித்தார். அவர் சொன்னார்:mark
+                                                        “கர்த்தாவே,
+                                                        நீர் வானத்திலும் பூமியிலும் உள்ளவர்களை கேளும் தேவனே! இங்கு
+                                                        பிரார்த்திக்கும் யாரின் குரலும் நீர் கேட்டு ஆசீர்வதிக்குமாறு.”
+                                                        அப்பொழுது<mark> வானத்திலிருந்து தீ இறங்கி பலிபீடத்தை
+                                                            எரித்தது</mark>. மக்கள்
+                                                        அனைவரும் விழுந்து வணங்கினர். <mark>“தேவனுக்கான இடத்தை கட்டுவது
+                                                            கைகளால் அல்ல; இதயத்தால்.”</mark>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 5 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/qq6.jpg" alt="Day 5">
+                                                <div class="card-content">
+                                                    <h4 class="en">Solomon’s Reign – Glory and Prosperity</h4>
+                                                    <h4 class="ta" style="display:none;">சாலொமோனின் ஆட்சி – செல்வமும்
+                                                        மகிமையும்</h4>
+                                                    <p class="en">During Solomon’s reign, Israel lived in peace and
+                                                        prosperity.
+                                                        <mark> Gold, silver, and fine spices filled his kingdom.</mark>
+
+                                                        Kings and queens from other nations came to hear his wisdom —
+                                                        including the <mark>Queen of Sheba.</mark>
+
+                                                        She brought <mark>gifts of gold, spices, and jewels,</mark>
+                                                        and asked Solomon many questions.
+                                                        He answered them all with wisdom.
+
+                                                        Amazed, she said:
+
+                                                        <mark> “Your wisdom and your God are greater than all!”
+
+                                                            “A life lived in wisdom is the richest life of all.”</mark>
+                                                    </p>
+                                                    <p class="ta" style="display:none;"> சாலொமோனின் ஆட்சி காலத்தில்
+                                                        இஸ்ரவேல் தேசம் அமைதியிலும் வளமையிலும் இருந்தது. அவரது
+                                                        <mark>ராஜ்ஜியம்
+                                                            தங்கம், வெள்ளி, மண்மலர் போன்ற செல்வங்களால்</mark>
+                                                        நிரம்பியது. அவரின்
+                                                        ஞானத்தை கேட்க அனைத்து தேசங்களின் ராஜாக்களும் வந்தனர். சிறப்பாக
+                                                        <mark>சேபா ராஜ்ஞி </mark>அவரைச் சந்திக்க வந்தாள். அவள்<mark>
+                                                            தங்கம், நறுமணங்கள்,
+                                                            நகைகள்</mark> ஆகியவற்றைக் கொண்டு வந்து சாலொமோனிடம் கேள்விகள்
+                                                        கேட்டாள்.
+                                                        சாலொமோன் அனைத்துக்கும் ஞானமாய் பதிலளித்தான். அவள் கூறினாள்:
+                                                        <mark> “உன்
+                                                            ஞானமும் உன் தேவனும் எல்லாவற்றிலும் மேலானது!” “ஞானத்தோடு
+                                                            வாழ்ந்த வாழ்க்கைதான் உண்மையான செல்வம்.”</mark>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card 6 -->
+                                            <div class="related-card">
+                                                <img src="assets/imges/qq7.jpg" alt="Day 5">
+                                                <div class="card-content">
+                                                    <h4 class="en">Solomon’s Later Years and His Mistakes</h4>
+                                                    <h4 class="ta" style="display:none;">சாலொமோனின் இறுதி நாட்களும்
+                                                        தவறுகளும்</h4>
+                                                    <p class="en">As years passed, <mark>Solomon married many foreign wives.</mark>
+                                                        They turned his heart toward their gods.
+
+                                                        Then God said:
+
+                                                       <mark> “You have turned away from Me.
+                                                        Therefore, your son will not rule over the whole kingdom.”</mark>
+
+                                                        From that time, Solomon’s kingdom began to weaken.
+                                                        Yet, because of God’s promise to David,
+                                                        a part of the kingdom remained with Solomon’s family.
+
+                                                        In his <mark>old age, Solomon died peacefully,</mark>
+                                                        and his <mark>son Rehoboam became king.</mark>
+                                                    </p>
+                                                    <p class="ta" style="display:none;"> ஆனால் காலம் கடந்து, <mark>சாலொமோன் பல
+                                                        வெளிநாட்டு பெண்களை மணந்தார்.</mark> அவர்கள் தம் தேவன்களை வணங்கச்
+                                                        செய்தனர். அதனால் சாலொமோனின் இதயம் மெதுவாக தேவனிடமிருந்து
+                                                        விலகியது. தேவன் கூறினார்: <mark>“நீ என் வழியிலிருந்து விலகிவிட்டாய்.
+                                                        அதனால் உன் மகன் நாடு முழுவதையும் ஆட்சி செய்யமாட்டான்.”</mark> அந்தப்
+                                                        பின்பு சாலொமோனின் ஆட்சி மெதுவாகச் சீர்குலைந்தது. ஆனால் தேவன்
+                                                        தாவீதின் வாக்குறுதியால் ஒரு பகுதியை சாலொமோனின் குடும்பத்திற்குத்
+                                                        தந்தார். இறுதியில் <mark>சாலொமோன் முதுமையில் இறந்தார்.</mark> அவரது <mark>மகன்
+                                                        ரெஹபெயம் அரசனாக </mark>ஆனார்.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+
+
+                                    </section>
+
+
+                                </div><!-- End post content -->
+
+                                <blockquote>
+                                    <p>
+                                        "His wisdom built a temple for God and brought peace to the land.
+                                        Yet, as time passed, his heart drifted toward the world — a gentle reminder that
+                                        even the wisest can stumble when they forget their first love.
+
+                                        Wisdom without obedience leads to emptiness.
+                                        But a humble, faithful heart keeps us anchored in God’s truth forever.
+
+                                        Let Solomon’s story inspire us to seek not just knowledge, but the wisdom that
+                                        stays rooted in love and faith.
+
+
+
+                                        “Lord, give me wisdom to walk in Your ways — and a heart that never turns away.”
+                                        Those who obey God’s word will always find vict!ory.
+                                        Every ending is also a new beginning "
+                                    </p>
+                                </blockquote>
+
+                            </article>
+
+                        </div>
+                    </section><!-- /Blog Details Section -->
+
+
+
+                </div>
+
+                <div class="col-lg-4 sidebar">
+
+                    <div class="widgets-container">
+
+
+                        <!-- Recent Posts Widget -->
+                        <div class="recent-posts-widget widget-item">
+
+                            <h3 class="widget-title">Next Stories</h3>
+
+                            <div class="post-item">
+                                <img src="assets/imges/jn1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Jonah.html">Jonah and the Whale</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/dn1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Daniel.html">Daniel in the Lion’s Den</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/qe1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Esther.html">Queen Esther – Brave and Kind Queen</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/nn1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Noah.html">Noah – The Great Ark and God’s Promise</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/aa1.webp" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="single-post.html">God Create World</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+
+
+                            <div class="post-item">
+                                <img src="assets/imges/bb1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Adam.html">The Story of Adam and Eve</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/kk1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Abel.html">Cain and Abel – Detailed Story</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+
+
+                            <div class="post-item">
+                                <img src="assets/imges/hh1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Abraham.html">Abraham – The Father of Faith</a>
+                                    </h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/jj1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Jacob.html">Jacob & Joseph – The Dreamer and the Redeemer</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/mm1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Moses.html">The Story of Moses’ Final Blessing and Death</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/ss1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="Samuel.html">Samuel the Prophet – From Birth to Death</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="assets/imges/dd1.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="David.html">King David – From Shepherd Boy to King of Israel</a></h4>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                        </div><!--/Recent Posts Widget -->
+
+
+                        <!-- Blog Author Widget -->
+                        <div class="blog-author-widget widget-item">
+
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="d-flex align-items-center w-100">
+                                    <img src="assets/imges/mine.jpg" class="rounded-circle flex-shrink-0" alt="">
+                                    <div>
+                                        <h4>Jebin Joseph</h4>
+                                        <div class="social-links">
+                                            <a href="https://github.com/Jebindevp" class="github"><i
+                                                    class="bi bi-github"></i></a>
+                                            <a href="https://wa.me/919487851243?text=Hello%20I%20have%20a%20question"
+                                                target="_blank" rel="noopener noreferrer">
+                                                <i class="bi bi-whatsapp"></i>
+                                            </a>
+                                            <a href="mailto:kmt4543@gmail.com" class="gmail"><i
+                                                    class="bi bi-envelope-fill"></i></a>
+                                            <a href="https://jebindevp.github.io/My-Protifolio/" class="portfolio"><i
+                                                    class="bi bi-briefcase-fill"></i></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <p>
+                                    I’m Jebin Joseph, a passionate Web Designer dedicated to turning creative ideas into
+                                    visually stunning
+                                    and user-friendly websites. With a deep love for design and technology, I specialize
+                                    in crafting
+                                    modern, responsive, and engaging digital experiences that bring brands to life.
+                                </p>
+                                <p>"Good design is not just about how it looks — it’s about how it works and how it
+                                    makes people feel."
+                                </p>
+                            </div>
+
+                        </div><!--/Blog Author Widget -->
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer id="footer" class="footer dark-background">
+
+        <div class="container footer-top">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <a href="index.html" class="logo d-flex align-items-center">
+                        <span class="sitename">Bible</span>
+                    </a>
+                    <div class="footer-contact pt-3">
+                        <p>India , TamilNadu</p>
+                        <p>Kanya Kumari Dist</p>
+                        <p class="mt-3"><strong>Phone:</strong> <span>91+ 9487851243</span></p>
+                        <p><strong>Email:</strong> <span>kmt4543@gmail.com</span></p>
+                    </div>
+                    <div class="social-links d-flex mt-4">
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Categries</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Management System</a></li>
+                        <li><a href="#">Marketing</a></li>
+                        <li><a href="#">Graphic Design</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Development</h4>
+                    <ul>
+                        <li><a href="#">static websites</a></li>
+                        <li><a href="#">dynamic websites </a></li>
+                        <li><a href="#">E-Commerce design</a></li>
+                        <li><a href="#">Student Projects</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Other Services</h4>
+                    <ul>
+                        <li><a href="#">Photos Editting</a></li>
+                        <li><a href="#">Video Editting</a></li>
+                        <li><a href="#">Online Class </a></li>
+                        <li><a href="#">Poster Edit</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container copyright text-center mt-4">
+            <p>© <span>Copyright</span> <strong class="px-1 sitename">BIBLE</strong> <span>All Rights Reserved</span>
+            </p>
+            <div class="credits">
+
+                Designed by & Distributed by <a href="">Jebin Joseph</a>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+
+    <script>
+        const cards = document.querySelectorAll(".related-card");
+        const nextBtn = document.getElementById("next-btn");
+        const prevBtn = document.getElementById("prev-btn");
+        const pageInfo = document.getElementById("page-info");
+        let currentCard = 0;
+
+        function showCard(index) {
+            cards.forEach((card, i) => card.classList.toggle("active", i === index));
+            pageInfo.textContent = ` ${index + 1} of ${cards.length}`;
+        }
+
+        nextBtn.addEventListener("click", () => {
+            currentCard = (currentCard + 1) % cards.length;
+            showCard(currentCard);
+        });
+
+        prevBtn.addEventListener("click", () => {
+            currentCard = (currentCard - 1 + cards.length) % cards.length;
+            showCard(currentCard);
+        });
+
+        showCard(currentCard);
+
+        // Language Toggle
+        const tamilBtn = document.getElementById("tamil-btn");
+        const englishBtn = document.getElementById("english-btn");
+
+        tamilBtn.addEventListener("click", () => {
+            tamilBtn.classList.add("active");
+            englishBtn.classList.remove("active");
+            document.querySelectorAll(".ta").forEach(el => el.style.display = "block");
+            document.querySelectorAll(".en").forEach(el => el.style.display = "none");
+        });
+
+        englishBtn.addEventListener("click", () => {
+            englishBtn.classList.add("active");
+            tamilBtn.classList.remove("active");
+            document.querySelectorAll(".en").forEach(el => el.style.display = "block");
+            document.querySelectorAll(".ta").forEach(el => el.style.display = "none");
+        });
+    </script>
+
+
+</body>
+
+
+<!-- Mirrored from themewagon.github.io/ZenBlog/single-post.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Oct 2025 10:06:52 GMT -->
+
+</html>
