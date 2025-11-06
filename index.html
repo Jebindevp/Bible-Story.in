@@ -597,6 +597,82 @@
         font-size: 1rem;
       }
     }
+
+
+
+    /* Bible Story Section */
+    .bible-story {
+      background: #f9f9ff;
+      color: #222;
+    }
+
+    .bible-story .content {
+      padding: 20px;
+    }
+
+    .bible-story h2 {
+      font-weight: 700;
+      color: #2b3a67;
+    }
+
+    .bible-story p {
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    .video-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 1rem;
+    }
+
+    .video-card video {
+      width: 100%;
+      display: block;
+      border-radius: 1rem;
+      transition: transform 0.3s ease;
+    }
+
+    .video-card:hover video {
+      transform: scale(1.02);
+    }
+
+    /* Play Button */
+    .play-btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0, 0, 0, 0.6);
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .play-btn i {
+      font-size: 2.5rem;
+      color: #fff;
+    }
+
+    .play-btn:hover {
+      background: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Responsive */
+    @media (max-width: 992px) {
+      .bible-story .content {
+        text-align: center;
+      }
+
+      .video-col {
+        margin-top: 20px;
+      }
+    }
   </style>
 
 
@@ -713,6 +789,58 @@
       </div>
 
     </section><!-- /Slider Section -->
+
+    <!-- ======= Bible Story Section ======= -->
+    <section id="bible-story" class="bible-story section py-5">
+      <div class="container">
+        <div class="row gy-4 align-items-center">
+
+          <!-- LEFT: Bible Story Text -->
+          <div class="col-lg-6 content" data-aos="fade-right" data-aos-delay="100">
+            <p class="section-label text-uppercase text-primary fw-bold">Bible Story</p>
+            <h2 class="mb-3">David and Goliath – Victory Through Faith</h2>
+            <p class="fst-italic">
+              “The battle is the Lord’s, and He will give all of you into our hands.” — 1 Samuel 17:47
+            </p>
+            <p>
+              “So God created mankind in His own image.” — Genesis 1:27
+            </p>
+            <p>
+              “But Noah found favor in the eyes of the Lord.” — Genesis 6:8
+            </p>
+            <p>“The battle is the Lord’s.” — 1 Samuel 17:47</p>
+            <p>“My God sent His angel, and He shut the mouths of the lions.” — Daniel 6:22</p>
+            <p>“He is not here; He has risen, just as He said.” — Matthew 28:6</p>
+            <p>“Love your neighbor as yourself.” — Luke 10:27</p>
+            <p>“You meant evil against me, but God meant it for good.” — Genesis 50:20</p>
+            <p>“Where you go, I will go; your people will be my people, and your God my God.” — Ruth 1:16</p>
+            <p>“Who knows but that you have come to your royal position for such a time as this?” — Esther 4:14</p>
+            <p>“If the Lord is God, follow Him.” — 1 Kings 18:21</p>
+            <p>“I am the Lord’s servant. May it be to me as You have said.” — Luke 1:38</p>
+            <P>“I have fought the good fight, I have finished the race, I have kept the faith.” — 2 Timothy 4:7</P>
+            <p class="fw-bold text-secondary">
+              “The Lord will fight for you; you need only to be still.” — Exodus 14:14
+            </p>
+          </div>
+
+          <!-- RIGHT: Video Card -->
+          <div class="col-lg-6 video-col" data-aos="fade-left" data-aos-delay="200">
+            <div class="video-card position-relative">
+              <video id="bibleVideo" class="video-fluid w-100 rounded-4 shadow-lg" muted loop playsinline>
+                <source src="assets/imges/vv3.mp4" type="video/mp4">
+                Your browser does not support HTML video.
+              </video>
+              <div class="play-btn" id="playBtn">
+                <i class="bi bi-play-fill"></i>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- ======= End Bible Story Section ======= -->
+
 
     <!-- Trending Category Section -->
     <section id="trending-category" class="trending-category section">
@@ -927,40 +1055,23 @@
               <div class="post-meta"><span class="date">World</span> <span class="mx-1">•</span> <span>In the
                   Beginning…</span></div>
               <h2><a href="mary.html">Birth of Jesus</a></h2>
-              <p class="mb-4 d-block">In the beginning, there was only stillness — no light, no sound, no form. The
-                world was empty and silent, covered in deep darkness. But then, God spoke — and everything changed.
-
-                “Let there be light!” — and light burst into existence, chasing away the darkness. The first sunrise
-                painted the heavens with gold, and creation began to sing.
-
-                God separated the day from the night, the land from the sea. He shaped mighty mountains, peaceful
-                valleys, and flowing rivers. The blue sky stretched wide above, and the green earth blossomed below.
-
-                He made the grass to grow, the flowers to bloom, and the trees to reach toward the heavens. Every
-                leaf whispered His glory. Every breeze carried His breath of life.
-
-                Then came the creatures — great and small — birds that soared in the air, fish that swam in the
-                deep seas, and animals that walked the land. Each one unique, each one made with care and love.
-
-                And finally, God created man and woman in His own image — to love, to think, to create, and to walk
-                with Him. He breathed His very life into them. Humanity became the reflection of His heart.
-
-                The world was perfect — peaceful, beautiful, full of harmony.
-                God looked at all He had made and said, “It is very good.”
-
-                Jesus was there — from the very beginning.
-                He was the Word through whom all things were created — the galaxies, the stars, the earth, and even
-                your heartbeat.
-
-                The same Jesus who made the universe also made you, with a purpose and a plan.
-                He knows your name, your dreams, and your heart — because you were created by His love.
-
-                Message:
-                From nothing, God created everything — with love, order, and beauty.
-                He is the Light that shines in every darkness, the Life that fills all creation.
-                And just as He spoke the world into being, He can speak new beginnings into your life too.
-
-                “The same God who made the stars also made you — and He calls you His masterpiece.”</p>
+              <p class="mb-4 d-block">Long before Jesus was born, the prophets had spoken of a Savior who would bring
+                peace and light to the world. The prophet Isaiah said, “For to us a child is born, to us a son is given;
+                and the government will be on His shoulders. And He will be called Wonderful Counselor, Mighty God,
+                Everlasting Father, Prince of Peace” (Isaiah 9:6). When the right time came, God sent His Son into the
+                world, born of the Virgin Mary, in a small and quiet town called Bethlehem. His birth was not in a
+                palace but in a humble stable, showing that God’s love reaches even the lowliest of hearts. The shining
+                star that appeared in the sky was a sign that the Light of the World had come. Truly, the birth of Jesus
+                is the greatest sign of God’s faithfulness and mercy to humankind.The night Jesus was born was filled
+                with divine glory. Shepherds were watching their flocks in the fields when suddenly, the glory of the
+                Lord shone around them. The angel told them not to fear, but to rejoice, for the Savior had been born.
+                They hurried to Bethlehem and found Mary, Joseph, and the baby lying in a manger, just as the angel had
+                said. Filled with joy, they praised God and told everyone what they had seen. The wise men also came
+                from faraway lands, guided by the star that rested over the place where Jesus was. They bowed down and
+                worshiped Him, offering their treasures. This holy birth reminds us that Jesus is “the true light that
+                gives light to everyone” (John 1:9). His coming brought hope to the hopeless and peace to the world.
+                Every Christmas, we remember that God’s love was born among us in the form of a child — the
+                Lord Jesus Christ.</p>
 
             </div>
 
@@ -993,19 +1104,19 @@
                   <h2><a href="Life.html">- Jesus returned to Nazareth</a></h2>
                 </div>
                 <div class="post-entry">
-                  <a href="#"><img src="assets/imges/yy1.jpg" alt="" class="img-fluid"></a>
-                  <div class="post-meta"><span class="date">John the Baptist –</span> <span class="mx-1">•</span> </div>
-                  <h2><a href="Baptism.html"> The Dreamer and the Redeemer</a></h2>
+                  <a href="#"><img src="assets/imges/js1.jpg" alt="" class="img-fluid"></a>
+                  <div class="post-meta"><span class="date">Prepare the way for Jesus Christ –</span> <span class="mx-1">•</span> </div>
+                  <h2><a href="John.html">The Baptism of Jesus</a></h2>
                 </div>
               </div>
               <div class="col-lg-4 border-start custom-border">
 
                 <div class="post-entry">
-                  <a href="#"><img src="assets/imges/js1.jpg" alt="" class="img-fluid"></a>
-                  <div class="post-meta"><span class="date">Prepare the way for Jesus Christ.</span> <span
+                  <a href="#"><img src="assets/imges/we1.jpg" alt="" class="img-fluid"></a>
+                  <div class="post-meta">Jesus’ First Miracle - <span class="date">.</span> <span
                       class="mx-1">•</span>
                   </div>
-                  <h2><a href="John.html"> The Baptism of Jesus</a></h2>
+                  <h2><a href="Wedding.html"> The Miracle at the Wedding in Cana</a></h2>
                 </div>
                 <div class="post-entry">
                   <a href="#"><img src="assets/imges/ww1.jpg" alt="" class="img-fluid"></a>
@@ -1015,7 +1126,7 @@
                 </div>
 
                 <div class="post-entry">
-                  <a href="#"><img src="assets/imges/ww1.jpg" alt="" class="img-fluid"></a>
+                  <a href="#"><img src="assets/imges/PP1.jpg" alt="" class="img-fluid"></a>
                   <div class="post-meta"><span class="date">Jesus</span> <span class="mx-1">•</span>
                   </div>
                   <h2><a href="Blood.html">The Body and Blood of Christ</a></h2>
@@ -1047,17 +1158,17 @@
                     <li>
                       <a href="#"> <span class="author">Jesus’</span>
                         <span class="number">2</span>
-                        <a href="Daniel.html">
+                        <a href="">
                           <h3> Out Demons and Evil Spirits</h3>
                         </a>
 
                       </a>
                     </li>
                     <li>
-                      <a href="#"> <span class="author">Esther </span>
+                      <a href="#"> <span class="author">John the Baptist</span>
                         <span class="number">3</span>
                         <a href="Esther.html">
-                          <h3>Queen Esther – The Brave and Kind Queen Who Saved Her People</h3>
+                          <h3>The Dreamer and the Redeemer</h3>
                         </a>
 
                       </a>
@@ -1210,6 +1321,20 @@
     });
   </script>
 
+  <script>
+    const video = document.getElementById('bibleVideo');
+    const playBtn = document.getElementById('playBtn');
+
+    playBtn.addEventListener('click', () => {
+      if (video.paused) {
+        video.play();
+        playBtn.style.display = 'none';
+      } else {
+        video.pause();
+        playBtn.style.display = 'flex';
+      }
+    });
+  </script>
 
 
   <!-- Main JS File -->
