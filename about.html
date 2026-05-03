@@ -295,6 +295,151 @@
     }
   </style>
 
+  <style>
+    .prayer-section {
+      background: linear-gradient(135deg, #f8f9ff, #eef4ff);
+    }
+
+    .mini-title {
+      color: #0d6efd;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .main-title {
+      font-size: 42px;
+      font-weight: 800;
+      margin: 12px 0 18px;
+      color: #111;
+    }
+
+    .lead-text {
+      color: #555;
+      line-height: 1.8;
+      margin-bottom: 30px;
+    }
+
+    .prayer-list {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .prayer-item {
+      display: flex;
+      gap: 15px;
+      padding: 18px;
+      border-radius: 16px;
+      background: #fff;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, .06);
+      transition: .4s;
+    }
+
+    .prayer-item:hover {
+      transform: translateY(-6px);
+    }
+
+    .prayer-item i {
+      font-size: 28px;
+      color: #0d6efd;
+    }
+
+    .prayer-item h5 {
+      font-size: 18px;
+      margin-bottom: 6px;
+      font-weight: 700;
+    }
+
+    .prayer-item p {
+      margin: 0;
+      color: #666;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    /* Cards */
+    .pdf-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 18px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, .12);
+    }
+
+    .pdf-card img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      transition: .5s;
+    }
+
+    .pdf-card:hover img {
+      transform: scale(1.08);
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, .60);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: .4s;
+    }
+
+    .pdf-card:hover .overlay {
+      opacity: 1;
+    }
+
+    .overlay h6 {
+      color: #fff;
+      font-size: 18px;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+
+    .btn-open {
+      background: #0d6efd;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: .3s;
+    }
+
+    .btn-open:hover {
+      background: #fff;
+      color: #0d6efd;
+    }
+
+    /* Mobile */
+    @media(max-width:991px) {
+      .main-title {
+        font-size: 34px;
+      }
+
+      .pdf-card img {
+        height: 260px;
+      }
+    }
+
+    @media(max-width:767px) {
+      .main-title {
+        font-size: 28px;
+      }
+
+      .prayer-item {
+        padding: 15px;
+      }
+
+      .pdf-card img {
+        height: 240px;
+      }
+    }
+  </style>
 
 </head>
 
@@ -420,6 +565,158 @@
       </div>
     </section>
     <!-- ======= End About Section ======= -->
+
+    <section id="about" class="about section py-5 prayer-section">
+      <div class="container">
+        <div class="row gy-5 align-items-center">
+
+          <!-- LEFT CONTENT -->
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <span class="mini-title">Daily Bible Prayer</span>
+            <h2 class="main-title">God's Grace For Today</h2>
+
+            <p class="lead-text">
+              Start today with prayer, faith, and hope.
+              God sees every tear, hears every prayer, and blesses every faithful heart.
+            </p>
+
+            <div class="prayer-list">
+
+              <div class="prayer-item">
+                <i class="bi bi-bookmark-heart-fill"></i>
+                <div>
+                  <h5>Morning Prayer</h5>
+                  <p>
+                    Lord Jesus, guide my steps today. Fill my heart with peace and wisdom.
+                  </p>
+                </div>
+              </div>
+
+              <div class="prayer-item">
+                <i class="bi bi-house-heart-fill"></i>
+                <div>
+                  <h5>Family Prayer</h5>
+                  <p>
+                    Protect my family with love, health, unity, and blessings.
+                  </p>
+                </div>
+              </div>
+
+              <div class="prayer-item">
+                <i class="bi bi-stars"></i>
+                <div>
+                  <h5>Mother Mary Prayer</h5>
+                  <p>
+                    Ave Maria, full of grace, pray for us and lead us to Christ.
+                  </p>
+                </div>
+              </div>
+
+              <div class="prayer-item">
+                <i class="bi bi-brightness-high-fill"></i>
+                <div>
+                  <h5>Hope Prayer</h5>
+                  <p>
+                    Father, remove fear and fill my future with hope and courage.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- RIGHT SIDE PDF BOOK CARDS -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="row g-4">
+
+              <!-- CARD 1 -->
+              <div class="col-md-4 col-12">
+                <div class="pdf-card">
+                  <img src="assets/imges/pr1.jpg" class="img-fluid" alt="">
+                  <div class="overlay">
+                    <h6>Morning Prayer</h6>
+                    <a href="assets/pdf/prayer1.pdf" target="_blank" class="btn-open">
+                      Open PDF
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 2 -->
+              <div class="col-md-4 col-12">
+                <div class="pdf-card">
+                  <img src="assets/imges/pr2.jpg" class="img-fluid" alt="">
+                  <div class="overlay">
+                    <h6>Family Prayer</h6>
+                    <a href="assets/pdf/prayer2.pdf" target="_blank" class="btn-open">
+                      Open PDF
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 3 -->
+              <div class="col-md-4 col-12">
+                <div class="pdf-card">
+                  <img src="assets/imges/pr3.jpg" class="img-fluid" alt="">
+                  <div class="overlay">
+                    <h6>Ave Maria</h6>
+                    <a href="assets/pdf/prayer3.pdf" target="_blank" class="btn-open">
+                      Open PDF
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 1 -->
+              <div class="col-md-4 col-12">
+                <div class="pdf-card">
+                  <img src="assets/imges/pr4.jpg" class="img-fluid" alt="">
+                  <div class="overlay">
+                    <h6>sagaya madha prayer</h6>
+                    <a href="assets/pdf/prayer1.pdf" target="_blank" class="btn-open">
+                      Open PDF
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 2 -->
+              <div class="col-md-4 col-12">
+                <div class="pdf-card">
+                  <img src="assets/imges/pr5.jpg" class="img-fluid" alt="">
+                  <div class="overlay">
+                    <h6>Family Prayer</h6>
+                    <a href="assets/pdf/prayer2.pdf" target="_blank" class="btn-open">
+                      Open PDF
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 3 -->
+              <div class="col-md-4 col-12">
+                <div class="pdf-card">
+                  <img src="assets/imges/pr6.png" class="img-fluid" alt="">
+                  <div class="overlay">
+                    <h6>Ave Maria</h6>
+                    <a href="assets/pdf/prayer3.pdf" target="_blank" class="btn-open">
+                      Open PDF
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
 
 
 
