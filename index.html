@@ -1,28 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-<!-- Mirrored from themewagon.github.io/ZenBlog/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Oct 2025 10:06:32 GMT -->
-<!-- Added by HTTrack -->
-<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Bible Stories</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>Holy Bible Stories – The Living Word of God</title>
+  <meta name="description" content="Explore illuminated stories from the Holy Bible, from God's Creation to Jesus Christ's Resurrection.">
+  <meta name="keywords" content="Bible, Bible Stories, Jesus Christ, Old Testament, New Testament, Faith, Miracles">
 
   <!-- Favicons -->
   <link href="assets/imges/ll1.jpg" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/" rel="preconnect">
-  <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
-    rel="stylesheet">
+  <!-- Google Fonts: Cinzel, EB Garamond, Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Cinzel+Decorative:wght@700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -30,662 +23,58 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Main CSS File -->
+  <!-- Master Bible Design CSS -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-
-  <!-- Swiper CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
-
-  <!-- =======================================================
-  * Template Name: ZenBlog
-  * Template URL: https://bootstrapmade.com/zenblog-bootstrap-blog-template/
-  * Updated: Aug 08 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-
-  <style>
-    /* ====== Header Base ====== */
-    .header {
-      background: #0d1b2a;
-      /* deep navy blue */
-      padding: 15px 0;
-      transition: all 0.3s ease;
-      z-index: 999;
-      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
-    }
-
-    .header.sticky-top {
-      position: sticky;
-      top: 0;
-    }
-
-    /* ====== Logo ====== */
-    .sitename {
-      font-size: 1.8rem;
-      font-weight: 700;
-      color: #fff;
-      letter-spacing: 1px;
-      transition: color 0.3s;
-    }
-
-    .sitename:hover {
-      color: #ffd700;
-      /* gold hover */
-    }
-
-    /* ====== Navigation Menu ====== */
-    .navmenu ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      align-items: center;
-      gap: 25px;
-    }
-
-    .navmenu a {
-      text-decoration: none;
-      color: #fff;
-      font-weight: 500;
-      font-size: 1rem;
-      position: relative;
-      transition: color 0.3s ease;
-    }
-
-    /* Hover underline animation */
-    .navmenu a::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: -5px;
-      width: 0;
-      height: 2px;
-      background-color: #ffd700;
-      transition: width 0.3s ease;
-    }
-
-    .navmenu a:hover::after,
-    .navmenu a.active::after {
-      width: 100%;
-    }
-
-    .navmenu a:hover,
-    .navmenu a.active {
-      color: #ffd700;
-    }
-
-    /* ====== Social Icons ====== */
-    /* ====== Header Social Links ====== */
-    .header-social-links {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      /* ensures even centering in container */
-      gap: 12px;
-    }
-
-    /* Base style for icons */
-    .header-social-links a {
-      color: #ffffff;
-      font-size: 1.2rem;
-      width: 40px;
-      /* slightly larger for better centering */
-      height: 40px;
-      display: flex;
-      /* use flex instead of inline-flex for stable centering */
-      align-items: center;
-      justify-content: center;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.826);
-      backdrop-filter: blur(6px);
-      transition: all 0.35s ease;
-      position: relative;
-      overflow: hidden;
-      line-height: 1;
-      /* keeps icon centered vertically */
-    }
-
-    /* Icon hover animation */
-    .header-social-links a::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(45deg, #ffd700, #ff8c00);
-      transform: scale(0);
-      transition: transform 0.35s ease;
-      border-radius: 50%;
-      z-index: 0;
-    }
-
-    .header-social-links a:hover::after {
-      transform: scale(1);
-    }
-
-    /* Hover effects for the icon itself */
-    .header-social-links a i {
-      position: relative;
-      z-index: 1;
-      transition: transform 0.35s ease, color 0.35s ease;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-top: 10px;
-    }
-
-    .header-social-links a:hover i {
-      transform: scale(1.2) rotate(10deg);
-      color: #000;
-    }
-
-    /* Add glowing effect on hover */
-    .header-social-links a:hover {
-      box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
-    }
-
-
-    /* ====== Mobile Navigation ====== */
-    .mobile-nav-toggle {
-      display: none;
-      font-size: 1.8rem;
-      color: #fff;
-      cursor: pointer;
-      transition: transform 0.3s ease;
-    }
-
-    .mobile-nav-toggle:hover {
-      transform: rotate(90deg);
-    }
-
-    /* ====== Responsive Design ====== */
-    @media (max-width: 991px) {
-      .navmenu ul {
-        position: absolute;
-        top: 70px;
-        left: 0;
-        width: 100%;
-        background: #1b263b;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 15px 20px;
-        gap: 15px;
-        display: none;
-        /* hidden by default */
-      }
-
-      .navmenu.active ul {
-        display: flex;
-        /* show when toggled */
-      }
-
-      .mobile-nav-toggle {
-        display: block;
-      }
-
-      .header-social-links {
-        display: none;
-        /* hide social links on mobile for simplicity */
-      }
-    }
-
-    /* ====== Scroll Effect (optional enhancement) ====== */
-    .header.scrolled {
-      background: #1b263b;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-      transition: background 0.3s, box-shadow 0.3s;
-    }
-
-
-
-
-
-    /* ===========================
-   SLIDER SECTION STYLING
-   =========================== */
-    .slider {
-      position: relative;
-      width: 100%;
-      overflow: hidden;
-      background: #f0eded;
-      /* fallback background */
-      color: #fff;
-      font-family: "Poppins", sans-serif;
-    }
-
-    /* Swiper wrapper setup */
-    .swiper {
-      width: 100%;
-      height: 100%;
-    }
-
-    /* Each slide */
-    .swiper-slide {
-      position: relative;
-      width: 100%;
-      height: 90vh;
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      align-items: flex-end;
-      justify-content: center;
-      transition: transform 0.6s ease-in-out;
-      overflow: hidden;
-    }
-
-    /* Add a dark overlay on images */
-    .swiper-slide::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.55);
-      z-index: 1;
-      transition: background 0.5s ease;
-    }
-
-    /* Slide content box */
-    .swiper-slide .content {
-      position: relative;
-      z-index: 2;
-      color: #fff;
-      text-align: center;
-      max-width: 800px;
-      padding: 20px;
-      margin-bottom: 80px;
-      background: rgba(0, 0, 0, 0.4);
-      border-radius: 15px;
-      backdrop-filter: blur(8px);
-      animation: fadeUp 0.8s ease-in-out;
-    }
-
-    /* Title styling */
-    .swiper-slide .content h2 {
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 15px;
-      line-height: 1.3;
-    }
-
-    .swiper-slide .content h2 a {
-      color: #ffd700;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-
-    .swiper-slide .content h2 a:hover {
-      color: #ff9d00;
-    }
-
-    /* Paragraph text */
-    .swiper-slide .content p {
-      font-size: 1rem;
-      line-height: 1.7;
-      color: #e0e0e0;
-    }
-
-    /* Hover zoom effect */
-    .swiper-slide:hover {
-      transform: scale(1.02);
-    }
-
-    /* Swiper Navigation Buttons */
-    .swiper-button-next,
-    .swiper-button-prev {
-      color: #fff;
-      background: rgba(255, 255, 255, 0.15);
-      width: 45px;
-      height: 45px;
-      border-radius: 50%;
-      backdrop-filter: blur(5px);
-      transition: all 0.3s ease;
-    }
-
-    .swiper-button-next:hover,
-    .swiper-button-prev:hover {
-      background: rgba(255, 215, 0, 0.9);
-      color: #000;
-      transform: scale(1.1);
-    }
-
-    /* Swiper pagination bullets */
-    .swiper-pagination-bullet {
-      background: #fff;
-      opacity: 0.7;
-      transition: all 0.3s ease;
-    }
-
-    .swiper-pagination-bullet-active {
-      background: #ffd700;
-      opacity: 1;
-      transform: scale(1.2);
-    }
-
-    /* ===========================
-   RESPONSIVE DESIGN
-   =========================== */
-    @media (max-width: 991px) {
-      .swiper-slide {
-        height: 70vh;
-      }
-
-      .swiper-slide .content {
-        margin-bottom: 60px;
-        padding: 15px;
-      }
-
-      .swiper-slide .content h2 {
-        font-size: 1.6rem;
-      }
-
-      .swiper-slide .content p {
-        font-size: 0.95rem;
-      }
-
-      .swiper-button-next,
-      .swiper-button-prev {
-        width: 40px;
-        height: 40px;
-      }
-    }
-
-    @media (max-width: 600px) {
-      .swiper-slide {
-        height: 60vh;
-        align-items: flex-end;
-      }
-
-      .swiper-slide .content {
-        margin-bottom: 40px;
-        padding: 10px 15px;
-        background: rgba(0, 0, 0, 0.5);
-      }
-
-      .swiper-slide .content h2 {
-        font-size: 1.2rem;
-      }
-
-      .swiper-slide .content p {
-        display: none;
-        /* hide long text on small screens for readability */
-      }
-    }
-
-    /* ===========================
-   Animation
-   =========================== */
-    @keyframes fadeUp {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-
-
-
-    /* ===== Trending Category Section ===== */
-    .trending-category {
-      background: #f8f9fa;
-      padding: 60px 0;
-      font-family: "Poppins", sans-serif;
-    }
-
-    /* Post Entry */
-    .post-entry {
-      transition: all 0.4s ease;
-      border-radius: 10px;
-      overflow: hidden;
-      position: relative;
-    }
-
-    .post-entry img {
-      border-radius: 10px;
-      transition: transform 0.5s ease, filter 0.5s ease;
-    }
-
-    .post-entry:hover img {
-      transform: scale(1.07);
-      filter: brightness(0.8);
-    }
-
-    .post-entry h2 a {
-      color: #222;
-      font-weight: 600;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      position: relative;
-    }
-
-    /* Underline hover animation */
-    .post-entry h2 a::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: -3px;
-      width: 0;
-      height: 2px;
-      background: linear-gradient(90deg, #ff7b00, #ffd700);
-      transition: width 0.4s ease;
-    }
-
-    .post-entry h2 a:hover::after {
-      width: 100%;
-    }
-
-    /* Hover effect on link text */
-    .post-entry h2 a:hover {
-      color: #ff7b00;
-      letter-spacing: 0.5px;
-    }
-
-    /* Clicked / Active link state */
-    .post-entry h2 a:active,
-    .post-entry h2 a:focus {
-      background-color: #ffffff;
-      color: #000000;
-      border-radius: 6px;
-      padding: 3px 6px;
-      transition: all 0.3s ease-in-out;
-    }
-
-    /* ===== Trending Sidebar Section ===== */
-    .trending {
-      background: #ffffff;
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
-      padding: 25px;
-      transition: transform 0.3s ease;
-    }
-
-    .trending:hover {
-      transform: translateY(-5px);
-    }
-
-    .trending h3 {
-      font-weight: 700;
-      font-size: 1.4rem;
-      margin-bottom: 20px;
-      border-left: 4px solid #ff7b00;
-      padding-left: 10px;
-    }
-
-    /* Trending list styles */
-    .trending-post {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .trending-post li {
-      margin-bottom: 18px;
-    }
-
-    .trending-post a {
-      display: block;
-      color: #333;
-      text-decoration: none;
-      padding: 10px 12px;
-      border-radius: 10px;
-      transition: all 0.4s ease;
-      background: rgba(255, 255, 255, 0.6);
-      position: relative;
-    }
-
-    /* Number style */
-    .trending-post .number {
-      font-size: 1.3rem;
-      font-weight: 700;
-      color: #ff7b00;
-      margin-right: 10px;
-    }
-
-    /* Hover Effect */
-    .trending-post a:hover {
-      background: #ff7b00;
-      color: #fff;
-      transform: translateX(5px);
-      box-shadow: 0 8px 15px rgba(255, 123, 0, 0.3);
-    }
-
-    /* Text inside trending post */
-    .trending-post a h3 {
-      font-size: 1rem;
-      font-weight: 600;
-      line-height: 1.4;
-      margin: 5px 0;
-    }
-
-    .trending-post a .author {
-      font-size: 0.9rem;
-      color: #777;
-      transition: color 0.3s ease;
-    }
-
-    /* Hover on text color */
-    .trending-post a:hover .author {
-      color: #fff;
-    }
-
-    /* Active Click Effect */
-    .trending-post a:active,
-    .trending-post a:focus {
-      background: #fff;
-      color: #000;
-      box-shadow: 0 0 0 3px #ff7b00 inset;
-    }
-
-    /* Responsive Design */
-    @media (max-width: 768px) {
-      .trending-category {
-        padding: 40px 15px;
-      }
-
-      .trending {
-        margin-top: 30px;
-      }
-
-      .post-entry h2 {
-        font-size: 1rem;
-      }
-    }
-
-
-
-    /* Bible Story Section */
-    .bible-story {
-      background: #f9f9ff;
-      color: #222;
-    }
-
-    .bible-story .content {
-      padding: 20px;
-    }
-
-    .bible-story h2 {
-      font-weight: 700;
-      color: #2b3a67;
-    }
-
-    .bible-story p {
-      font-size: 1rem;
-      line-height: 1.7;
-    }
-
-    .video-card {
-      position: relative;
-      overflow: hidden;
-      border-radius: 1rem;
-    }
-
-    .video-card video {
-      width: 100%;
-      display: block;
-      border-radius: 1rem;
-      transition: transform 0.3s ease;
-    }
-
-    .video-card:hover video {
-      transform: scale(1.02);
-    }
-
-    /* Play Button */
-    .play-btn {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background: rgba(0, 0, 0, 0.6);
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-
-    .play-btn i {
-      font-size: 2.5rem;
-      color: #fff;
-    }
-
-    .play-btn:hover {
-      background: rgba(0, 0, 0, 0.8);
-    }
-
-    /* Responsive */
-    @media (max-width: 992px) {
-      .bible-story .content {
-        text-align: center;
-      }
-
-      .video-col {
-        margin-top: 20px;
-      }
-    }
-  </style>
-
-
-
 </head>
 
 <body class="index-page">
 
+  <!-- ========================================================================
+       GRAND CINEMATIC BIBLE VIDEO INTRO OVERLAY
+       ======================================================================== -->
+  <div id="bible-intro-overlay" class="bible-intro-overlay">
+    <div class="bible-intro-backdrop"></div>
+    <video id="introVideoPlayer" class="intro-bg-video" autoplay muted loop playsinline>
+      <source src="assets/imges/vv3.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="bible-intro-vignette"></div>
+
+    <div class="bible-intro-content text-center">
+      <div class="bible-emblem-container mb-3">
+        <div class="bible-emblem-glow"></div>
+        <div class="bible-emblem-cross">✝</div>
+      </div>
+      <span class="bible-subtitle-badge">The Living Word of God</span>
+      <h1 class="bible-intro-title">HOLY BIBLE STORIES</h1>
+      <div class="bible-intro-divider">
+        <span></span>
+        <i class="bi bi-book-half"></i>
+        <span></span>
+      </div>
+      <p class="bible-intro-verse">
+        “In the beginning was the Word, and the Word was with God, and the Word was God.”
+        <span class="verse-ref">— John 1:1</span>
+      </p>
+
+      <div class="bible-intro-actions">
+        <button id="btnEnterBible" class="btn-enter-bible">
+          <i class="bi bi-book-fill me-2"></i> Enter Holy Scriptures
+        </button>
+        <button id="btnToggleSound" class="btn-intro-sound" title="Toggle Sound">
+          <i class="bi bi-volume-mute-fill"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       HEADER & NAVIGATION
+       ======================================================================== -->
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-
         <h1 class="sitename">BIBLE</h1>
       </a>
 
@@ -693,10 +82,13 @@
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="category.html">Categories</a></li>
-
-
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="category.html">Scripture Categories</a></li>
+          <li><a href="contact.html">Prayer & Contact</a></li>
+          <li>
+            <a href="#intro" id="btnReplayIntro" class="nav-intro-btn">
+              <i class="bi bi-play-circle-fill"></i> Watch Intro Video
+            </a>
+          </li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -704,21 +96,35 @@
     </div>
   </header>
 
+  <!-- ========================================================================
+       SCRIPTURE MARQUEE TICKER
+       ======================================================================== -->
+  <div class="bible-scripture-ticker">
+    <div class="bible-ticker-track">
+      <div class="bible-ticker-item">“The Lord is my shepherd; I shall not want.” <span>— Psalm 23:1</span></div>
+      <div class="bible-ticker-item">“For God so loved the world that He gave His one and only Son.” <span>— John 3:16</span></div>
+      <div class="bible-ticker-item">“I can do all things through Christ who strengthens me.” <span>— Philippians 4:13</span></div>
+      <div class="bible-ticker-item">“Trust in the Lord with all your heart.” <span>— Proverbs 3:5</span></div>
+      <div class="bible-ticker-item">“The battle is the Lord’s.” <span>— 1 Samuel 17:47</span></div>
+      <div class="bible-ticker-item">“He has risen, just as He said.” <span>— Matthew 28:6</span></div>
+    </div>
+  </div>
+
   <main class="main">
 
-    <!-- Slider Section -->
+    <!-- ========================================================================
+         HERO SLIDER SECTION (Open Bible Manuscript Carousel)
+         ======================================================================== -->
     <section id="slider" class="slider section dark-background">
-
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="swiper init-swiper">
-
           <script type="application/json" class="swiper-config">
             {
               "loop": true,
-              "speed": 600,
+              "speed": 700,
               "autoplay": {
-                "delay": 5000
+                "delay": 5500
               },
               "slidesPerView": "auto",
               "centeredSlides": true,
@@ -738,93 +144,80 @@
 
             <div class="swiper-slide" style="background-image: url('assets/imges/cc1.jpg');">
               <div class="content">
-                <h2><a href="#">God’s Amazing Creation</a></h2>
-                <p>In the beginning, there was nothing — no light, no land, no people. Only darkness covered everything.
-                  Then, by His great power, God began to create the world.</p>
+                <h2><a href="single-post.html">God’s Amazing Creation</a></h2>
+                <p>In the beginning, God created the heavens and the earth. By His mighty Word, light pierced the darkness, seas formed, and humanity was shaped in His sacred divine image.</p>
               </div>
             </div>
 
             <div class="swiper-slide" style="background-image: url('assets/imges/mm3.jpg');">
               <div class="content">
-                <h2><a href="#">Moses was born.</a></h2>
-                <p> They are fulfilled in His perfect way and in His perfect time. When we trust God completely, He
-                  leads us exactly where we need to be. Sometimes, our purpose is to pave the way for others to enter
-                  the blessing." breadcrumbs breadcrumbsLet us walk like Moses — with humility, patience, and unwavering
-                  faith.</p>
+                <h2><a href="Moses.html">The Life & Calling of Moses</a></h2>
+                <p>From the river Nile to the burning bush, God raised Moses with humility and faith to deliver His people and reveal the Holy Commandments on Mount Sinai.</p>
               </div>
             </div>
 
             <div class="swiper-slide" style="background-image: url('assets/imges/hh7.jpg');">
               <div class="content">
-                <h2><a href="#">Abraham – The Father of Faith</a>
-                </h2>
-                <p>God’s timing is perfect. What He promises, He will surely fulfill. Even when it seems impossible, He
-                  is working behind the scenes. When Abraham was 100 years old, and Sarah’s womb was barren, God still
-                  kept His word — and Isaac was born.</p>
+                <h2><a href="Abraham.html">Abraham – The Father of Faith</a></h2>
+                <p>When God called him, Abraham stepped out in unwavering faith. God’s promise proved faithful, and Isaac was born as a covenant of everlasting blessings.</p>
               </div>
             </div>
 
             <div class="swiper-slide" style="background-image: url('assets/imges/ja2.jpg');">
               <div class="content">
-                <h2><a href="#">Light of the World Birth of Jesus</a></h2>
-                <p>He is the Everlasting Father — full of love, mercy, and compassion. His arms are always open to those
-                  who come to Him. He is the Prince of Peace — the One who calms the storms within, who brings rest to
-                  weary souls and unity to a broken world.</p>
+                <h2><a href="Birth.html">Light of the World – The Birth of Jesus</a></h2>
+                <p>He is the Prince of Peace, born in a humble manger in Bethlehem to bring redemption, hope, and everlasting salvation to all humanity.</p>
               </div>
             </div>
+
           </div>
 
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
-
           <div class="swiper-pagination"></div>
         </div>
 
       </div>
+    </section>
 
-    </section><!-- /Slider Section -->
-
-    <!-- ======= Bible Story Section ======= -->
+    <!-- ========================================================================
+         FEATURED BIBLE STORY SPREAD (Left Content / Right Video Showcase)
+         ======================================================================== -->
     <section id="bible-story" class="bible-story section py-5">
       <div class="container">
         <div class="row gy-4 align-items-center">
 
-          <!-- LEFT: Bible Story Text -->
+          <!-- LEFT: Bible Story Text & Verses -->
           <div class="col-lg-6 content" data-aos="fade-right" data-aos-delay="100">
-            <p class="section-label text-uppercase text-primary fw-bold">Bible Story</p>
+            <p class="section-label text-uppercase fw-bold">✦ Scripture Showcase</p>
             <h2 class="mb-3">David and Goliath – Victory Through Faith</h2>
-            <p class="fst-italic">
+            <p class="fst-italic" style="color: var(--bible-crimson); font-size: 1.25rem;">
               “The battle is the Lord’s, and He will give all of you into our hands.” — 1 Samuel 17:47
             </p>
             <p>
-              “So God created mankind in His own image.” — Genesis 1:27
+              When the giant Goliath defied the armies of the living God, young David stood fearless. Armed not with heavy armor or spear, but with unshakable faith and the name of the Lord of hosts, David stepped forward onto the battlefield.
             </p>
             <p>
-              “But Noah found favor in the eyes of the Lord.” — Genesis 6:8
+              With a single stone and unwavering trust, God delivered an extraordinary victory. This story teaches us that no giant in our life is greater than the power and faithfulness of our Almighty God.
             </p>
-            <p>“The battle is the Lord’s.” — 1 Samuel 17:47</p>
-            <p>“My God sent His angel, and He shut the mouths of the lions.” — Daniel 6:22</p>
-            <p>“He is not here; He has risen, just as He said.” — Matthew 28:6</p>
-            <p>“Love your neighbor as yourself.” — Luke 10:27</p>
-            <p>“You meant evil against me, but God meant it for good.” — Genesis 50:20</p>
-            <p>“Where you go, I will go; your people will be my people, and your God my God.” — Ruth 1:16</p>
-            <p>“Who knows but that you have come to your royal position for such a time as this?” — Esther 4:14</p>
-            <p>“If the Lord is God, follow Him.” — 1 Kings 18:21</p>
-            <p>“I am the Lord’s servant. May it be to me as You have said.” — Luke 1:38</p>
-            <P>“I have fought the good fight, I have finished the race, I have kept the faith.” — 2 Timothy 4:7</P>
-            <p class="fw-bold text-secondary">
+            <p class="fw-bold" style="color: var(--bible-navy-mid); border-left: 3px solid var(--bible-gold-primary); padding-left: 12px;">
               “The Lord will fight for you; you need only to be still.” — Exodus 14:14
             </p>
+            <div class="mt-4">
+              <a href="David.html" class="btn-enter-bible" style="padding: 10px 24px; font-size: 0.95rem;">
+                <i class="bi bi-book-half me-1"></i> Read Full David Chronicle
+              </a>
+            </div>
           </div>
 
-          <!-- RIGHT: Video Card -->
+          <!-- RIGHT: Video Card in Gilded Frame -->
           <div class="col-lg-6 video-col" data-aos="fade-left" data-aos-delay="200">
             <div class="video-card position-relative">
-              <video id="bibleVideo" class="video-fluid w-100 rounded-4 shadow-lg" muted loop playsinline>
+              <video id="bibleVideo" class="video-fluid w-100" muted loop playsinline poster="assets/imges/dd1.jpg">
                 <source src="assets/imges/vv3.mp4" type="video/mp4">
                 Your browser does not support HTML video.
               </video>
-              <div class="play-btn" id="playBtn">
+              <div class="play-btn" id="playBtn" title="Play Video">
                 <i class="bi bi-play-fill"></i>
               </div>
             </div>
@@ -833,423 +226,352 @@
         </div>
       </div>
     </section>
-    <!-- ======= End Bible Story Section ======= -->
 
-
-    <!-- Trending Category Section -->
+    <!-- ========================================================================
+         OLD TESTAMENT & CREATION STORIES
+         ======================================================================== -->
     <section id="trending-category" class="trending-category section">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="section-title-container d-flex align-items-center justify-content-between">
-          <u>
-            <h2>Before Stories</h2>
-          </u>
+          <h2>✦ Genesis & Old Testament Chronicles</h2>
         </div>
-      </div><!-- End Section Title --> <br>
-      <div class="container" data-aos="fade-up">
+      </div>
+
+      <div class="container mt-4" data-aos="fade-up">
         <div class="row g-5">
+          
+          <!-- Featured Story Card -->
           <div class="col-lg-4">
-
             <div class="post-entry lg">
-              <a href="single-post.html"><img src="assets/imges/aa1.webp" alt="" class="img-fluid"></a>
-              <div class="post-meta"><span class="date">World</span> <span class="mx-1">•</span> <span>In the
-                  Beginning…</span></div>
-              <h2><a href="single-post.html">God’s Amazing Creation:</a></h2>
-              <p class="mb-4 d-block">In the beginning, there was only stillness — no light, no sound, no form. The
-                world was empty and silent, covered in deep darkness. But then, God spoke — and everything changed.
-
-                “Let there be light!” — and light burst into existence, chasing away the darkness. The first sunrise
-                painted the heavens with gold, and creation began to sing.
-
-                God separated the day from the night, the land from the sea. He shaped mighty mountains, peaceful
-                valleys, and flowing rivers. The blue sky stretched wide above, and the green earth blossomed below.
-
-                He made the grass to grow, the flowers to bloom, and the trees to reach toward the heavens. Every
-                leaf whispered His glory. Every breeze carried His breath of life.
-
-                Then came the creatures — great and small — birds that soared in the air, fish that swam in the
-                deep seas, and animals that walked the land. Each one unique, each one made with care and love.
-
-                And finally, God created man and woman in His own image — to love, to think, to create, and to walk
-                with Him. He breathed His very life into them. Humanity became the reflection of His heart.
-
-                The world was perfect — peaceful, beautiful, full of harmony.
-                God looked at all He had made and said, “It is very good.”
-
-                Jesus was there — from the very beginning.
-                He was the Word through whom all things were created — the galaxies, the stars, the earth, and even
-                your heartbeat.
-
-                The same Jesus who made the universe also made you, with a purpose and a plan.
-                He knows your name, your dreams, and your heart — because you were created by His love.
-
-                Message:
-                From nothing, God created everything — with love, order, and beauty.
-                He is the Light that shines in every darkness, the Life that fills all creation.
-                And just as He spoke the world into being, He can speak new beginnings into your life too.
-
-                “The same God who made the stars also made you — and He calls you His masterpiece.”</p>
-
+              <a href="single-post.html"><img src="assets/imges/aa1.webp" alt="God's Creation" class="img-fluid"></a>
+              <div class="post-meta">
+                <span class="date" style="color: var(--bible-gold-dark);">Genesis 1:1</span> 
+                <span class="mx-1">•</span> 
+                <span>In the Beginning…</span>
+              </div>
+              <h2><a href="single-post.html">God’s Amazing Creation</a></h2>
+              <p class="mb-4 d-block">
+                In the beginning, there was only stillness — no light, no sound, no form. The world was empty and silent, covered in deep darkness. But then, God spoke — and everything changed. “Let there be light!” — and light burst into existence.
+              </p>
+              <a href="single-post.html" class="fw-bold" style="color: var(--bible-gold-dark);">Explore Story →</a>
             </div>
-
           </div>
 
+          <!-- Middle & Right Columns -->
           <div class="col-lg-8">
-            <div class="row g-5">
+            <div class="row g-4">
 
               <div class="col-lg-4 border-start custom-border">
-
                 <div class="post-entry">
-
-                  <a href="Adam.html"><img src="assets/imges/bb1.jpg" alt="" class="img-fluid"></a>
-                  <div class="post-meta"><span class="date">World</span> <span class="mx-1">•</span> <span>First
-                      People<span></div>
-                  <h2><a href="Adam.html">Adam, and Eve </a></h2>
+                  <a href="Adam.html"><img src="assets/imges/bb1.jpg" alt="Adam and Eve" class="img-fluid"></a>
+                  <div class="post-meta"><span class="date">Genesis</span> <span class="mx-1">•</span> <span>The First People</span></div>
+                  <h2><a href="Adam.html">Adam and Eve in Eden</a></h2>
                 </div>
                 <div class="post-entry">
-                  <a href="Abel.html"><img src="assets/imges/kk1.jpg" alt="" class="img-fluid"></a>
-                  <div class="post-meta"><span class="date">Gifts to God</span> <span class="mx-1">•</span>
-                    <span>Children of Adam and Eve</span>
-                  </div>
-                  <h2><a href="Abel.html">Cain and Abel – Detailed Story</a>
-                  </h2>
+                  <a href="Abel.html"><img src="assets/imges/kk1.jpg" alt="Cain and Abel" class="img-fluid"></a>
+                  <div class="post-meta"><span class="date">Genesis</span> <span class="mx-1">•</span> <span>Offerings of Faith</span></div>
+                  <h2><a href="Abel.html">Cain and Abel – Detailed Story</a></h2>
                 </div>
                 <div class="post-entry">
-                  <a href="Abraham.html"><img src="assets/imges/hh1.jpg" alt="" class="img-fluid"></a>
-                  <div class="post-meta"><span class="date">Abraham – </span> <span class="mx-1">•</span> <span>
-                    </span></div>
-                  <h2><a href="Abraham.html">The Father of Faith</a></h2>
+                  <a href="Abraham.html"><img src="assets/imges/hh1.jpg" alt="Abraham" class="img-fluid"></a>
+                  <div class="post-meta"><span class="date">Genesis</span> <span class="mx-1">•</span> <span>Covenant</span></div>
+                  <h2><a href="Abraham.html">Abraham – The Father of Faith</a></h2>
                 </div>
                 <div class="post-entry">
-                  <a href="Jacob.html"><img src="assets/imges/jj1.jpg" alt="" class="img-fluid"></a>
-                  <div class="post-meta"><span class="date">Jacob & Joseph –</span> <span class="mx-1">•</span> </div>
-                  <h2><a href="Jacob.html"> The Dreamer and the Redeemer</a></h2>
-                </div>
-              </div>
-              <div class="col-lg-4 border-start custom-border">
-
-                <div class="post-entry">
-                  <a href="Moses.html"><img src="assets/imges/mm1.jpg" alt="" class="img-fluid"></a>
-                  <div class="post-meta"><span class="date">The Story of Moses’</span> <span class="mx-1">•</span>
-                  </div>
-                  <h2><a href="Moses.html"> Final Blessing and Death</a></h2>
-                </div>
-                <div class="post-entry">
-                  <a href="Samuel.html"><img src="assets/imges/ss1.jpg" alt="" class="img-fluid"></a>
-                  <div class="post-meta"><span class="date">Samuel the Prophet </span> <span class="mx-1">•</span>
-                  </div>
-                  <h2><a href="Samuel.html">– From Birth to Death</a></h2>
-                </div>
-
-                <div class="post-entry">
-                  <a href="David.html"><img src="assets/imges/dd1.jpg" alt="" class="img-fluid"></a>
-                  <div class="post-meta"><span class="date">King David </span> <span class="mx-1">•</span>
-                  </div>
-                  <h2><a href="David.html">– From Shepherd Boy to King of Israel</a></h2>
-                </div>
-
-                <div class="post-entry">
-                  <a href="Solomon.html"><img src="assets/imges/qq1.jpg" alt="" class="img-fluid"></a>
-                  <div class="post-meta"><span class="date">King Solomon</span> <span class="mx-1">•</span>
-                  </div>
-                  <h2><a href="Solomon.html"> – The King of Wisdom</a></h2>
+                  <a href="Jacob.html"><img src="assets/imges/jj1.jpg" alt="Jacob" class="img-fluid"></a>
+                  <div class="post-meta"><span class="date">Genesis</span> <span class="mx-1">•</span> <span>The Dreamer</span></div>
+                  <h2><a href="Jacob.html">Jacob & Joseph – Dreamer to Redeemer</a></h2>
                 </div>
               </div>
 
-              <!-- Trending Section -->
+              <div class="col-lg-4 border-start custom-border">
+                <div class="post-entry">
+                  <a href="Moses.html"><img src="assets/imges/mm1.jpg" alt="Moses" class="img-fluid"></a>
+                  <div class="post-meta"><span class="date">Exodus</span> <span class="mx-1">•</span> <span>The Deliverer</span></div>
+                  <h2><a href="Moses.html">The Story of Moses & Exodus</a></h2>
+                </div>
+                <div class="post-entry">
+                  <a href="Samuel.html"><img src="assets/imges/ss1.jpg" alt="Samuel" class="img-fluid"></a>
+                  <div class="post-meta"><span class="date">1 Samuel</span> <span class="mx-1">•</span> <span>The Prophet</span></div>
+                  <h2><a href="Samuel.html">Samuel the Prophet – Faithful Servant</a></h2>
+                </div>
+                <div class="post-entry">
+                  <a href="David.html"><img src="assets/imges/dd1.jpg" alt="King David" class="img-fluid"></a>
+                  <div class="post-meta"><span class="date">1 Samuel</span> <span class="mx-1">•</span> <span>Shepherd to King</span></div>
+                  <h2><a href="David.html">King David – Shepherd Boy to King</a></h2>
+                </div>
+                <div class="post-entry">
+                  <a href="Solomon.html"><img src="assets/imges/qq1.jpg" alt="King Solomon" class="img-fluid"></a>
+                  <div class="post-meta"><span class="date">1 Kings</span> <span class="mx-1">•</span> <span>Wisdom</span></div>
+                  <h2><a href="Solomon.html">King Solomon – The King of Wisdom</a></h2>
+                </div>
+              </div>
+
+              <!-- Sidebar Trending List -->
               <div class="col-lg-4">
-
-                <div class="trending">
-                  <ul class="trending-post">
-                    <h2>Other Stories</h2>
-                    <li>
-                      <a href="#"><span class="author">Jonah</span>
-                        <span class="number">1</span>
-                        <a href="Jonah.html">
-                          <h3>Jonah and the Whale</h3>
-                        </a>
-
-                      </a>
+                <div class="widget-item">
+                  <h3 class="widget-title">Sacred Heroes</h3>
+                  <ul class="list-unstyled">
+                    <li class="mb-3 pb-2 border-bottom">
+                      <a href="Jonah.html" class="fw-bold d-block text-dark">1. Jonah and the Great Whale</a>
+                      <small class="text-muted">Repentance in Nineveh</small>
+                    </li>
+                    <li class="mb-3 pb-2 border-bottom">
+                      <a href="Daniel.html" class="fw-bold d-block text-dark">2. Daniel in the Lions' Den</a>
+                      <small class="text-muted">Unshakable devotion</small>
+                    </li>
+                    <li class="mb-3 pb-2 border-bottom">
+                      <a href="Esther.html" class="fw-bold d-block text-dark">3. Queen Esther’s Bravery</a>
+                      <small class="text-muted">For such a time as this</small>
+                    </li>
+                    <li class="mb-3 pb-2 border-bottom">
+                      <a href="Noah.html" class="fw-bold d-block text-dark">4. Noah & the Great Ark</a>
+                      <small class="text-muted">The Covenant of the Rainbow</small>
+                    </li>
+                    <li class="mb-3 pb-2 border-bottom">
+                      <a href="Ruth.html" class="fw-bold d-block text-dark">5. Ruth & Naomi</a>
+                      <small class="text-muted">Loyalty, love and redemption</small>
                     </li>
                     <li>
-                      <a href="#"> <span class="author">Daniel</span>
-                        <span class="number">2</span>
-                        <a href="Daniel.html">
-                          <h3>Daniel in the Lion’s Den</h3>
-                        </a>
-
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#"> <span class="author">Esther </span>
-                        <span class="number">3</span>
-                        <a href="Esther.html">
-                          <h3>Queen Esther – The Brave and Kind Queen Who Saved Her People</h3>
-                        </a>
-
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#"> <span class="author">Noah </span>
-                        <span class="number">4</span>
-                        <a href="Noah.html">
-                          <h3>Noah – The Great Ark and God’s Promise</h3>
-                        </a>
-
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#"> <span class="author">Ruth and Naomi </span>
-                        <span class="number">5</span>
-                        <a href="Ruth.html">
-                          <h3>Ruth and Naomi: A Story of Friendship and Faith</h3>
-                        </a>
-
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#"> <span class="author">Shadrach, Meshach, and Abednego. </span>
-
-                        <span class="number">6</span>
-                        <a href="Friends.html">
-                          <h3>The Fiery Furnace – God Protects His Brave Friends</h3>
-                        </a>
-                      </a>
+                      <a href="Friends.html" class="fw-bold d-block text-dark">6. The Fiery Furnace</a>
+                      <small class="text-muted">Protected in the fire</small>
                     </li>
                   </ul>
                 </div>
+              </div>
 
-              </div> <!-- End Trending Section -->
             </div>
           </div>
 
-        </div> <!-- End .row -->
+        </div>
       </div>
+    </section>
 
-      </div>
-
-    </section><!-- /Trending Category Section -->
-
-    <!-- Trending Category Section -->
-    <section id="trending-category" class="trending-category section">
-
+    <!-- ========================================================================
+         NEW TESTAMENT & LIFE OF JESUS CHRIST
+         ======================================================================== -->
+    <section class="trending-category section" style="background: var(--bible-parchment-card);">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="section-title-container d-flex align-items-center justify-content-between">
-          <u>
-            <h2>Jesus’ Wisdom and Miracles</h2>
-          </u>
-        </div> <br>
-      </div><!-- End Section Title -->
-      <div class="container" data-aos="fade-up">
+          <h2>✦ Jesus Christ – Life, Miracles & Resurrection</h2>
+        </div>
+      </div>
+
+      <div class="container mt-4" data-aos="fade-up">
         <div class="row g-5">
+
+          <!-- Featured New Testament Card -->
           <div class="col-lg-4">
-
             <div class="post-entry lg">
-              <a href="mary.html"><img src="assets/imges/ma1.jpg" alt="" class="img-fluid"></a>
-              <div class="post-meta"><span class="date">World</span> <span class="mx-1">•</span> <span>In the
-                  Beginning…</span></div>
-              <h2><a href="mary.html">Birth of Jesus</a></h2>
-              <p class="mb-4 d-block">Long before Jesus was born, the prophets had spoken of a Savior who would bring
-                peace and light to the world. The prophet Isaiah said, “For to us a child is born, to us a son is given;
-                and the government will be on His shoulders. And He will be called Wonderful Counselor, Mighty God,
-                Everlasting Father, Prince of Peace” (Isaiah 9:6). When the right time came, God sent His Son into the
-                world, born of the Virgin Mary, in a small and quiet town called Bethlehem. His birth was not in a
-                palace but in a humble stable, showing that God’s love reaches even the lowliest of hearts. The shining
-                star that appeared in the sky was a sign that the Light of the World had come. Truly, the birth of Jesus
-                is the greatest sign of God’s faithfulness and mercy to humankind.The night Jesus was born was filled
-                with divine glory. Shepherds were watching their flocks in the fields when suddenly, the glory of the
-                Lord shone around them. The angel told them not to fear, but to rejoice, for the Savior had been born.
-                They hurried to Bethlehem and found Mary, Joseph, and the baby lying in a manger, just as the angel had
-                said. Filled with joy, they praised God and told everyone what they had seen. The wise men also came
-                from faraway lands, guided by the star that rested over the place where Jesus was. They bowed down and
-                worshiped Him, offering their treasures. This holy birth reminds us that Jesus is “the true light that
-                gives light to everyone” (John 1:9). His coming brought hope to the hopeless and peace to the world.
-                Every Christmas, we remember that God’s love was born among us in the form of a child — the
-                Lord Jesus Christ.</p>
-
+              <a href="mary.html"><img src="assets/imges/ma1.jpg" alt="Birth of Jesus" class="img-fluid"></a>
+              <div class="post-meta">
+                <span class="date" style="color: var(--bible-gold-dark);">Luke 2</span> 
+                <span class="mx-1">•</span> 
+                <span>The Savior is Born</span>
+              </div>
+              <h2><a href="mary.html">The Holy Nativity & Birth of Jesus</a></h2>
+              <p class="mb-4 d-block">
+                Long before Jesus was born, prophets proclaimed the coming of the Prince of Peace. In a humble stable under a radiant star in Bethlehem, God’s greatest gift of love was born to redeem humanity.
+              </p>
+              <a href="mary.html" class="fw-bold" style="color: var(--bible-gold-dark);">Read Nativity Chronicle →</a>
             </div>
-
           </div>
 
           <div class="col-lg-8">
-            <div class="row g-5">
+            <div class="row g-4">
 
               <div class="col-lg-4 border-start custom-border">
-
                 <div class="post-entry">
-
-                  <a href="Birth.html"><img src="assets/imges/ja1.jpg" alt="" class="img-fluid"></a>
-                  <div class="post-meta"><span class="date">The Birth of Jesus </span> <span class="mx-1">•</span>
-                  </div>
-                  <h2><a href="Birth.html">– The Savior is Born </a></h2>
+                  <a href="Birth.html"><img src="assets/imges/ja1.jpg" alt="The Savior Born" class="img-fluid"></a>
+                  <div class="post-meta"><span class="date">Bethlehem</span> <span class="mx-1">•</span> <span>Nativity</span></div>
+                  <h2><a href="Birth.html">The Savior is Born</a></h2>
                 </div>
                 <div class="post-entry">
-                  <a href="Childhood.html"><img src="assets/imges/je1.jpg" alt="" class="img-fluid"></a>
-                  <div class="post-meta"><span class="date">Nazareth</span> <span class="mx-1">•</span>
-
-                  </div>
-                  <h2><a href="Childhood.html">The Childhood and Growth of Jesus</a>
-                  </h2>
+                  <a href="Childhood.html"><img src="assets/imges/je1.jpg" alt="Childhood of Jesus" class="img-fluid"></a>
+                  <div class="post-meta"><span class="date">Nazareth</span> <span class="mx-1">•</span> <span>Temple Visit</span></div>
+                  <h2><a href="Childhood.html">The Childhood of Jesus</a></h2>
                 </div>
                 <div class="post-entry">
-                  <a href="Life.html"><img src="assets/imges/je9.jpg" alt="" class="img-fluid"></a>
-                  <div class="post-meta"><span class="date">The Growing Jesus</span> <span class="mx-1">•</span> <span>
-                    </span></div>
-                  <h2><a href="Life.html">- Jesus returned to Nazareth</a></h2>
+                  <a href="Life.html"><img src="assets/imges/je9.jpg" alt="Life of Jesus" class="img-fluid"></a>
+                  <div class="post-meta"><span class="date">Ministry</span> <span class="mx-1">•</span> <span>Wisdom</span></div>
+                  <h2><a href="Life.html">Jesus in Nazareth</a></h2>
                 </div>
                 <div class="post-entry">
-                  <a href="John.html"><img src="assets/imges/js1.jpg" alt="" class="img-fluid"></a>
-                  <div class="post-meta"><span class="date">Prepare the way for Jesus Christ –</span> <span
-                      class="mx-1">•</span> </div>
+                  <a href="John.html"><img src="assets/imges/js1.jpg" alt="Baptism" class="img-fluid"></a>
+                  <div class="post-meta"><span class="date">Jordan River</span> <span class="mx-1">•</span> <span>Holy Spirit</span></div>
                   <h2><a href="John.html">The Baptism of Jesus</a></h2>
                 </div>
               </div>
+
               <div class="col-lg-4 border-start custom-border">
-
                 <div class="post-entry">
-                  <a href="Wedding.html"><img src="assets/imges/we1.jpg" alt="" class="img-fluid"></a>
-                  <div class="post-meta">Jesus’ First Miracle - <span class="date">.</span> <span class="mx-1">•</span>
-                  </div>
-                  <h2><a href="Wedding.html"> The Miracle at the Wedding in Cana</a></h2>
+                  <a href="Wedding.html"><img src="assets/imges/we1.jpg" alt="Wedding in Cana" class="img-fluid"></a>
+                  <div class="post-meta"><span class="date">Miracles</span> <span class="mx-1">•</span> <span>Cana</span></div>
+                  <h2><a href="Wedding.html">The Miracle at Cana</a></h2>
                 </div>
                 <div class="post-entry">
-                  <a href="Wilderness.html"><img src="assets/imges/ww1.jpg" alt="" class="img-fluid"></a>
-                  <div class="post-meta"><span class="date">Jesus Is King </span> <span class="mx-1">•</span>
-                  </div>
-                  <h2><a href="Wilderness.html"> Tempted in the Wilderness</a></h2>
+                  <a href="Wilderness.html"><img src="assets/imges/ww1.jpg" alt="Wilderness" class="img-fluid"></a>
+                  <div class="post-meta"><span class="date">Temptation</span> <span class="mx-1">•</span> <span>Victory</span></div>
+                  <h2><a href="Wilderness.html">Tempted in the Wilderness</a></h2>
                 </div>
-
                 <div class="post-entry">
-                  <a href="Blood.html"><img src="assets/imges/pp1.jpg" alt="" class="img-fluid"></a>
-                  <div class="post-meta"><span class="date">Jesus</span> <span class="mx-1">•</span>
-                  </div>
-                  <h2><a href="Blood.html">The Body and Blood of Christ</a></h2>
+                  <a href="Blood.html"><img src="assets/imges/pp1.jpg" alt="Last Supper" class="img-fluid"></a>
+                  <div class="post-meta"><span class="date">Last Supper</span> <span class="mx-1">•</span> <span>Covenant</span></div>
+                  <h2><a href="Blood.html">The Body & Blood of Christ</a></h2>
                 </div>
-
                 <div class="post-entry">
-                  <a href="Crucifixion.html"><img src="assets/imges/jk7.jpg" alt="" class="img-fluid"></a>
-                  <div class="post-meta"><span class="date">Jesus</span> <span class="mx-1">•</span>
-                  </div>
-                  <h2><a href="Crucifixion.html">The Crucifixion and Resurrection of Jesus Christ</a></h2>
+                  <a href="Crucifixion.html"><img src="assets/imges/jk7.jpg" alt="Resurrection" class="img-fluid"></a>
+                  <div class="post-meta"><span class="date">Easter</span> <span class="mx-1">•</span> <span>Victory over Death</span></div>
+                  <h2><a href="Crucifixion.html">Crucifixion & Resurrection</a></h2>
                 </div>
               </div>
 
-              <!-- Trending Section -->
+              <!-- Sidebar Miracles List -->
               <div class="col-lg-4">
-
-                <div class="trending">
-                  <ul class="trending-post">
-                    <h2>Other Stories</h2>
-                    <li>
-                      <a href="assets/imges/as1.jpg"><span class="author">Jesus’</span>
-                        <span class="number">1</span>
-                        <a href="Miracles.html">
-                          <h3> Jesus Wisdom </h3>
-                        </a>
-
-                      </a>
+                <div class="widget-item">
+                  <h3 class="widget-title">Divine Miracles</h3>
+                  <ul class="list-unstyled">
+                    <li class="mb-3 pb-2 border-bottom">
+                      <a href="Miracles.html" class="fw-bold d-block text-dark">1. Jesus Calms the Storm</a>
+                      <small class="text-muted">Peace, be still!</small>
+                    </li>
+                    <li class="mb-3 pb-2 border-bottom">
+                      <a href="Demons.html" class="fw-bold d-block text-dark">2. Healing the Afflicted</a>
+                      <small class="text-muted">Authority over darkness</small>
+                    </li>
+                    <li class="mb-3 pb-2 border-bottom">
+                      <a href="Dead.html" class="fw-bold d-block text-dark">3. Jesus Raises Lazarus</a>
+                      <small class="text-muted">I am the Resurrection and Life</small>
                     </li>
                     <li>
-                      <a href="#"> <span class="author">Jesus’</span>
-                        <span class="number">2</span>
-                        <a href="">
-                          <h3> Out Demons and Evil Spirits</h3>
-                        </a>
-
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#"> <span class="author">Jesus’</span>
-                        <span class="number">3</span>
-                        <a href="Dead.html">
-                          <h3>Jesus Raises the Dead</h3>
-                        </a>
-                      </a>
-                    </li>
-                     <li>
-                      <a href="#"> <span class="author">Jesus’</span>
-                        <span class="number">4</span>
-                        <a href="Water.html">
-                          <h3>Jesus Miracles</h3>
-                        </a>
-                      </a>
+                      <a href="Baptism.html" class="fw-bold d-block text-dark">4. Walking on Water</a>
+                      <small class="text-muted">Take heart, do not be afraid</small>
                     </li>
                   </ul>
                 </div>
+              </div>
 
-              </div> <!-- End Trending Section -->
             </div>
           </div>
 
-        </div> <!-- End .row -->
+        </div>
       </div>
+    </section>
 
+    <!-- ========================================================================
+         CINEMATIC BIBLE VIDEO STORIES GALLERY
+         ======================================================================== -->
+    <section class="section dark-background py-5">
+      <div class="container" data-aos="fade-up">
+        <div class="text-center mb-5">
+          <span class="bible-subtitle-badge">Cinematic Video Archive</span>
+          <h2 class="display-6 mt-2" style="font-family: var(--decorative-font); color: #ffd700;">Witness The Scriptures in Motion</h2>
+          <p class="text-muted" style="max-width: 600px; margin: 0 auto; color: #cbd5e1 !important;">
+            Experience animated sacred moments brought to life with cinematic reverence and inspiring biblical imagery.
+          </p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <div class="col-lg-4 col-md-6">
+            <div class="video-card">
+              <video class="w-100" controls playsinline poster="assets/imges/cc1.jpg">
+                <source src="assets/imges/vv1.mp4" type="video/mp4">
+              </video>
+              <div class="p-3" style="background: var(--bible-navy-card); border-top: 1px solid var(--bible-gold-border);">
+                <h5 class="mb-1 text-warning" style="font-family: var(--heading-font);">Creation of the Heavens</h5>
+                <small class="text-light">Genesis 1 – God's Glorious Beginning</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="video-card">
+              <video class="w-100" controls playsinline poster="assets/imges/ja2.jpg">
+                <source src="assets/imges/vv2.mp4" type="video/mp4">
+              </video>
+              <div class="p-3" style="background: var(--bible-navy-card); border-top: 1px solid var(--bible-gold-border);">
+                <h5 class="mb-1 text-warning" style="font-family: var(--heading-font);">The Ministry of Grace</h5>
+                <small class="text-light">Teachings, Parables and Healing</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="video-card">
+              <video class="w-100" controls playsinline poster="assets/imges/jk7.jpg">
+                <source src="assets/imges/vv3.mp4" type="video/mp4">
+              </video>
+              <div class="p-3" style="background: var(--bible-navy-card); border-top: 1px solid var(--bible-gold-border);">
+                <h5 class="mb-1 text-warning" style="font-family: var(--heading-font);">Victory and Resurrection</h5>
+                <small class="text-light">The Triumph of the Cross and Living Lord</small>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
-    </section><!-- /Trending Category Section -->
+    </section>
 
   </main>
 
+  <!-- ========================================================================
+       GLOBAL HOLY FOOTER
+       ======================================================================== -->
   <footer id="footer" class="footer dark-background">
 
     <div class="container footer-top">
       <div class="row gy-4">
+        
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Bible</span>
+            <span class="sitename">BIBLE</span>
           </a>
-          <div class="footer-contact pt-3">
-            <p>India , TamilNadu</p>
-            <p>Kanya Kumari Dist</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>91+ 9487851243</span></p>
+          <p class="mt-3" style="color: #cbd5e1; font-style: italic;">
+            “Your word is a lamp to my feet and a light to my path.” — Psalm 119:105
+          </p>
+          <div class="footer-contact pt-2">
+            <p>India, Tamil Nadu</p>
+            <p>Kanyakumari District</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+91 9487851243</span></p>
             <p><strong>Email:</strong> <span>kmt4543@gmail.com</span></p>
           </div>
           <div class="social-links d-flex mt-4">
-            <a href="#"><i class="bi bi-twitter-x"></i></a>
-            <a href="#"><i class="bi bi-facebook"></i></a>
-            <a href="#"><i class="bi bi-instagram"></i></a>
-            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#" title="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" title="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" title="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
+          <h4>Scripture Links</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Categries</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About the Mission</a></li>
+            <li><a href="category.html">Scripture Library</a></li>
+            <li><a href="contact.html">Prayer Requests</a></li>
           </ul>
         </div>
 
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
+        <div class="col-lg-3 col-md-3 footer-links">
+          <h4>Old Testament</h4>
           <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Management System</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
+            <li><a href="single-post.html">Creation & Eden</a></li>
+            <li><a href="Noah.html">Noah's Ark</a></li>
+            <li><a href="Moses.html">Moses & Exodus</a></li>
+            <li><a href="David.html">David & Goliath</a></li>
+            <li><a href="Daniel.html">Daniel in Lion's Den</a></li>
           </ul>
         </div>
 
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Development</h4>
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>New Testament</h4>
           <ul>
-            <li><a href="#">Static Websites design</a></li>
-            <li><a href="#">Dynamic </a></li>
-            <li><a href="#">E-Commers</a></li>
-            <li><a href="#">Student Projects</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Other Services</h4>
-          <ul>
-            <li><a href="#">Photos Editting</a></li>
-            <li><a href="#">Video Editting</a></li>
-            <li><a href="#">Online Class </a></li>
-            <li><a href="#">Poster Edit</a></li>
+            <li><a href="mary.html">Birth of Christ</a></li>
+            <li><a href="Wedding.html">Miracle at Cana</a></li>
+            <li><a href="Miracles.html">Miracles of Jesus</a></li>
+            <li><a href="Blood.html">The Last Supper</a></li>
+            <li><a href="Crucifixion.html">Resurrection of Christ</a></li>
           </ul>
         </div>
 
@@ -1257,66 +579,30 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">BIBLE</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-
-        Designed by & Distributed by <a href="">Jebin Joseph</a>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename" style="color: #ffd700;">HOLY BIBLE STORIES</strong> <span>All Rights Reserved</span></p>
+      <div class="credits mt-2">
+        Designed with reverence & devotion by <a href="#" style="color: #ffd700; font-weight: 600;">Jebin Joseph</a>
       </div>
     </div>
 
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" title="Back to Top">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-
-  <script>
-    const navToggle = document.querySelector('.mobile-nav-toggle');
-    const navMenu = document.querySelector('.navmenu');
-
-    navToggle.addEventListener('click', () => {
-      navMenu.classList.toggle('active');
-    });
-
-    // Optional scroll effect
-    window.addEventListener('scroll', () => {
-      const header = document.querySelector('.header');
-      header.classList.toggle('scrolled', window.scrollY > 50);
-    });
-  </script>
-
-  <script>
-    const video = document.getElementById('bibleVideo');
-    const playBtn = document.getElementById('playBtn');
-
-    playBtn.addEventListener('click', () => {
-      if (video.paused) {
-        video.play();
-        playBtn.style.display = 'none';
-      } else {
-        video.pause();
-        playBtn.style.display = 'flex';
-      }
-    });
-  </script>
-
-
-  <!-- Main JS File -->
+  <!-- Master Bible JS -->
   <script src="assets/js/main.js"></script>
 
 </body>
-
-
-<!-- Mirrored from themewagon.github.io/ZenBlog/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Oct 2025 10:06:43 GMT -->
 
 </html>
