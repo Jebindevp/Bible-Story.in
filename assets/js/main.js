@@ -42,6 +42,7 @@
       mobileNavToggleBtn.classList.toggle("bi-x");
     }
   }
+
   if (mobileNavToggleBtn) {
     mobileNavToggleBtn.addEventListener("click", mobileNavToggle);
   }
@@ -53,6 +54,16 @@
         mobileNavToggle();
       }
     });
+  });
+
+  // Close mobile nav when clicking outside header
+  document.addEventListener("click", (e) => {
+    if (document.querySelector(".mobile-nav-active")) {
+      const header = document.querySelector("#header");
+      if (header && !header.contains(e.target)) {
+        mobileNavToggle();
+      }
+    }
   });
 
   /* --------------------------------------------------------------------------
@@ -119,25 +130,48 @@
   window.addEventListener("load", initSwiper);
 
   /* --------------------------------------------------------------------------
-     7. GRAND CINEMATIC BIBLE VIDEO INTRO CONTROLLER
+     7. DEDICATED CINEMATIC BIBLE VIDEO INTRO THEATER CONTROLLER
      -------------------------------------------------------------------------- */
   function initBibleVideoIntro() {
     const introOverlay = document.getElementById("bible-intro-overlay");
+    const introStage = document.getElementById("introVideoStage");
     const introVideo = document.getElementById("introVideoPlayer");
     const btnEnter = document.getElementById("btnEnterBible");
+    const btnSkipTop = document.getElementById("btnSkipIntroTop");
     const btnSound = document.getElementById("btnToggleSound");
-    const btnReplay = document.getElementById("btnReplayIntro");
+    const soundIcon = document.getElementById("soundIcon");
+    const soundText = document.getElementById("soundText");
+    const btnReplayNav = document.getElementById("btnReplayIntro");
+    const btnRestart = document.getElementById("btnRestartIntro");
+    const btnPlayPause = document.getElementById("btnPlayPauseOverlay");
+    const playPauseIcon = document.getElementById("playPauseIcon");
+    const progressFill = document.getElementById("introProgressFill");
 
     if (!introOverlay) return;
 
     // Check if user already viewed intro in this session
     const hasSeenIntro = sessionStorage.getItem("bible_intro_seen");
 
+    function updatePlayState(isPlaying) {
+      if (introStage) {
+        introStage.classList.toggle("is-playing", isPlaying);
+      }
+      if (playPauseIcon) {
+        playPauseIcon.className = isPlaying ? "bi bi-pause-fill" : "bi bi-play-fill";
+      }
+    }
+
     function openIntro() {
       introOverlay.classList.remove("hidden");
       document.body.style.overflow = "hidden";
       if (introVideo) {
-        introVideo.play().catch(() => {});
+        introVideo.currentTime = 0;
+        introVideo.play().then(() => {
+          updatePlayState(true);
+        }).catch(() => {
+          // If autoplay blocked, show play button
+          updatePlayState(false);
+        });
       }
     }
 
@@ -147,39 +181,100 @@
       sessionStorage.setItem("bible_intro_seen", "true");
       if (introVideo) {
         introVideo.pause();
+        updatePlayState(false);
       }
     }
 
+    // Video progress update
+    if (introVideo) {
+      introVideo.addEventListener("timeupdate", () => {
+        if (progressFill && introVideo.duration) {
+          const progress = (introVideo.currentTime / introVideo.duration) * 100;
+          progressFill.style.width = `${progress}%`;
+        }
+      });
+
+      introVideo.addEventListener("play", () => updatePlayState(true));
+      introVideo.addEventListener("pause", () => updatePlayState(false));
+      introVideo.addEventListener("ended", () => {
+        updatePlayState(false);
+      });
+    }
+
+    // Toggle Play / Pause on Video Stage Click
+    if (btnPlayPause && introVideo) {
+      btnPlayPause.addEventListener("click", () => {
+        if (introVideo.paused) {
+          introVideo.play();
+        } else {
+          introVideo.pause();
+        }
+      });
+    }
+
+    if (introStage && introVideo) {
+      introStage.addEventListener("click", (e) => {
+        if (e.target === btnPlayPause || btnPlayPause.contains(e.target)) return;
+        if (introVideo.paused) {
+          introVideo.play();
+        } else {
+          introVideo.pause();
+        }
+      });
+    }
+
+    // Initial state check
     if (hasSeenIntro === "true") {
       introOverlay.classList.add("hidden");
     } else {
       openIntro();
     }
 
+    // Next: Enter Holy Scriptures & Skip actions
     if (btnEnter) {
       btnEnter.addEventListener("click", closeIntro);
     }
+    if (btnSkipTop) {
+      btnSkipTop.addEventListener("click", closeIntro);
+    }
 
+    // Sound toggle
     if (btnSound && introVideo) {
       btnSound.addEventListener("click", () => {
         introVideo.muted = !introVideo.muted;
-        const icon = btnSound.querySelector("i");
-        if (icon) {
-          icon.className = introVideo.muted
+        if (soundIcon) {
+          soundIcon.className = introVideo.muted
             ? "bi bi-volume-mute-fill"
             : "bi bi-volume-up-fill";
+        }
+        if (soundText) {
+          soundText.textContent = introVideo.muted ? "Unmute" : "Mute";
         }
       });
     }
 
-    if (btnReplay) {
-      btnReplay.addEventListener("click", (e) => {
+    // Replay / Restart actions
+    if (btnRestart && introVideo) {
+      btnRestart.addEventListener("click", () => {
+        introVideo.currentTime = 0;
+        introVideo.play();
+        updatePlayState(true);
+      });
+    }
+
+    if (btnReplayNav) {
+      btnReplayNav.addEventListener("click", (e) => {
         e.preventDefault();
         openIntro();
       });
     }
   }
-  window.addEventListener("DOMContentLoaded", initBibleVideoIntro);
+
+  if (document.readyState === "loading") {
+    window.addEventListener("DOMContentLoaded", initBibleVideoIntro);
+  } else {
+    initBibleVideoIntro();
+  }
 
   /* --------------------------------------------------------------------------
      8. OPEN BIBLE BOOK READER CARD CONTROLLER (Left Content / Right Image)
@@ -237,16 +332,19 @@
       }
     });
 
-    // Touch Swipe Gesture Support for Mobile Devices
+    // Touch Swipe Gesture Support for Mobile Devices & Tablets
     if (cardsContainer) {
       let touchStartX = 0;
       let touchEndX = 0;
+      let touchStartY = 0;
+      let touchEndY = 0;
       const minSwipeDistance = 45;
 
       cardsContainer.addEventListener(
         "touchstart",
         (e) => {
           touchStartX = e.changedTouches[0].screenX;
+          touchStartY = e.changedTouches[0].screenY;
         },
         { passive: true }
       );
@@ -255,16 +353,20 @@
         "touchend",
         (e) => {
           touchEndX = e.changedTouches[0].screenX;
-          const diff = touchStartX - touchEndX;
-          if (Math.abs(diff) > minSwipeDistance) {
-            if (diff > 0) {
+          touchEndY = e.changedTouches[0].screenY;
+          const diffX = touchStartX - touchEndX;
+          const diffY = touchStartY - touchEndY;
+
+          // Only trigger if horizontal swipe is greater than vertical swipe
+          if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > minSwipeDistance) {
+            if (diffX > 0) {
               // Swipe left -> Next card
               currentCard = (currentCard + 1) % cards.length;
-              showCard(currentCard);
+              showCard(currentCard, true);
             } else {
               // Swipe right -> Prev card
               currentCard = (currentCard - 1 + cards.length) % cards.length;
-              showCard(currentCard);
+              showCard(currentCard, true);
             }
           }
         },

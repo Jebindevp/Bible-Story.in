@@ -30,18 +30,20 @@
 <body class="index-page">
 
   <!-- ========================================================================
-       GRAND CINEMATIC BIBLE VIDEO INTRO OVERLAY
+       GRAND CINEMATIC BIBLE VIDEO INTRO THEATER
        ======================================================================== -->
   <div id="bible-intro-overlay" class="bible-intro-overlay">
     <div class="bible-intro-backdrop"></div>
-    <video id="introVideoPlayer" class="intro-bg-video" autoplay muted loop playsinline>
-      <source src="assets/imges/vv3.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
     <div class="bible-intro-vignette"></div>
 
-    <div class="bible-intro-content text-center">
-      <div class="bible-emblem-container mb-3">
+    <div class="intro-theater-container text-center">
+      <!-- Quick Skip Button -->
+      <button id="btnSkipIntroTop" class="btn-intro-skip-top" title="Skip to Website">
+        <span>Skip</span> <i class="bi bi-arrow-right"></i>
+      </button>
+
+      <!-- Sacred Emblem & Title -->
+      <div class="bible-emblem-container">
         <div class="bible-emblem-glow"></div>
         <div class="bible-emblem-cross">✝</div>
       </div>
@@ -52,17 +54,44 @@
         <i class="bi bi-book-half"></i>
         <span></span>
       </div>
+
+      <!-- Dedicated Video Stage -->
+      <div class="intro-video-stage" id="introVideoStage">
+        <video id="introVideoPlayer" playsinline poster="assets/imges/cc1.jpg">
+          <source src="assets/imges/vv3.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="intro-video-badge">
+          <span class="pulse-dot"></span> Cinematic Intro
+        </div>
+        <div id="btnPlayPauseOverlay" class="intro-video-play-overlay" title="Play / Pause Video">
+          <i class="bi bi-play-fill" id="playPauseIcon"></i>
+        </div>
+        <div class="intro-video-progress-bar">
+          <div class="intro-video-progress-fill" id="introProgressFill"></div>
+        </div>
+      </div>
+
+      <!-- Sacred Verse -->
       <p class="bible-intro-verse">
         “In the beginning was the Word, and the Word was with God, and the Word was God.”
         <span class="verse-ref">— John 1:1</span>
       </p>
 
+      <!-- Action Navigation Buttons -->
       <div class="bible-intro-actions">
-        <button id="btnEnterBible" class="btn-enter-bible">
-          <i class="bi bi-book-fill me-2"></i> Enter Holy Scriptures
+        <button id="btnEnterBible" class="btn-enter-bible btn-intro-next">
+          <i class="bi bi-book-fill me-1"></i>
+          <span>Next: Enter Holy Scriptures</span>
+          <i class="bi bi-arrow-right-circle-fill arrow-icon ms-1"></i>
         </button>
         <button id="btnToggleSound" class="btn-intro-sound" title="Toggle Sound">
-          <i class="bi bi-volume-mute-fill"></i>
+          <i class="bi bi-volume-mute-fill" id="soundIcon"></i>
+          <span id="soundText">Unmute</span>
+        </button>
+        <button id="btnRestartIntro" class="btn-intro-replay" title="Replay Video">
+          <i class="bi bi-arrow-counterclockwise"></i>
+          <span>Replay</span>
         </button>
       </div>
     </div>
