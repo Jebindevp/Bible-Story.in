@@ -196,7 +196,12 @@
 
     function showCard(index, shouldScroll = false) {
       cards.forEach((card, i) => {
-        card.classList.toggle("active", i === index);
+        const isActive = (i === index);
+        card.classList.toggle("active", isActive);
+        if (isActive) {
+          const content = card.querySelector(".card-content");
+          if (content) content.scrollTop = 0;
+        }
       });
       if (pageInfo) {
         pageInfo.textContent = `Page ${index + 1} of ${cards.length}`;

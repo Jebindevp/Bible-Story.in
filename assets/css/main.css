@@ -820,15 +820,13 @@ a:hover {
 .related-cards {
   position: relative !important;
   width: 100% !important;
-  min-height: 480px !important;
-  background: transparent !important;
-  margin: 15px 0 20px !important;
+  margin: 15px 0 25px !important;
 }
 
-/* The Grand Open Bible Manuscript Card */
+/* The Grand Open Bible Manuscript Card with Sticky Image & Text Scroll */
 .related-card {
   display: none !important;
-  flex-direction: row !important; /* Left Content, Right Image */
+  flex-direction: row !important;
   align-items: stretch !important;
   background: var(--bible-parchment-card) !important;
   background-image: 
@@ -836,16 +834,16 @@ a:hover {
     radial-gradient(circle at 100% 50%, rgba(212, 175, 55, 0.08) 0%, transparent 40%),
     linear-gradient(135deg, #fdfbf7 0%, #f4edd9 100%) !important;
   border: 3px solid var(--bible-gold-border) !important;
-  border-radius: 18px !important;
+  border-radius: 20px !important;
   box-shadow: 
     0 15px 45px rgba(0, 0, 0, 0.2),
-    0 0 25px rgba(212, 175, 55, 0.22),
+    0 0 30px rgba(212, 175, 55, 0.25),
     inset 0 0 35px rgba(184, 134, 11, 0.08) !important;
   overflow: hidden !important;
   position: relative !important;
   width: 100% !important;
-  height: auto !important;
-  min-height: 500px !important;
+  height: 560px !important;
+  max-height: 560px !important;
   padding: 0 !important;
 }
 
@@ -859,7 +857,7 @@ a:hover {
   content: "";
   position: absolute;
   top: 0;
-  left: 55%;
+  left: 56%;
   transform: translateX(-50%);
   width: 14px;
   height: 48px;
@@ -867,26 +865,54 @@ a:hover {
   border-radius: 0 0 4px 4px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   z-index: 10;
+  pointer-events: none;
 }
 
-/* LEFT SIDE: STORY CONTENT & HEADINGS */
+/* LEFT SIDE: STORY CONTENT (SMOOTH ILLUMINATED TEXT SCROLL) */
 .related-card .card-content {
   order: 1 !important;
   flex: 1 1 56% !important;
   width: 56% !important;
-  padding: 38px 32px 32px 36px !important;
+  height: 100% !important;
+  max-height: 100% !important;
+  overflow-y: auto !important;
+  scroll-behavior: smooth !important;
+  -webkit-overflow-scrolling: touch !important;
+  padding: 36px 32px 32px 36px !important;
   margin: 0 !important;
   display: flex !important;
   flex-direction: column !important;
-  justify-content: center !important;
+  justify-content: flex-start !important;
   position: relative !important;
   z-index: 4 !important;
   border-right: 2px dashed rgba(212, 175, 55, 0.4) !important;
   background: linear-gradient(135deg, rgba(253, 251, 247, 0.96), rgba(244, 237, 217, 0.96)) !important;
   text-align: left !important;
+  scrollbar-width: thin !important;
+  scrollbar-color: var(--bible-gold-primary) rgba(212, 175, 55, 0.1) !important;
 }
 
-/* Chapter Heading */
+/* Ancient Gold WebKit Scrollbar for Card Content */
+.related-card .card-content::-webkit-scrollbar {
+  width: 6px !important;
+}
+
+.related-card .card-content::-webkit-scrollbar-track {
+  background: rgba(212, 175, 55, 0.08) !important;
+  border-radius: 4px !important;
+}
+
+.related-card .card-content::-webkit-scrollbar-thumb {
+  background: var(--bible-gold-gradient) !important;
+  border-radius: 4px !important;
+  box-shadow: 0 0 6px rgba(212, 175, 55, 0.4) !important;
+}
+
+.related-card .card-content::-webkit-scrollbar-thumb:hover {
+  background: var(--bible-gold-bright) !important;
+}
+
+/* Chapter Heading - Sticky at Top of Text Container */
 .related-card .card-content h4 {
   font-family: var(--heading-font) !important;
   font-size: 1.6rem !important;
@@ -895,7 +921,11 @@ a:hover {
   margin-bottom: 16px !important;
   padding-bottom: 10px !important;
   border-bottom: 2px solid rgba(212, 175, 55, 0.35) !important;
-  position: relative !important;
+  position: sticky !important;
+  top: 0 !important;
+  background: rgba(253, 251, 247, 0.98) !important;
+  backdrop-filter: blur(6px) !important;
+  z-index: 5 !important;
   letter-spacing: 0.5px !important;
   line-height: 1.3 !important;
 }
@@ -911,9 +941,9 @@ a:hover {
 .related-card .card-content p {
   font-family: var(--default-font) !important;
   font-size: 1.15rem !important;
-  line-height: 1.8 !important;
+  line-height: 1.85 !important;
   color: var(--bible-text-dark) !important;
-  margin-bottom: 12px !important;
+  margin-bottom: 16px !important;
 }
 
 /* Illuminated Drop Cap on first letter */
@@ -938,21 +968,22 @@ a:hover {
   border-left: 3px solid var(--bible-gold-primary) !important;
   font-style: italic !important;
   font-weight: 600 !important;
+  display: inline-block;
+  margin: 3px 0;
 }
 
-/* RIGHT SIDE: FULL STORY IMAGE */
+/* RIGHT SIDE: STICKY FULL STORY IMAGE */
 .related-card img {
   order: 2 !important;
   flex: 1 1 44% !important;
   width: 44% !important;
   max-width: none !important;
   height: 100% !important;
-  min-height: 480px !important;
-  max-height: 600px !important;
+  position: sticky !important;
+  top: 0 !important;
   object-fit: cover !important;
   border-radius: 0 !important;
   margin: 0 !important;
-  position: relative !important;
   z-index: 2 !important;
   transition: transform 0.6s cubic-bezier(0.2, 1, 0.3, 1), filter 0.6s ease !important;
   box-shadow: inset 0 0 35px rgba(0, 0, 0, 0.4) !important;
@@ -970,59 +1001,6 @@ a:hover {
   100% {
     opacity: 1;
     transform: rotateY(0deg) scale(1);
-  }
-}
-
-/* Responsive Bible Spread for Tablets & Mobile */
-@media (max-width: 991px) {
-  .related-card {
-    flex-direction: column !important;
-    min-height: auto !important;
-  }
-  
-  .related-card::after {
-    display: none;
-  }
-
-  .related-card .card-content {
-    order: 1 !important;
-    width: 100% !important;
-    flex: none !important;
-    padding: 28px 20px !important;
-    border-right: none !important;
-    border-bottom: 2px dashed rgba(212, 175, 55, 0.4) !important;
-  }
-
-  .related-card .card-content p:first-of-type::first-letter {
-    font-size: 2.2rem;
-    margin-right: 8px;
-  }
-
-  .related-card img {
-    order: 2 !important;
-    width: 100% !important;
-    flex: none !important;
-    height: 320px !important;
-    min-height: 240px !important;
-    max-height: 360px !important;
-  }
-}
-
-@media (max-width: 576px) {
-  .related-card .card-content {
-    padding: 20px 15px !important;
-  }
-
-  .related-card .card-content h4 {
-    font-size: 1.3rem !important;
-  }
-
-  .related-card .card-content p {
-    font-size: 1.05rem !important;
-  }
-
-  .related-card img {
-    height: 240px !important;
   }
 }
 
@@ -1116,6 +1094,276 @@ a:hover {
 #prev-btn:active,
 #next-btn:active {
   transform: translateY(0) scale(0.98) !important;
+}
+
+#page-info {
+  font-family: var(--heading-font) !important;
+  font-size: 1.05rem !important;
+  font-weight: 700 !important;
+  color: var(--bible-navy-deep) !important;
+  background: var(--bible-parchment-card) !important;
+  padding: 8px 18px !important;
+  min-height: 44px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 30px !important;
+  border: 1.5px solid var(--bible-gold-border) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06) !important;
+}
+
+/* ==========================================================================
+   COMPLETE RESPONSIVE MEDIA QUERIES MATRIX
+   ========================================================================== */
+
+/* --- 1. Large Desktop / 4K Monitors (min-width: 1400px) --- */
+@media (min-width: 1400px) {
+  .related-card {
+    height: 600px !important;
+    max-height: 600px !important;
+  }
+
+  .related-card .card-content {
+    padding: 42px 38px 36px 42px !important;
+  }
+
+  .related-card .card-content p {
+    font-size: 1.2rem !important;
+    line-height: 1.9 !important;
+  }
+}
+
+/* --- 2. Standard Desktop / Laptops (992px to 1399px) --- */
+@media (min-width: 992px) and (max-width: 1399px) {
+  .related-card {
+    height: 540px !important;
+    max-height: 540px !important;
+  }
+
+  .related-card .card-content {
+    padding: 32px 26px !important;
+  }
+}
+
+/* --- 3. Tablets / iPad Viewports (768px to 991px) --- */
+@media (max-width: 991px) {
+  .related-card {
+    flex-direction: column !important;
+    height: auto !important;
+    max-height: none !important;
+    min-height: auto !important;
+  }
+  
+  .related-card::after {
+    display: none;
+  }
+
+  .related-card .card-content {
+    order: 1 !important;
+    width: 100% !important;
+    flex: none !important;
+    max-height: 380px !important;
+    overflow-y: auto !important;
+    padding: 26px 20px !important;
+    border-right: none !important;
+    border-bottom: 2px dashed rgba(212, 175, 55, 0.4) !important;
+  }
+
+  .related-card .card-content p:first-of-type::first-letter {
+    font-size: 2.3rem;
+    margin-right: 8px;
+  }
+
+  .related-card img {
+    order: 2 !important;
+    width: 100% !important;
+    flex: none !important;
+    height: 300px !important;
+    min-height: 240px !important;
+    max-height: 340px !important;
+    position: relative !important;
+  }
+
+  .sidebar {
+    margin-top: 35px;
+  }
+}
+
+/* --- 4. Mobile Landscape & Large Phones (576px to 767px) --- */
+@media (min-width: 576px) and (max-width: 767px) {
+  .page-title h1 {
+    font-size: 1.7rem !important;
+  }
+
+  .related-card .card-content {
+    max-height: 340px !important;
+    padding: 22px 18px !important;
+  }
+
+  .related-card img {
+    height: 260px !important;
+  }
+}
+
+/* --- 5. Mobile Portrait & Small Phones (max-width: 575px) --- */
+@media (max-width: 575px) {
+  .header {
+    padding: 10px 0 !important;
+  }
+
+  .header .sitename {
+    font-size: 1.6rem !important;
+  }
+
+  .page-title {
+    padding: 28px 12px 22px !important;
+    border-radius: 0 0 25px 25px !important;
+  }
+
+  .page-title h1 {
+    font-size: 1.35rem !important;
+    line-height: 1.3 !important;
+  }
+
+  .breadcrumbs ol li {
+    font-size: 0.82rem;
+  }
+
+  .breadcrumbs ol li a {
+    padding: 3px 8px;
+    font-size: 0.8rem;
+  }
+
+  .blog-details .article {
+    padding: 18px 12px !important;
+    border-radius: 14px !important;
+    margin-bottom: 25px !important;
+  }
+
+  .blog-details .title {
+    font-size: 1.3rem !important;
+  }
+
+  .blog-details .content p {
+    font-size: 1.05rem !important;
+    line-height: 1.7 !important;
+  }
+
+  .blog-details .post-img img {
+    max-height: 240px !important;
+    border-radius: 10px !important;
+  }
+
+  .blog-details blockquote {
+    padding: 16px 12px !important;
+    font-size: 1.02rem !important;
+    margin: 20px 0 !important;
+  }
+
+  /* Mobile Story Card with Sticky Text Scroll */
+  .related-card {
+    border-radius: 14px !important;
+    border-width: 2px !important;
+  }
+
+  .related-card .card-content {
+    max-height: 320px !important;
+    padding: 18px 14px !important;
+  }
+
+  .related-card .card-content h4 {
+    font-size: 1.22rem !important;
+    padding-bottom: 8px !important;
+    margin-bottom: 12px !important;
+  }
+
+  .related-card .card-content p {
+    font-size: 1.02rem !important;
+    line-height: 1.75 !important;
+    margin-bottom: 12px !important;
+  }
+
+  .related-card .card-content p:first-of-type::first-letter {
+    font-size: 2.0rem;
+    margin-right: 6px;
+  }
+
+  .related-card img {
+    height: 220px !important;
+    min-height: 200px !important;
+  }
+
+  .language-toggle {
+    gap: 8px !important;
+    margin-bottom: 15px !important;
+  }
+
+  .lang-btn {
+    padding: 6px 16px !important;
+    font-size: 0.88rem !important;
+    min-height: 38px !important;
+  }
+
+  .pagination-controls {
+    gap: 8px !important;
+    margin: 15px 0 !important;
+  }
+
+  .pagination-controls button,
+  #prev-btn,
+  #next-btn {
+    padding: 7px 16px !important;
+    font-size: 0.88rem !important;
+    min-height: 40px !important;
+  }
+
+  #page-info {
+    font-size: 0.92rem !important;
+    padding: 6px 14px !important;
+    min-height: 40px !important;
+  }
+
+  .recent-posts-widget .post-item img {
+    width: 56px !important;
+    height: 56px !important;
+    min-width: 56px !important;
+  }
+
+  .recent-posts-widget .post-item h4 {
+    font-size: 0.9rem !important;
+  }
+
+  .footer {
+    padding: 40px 0 20px !important;
+  }
+}
+
+/* --- 6. Extra Small Screens (max-width: 360px) --- */
+@media (max-width: 360px) {
+  .header .sitename {
+    font-size: 1.4rem !important;
+  }
+
+  .page-title h1 {
+    font-size: 1.2rem !important;
+  }
+
+  .related-card .card-content {
+    max-height: 290px !important;
+    padding: 14px 10px !important;
+  }
+
+  .pagination-controls button,
+  #prev-btn,
+  #next-btn {
+    padding: 6px 12px !important;
+    font-size: 0.82rem !important;
+  }
+
+  #page-info {
+    font-size: 0.85rem !important;
+    padding: 5px 10px !important;
+  }
 }
 
 #page-info {
